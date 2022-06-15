@@ -156,6 +156,8 @@ shell  vars in general have a $ infront of them when yolu access them. but not w
 - ``alias`` - it is a command that tells the shell to make a macro for other commands 
 - ``env`` shows your env
 - ``export`` -declare env var for remainder of session until u clsoe this shell 
+- ``jobs`` - lists the jobs in shell(if you have pauzed iwth ctrl z) with jobid
+- ``bg <jobid>`` and ``fg <jobid>`` - background a paused job or foreground a paused job respectively. 
 
 strange obscure barely useful:
 ==============================
@@ -172,6 +174,9 @@ graphical
 - xorg/x11 - always started by scripts, but it is the name of the service that runs the GUI in linux generally. x1 was the old name xorg is the new one. there are forks...
 - ``xv`` -old and simple image viewer
 - ``mplayer`` -old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot
+- ``mpv`` - like mplayer but better
+- ``gimp`` - powerful image editing, old schoool MIT project, shit interface, opens any format basically
+
 - ``xviewer`` -seems to be the version of xv/xview available in modern ubuntu? stupid name
 
 
@@ -307,8 +312,6 @@ on cients:  git clone ssh://git@server:/home/git/package
 
 then make an initial commit to master to make sure it works
 
-proceed as normal:  make branch, write stuf, git add stuff,commit it, push, merge, etc
-
 pull requests seem like a thing you dont want to do without a web interface like github
 
 git client side
@@ -356,3 +359,5 @@ also a good way to give people root-like power on servers, without allowing them
 
 - ``docker-compose`` - utility for launching a few differentd ocker containers of different services, allowig you to easily config them to be interconnected in one file. simply put ``docker-compose.yml`` in an empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due to autistic standards with whitespace and stuff. so work off of a copypaste
 - ``docker`` - the normal interface to docker to run one container
+- ``docker stats`` shows current running containers wioth resource use
+

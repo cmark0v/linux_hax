@@ -554,6 +554,8 @@ ul.auto-toc {
 <li><tt class="docutils literal">alias</tt> - it is a command that tells the shell to make a macro for other commands</li>
 <li><tt class="docutils literal">env</tt> shows your env</li>
 <li><tt class="docutils literal">export</tt> -declare env var for remainder of session until u clsoe this shell</li>
+<li><tt class="docutils literal">jobs</tt> - lists the jobs in shell(if you have pauzed iwth ctrl z) with jobid</li>
+<li><tt class="docutils literal">bg &lt;jobid&gt;</tt> and <tt class="docutils literal">fg &lt;jobid&gt;</tt> - background a paused job or foreground a paused job respectively.</li>
 </ul>
 </div>
 <div class="section" id="strange-obscure-barely-useful">
@@ -574,6 +576,8 @@ ul.auto-toc {
 <li>xorg/x11 - always started by scripts, but it is the name of the service that runs the GUI in linux generally. x1 was the old name xorg is the new one. there are forks...</li>
 <li><tt class="docutils literal">xv</tt> -old and simple image viewer</li>
 <li><tt class="docutils literal">mplayer</tt> -old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot</li>
+<li><tt class="docutils literal">mpv</tt> - like mplayer but better</li>
+<li><tt class="docutils literal">gimp</tt> - powerful image editing, old schoool MIT project, shit interface, opens any format basically</li>
 <li><tt class="docutils literal">xviewer</tt> -seems to be the version of xv/xview available in modern ubuntu? stupid name</li>
 </ul>
 </div>
@@ -710,7 +714,6 @@ git config receive.denyCurrentBranch ignore # over rides some annoying check tha
 <p>put public keys in /home/git/.ssh/authorized_keys as a line, on the host n</p>
 <p>on cients:  git clone <a class="reference external" href="ssh://git&#64;server:/home/git/package">ssh://git&#64;server:/home/git/package</a></p>
 <p>then make an initial commit to master to make sure it works</p>
-<p>proceed as normal:  make branch, write stuf, git add stuff,commit it, push, merge, etc</p>
 <p>pull requests seem like a thing you dont want to do without a web interface like github</p>
 </div>
 <div class="section" id="git-client-side">
@@ -751,6 +754,7 @@ but remember to push after you merge, push and pull and clone are remote command
 <ul class="simple">
 <li><tt class="docutils literal"><span class="pre">docker-compose</span></tt> - utility for launching a few differentd ocker containers of different services, allowig you to easily config them to be interconnected in one file. simply put <tt class="docutils literal"><span class="pre">docker-compose.yml</span></tt> in an empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due to autistic standards with whitespace and stuff. so work off of a copypaste</li>
 <li><tt class="docutils literal">docker</tt> - the normal interface to docker to run one container</li>
+<li><tt class="docutils literal">docker stats</tt> shows current running containers wioth resource use</li>
 </ul>
 </div>
 </div>
