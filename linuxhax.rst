@@ -14,23 +14,23 @@ Quintesential Unix Shell commands
 - ``mkdir`` -makes an empty directory
 - ``touch`` -makes an empty file
 - ``rmdir`` -remove empty directory only(safety feature)
-- ``less`` -read a file that is longer than the screen. scroll by hitting enter, space, arows, pgdown, search with ``/`` use q to quit
+- ``less`` -read a file that is longer than the screen. scroll by hitting enter, space, arrows, pgdown, search with ``/`` use q to quit
 - ``su`` - setuser/superuser its supposed to stand for, su bob will make your user bob, you need his password. su makes u root(if you have a root password
 - ``sudo`` - run a command as root, became the normal way to do things in administration after a while. before it was just get a root shell with su. it will ask for a password and if you are an admin user yours will work. you have to be in the group sudoers. 
-- ``more`` - basically the same as less but slightly different in an unmemorable and barly perceivable way
+- ``more`` - basically the same as less but slightly different in an unmemorable and barely perceivable way
 - ``top`` - like task manager, list everything. full featured interface, can kill things, sort everything, etc
 - ``ps`` -list processes defaults to ones in your shell
    - ``ps aux``- lists processes from all users with more information
 
 - ``grep`` - search files for string or regular expression, print whole line
    - ``grep -v`` - exclude files 
-   - ``grep -A n -B m`` - print lines n after matching line and m before mastching line
+   - ``grep -A n -B m`` - print lines n after matching line and m before matching line
 
 - ``kill`` -end process with signal 15, smooth exit
    - ``kill -s 9`` - end it right now, no shutdown sequence
 
 - ``cat`` -spit entire file to stout
-- ``curl`` -send http request and spit utput to stdout
+- ``curl`` -send http request and spit output to stdout
 - ``nc`` -netcat, same as cat but uses raw tcp socket. can work on udp too
    - ``nc -l n`` - liston on port n, add -u for udp
 
@@ -50,7 +50,6 @@ Quintesential Unix Shell commands
 - ``sha256sum`` -same as above woth sha256 algorithm. also exists others. 
 - ``who`` -lists out the current logins/screens. shows u who is logged in(whci hsuers and where)
 - ``whoami`` -tells u which user u are. used to check if you've successfully hacked things and became root. or in innocent shell scripts
-- ``export`` -declare env var for remainder of sessuion until u clsoe this shell 
 - ``lsof`` -spit out data about various things going on with processes and devices and filesystem. example lsof -i:8000 gives u info about proc using port 8000
 - ``lsusb`` -list the usb devs. good to check if it can see a device
 - ``lspci`` -same but for pci devices
@@ -76,17 +75,17 @@ Quintesential Unix Shell commands
 - ``time`` -TIMES A COMMAND in human readable down to ms
 - ``date`` -the timestamp in a human readable format, can spit out other formats cehck man apge
 - ``ln`` -typically invoked as ``ln -s``, which creates a symbolic link
-- ``fsck`` -checks ahrd drives
+- ``fsck`` -checks hard drives
 - ``fdisk`` -partition hard drves
 - ``mkfs`` -makes the default fs, ext4 or whatever your system thinks is the default, for other fs do ``mkfs.<x>`` or ``mkfs -t <x>`` - make other kinds of fs ``<x>``, IE format partitions
-- ``yes`` -englss loop of 'y'... for dealign ith annoying meuus with the y/n? promps using pipe
+- ``yes`` -endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe
 - ``wipefs`` -removed disk label
 - ``shred`` - destroy files by writing random data to the location they were stored on disk(doesnt work on some filesystems) or write random data to a whole disk
 - ``cryptsetup`` - setup luks volumes
 - ``cron`` -service for running periodic tasks. 
 - ``ranger`` - file explorer command line tool. vim bindings, written in python. navigate filesystem in ncurses text interface
 - ``lfm`` - shitty version of ranger seems really old
-- ``lf`` - newer unfinished version of ranger lgihter and focused on the use of external tools to open things, not in repos https://github.com/gokcehan/lf
+- ``lf`` - newer unfinished version of ranger lighter and focused on the use of external tools to open things, not in repos https://github.com/gokcehan/lf
 - ``head``- get top 10 lines of the file, use -n to specify numlines
 - ``tail``- some as above, last 10 lines as default
 - ``cut``- more general than the 2 above, check the manpage, cuts chars bytes lines....
@@ -95,12 +94,12 @@ Quintesential Unix Shell commands
 editors:
 ========
 - ``vi`` -the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this 
-- ``vim`` -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for peoplle that hate their mouse. extesible to the point of absurdity. it is a modal editor, meaning it has modes of itneraction with file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter i is insert (normal edit mode), v is visual(select and delete copy and stuff large blocks to text), d is delete. u is undo. : char (yes use shift) lets u type in commands for user defined things and itneractions with filesystem. :w is write. wq is write and quit. q is quit. q! is quick rtfn with no confirmation. r is read(a file). 
+- ``vim`` -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter i is insert (normal edit mode), v is visual(select and delete copy and stuff large blocks to text), d is delete. u is undo. : char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. :w is write. wq is write and quit. q is quit. q! is quick rtfn with no confirmation. r is read(a file). 
 - ``elvis`` - this is another editor, a better version of vi, lighter than vim(if i remember correctly)
 - ``pico`` -simple old editor
 - ``nano`` -a fork/copy/something of pico, newer, good for noobs, often used and well respected. commands are on the screen when using it and ctrl-X based. 
 - ``emacs`` -a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it. 
-- ``ed`` -the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a munich would use. 
+- ``ed`` -the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use. 
 - ``gedit`` - simple grpahical editor, good
 - ``neovim`` - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently
 
@@ -138,17 +137,25 @@ shells:
 
 env vars:
 ================
+
 the shell and other software uses many environment vars
+
 these give background information about your system and things to software that needs it
+
 this information is stored here because it doesntn eed to be chagned often, but always needs ot be sepcified
+
 type env to see them all. echo $VAR to see VAR. export VAR=sgfsgs to set VAR to sgfsgs for your session. setting ``VAR=5 someprogram``, will modify VAR for that single line running someprogram. 
+
 shell  vars in general have a $ infront of them when yolu access them. but not when you set them
+
 - ``$PATH`` - path to binarys, default is /bin /usr/bin /usr/local/bin  etc
 - ``$DISPLAY`` - x11/xorg display, typically :0. machines can have multiple displays, like all unix things, its multiuser
 - ``$PYTHONPATH`` - where python looks for modules
 - ``$USER, $HOME``, - username and home directory path
 - ``$_`` - arguments of last program ran? 
 - ``alias`` - it is a command that tells the shell to make a macro for other commands 
+- ``env`` shows your env
+- ``export`` -declare env var for remainder of session until u clsoe this shell 
 
 strange obscure barely useful:
 ==============================
