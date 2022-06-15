@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.16: http://docutils.sourceforge.net/" />
+<title>linuxhax.rst</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7952 2016-07-26 18:15:59Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+.subscript {
+  vertical-align: sub;
+  font-size: smaller }
+
+.superscript {
+  vertical-align: super;
+  font-size: smaller }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left, table.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right, table.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table.align-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+.align-top    {
+  vertical-align: top }
+
+.align-middle {
+  vertical-align: middle }
+
+.align-bottom {
+  vertical-align: bottom }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<div class="section" id="quintesential-unix-shell-commands">
+<h1>Quintesential Unix Shell commands</h1>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">ls</tt> - list files</dt>
+<dd><ul class="first last">
+<li><tt class="docutils literal">ls <span class="pre">-al</span></tt> - list all files with extra information</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><tt class="docutils literal">mv</tt> - move file/folder</li>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">cp</tt> - copy file/folder</dt>
+<dd><ul class="first last">
+<li><tt class="docutils literal">cp <span class="pre">-r</span></tt> - copy folder recursively</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><tt class="docutils literal">pwd</tt> - gives u the current directory, like which, full path</li>
+<li><tt class="docutils literal">rm</tt> - delete file</li>
+<li><tt class="docutils literal">rm <span class="pre">-rf</span></tt> - remove folder recursively and force, IE, ignore all warnings. yes it will delete the whole drive if run as sudo on /</li>
+<li><tt class="docutils literal">mkdir</tt> -makes an empty directory</li>
+<li><tt class="docutils literal">touch</tt> -makes an empty file</li>
+<li><tt class="docutils literal">rmdir</tt> -remove empty directory only(safety feature)</li>
+<li><tt class="docutils literal">less</tt> -read a file that is longer than the screen. scroll by hitting enter, space, arrows, pgdown, search with <tt class="docutils literal">/</tt> use q to quit</li>
+<li><tt class="docutils literal">su</tt> - setuser/superuser its supposed to stand for, su bob will make your user bob, you need his password. su makes u root(if you have a root password</li>
+<li><tt class="docutils literal">sudo</tt> - run a command as root, became the normal way to do things in administration after a while. before it was just get a root shell with su. it will ask for a password and if you are an admin user yours will work. you have to be in the group sudoers.</li>
+<li><tt class="docutils literal">more</tt> - basically the same as less but slightly different in an unmemorable and barely perceivable way</li>
+<li><tt class="docutils literal">top</tt> - like task manager, list everything. full featured interface, can kill things, sort everything, etc</li>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">ps</tt> -list processes defaults to ones in your shell</dt>
+<dd><ul class="first last">
+<li><tt class="docutils literal">ps aux</tt>- lists processes from all users with more information</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">grep</tt> - search files for string or regular expression, print whole line</dt>
+<dd><ul class="first last">
+<li><tt class="docutils literal">grep <span class="pre">-v</span></tt> - exclude files</li>
+<li><tt class="docutils literal">grep <span class="pre">-A</span> n <span class="pre">-B</span> m</tt> - print lines n after matching line and m before matching line</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">kill</tt> -end process with signal 15, smooth exit</dt>
+<dd><ul class="first last">
+<li><tt class="docutils literal">kill <span class="pre">-s</span> 9</tt> - end it right now, no shutdown sequence</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><tt class="docutils literal">cat</tt> -spit entire file to stout</li>
+<li><tt class="docutils literal">curl</tt> -send http request and spit output to stdout</li>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">nc</tt> -netcat, same as cat but uses raw tcp socket. can work on udp too</dt>
+<dd><ul class="first last">
+<li><tt class="docutils literal">nc <span class="pre">-l</span> n</tt> - liston on port n, add -u for udp</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><tt class="docutils literal">sed</tt> -more advanced regular expression oriented grep with inplace editig focus</li>
+<li><tt class="docutils literal">awk</tt> -similar to sed, complex grep type thing regepts inplace editing etc</li>
+<li><tt class="docutils literal">perl</tt> -a whole language like python, partially specialized for the tasks sed and awk do, can write one liners in shell. regexps</li>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">chmod</tt> -modify permissions, uses a number code of 3 digits or letter</dt>
+<dd><ul class="first last">
+<li><tt class="docutils literal">cmod +x file</tt> - set file to be executable</li>
+<li><tt class="docutils literal">chmod 777</tt> - let all users read write and execute. dont do it</li>
+<li><tt class="docutils literal">chmod 666</tt> - all users read and write,</li>
+<li><tt class="docutils literal">chmod 770</tt> owner user and group for owner user cab w r ex</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><tt class="docutils literal">man</tt> -manual page, man &lt;command&gt; shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim.</li>
+<li><tt class="docutils literal">screen</tt> -make a new screen. <tt class="docutils literal"><span class="pre">ctrl-a</span> (release) d</tt> detaches/exits from it, ctrol-a c closes. tis is the way you run things in the background</li>
+<li><tt class="docutils literal">nohup</tt> -preceeds command/proram and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for backgrond process tat will persist on logout</li>
+<li><tt class="docutils literal">md5sum</tt> -jsut called md5 on mac/bsd jsut does an md5 checksum hash of a file. for comparison of files of any size</li>
+<li><tt class="docutils literal">sha256sum</tt> -same as above woth sha256 algorithm. also exists others.</li>
+<li><tt class="docutils literal">who</tt> -lists out the current logins/screens. shows u who is logged in(whci hsuers and where)</li>
+<li><tt class="docutils literal">whoami</tt> -tells u which user u are. used to check if you've successfully hacked things and became root. or in innocent shell scripts</li>
+<li><tt class="docutils literal">lsof</tt> -spit out data about various things going on with processes and devices and filesystem. example lsof -i:8000 gives u info about proc using port 8000</li>
+<li><tt class="docutils literal">lsusb</tt> -list the usb devs. good to check if it can see a device</li>
+<li><tt class="docutils literal">lspci</tt> -same but for pci devices</li>
+<li><tt class="docutils literal">sort</tt> -sorts text file line by line</li>
+<li><tt class="docutils literal">find</tt> -for searching the file system. most stupid way  can be done like find .|grep filenameiwant. recursive list of full dir tree uis the default behavior</li>
+<li><tt class="docutils literal">uniq</tt> -deletes duplicate lines that appear next to eachother in text.</li>
+<li><tt class="docutils literal">echo</tt> -prints whatever is in its args to stdout</li>
+<li><tt class="docutils literal">which</tt> -gives total path to an executable in the shell path</li>
+<li><tt class="docutils literal">strings</tt> -spits strings out from binary file</li>
+<li><tt class="docutils literal">hexdump</tt> -spits out hex of a file</li>
+<li><tt class="docutils literal">diff</tt> -gives u the difference of 2(text) files line by line. yes this is where the term diff comes from in git repos etc</li>
+<li><tt class="docutils literal">tar</tt> -deals with tar archives. to untar a tar.gz tar xvzf file.tar.gz, for tar.bz2, tar xvjf</li>
+<li><tt class="docutils literal">gzip</tt> -compression. works on one file, takes inut from file or stdout(!) good on text, fast</li>
+<li><tt class="docutils literal">bzip2</tt> -slower more intense compression</li>
+<li><tt class="docutils literal">gunzip</tt> -un-gzipps file</li>
+<li><tt class="docutils literal">bunzip2</tt> -unbz2 a file</li>
+<li><tt class="docutils literal">bzgrep</tt> -grep a bzfile, handy, exists also bzless bzcat bzexe...</li>
+<li><tt class="docutils literal">lsblk</tt> -list block devices. handy to se drives that are not mounted</li>
+<li><tt class="docutils literal">df <span class="pre">-h</span></tt> - lsits mounted drives with size ad free space in human readable format</li>
+<li><tt class="docutils literal">du <span class="pre">-h</span></tt> - check file size. it is recursive by default so it is good to set the max view deth with -d 0. du -h -d0 file</li>
+<li><tt class="docutils literal">lsmod</tt> -list kernel modules(generally are drivers), whcih are code that can be hotplugged into the kernel. this is used when trubleshooting hardware and driver issues</li>
+<li><tt class="docutils literal">modprobe</tt> -load up a module, they ahve a path thing built in so you can tab tab to see wahts abailable</li>
+<li><tt class="docutils literal">time</tt> -TIMES A COMMAND in human readable down to ms</li>
+<li><tt class="docutils literal">date</tt> -the timestamp in a human readable format, can spit out other formats cehck man apge</li>
+<li><tt class="docutils literal">ln</tt> -typically invoked as <tt class="docutils literal">ln <span class="pre">-s</span></tt>, which creates a symbolic link</li>
+<li><tt class="docutils literal">fsck</tt> -checks hard drives</li>
+<li><tt class="docutils literal">fdisk</tt> -partition hard drves</li>
+<li><tt class="docutils literal">mkfs</tt> -makes the default fs, ext4 or whatever your system thinks is the default, for other fs do <tt class="docutils literal"><span class="pre">mkfs.&lt;x&gt;</span></tt> or <tt class="docutils literal">mkfs <span class="pre">-t</span> &lt;x&gt;</tt> - make other kinds of fs <tt class="docutils literal">&lt;x&gt;</tt>, IE format partitions</li>
+<li><tt class="docutils literal">yes</tt> -endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe</li>
+<li><tt class="docutils literal">wipefs</tt> -removed disk label</li>
+<li><tt class="docutils literal">shred</tt> - destroy files by writing random data to the location they were stored on disk(doesnt work on some filesystems) or write random data to a whole disk</li>
+<li><tt class="docutils literal">cryptsetup</tt> - setup luks volumes</li>
+<li><tt class="docutils literal">cron</tt> -service for running periodic tasks.</li>
+<li><tt class="docutils literal">ranger</tt> - file explorer command line tool. vim bindings, written in python. navigate filesystem in ncurses text interface</li>
+<li><tt class="docutils literal">lfm</tt> - shitty version of ranger seems really old</li>
+<li><tt class="docutils literal">lf</tt> - newer unfinished version of ranger lighter and focused on the use of external tools to open things, not in repos <a class="reference external" href="https://github.com/gokcehan/lf">https://github.com/gokcehan/lf</a></li>
+<li><tt class="docutils literal">head</tt>- get top 10 lines of the file, use -n to specify numlines</li>
+<li><tt class="docutils literal">tail</tt>- some as above, last 10 lines as default</li>
+<li><tt class="docutils literal">cut</tt>- more general than the 2 above, check the manpage, cuts chars bytes lines....</li>
+</ul>
+</div>
+<div class="section" id="editors">
+<h1>editors:</h1>
+<ul class="simple">
+<li><tt class="docutils literal">vi</tt> -the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this</li>
+<li><tt class="docutils literal">vim</tt> -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter i is insert (normal edit mode), v is visual(select and delete copy and stuff large blocks to text), d is delete. u is undo. : char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. :w is write. wq is write and quit. q is quit. q! is quick rtfn with no confirmation. r is read(a file).</li>
+<li><tt class="docutils literal">elvis</tt> - this is another editor, a better version of vi, lighter than vim(if i remember correctly)</li>
+<li><tt class="docutils literal">pico</tt> -simple old editor</li>
+<li><tt class="docutils literal">nano</tt> -a fork/copy/something of pico, newer, good for noobs, often used and well respected. commands are on the screen when using it and ctrl-X based.</li>
+<li><tt class="docutils literal">emacs</tt> -a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it.</li>
+<li><tt class="docutils literal">ed</tt> -the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use.</li>
+<li><tt class="docutils literal">gedit</tt> - simple grpahical editor, good</li>
+<li><tt class="docutils literal">neovim</tt> - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently</li>
+</ul>
+</div>
+<div class="section" id="system-things-debian-based-mint-ubuntu">
+<h1>system things(debian based mint/ubuntu):</h1>
+<ul class="simple">
+<li><tt class="docutils literal">sudo</tt> -run following command as root (admin)</li>
+<li><tt class="docutils literal">su</tt> -set user, defaults to root. can specify shell with -s</li>
+<li><tt class="docutils literal">service</tt> -control a service. service &lt;name of it&gt; &lt;start, stop, restart, reload&gt;   ex: sudo service posrtgresl restart</li>
+<li><tt class="docutils literal">hostname</tt> -prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary</li>
+<li><tt class="docutils literal">adduser</tt> -<tt class="docutils literal">adduser &lt;newusername&gt;</tt> maeks a new user. many options. none are really required, even a password.</li>
+<li><tt class="docutils literal">usermod</tt> -mod shell and stuff of a givemn user usermod -aG common for adding group</li>
+<li><tt class="docutils literal">passwd</tt> -password change, <tt class="docutils literal">passwd &lt;user&gt;</tt> does it for user when u are admin</li>
+<li><tt class="docutils literal">dd</tt> -writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste objet to be read, of is the filesystem object to be written and bs is the block size which can be written human readablel ike 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this u can easily overwrite your hard drive. do not do it to mounted filesystem</li>
+<li><tt class="docutils literal">chsh</tt>- change the shell for a user</li>
+<li><tt class="docutils literal">chgroup</tt>- change group of file... group ownership</li>
+<li><tt class="docutils literal">chmod</tt>- change permissions of file chmod 777 file makes everyone read write ex it, chmod 666 is read write for all.... chmod 600 is antoeh common one ls -al will show the perms</li>
+<li><tt class="docutils literal">mount</tt> - attaches a block device to a folder, allowing you to browse the filesystem</li>
+<li><tt class="docutils literal">umount</tt>- unmounts somethign takes mountpoint or /dev /device as target</li>
+<li><tt class="docutils literal">dmesg</tt>- prints messages generated at boot</li>
+<li><tt class="docutils literal">env</tt>- show ur environment vars, set them then run command(too)</li>
+<li><tt class="docutils literal">uptime</tt>- time up</li>
+<li><tt class="docutils literal">wipefs</tt>- removed disk label</li>
+<li><tt class="docutils literal">cryptsetup</tt> - setup luks volumes</li>
+<li><tt class="docutils literal">cron</tt>- service for running periodic tasks.</li>
+</ul>
+</div>
+<div class="section" id="shells">
+<h1>shells:</h1>
+<ul class="simple">
+<li><tt class="docutils literal">bash</tt> -common, youre prob on it. &quot;bourne again shell&quot; wahteve that means</li>
+<li><tt class="docutils literal">csh</tt> -differentm advanced too - C shell</li>
+<li><tt class="docutils literal">tcsh</tt> -mac uses it? freebsd? its good</li>
+<li><tt class="docutils literal">sh</tt> - the most simple barebones one used when there is nothing else in some broke-ass embedded system or something</li>
+</ul>
+</div>
+<div class="section" id="env-vars">
+<h1>env vars:</h1>
+<p>the shell and other software uses many environment vars</p>
+<p>these give background information about your system and things to software that needs it</p>
+<p>this information is stored here because it doesntn eed to be chagned often, but always needs ot be sepcified</p>
+<p>type env to see them all. echo $VAR to see VAR. export VAR=sgfsgs to set VAR to sgfsgs for your session. setting <tt class="docutils literal">VAR=5 someprogram</tt>, will modify VAR for that single line running someprogram.</p>
+<p>shell  vars in general have a $ infront of them when yolu access them. but not when you set them</p>
+<ul class="simple">
+<li><tt class="docutils literal">$PATH</tt> - path to binarys, default is /bin /usr/bin /usr/local/bin  etc</li>
+<li><tt class="docutils literal">$DISPLAY</tt> - x11/xorg display, typically :0. machines can have multiple displays, like all unix things, its multiuser</li>
+<li><tt class="docutils literal">$PYTHONPATH</tt> - where python looks for modules</li>
+<li><tt class="docutils literal">$USER, $HOME</tt>, - username and home directory path</li>
+<li><tt class="docutils literal">$_</tt> - arguments of last program ran?</li>
+<li><tt class="docutils literal">alias</tt> - it is a command that tells the shell to make a macro for other commands</li>
+<li><tt class="docutils literal">env</tt> shows your env</li>
+<li><tt class="docutils literal">export</tt> -declare env var for remainder of session until u clsoe this shell</li>
+</ul>
+</div>
+<div class="section" id="strange-obscure-barely-useful">
+<h1>strange obscure barely useful:</h1>
+<ul class="simple">
+<li><tt class="docutils literal">motd</tt> - message of the day, displayed on login</li>
+<li><tt class="docutils literal">links</tt> - text only browser</li>
+<li><tt class="docutils literal">lynx</tt> - older more useless text only browser</li>
+<li><tt class="docutils literal">irssi</tt> - irc client ncurses flavor. leet af</li>
+<li><tt class="docutils literal">rexima</tt> - command line sound volume control mixer thingy</li>
+<li><tt class="docutils literal">beep</tt> - makes a console beep</li>
+</ul>
+</div>
+<div class="section" id="graphical">
+<h1>graphical</h1>
+<ul class="simple">
+<li><tt class="docutils literal">xterm</tt> -old school bare bones terminal emulator for x11</li>
+<li>xorg/x11 - always started by scripts, but it is the name of the service that runs the GUI in linux generally. x1 was the old name xorg is the new one. there are forks...</li>
+<li><tt class="docutils literal">xv</tt> -old and simple image viewer</li>
+<li><tt class="docutils literal">mplayer</tt> -old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot</li>
+<li><tt class="docutils literal">xviewer</tt> -seems to be the version of xv/xview available in modern ubuntu? stupid name</li>
+</ul>
+</div>
+<div class="section" id="network-hax">
+<h1>network &amp; hax</h1>
+<ul class="simple">
+<li><tt class="docutils literal">nmap</tt> -port scanner highly advanced, many modes and options</li>
+<li><tt class="docutils literal">masscan</tt> -speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information</li>
+<li><tt class="docutils literal">nc</tt> -previously merntioned, netcat, raw conns</li>
+<li><tt class="docutils literal">ettercap</tt> -manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack</li>
+<li><tt class="docutils literal">wireshark</tt> -watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon</li>
+<li><tt class="docutils literal">ngrep</tt> -network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for</li>
+<li><tt class="docutils literal">tcpdump</tt> -captures and dumps packets, dump files can be reloaded, minor dissection available with some calssification, can load the dumps up with anything</li>
+<li><tt class="docutils literal">ifconfig</tt> -old network interface config command line utility. windows ipconfig is the ripoff version with a weird name</li>
+<li><tt class="docutils literal">ip</tt> -the newer, 'better' network interface and routing table configuration tool</li>
+<li><tt class="docutils literal">route</tt> -orouting table edit and explore</li>
+<li><tt class="docutils literal">httping</tt> -sends a http packet to a server on default prot of 80, gives response time</li>
+<li><tt class="docutils literal">ping</tt> -normal old school icmp ping. not waht it used to be</li>
+<li><tt class="docutils literal">telnet</tt> -old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. helpful for testing connections, manual single prot probing like tenet &lt;host&gt; 80 to connect to port 80 on &lt;host&gt;</li>
+<li><tt class="docutils literal">nslookup</tt> -look up an ip or hostname in DNS</li>
+<li><tt class="docutils literal">john</tt> -old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too. likely better things these days. called john the ripper(after the famous amteur serial-hooker-disection-practicioner)</li>
+<li><tt class="docutils literal">whois</tt> -information on domain ownership, reverse look up of IP addresses. just an entry from a database about the owner and registrar stuff for IPs and domains.</li>
+<li><tt class="docutils literal">traceroute</tt> -old school packet routing trace, not sure if it really works the same anymore, but shows you the path packets take to a server. seems like maye routers out in the widl drop the packets it uses now often? not sure. dont use it much and its not what it used to be is the word</li>
+<li><tt class="docutils literal">arping</tt> -executes a ping-analogous function using the arp protocol. v nice.</li>
+<li><tt class="docutils literal">tsocks</tt> -wrap any protocol through socks</li>
+<li><tt class="docutils literal">httping</tt>- ping a http server. IE, give the response time to a http service</li>
+<li><tt class="docutils literal"><span class="pre">aircrack-ng</span></tt> - a suite of utilities for security analysis of wifi networks</li>
+<li><tt class="docutils literal">iwconfig</tt>-ike ifconfig but with specific features for wifi adapters/driver interfaces. it is old school</li>
+<li><tt class="docutils literal">iw</tt> - same as above but not as old school</li>
+<li><tt class="docutils literal">bluetoothctl</tt>- shell style interface to bluetooth hardware. quite good</li>
+<li><tt class="docutils literal">yersinia</tt>- a powerful security analysis too that i am not too familiar with, but worth a mention. some kid in vegas looked at me like i was insane for not using it. appears very powerful.</li>
+<li><tt class="docutils literal">netstat</tt>- usually i invoke as netstat -n, lists the connections in and out of the machine. godo stuff is by the top so try netstat -n|head</li>
+</ul>
+</div>
+<div class="section" id="ssh-stuff">
+<h1>SSH STUFF</h1>
+<ul class="simple">
+<li><tt class="docutils literal">ssh</tt> -secure shell, replaced telnet when people realizsed u could ngrep peoples files out off the network</li>
+<li><tt class="docutils literal"><span class="pre">ssh-keygen</span></tt> - generates keypairs for ssh auth</li>
+<li><tt class="docutils literal">scp</tt> -copies files over ssh, wil ldefault to copy locally for composibility and uses same args generally. typical use scp <a class="reference external" href="mailto:user&#64;host">user&#64;host</a>:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB to complete. tab is slow though. remember you can copy to /tmp always, too.</li>
+<li><tt class="docutils literal">ssh <span class="pre">-X</span></tt> - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides)</li>
+<li><tt class="docutils literal">ssh <span class="pre">-D</span> 8888</tt> - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host</li>
+<li><tt class="docutils literal">ssh <span class="pre">-L8888:host:8888</span></tt> - tunnel localhost 8888 to remove host's view of host:8888</li>
+<li><tt class="docutils literal">ssh <span class="pre">-R8888:host:8888</span></tt> - reverse tunnel, goes from remote host to localhsots view of host:8888</li>
+<li><tt class="docutils literal">sftp</tt> - ftp liek client thingy for scp. never use it, might be the original client and actual protocol name for the machinery that does scp</li>
+<li><tt class="docutils literal">sshfs</tt> - smount - use the above sftp facilities to emualted a mounted filesystem</li>
+</ul>
+</div>
+<div class="section" id="operators-in-shell-bash">
+<h1>operators in shell(bash)</h1>
+<ul class="simple">
+<li><tt class="docutils literal">|</tt> pipe, puts stdout into stdin like <tt class="docutils literal">cat bob|grep &lt;word&gt;</tt></li>
+<li><tt class="docutils literal">&amp;</tt> - runs concurrently with following command.</li>
+<li><tt class="docutils literal">&amp;&amp;</tt> - run next program sequentially</li>
+<li><tt class="docutils literal">&gt;</tt> - stdout into a file cat bob &gt; bobfile. OVERWRITES THE FILE</li>
+<li><tt class="docutils literal">&gt;&gt;</tt> - APPENDS TO THE FILE like ls &gt;&gt; listfile will append to the botom of nugget list the folder contents</li>
+<li><tt class="docutils literal">2&gt;</tt>  - same as &gt; but does stderr,</li>
+<li><tt class="docutils literal">&lt;</tt> file on right into stdin of command on left</li>
+<li><tt class="docutils literal">&lt;&lt;&lt;</tt> - string on the right into stdin on the left</li>
+<li><tt class="docutils literal"><span class="pre">ctrl-z</span></tt> - pause - immediate effect always</li>
+<li><tt class="docutils literal"><span class="pre">ctrl-c</span></tt> exit, doest leave shell(thats logout) clears the line though. sends a <tt class="docutils literal">kill <span class="pre">-s</span> 15</tt> to the thread in foreground</li>
+<li><tt class="docutils literal"><span class="pre">ctrl-d</span></tt> logout</li>
+<li><tt class="docutils literal">[TAB]</tt> - tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. <tt class="docutils literal">git add [TAB] [TAB]</tt> lists your changed files, for instance</li>
+<li>back quotes - <cite>kill `pgrep firefox</cite> `  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox</li>
+<li><tt class="docutils literal">*</tt> - wildcard, <tt class="docutils literal">ls *.py</tt> gives list of python scripts in current directory</li>
+<li><tt class="docutils literal"><span class="pre">[0-9]</span></tt> - matches digits in shell, <tt class="docutils literal">ls <span class="pre">[0-9]*</span></tt> liss eveyrhing that starts with a digit. can use comma separated singletons, works with letters too [a-z]...</li>
+</ul>
+</div>
+<div class="section" id="root-filesystem-synopsis">
+<h1>root filesystem synopsis</h1>
+<blockquote>
+Int the past many of these were separate partitions, hence some of the seemingly redundant things. Now this is not as important with solid state drives and (i supposed) more modern file systems</blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">/tmp</tt> - temp folder, anyone can write in it. it is there on every system and great place to copy things to if you are not sure where to do it</li>
+<li><tt class="docutils literal">/etc</tt> - pronounced et-SEE. all the configuration files and global settings are in here by default. in the past administration could be done exclusively by modificaion of files here, more or less. programs like passwd are tools to automatically edit files here</li>
+<li><tt class="docutils literal">/var</tt> - various data here, var/log is a default global spot for logs. often home to global data storage, such as the root of a  webserver with static content, or database disk footprint.</li>
+<li><tt class="docutils literal">/usr</tt> - user installed things generally.... comes with a lot in it these days. it is like an alternative root where u generally would modify things for system wide access. has the same diretory structure as /</li>
+<li><tt class="docutils literal">/proc</tt> - process information emulatd as block storage devices and stuff liek this. can get info abotu some hardware from drivers, and access some other weird low level things, dynamic emulated files that are read from live executing daemons</li>
+<li><tt class="docutils literal">/dev</tt> - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it isa like proc, not actual files, but dynamic emulated files that make access to devices liek accessing a file</li>
+<li><tt class="docutils literal">/opt</tt> - not sure what it is suppsoed to be but it is often used to store globally accessed proprietary software that doesnt have facility to install in the typical global directory structure(where thigns are in /bin and /lib and sstuff</li>
+<li><tt class="docutils literal">/bin</tt> - binarys, these are where the commands are stored for the base system. most of the higher level suff is in /usr/bin and /usr/local/bin</li>
+<li><tt class="docutils literal">/home</tt> - home diretorys for each user here. all user settings and information and data are in their home folder. copy it to an ew system an it will all be there</li>
+<li><tt class="docutils literal">/root</tt> - home direxdtory for admin/root user</li>
+<li><tt class="docutils literal">/boot</tt> - ccontains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a separate partition still</li>
+<li><tt class="docutils literal">/cdrom</tt> - vestigal artifact of a time when people used cdrom</li>
+<li><tt class="docutils literal">/mnt</tt> - this was originalyl where you would mount drives, IE, any drive that was not hosting system critical contents, like removeable media, was mounted here. you added these to be automounted using /etc/fstab, and mounting had to be done by root</li>
+<li><tt class="docutils literal">/media</tt> - this is where thigns are mounted now, un a path like /media/&lt;username&gt;/&lt;uuid serial thing&gt;</li>
+</ul>
+</div>
+<div class="section" id="notable-filesystem-objects-global">
+<h1>notable filesystem objects, global</h1>
+<ul class="simple">
+<li><tt class="docutils literal">/proc/cpuinfo</tt> - cpu core info, pretty great</li>
+<li><tt class="docutils literal">/dev/random</tt> - random data from hardware. cat this and u get a dump of real physical entropy</li>
+<li><tt class="docutils literal">/dev/urandom</tt> - output of a psrng using above as seed. cat this and get infinite 'random' data generated from finite entropy harvested from ahrdware</li>
+<li><tt class="docutils literal">/etc/passwd</tt> - old school place where some user info is stored, originally included encrypted passwords</li>
+<li><tt class="docutils literal">/etc/shadow</tt> - where they moved the encrypted passwords  from passwd to hide them from users when ti as realzied they could be cracked</li>
+<li><tt class="docutils literal">/etc/hosts</tt> - lsit of hosts that are basically added to DNS, can put some of your servers here so u dont type ip</li>
+<li><tt class="docutils literal">/etc/hostname</tt> - yur hostname, for some reason i feel i usualy msut edit this and use the hostname command at the same time/session</li>
+<li><tt class="docutils literal">/etc/rc.local</tt> - old school palce to put commands to have them run on boot, on many linux systems.</li>
+<li><tt class="docutils literal">/etc/resolv.conf</tt> - old way of keeping global nameservers. depends on the system now....</li>
+<li><tt class="docutils literal">/etc/motd</tt> - text displayed at login. put stuff here if you have users, info about the system, advertisements, cuss them out, etc</li>
+</ul>
+</div>
+<div class="section" id="notable-filesystem-objects-local">
+<h1>notable filesystem objects, local</h1>
+<ul class="simple">
+<li><tt class="docutils literal">~</tt> - alias to your homefolder <tt class="docutils literal">/home/username</tt></li>
+<li><tt class="docutils literal"><span class="pre">~/.ssh/authorized_keys</span></tt> - pt in a ocpy of someones id_rs.pub file as a line, and it allows the guy wti hteh private key to get in via passwordless ssh</li>
+<li><tt class="docutils literal"><span class="pre">~/.ssh/config</span></tt> - lts u preconfig defults for various servers and things, pivotal wehn using scp and git reguarly. man ssh_config exists and shows syntax</li>
+<li><tt class="docutils literal"><span class="pre">~/.ssh/id_rsa.pub</span></tt> - dfault place for public ssh key, without the .pub its default for private</li>
+<li><tt class="docutils literal"><span class="pre">~/.bashrc</span></tt> - i u use bash, this is a place you can add commadns that run on login. such as adding things to ur $PATH</li>
+<li><tt class="docutils literal"><span class="pre">~/.bash_history</span></tt> - hitory of commands in bash, some cap length, grep this to find stuff you did and need th command for</li>
+<li><tt class="docutils literal">.profile</tt> - tis is like .bashrc but not specific to bash. on many systems. efintiely check if you are not using bash</li>
+<li><tt class="docutils literal"><span class="pre">~/.local</span></tt> - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff gos here</li>
+<li><tt class="docutils literal"><span class="pre">~/.config</span></tt> - it is now considered bst practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~</li>
+</ul>
+</div>
+<div class="section" id="host-a-git-barebones">
+<h1>host a git, barebones</h1>
+<p>simple amd dirty instructions
+always use passwordless SSH or this
+make git user on server. no password on it. NO PASSWORD ON IT. no way to log in with password</p>
+<pre class="doctest-block">
+&gt;&gt;&gt;
+which git-shell #find path to git shell - comes with git, set this as the shell for the git user on the server. this prevents users from logging in with ssh but they can do the git operations
+adduser # set git-shell full path to the shell as you go through the menu and set no password. SET NO PASSWORD
+sudo su -s /bin/bash git# makes u git user and override shell so u can have an interactive session
+#make folders as you need them in /home/git. cd into the folter. do:
+mkdir package # to make git called package
+git init
+git config receive.denyCurrentBranch ignore # over rides some annoying check that maks the fist commit a pain
+</pre>
+<p>put public keys in /home/git/.ssh/authorized_keys as a line, on the host n</p>
+<p>on cients:  git clone <a class="reference external" href="ssh://git&#64;server:/home/git/package">ssh://git&#64;server:/home/git/package</a></p>
+<p>then make an initial commit to master to make sure it works</p>
+<p>proceed as normal:  make branch, write stuf, git add stuff,commit it, push, merge, etc</p>
+<p>pull requests seem like a thing you dont want to do without a web interface like github</p>
+</div>
+<div class="section" id="git-client-side">
+<h1>git client side</h1>
+<p>process of creating branch and merge:</p>
+<pre class="doctest-block">
+&gt;&gt;&gt;
+git checkout master
+git pull# - make sure its up to date
+git branch mybranchname #- make a branch
+git cheeckout mybranchname #- now you are on it, it is forekd off main
+#do stuff
+git add stuff
+git commit -m&quot;new stuff&quot;
+git push #- upload it to the remove server
+#keep doing stuff, eventually ready to merge
+git checkout master
+git pull #-make sure its up todate
+git merge mybranchname
+#now if theres conflicts, you make sure it works, correct them.
+#you can checkout a file from master by git checkout file, and add that one, to
+#blidnly tke the master verion of file
+git push
+</pre>
+<p>#there are other commands in betbween sometimes, but it will tell you waht they are
+git is very user friendly for a command line interface
+but remember to push after you merge, push and pull and clone are remote commands. rest are local</p>
+</div>
+<div class="section" id="docker">
+<h1>docker</h1>
+<p>docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your baremetal system.</p>
+<p>It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM</p>
+<p>docker has a built in management system for images shared by project teams and the community</p>
+<p>stuff in docker runs on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards)</p>
+<p>you can run things in docker like any other program</p>
+<p>if you dont use it youre basically failing at life</p>
+<p>also a good way to give people root-like power on servers, without allowing them to trash the system and spy on people through unfettered hardware access</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">docker-compose</span></tt> - utility for launching a few differentd ocker containers of different services, allowig you to easily config them to be interconnected in one file. simply put <tt class="docutils literal"><span class="pre">docker-compose.yml</span></tt> in an empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due to autistic standards with whitespace and stuff. so work off of a copypaste</li>
+<li><tt class="docutils literal">docker</tt> - the normal interface to docker to run one container</li>
+</ul>
+</div>
+</div>
+</body>
+</html>
