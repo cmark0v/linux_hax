@@ -94,14 +94,15 @@ Quintesential Unix Shell commands
 editors:
 ========
 - ``vi`` -the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this 
-- ``vim`` -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter i is insert (normal edit mode), v is visual(select and delete copy and stuff large blocks to text), d is delete. u is undo. : char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. :w is write. wq is write and quit. q is quit. q! is quick rtfn with no confirmation. r is read(a file). 
+- ``vim`` -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quick rtfn with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides theeditor, returning when ytou exit
+ 
 - ``elvis`` - this is another editor, a better version of vi, lighter than vim(if i remember correctly)
-- ``pico`` -simple old editor
+- ``neovim`` - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently
+- ``pico`` -simple old editor not sure its ever used anymore. 
 - ``nano`` -a fork/copy/something of pico, newer, good for noobs, often used and well respected. commands are on the screen when using it and ctrl-X based. 
 - ``emacs`` -a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it. 
 - ``ed`` -the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use. 
-- ``gedit`` - simple grpahical editor, good
-- ``neovim`` - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently
+- ``gedit`` - simple grpahical editor, good, basically notepad with syntax highlighting. 
 
 
 system things(debian based mint/ubuntu):
@@ -113,7 +114,7 @@ system things(debian based mint/ubuntu):
 - ``adduser`` -``adduser <newusername>`` maeks a new user. many options. none are really required, even a password. 
 - ``usermod`` -mod shell and stuff of a givemn user usermod -aG common for adding group
 - ``passwd`` -password change, ``passwd <user>`` does it for user when u are admin
-- ``dd`` -writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste objet to be read, of is the filesystem object to be written and bs is the block size which can be written human readablel ike 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this u can easily overwrite your hard drive. do not do it to mounted filesystem
+- ``dd`` -writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste objet to be read, of is the filesystem object to be written and bs is the block size which can be written human readablel ike 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem
 - ``chsh``- change the shell for a user
 - ``chgroup``- change group of file... group ownership 
 - ``chmod``- change permissions of file chmod 777 file makes everyone read write ex it, chmod 666 is read write for all.... chmod 600 is antoeh common one ls -al will show the perms
@@ -176,7 +177,7 @@ graphical
 - ``mplayer`` -old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot
 - ``mpv`` - like mplayer but better
 - ``gimp`` - powerful image editing, old schoool MIT project, shit interface, opens any format basically
-
+- ``ibus`` - this is a package for controlling advanced input methods that are a lot more than a change of layout; like Chinese, Korean,
 - ``xviewer`` -seems to be the version of xv/xview available in modern ubuntu? stupid name
 
 
@@ -197,7 +198,7 @@ network & hax
 - ``ping`` -normal old school icmp ping. not waht it used to be
 - ``telnet`` -old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. helpful for testing connections, manual single prot probing like tenet <host> 80 to connect to port 80 on <host>
 - ``nslookup`` -look up an ip or hostname in DNS
-- ``john`` -old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too. likely better things these days. called john the ripper(after the famous amteur serial-hooker-disection-practicioner)
+- ``john`` -old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-disection enthusiast)
 - ``whois`` -information on domain ownership, reverse look up of IP addresses. just an entry from a database about the owner and registrar stuff for IPs and domains. 
 - ``traceroute`` -old school packet routing trace, not sure if it really works the same anymore, but shows you the path packets take to a server. seems like maye routers out in the widl drop the packets it uses now often? not sure. dont use it much and its not what it used to be is the word
 - ``arping`` -executes a ping-analogous function using the arp protocol. v nice. 
