@@ -1,3 +1,5 @@
+
+
 Quintesential Unix Shell commands
 =================================
 
@@ -66,6 +68,8 @@ Quintesential Unix Shell commands
 - ``bzip2`` -slower more intense compression
 - ``gunzip`` -un-gzipps file
 - ``bunzip2`` -unbz2 a file
+- ``zcat`` - gunzip and contents to stdout
+- ``zgrep`` - greps compressed data, IE same as ``zcat <file>|grep <word>``
 - ``bzgrep`` -grep a bzfile, handy, exists also bzless bzcat bzexe...
 - ``lsblk`` -list block devices. handy to se drives that are not mounted
 - ``df -h`` - lsits mounted drives with size ad free space in human readable format
@@ -73,7 +77,7 @@ Quintesential Unix Shell commands
 - ``lsmod`` -list kernel modules(generally are drivers), whcih are code that can be hotplugged into the kernel. this is used when trubleshooting hardware and driver issues
 - ``modprobe`` -load up a module, they ahve a path thing built in so you can tab tab to see wahts abailable
 - ``time`` -TIMES A COMMAND in human readable down to ms
-- ``date`` -the timestamp in a human readable format, can spit out other formats cehck man apge
+- ``date`` -the timestamp in a human readable format, can spit out other formats check man page
 - ``ln`` -typically invoked as ``ln -s``, which creates a symbolic link
 - ``fsck`` -checks hard drives
 - ``fdisk`` -partition hard drves
@@ -90,11 +94,21 @@ Quintesential Unix Shell commands
 - ``tail``- some as above, last 10 lines as default
 - ``cut``- more general than the 2 above, check the manpage, cuts chars bytes lines....
 
+Notation 
+========
+
+this is notation used in this document and others like it, not syntax for the shell or anything else, and some general notes on style, common themes in this environment
+
+- ``<x>`` - a variable named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example ``ls <folder>`` is saying that putting a folder in that place makes sense.
+- ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available
+- ``<cmd> --<arg-name> -a`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words 
+- RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby yet walks around like a grown ass man...
+- ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard
 
 editors:
 ========
 - ``vi`` -the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this 
-- ``vim`` -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quick rtfn with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides theeditor, returning when ytou exit
+- ``vim`` -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quit RTFN with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides theeditor, returning when ytou exit
  
 - ``elvis`` - this is another editor, a better version of vi, lighter than vim(if i remember correctly)
 - ``neovim`` - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently
@@ -131,13 +145,14 @@ system things(debian based mint/ubuntu):
 shells:
 =======
 - ``bash`` -common, youre prob on it. "bourne again shell" wahteve that means
-- ``csh`` -differentm advanced too - C shell
-- ``tcsh`` -mac uses it? freebsd? its good
-- ``sh`` - the most simple barebones one used when there is nothing else in some broke-ass embedded system or something
+- ``csh`` -different, advanced too - C shell
+- ``tcsh`` -mac uses it? freebsd? its good too
+- ``zsh``` - another shell that some nerds are all about, like the previous 2
+- ``sh`` - the most simple bare bones one used when there is nothing else in some broke-ass embedded system or something, no tab to complete, no features, you run it because its always there on every system, common hack entrypoint to spawn a shell in a priv upgrade or somesort of remote code exe sploit
 
 
 env vars:
-================
+=========
 
 the shell and other software uses many environment vars
 
@@ -162,7 +177,7 @@ shell  vars in general have a $ infront of them when yolu access them. but not w
 
 strange obscure barely useful:
 ==============================
-- ``motd`` - message of the day, displayed on login
+- ``motd`` - message of the day, displayed on login, not all systems have this command, its old school, but having an MOTD is not a dead art. 
 - ``links`` - text only browser
 - ``lynx`` - older more useless text only browser
 - ``irssi`` - irc client ncurses flavor. leet af
@@ -221,7 +236,7 @@ SSH STUFF
 - ``ssh -D 8888`` - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host
 - ``ssh -L8888:host:8888`` - tunnel localhost 8888 to remove host's view of host:8888
 - ``ssh -R8888:host:8888`` - reverse tunnel, goes from remote host to localhsots view of host:8888
-- ``sftp`` - ftp liek client thingy for scp. never use it, might be the original client and actual protocol name for the machinery that does scp
+- ``sftp`` - ftp like client thingy for scp. never use it, might be the original client and actual protocol name for the machinery that does scp
 - ``sshfs`` - smount - use the above sftp facilities to emualted a mounted filesystem
 
 operators in shell(bash)
@@ -241,7 +256,7 @@ operators in shell(bash)
 - ``[TAB]`` - tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. ``git add [TAB] [TAB]`` lists your changed files, for instance
 - back quotes - `kill `pgrep firefox` `  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox
 - ``*`` - wildcard, ``ls *.py`` gives list of python scripts in current directory
-- ``[0-9]`` - matches digits in shell, ``ls [0-9]*`` liss eveyrhing that starts with a digit. can use comma separated singletons, works with letters too [a-z]...
+- ``[0-9]`` - matches digits in shell, ``ls [0-9]*`` list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...
 
 
 
@@ -253,16 +268,16 @@ root filesystem synopsis
 - ``/tmp`` - temp folder, anyone can write in it. it is there on every system and great place to copy things to if you are not sure where to do it
 - ``/etc`` - pronounced et-SEE. all the configuration files and global settings are in here by default. in the past administration could be done exclusively by modificaion of files here, more or less. programs like passwd are tools to automatically edit files here
 - ``/var`` - various data here, var/log is a default global spot for logs. often home to global data storage, such as the root of a  webserver with static content, or database disk footprint. 
-- ``/usr`` - user installed things generally.... comes with a lot in it these days. it is like an alternative root where u generally would modify things for system wide access. has the same diretory structure as /
-- ``/proc`` - process information emulatd as block storage devices and stuff liek this. can get info abotu some hardware from drivers, and access some other weird low level things, dynamic emulated files that are read from live executing daemons
-- ``/dev`` - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it isa like proc, not actual files, but dynamic emulated files that make access to devices liek accessing a file
-- ``/opt`` - not sure what it is suppsoed to be but it is often used to store globally accessed proprietary software that doesnt have facility to install in the typical global directory structure(where thigns are in /bin and /lib and sstuff
-- ``/bin`` - binarys, these are where the commands are stored for the base system. most of the higher level suff is in /usr/bin and /usr/local/bin
+- ``/usr`` - user installed things generally.... comes with a lot in it these days. it is like an alternative root where u generally would modify things for system wide access. has the same directory structure as /
+- ``/proc`` - process information emulated as block storage devices and stuff like this. can get info about some hardware from drivers, and access some other weird low level things, dynamic emulated files that are read from live executing daemons
+- ``/dev`` - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it isa like proc, not actual files, but dynamic emulated files that make access to devices like accessing a file
+- ``/opt`` - not sure what it is supposed to be but it is often used to store globally accessed proprietary software that doesn't have facility to install in the typical global directory structure(where things are in /bin and /lib andprstuff
+- ``/bin`` - binarys, these are where the commands are stored for the base system. most of the higher level stuff is in /usr/bin and /usr/local/bin
 - ``/home`` - home diretorys for each user here. all user settings and information and data are in their home folder. copy it to an ew system an it will all be there 
 - ``/root`` - home direxdtory for admin/root user
-- ``/boot`` - ccontains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a separate partition still
+- ``/boot`` - contains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a separate partition still
 - ``/cdrom`` - vestigal artifact of a time when people used cdrom
-- ``/mnt`` - this was originalyl where you would mount drives, IE, any drive that was not hosting system critical contents, like removeable media, was mounted here. you added these to be automounted using /etc/fstab, and mounting had to be done by root
+- ``/mnt`` - this was originally where you would mount drives, IE, any drive that was not hosting system critical contents, like removable media, was mounted here. you added these to be automounted using /etc/fstab, and mounting had to be done by root
 - ``/media`` - this is where thigns are mounted now, un a path like /media/<username>/<uuid serial thing>
 
 notable filesystem objects, global
@@ -294,7 +309,7 @@ notable filesystem objects, local
 
 host a git, barebones 
 =====================
-simple amd dirty instructions
+simple and dirty instructions
 always use passwordless SSH or this
 make git user on server. no password on it. NO PASSWORD ON IT. no way to log in with password
 
@@ -302,7 +317,7 @@ make git user on server. no password on it. NO PASSWORD ON IT. no way to log in 
 which git-shell #find path to git shell - comes with git, set this as the shell for the git user on the server. this prevents users from logging in with ssh but they can do the git operations
 adduser # set git-shell full path to the shell as you go through the menu and set no password. SET NO PASSWORD
 sudo su -s /bin/bash git# makes u git user and override shell so u can have an interactive session
-#make folders as you need them in /home/git. cd into the folter. do:
+#make folders as you need them in /home/git. cd into the folder. do:
 mkdir package # to make git called package
 git init
 git config receive.denyCurrentBranch ignore # over rides some annoying check that maks the fist commit a pain
