@@ -466,6 +466,8 @@ ul.auto-toc {
 <li><tt class="docutils literal">bzip2</tt> -slower more intense compression</li>
 <li><tt class="docutils literal">gunzip</tt> -un-gzipps file</li>
 <li><tt class="docutils literal">bunzip2</tt> -unbz2 a file</li>
+<li><tt class="docutils literal">zcat</tt> - gunzip and contents to stdout</li>
+<li><tt class="docutils literal">zgrep</tt> - greps compressed data, IE same as <tt class="docutils literal">zcat <span class="pre">&lt;file&gt;|grep</span> &lt;word&gt;</tt></li>
 <li><tt class="docutils literal">bzgrep</tt> -grep a bzfile, handy, exists also bzless bzcat bzexe...</li>
 <li><tt class="docutils literal">lsblk</tt> -list block devices. handy to se drives that are not mounted</li>
 <li><tt class="docutils literal">df <span class="pre">-h</span></tt> - lsits mounted drives with size ad free space in human readable format</li>
@@ -473,7 +475,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">lsmod</tt> -list kernel modules(generally are drivers), whcih are code that can be hotplugged into the kernel. this is used when trubleshooting hardware and driver issues</li>
 <li><tt class="docutils literal">modprobe</tt> -load up a module, they ahve a path thing built in so you can tab tab to see wahts abailable</li>
 <li><tt class="docutils literal">time</tt> -TIMES A COMMAND in human readable down to ms</li>
-<li><tt class="docutils literal">date</tt> -the timestamp in a human readable format, can spit out other formats cehck man apge</li>
+<li><tt class="docutils literal">date</tt> -the timestamp in a human readable format, can spit out other formats check man page</li>
 <li><tt class="docutils literal">ln</tt> -typically invoked as <tt class="docutils literal">ln <span class="pre">-s</span></tt>, which creates a symbolic link</li>
 <li><tt class="docutils literal">fsck</tt> -checks hard drives</li>
 <li><tt class="docutils literal">fdisk</tt> -partition hard drves</li>
@@ -491,11 +493,22 @@ ul.auto-toc {
 <li><tt class="docutils literal">cut</tt>- more general than the 2 above, check the manpage, cuts chars bytes lines....</li>
 </ul>
 </div>
+<div class="section" id="notation">
+<h1>Notation</h1>
+<p>this is notation used in this document and others like it, not syntax for the shell or anything else, and some general notes on style, common themes in this environment</p>
+<ul class="simple">
+<li><tt class="docutils literal">&lt;x&gt;</tt> - a variable named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example <tt class="docutils literal">ls &lt;folder&gt;</tt> is saying that putting a folder in that place makes sense.</li>
+<li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--help</span></tt> - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available</li>
+<li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--&lt;arg-name&gt;</span> <span class="pre">-a</span></tt> - it is very common for single character args to use a single <tt class="docutils literal">-</tt> and multi-char to use two like <tt class="docutils literal"><span class="pre">--arg</span></tt>, and use another <tt class="docutils literal">-</tt> to separate words</li>
+<li>RTFM - means read the fucking manual IE check <tt class="docutils literal">man</tt>, common use context is in a response to someone who wants to be spoon fed like a baby yet walks around like a grown ass man...</li>
+<li><tt class="docutils literal">[BUTTON]</tt>  - hit a button labeled BUTTON on your keyboard</li>
+</ul>
+</div>
 <div class="section" id="editors">
 <h1>editors:</h1>
 <ul class="simple">
 <li><tt class="docutils literal">vi</tt> -the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this</li>
-<li><tt class="docutils literal">vim</tt> -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter <tt class="docutils literal">i</tt> is insert (normal edit mode), <tt class="docutils literal">v</tt> is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual <tt class="docutils literal">d</tt> is delete, hit it twice to delete a line. visual mode <tt class="docutils literal">d</tt> deletes selection. <tt class="docutils literal">u</tt> is undo. the  <tt class="docutils literal">:</tt> char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. <tt class="docutils literal">:w</tt> is write. <tt class="docutils literal">:wq</tt> is write and quit. <tt class="docutils literal">:q</tt> is quit. <tt class="docutils literal">q!</tt> is quick rtfn with no confirmation. <tt class="docutils literal">:r &lt;file&gt;</tt> is read(a file and output it at current cursor position). <tt class="docutils literal">:read !&lt;commands&gt;</tt> does the same for a shell command <tt class="docutils literal">! &lt;cmd&gt;</tt> opens the shell and hides theeditor, returning when ytou exit</li>
+<li><tt class="docutils literal">vim</tt> -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter <tt class="docutils literal">i</tt> is insert (normal edit mode), <tt class="docutils literal">v</tt> is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual <tt class="docutils literal">d</tt> is delete, hit it twice to delete a line. visual mode <tt class="docutils literal">d</tt> deletes selection. <tt class="docutils literal">u</tt> is undo. the  <tt class="docutils literal">:</tt> char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. <tt class="docutils literal">:w</tt> is write. <tt class="docutils literal">:wq</tt> is write and quit. <tt class="docutils literal">:q</tt> is quit. <tt class="docutils literal">q!</tt> is quit RTFN with no confirmation. <tt class="docutils literal">:r &lt;file&gt;</tt> is read(a file and output it at current cursor position). <tt class="docutils literal">:read !&lt;commands&gt;</tt> does the same for a shell command <tt class="docutils literal">! &lt;cmd&gt;</tt> opens the shell and hides theeditor, returning when ytou exit</li>
 <li><tt class="docutils literal">elvis</tt> - this is another editor, a better version of vi, lighter than vim(if i remember correctly)</li>
 <li><tt class="docutils literal">neovim</tt> - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently</li>
 <li><tt class="docutils literal">pico</tt> -simple old editor not sure its ever used anymore.</li>
@@ -533,9 +546,10 @@ ul.auto-toc {
 <h1>shells:</h1>
 <ul class="simple">
 <li><tt class="docutils literal">bash</tt> -common, youre prob on it. &quot;bourne again shell&quot; wahteve that means</li>
-<li><tt class="docutils literal">csh</tt> -differentm advanced too - C shell</li>
-<li><tt class="docutils literal">tcsh</tt> -mac uses it? freebsd? its good</li>
-<li><tt class="docutils literal">sh</tt> - the most simple barebones one used when there is nothing else in some broke-ass embedded system or something</li>
+<li><tt class="docutils literal">csh</tt> -different, advanced too - C shell</li>
+<li><tt class="docutils literal">tcsh</tt> -mac uses it? freebsd? its good too</li>
+<li><tt class="docutils literal">zsh`</tt> - another shell that some nerds are all about, like the previous 2</li>
+<li><tt class="docutils literal">sh</tt> - the most simple bare bones one used when there is nothing else in some broke-ass embedded system or something, no tab to complete, no features, you run it because its always there on every system, common hack entrypoint to spawn a shell in a priv upgrade or somesort of remote code exe sploit</li>
 </ul>
 </div>
 <div class="section" id="env-vars">
@@ -561,7 +575,7 @@ ul.auto-toc {
 <div class="section" id="strange-obscure-barely-useful">
 <h1>strange obscure barely useful:</h1>
 <ul class="simple">
-<li><tt class="docutils literal">motd</tt> - message of the day, displayed on login</li>
+<li><tt class="docutils literal">motd</tt> - message of the day, displayed on login, not all systems have this command, its old school, but having an MOTD is not a dead art.</li>
 <li><tt class="docutils literal">links</tt> - text only browser</li>
 <li><tt class="docutils literal">lynx</tt> - older more useless text only browser</li>
 <li><tt class="docutils literal">irssi</tt> - irc client ncurses flavor. leet af</li>
@@ -623,7 +637,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">ssh <span class="pre">-D</span> 8888</tt> - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host</li>
 <li><tt class="docutils literal">ssh <span class="pre">-L8888:host:8888</span></tt> - tunnel localhost 8888 to remove host's view of host:8888</li>
 <li><tt class="docutils literal">ssh <span class="pre">-R8888:host:8888</span></tt> - reverse tunnel, goes from remote host to localhsots view of host:8888</li>
-<li><tt class="docutils literal">sftp</tt> - ftp liek client thingy for scp. never use it, might be the original client and actual protocol name for the machinery that does scp</li>
+<li><tt class="docutils literal">sftp</tt> - ftp like client thingy for scp. never use it, might be the original client and actual protocol name for the machinery that does scp</li>
 <li><tt class="docutils literal">sshfs</tt> - smount - use the above sftp facilities to emualted a mounted filesystem</li>
 </ul>
 </div>
@@ -644,7 +658,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">[TAB]</tt> - tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. <tt class="docutils literal">git add [TAB] [TAB]</tt> lists your changed files, for instance</li>
 <li>back quotes - <cite>kill `pgrep firefox</cite> `  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox</li>
 <li><tt class="docutils literal">*</tt> - wildcard, <tt class="docutils literal">ls *.py</tt> gives list of python scripts in current directory</li>
-<li><tt class="docutils literal"><span class="pre">[0-9]</span></tt> - matches digits in shell, <tt class="docutils literal">ls <span class="pre">[0-9]*</span></tt> liss eveyrhing that starts with a digit. can use comma separated singletons, works with letters too [a-z]...</li>
+<li><tt class="docutils literal"><span class="pre">[0-9]</span></tt> - matches digits in shell, <tt class="docutils literal">ls <span class="pre">[0-9]*</span></tt> list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...</li>
 </ul>
 </div>
 <div class="section" id="root-filesystem-synopsis">
@@ -655,16 +669,16 @@ Int the past many of these were separate partitions, hence some of the seemingly
 <li><tt class="docutils literal">/tmp</tt> - temp folder, anyone can write in it. it is there on every system and great place to copy things to if you are not sure where to do it</li>
 <li><tt class="docutils literal">/etc</tt> - pronounced et-SEE. all the configuration files and global settings are in here by default. in the past administration could be done exclusively by modificaion of files here, more or less. programs like passwd are tools to automatically edit files here</li>
 <li><tt class="docutils literal">/var</tt> - various data here, var/log is a default global spot for logs. often home to global data storage, such as the root of a  webserver with static content, or database disk footprint.</li>
-<li><tt class="docutils literal">/usr</tt> - user installed things generally.... comes with a lot in it these days. it is like an alternative root where u generally would modify things for system wide access. has the same diretory structure as /</li>
-<li><tt class="docutils literal">/proc</tt> - process information emulatd as block storage devices and stuff liek this. can get info abotu some hardware from drivers, and access some other weird low level things, dynamic emulated files that are read from live executing daemons</li>
-<li><tt class="docutils literal">/dev</tt> - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it isa like proc, not actual files, but dynamic emulated files that make access to devices liek accessing a file</li>
-<li><tt class="docutils literal">/opt</tt> - not sure what it is suppsoed to be but it is often used to store globally accessed proprietary software that doesnt have facility to install in the typical global directory structure(where thigns are in /bin and /lib and sstuff</li>
-<li><tt class="docutils literal">/bin</tt> - binarys, these are where the commands are stored for the base system. most of the higher level suff is in /usr/bin and /usr/local/bin</li>
+<li><tt class="docutils literal">/usr</tt> - user installed things generally.... comes with a lot in it these days. it is like an alternative root where u generally would modify things for system wide access. has the same directory structure as /</li>
+<li><tt class="docutils literal">/proc</tt> - process information emulated as block storage devices and stuff like this. can get info about some hardware from drivers, and access some other weird low level things, dynamic emulated files that are read from live executing daemons</li>
+<li><tt class="docutils literal">/dev</tt> - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it isa like proc, not actual files, but dynamic emulated files that make access to devices like accessing a file</li>
+<li><tt class="docutils literal">/opt</tt> - not sure what it is supposed to be but it is often used to store globally accessed proprietary software that doesn't have facility to install in the typical global directory structure(where things are in /bin and /lib andprstuff</li>
+<li><tt class="docutils literal">/bin</tt> - binarys, these are where the commands are stored for the base system. most of the higher level stuff is in /usr/bin and /usr/local/bin</li>
 <li><tt class="docutils literal">/home</tt> - home diretorys for each user here. all user settings and information and data are in their home folder. copy it to an ew system an it will all be there</li>
 <li><tt class="docutils literal">/root</tt> - home direxdtory for admin/root user</li>
-<li><tt class="docutils literal">/boot</tt> - ccontains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a separate partition still</li>
+<li><tt class="docutils literal">/boot</tt> - contains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a separate partition still</li>
 <li><tt class="docutils literal">/cdrom</tt> - vestigal artifact of a time when people used cdrom</li>
-<li><tt class="docutils literal">/mnt</tt> - this was originalyl where you would mount drives, IE, any drive that was not hosting system critical contents, like removeable media, was mounted here. you added these to be automounted using /etc/fstab, and mounting had to be done by root</li>
+<li><tt class="docutils literal">/mnt</tt> - this was originally where you would mount drives, IE, any drive that was not hosting system critical contents, like removable media, was mounted here. you added these to be automounted using /etc/fstab, and mounting had to be done by root</li>
 <li><tt class="docutils literal">/media</tt> - this is where thigns are mounted now, un a path like /media/&lt;username&gt;/&lt;uuid serial thing&gt;</li>
 </ul>
 </div>
@@ -699,7 +713,7 @@ Int the past many of these were separate partitions, hence some of the seemingly
 </div>
 <div class="section" id="host-a-git-barebones">
 <h1>host a git, barebones</h1>
-<p>simple amd dirty instructions
+<p>simple and dirty instructions
 always use passwordless SSH or this
 make git user on server. no password on it. NO PASSWORD ON IT. no way to log in with password</p>
 <pre class="doctest-block">
@@ -707,7 +721,7 @@ make git user on server. no password on it. NO PASSWORD ON IT. no way to log in 
 which git-shell #find path to git shell - comes with git, set this as the shell for the git user on the server. this prevents users from logging in with ssh but they can do the git operations
 adduser # set git-shell full path to the shell as you go through the menu and set no password. SET NO PASSWORD
 sudo su -s /bin/bash git# makes u git user and override shell so u can have an interactive session
-#make folders as you need them in /home/git. cd into the folter. do:
+#make folders as you need them in /home/git. cd into the folder. do:
 mkdir package # to make git called package
 git init
 git config receive.denyCurrentBranch ignore # over rides some annoying check that maks the fist commit a pain
