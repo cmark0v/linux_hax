@@ -37,7 +37,7 @@ Quintessential Unix Shell commands
    - ``nc -l n`` - liston on port n, add -u for udp
 
 - ``sed`` -more advanced regular expression oriented grep with in-place editing focus
-- ``awk`` -similar to sed, complex grep type thing regexts inplace editing etc
+- ``awk`` -similar to sed, complex grep type thing regexps in-place editing etc
 - ``perl`` -a whole language like python, partially specialized for the tasks sed and awk do, can write one liners in shell. regexps
 - ``chmod`` -modify permissions, uses a number code of 3 digits or letter
    - ``cmod +x file`` - set file to be executable
@@ -47,10 +47,10 @@ Quintessential Unix Shell commands
 
 - ``man`` -manual page, man <command> shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim. 
 - ``screen`` -make a new screen. ``ctrl-a (release) d`` detaches/exits from it, ``ctl-a c`` closes. this is one way you run things in the background
-- ``nohup`` -preceeds command/proram and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for backgrond process tat will persist on logout
-- ``md5sum`` -jsut called md5 on mac/bsd jsut does an md5 checksum hash of a file. for comparison of files of any size
+- ``nohup`` - precedes command and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for background process tat will persist on logout
+- ``md5sum`` -jsut called md5 on mac/bsd just does an md5 checksum hash of a file. for comparison of files of any size
 - ``sha256sum`` -same as above woth sha256 algorithm. also exists others. 
-- ``who`` -lists out the current logins/screens. shows u who is logged in(whci hsuers and where)
+- ``who`` -lists out the current logins/screens. shows u who is logged in(which users and where)
 - ``whoami`` -tells u which user u are. used to check if you've successfully hacked things and became root. or in innocent shell scripts
 - ``lsof`` -spit out data about various things going on with processes and devices and filesystem. example lsof -i:8000 gives u info about proc using port 8000
 - ``lsusb`` -list the usb devs. good to check if it can see a device
@@ -75,7 +75,7 @@ Quintessential Unix Shell commands
 - ``df -h`` - lists mounted drives with size ad free space in human readable format
 - ``du -h`` - check file size. it is recursive by default so it is good to set the max view depth with -d 0. ``du -h -d 0`` file
 - ``lsmod`` -list kernel modules(generally are drivers), whcih are code that can be hotplugged into the kernel. this is used when trubleshooting hardware and driver issues
-- ``modprobe`` -load up a module, they ahve a path thing built in so you can tab tab to see wahts abailable
+- ``modprobe`` -load up a module, they ahve a path thing built in so you can tab tab to see whats available
 - ``time`` -TIMES A COMMAND in human readable down to ms
 - ``date`` -the timestamp in a human readable format, can spit out other formats check man page
 - ``ln`` -typically invoked as ``ln -s``, which creates a symbolic link
@@ -283,11 +283,11 @@ root filesystem synopsis
 - ``/var`` - various data here, var/log is a default global spot for logs. often home to global data storage, such as the root of a  webserver with static content, or database disk footprint. 
 - ``/usr`` - user installed things generally.... comes with a lot in it these days. it is like an alternative root where u generally would modify things for system wide access. has the same directory structure as /
 - ``/proc`` - process information emulated as block storage devices and stuff like this. can get info about some hardware from drivers, and access some other weird low level things, dynamic emulated files that are read from live executing daemons
-- ``/dev`` - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it isa like proc, not actual files, but dynamic emulated files that make access to devices like accessing a file
+- ``/dev`` - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it is a virtualized/emulated filesystem integrated representation of a group of non-file objects(very cool) like proc. these are not actual files, but dynamic emulated files that make access to devices like accessing a file. reading and writing to them is the same as a file
 - ``/opt`` - not sure what it is supposed to be but it is often used to store globally accessed proprietary software that doesn't have facility to install in the typical global directory structure(where things are in /bin and /lib andprstuff
 - ``/bin`` - binarys, these are where the commands are stored for the base system. most of the higher level stuff is in /usr/bin and /usr/local/bin
-- ``/home`` - home diretorys for each user here. all user settings and information and data are in their home folder. copy it to an ew system an it will all be there 
-- ``/root`` - home direxdtory for admin/root user
+- ``/home`` - home directories for each user here. all user settings and information and data are in their home folder. copy it to an ew system an it will all be there 
+- ``/root`` - home directory for admin/root user
 - ``/boot`` - contains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a separate partition still
 - ``/cdrom`` - vestigal artifact of a time when people used cdrom
 - ``/mnt`` - this was originally where you would mount drives, IE, any drive that was not hosting system critical contents, like removable media, was mounted here. you added these to be automounted using /etc/fstab, and mounting had to be done by root
