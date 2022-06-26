@@ -430,7 +430,7 @@ ul.auto-toc {
 </dl>
 </li>
 <li><tt class="docutils literal">sed</tt> -more advanced regular expression oriented grep with in-place editing focus</li>
-<li><tt class="docutils literal">awk</tt> -similar to sed, complex grep type thing regexts inplace editing etc</li>
+<li><tt class="docutils literal">awk</tt> -similar to sed, complex grep type thing regexps in-place editing etc</li>
 <li><tt class="docutils literal">perl</tt> -a whole language like python, partially specialized for the tasks sed and awk do, can write one liners in shell. regexps</li>
 <li><dl class="first docutils">
 <dt><tt class="docutils literal">chmod</tt> -modify permissions, uses a number code of 3 digits or letter</dt>
@@ -445,10 +445,10 @@ ul.auto-toc {
 </li>
 <li><tt class="docutils literal">man</tt> -manual page, man &lt;command&gt; shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim.</li>
 <li><tt class="docutils literal">screen</tt> -make a new screen. <tt class="docutils literal"><span class="pre">ctrl-a</span> (release) d</tt> detaches/exits from it, <tt class="docutils literal"><span class="pre">ctl-a</span> c</tt> closes. this is one way you run things in the background</li>
-<li><tt class="docutils literal">nohup</tt> -preceeds command/proram and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for backgrond process tat will persist on logout</li>
-<li><tt class="docutils literal">md5sum</tt> -jsut called md5 on mac/bsd jsut does an md5 checksum hash of a file. for comparison of files of any size</li>
+<li><tt class="docutils literal">nohup</tt> - precedes command and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for background process tat will persist on logout</li>
+<li><tt class="docutils literal">md5sum</tt> -jsut called md5 on mac/bsd just does an md5 checksum hash of a file. for comparison of files of any size</li>
 <li><tt class="docutils literal">sha256sum</tt> -same as above woth sha256 algorithm. also exists others.</li>
-<li><tt class="docutils literal">who</tt> -lists out the current logins/screens. shows u who is logged in(whci hsuers and where)</li>
+<li><tt class="docutils literal">who</tt> -lists out the current logins/screens. shows u who is logged in(which users and where)</li>
 <li><tt class="docutils literal">whoami</tt> -tells u which user u are. used to check if you've successfully hacked things and became root. or in innocent shell scripts</li>
 <li><tt class="docutils literal">lsof</tt> -spit out data about various things going on with processes and devices and filesystem. example lsof -i:8000 gives u info about proc using port 8000</li>
 <li><tt class="docutils literal">lsusb</tt> -list the usb devs. good to check if it can see a device</li>
@@ -473,7 +473,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">df <span class="pre">-h</span></tt> - lists mounted drives with size ad free space in human readable format</li>
 <li><tt class="docutils literal">du <span class="pre">-h</span></tt> - check file size. it is recursive by default so it is good to set the max view depth with -d 0. <tt class="docutils literal">du <span class="pre">-h</span> <span class="pre">-d</span> 0</tt> file</li>
 <li><tt class="docutils literal">lsmod</tt> -list kernel modules(generally are drivers), whcih are code that can be hotplugged into the kernel. this is used when trubleshooting hardware and driver issues</li>
-<li><tt class="docutils literal">modprobe</tt> -load up a module, they ahve a path thing built in so you can tab tab to see wahts abailable</li>
+<li><tt class="docutils literal">modprobe</tt> -load up a module, they ahve a path thing built in so you can tab tab to see whats available</li>
 <li><tt class="docutils literal">time</tt> -TIMES A COMMAND in human readable down to ms</li>
 <li><tt class="docutils literal">date</tt> -the timestamp in a human readable format, can spit out other formats check man page</li>
 <li><tt class="docutils literal">ln</tt> -typically invoked as <tt class="docutils literal">ln <span class="pre">-s</span></tt>, which creates a symbolic link</li>
@@ -499,7 +499,7 @@ ul.auto-toc {
 <ul class="simple">
 <li><tt class="docutils literal">&lt;x&gt;</tt> - a variable named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example <tt class="docutils literal">ls &lt;folder&gt;</tt> is saying that putting a folder in that place makes sense.</li>
 <li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--help</span></tt> - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available</li>
-<li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--&lt;arg-name&gt;</span> <span class="pre">-a</span></tt> - it is very common for single character args to use a single <tt class="docutils literal">-</tt> and multi-char to use two like <tt class="docutils literal"><span class="pre">--arg</span></tt>, and use another <tt class="docutils literal">-</tt> to separate words</li>
+<li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--&lt;arg-name&gt;</span> <span class="pre">-a</span></tt> - it is very common for single character args to use a single <tt class="docutils literal">-</tt> and multi-char to use two like <tt class="docutils literal"><span class="pre">--arg</span></tt>, and use another <tt class="docutils literal">-</tt> to separate words. these are community habbits for manty decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace</li>
 <li>RTFM - means read the fucking manual IE check <tt class="docutils literal">man</tt>, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages...</li>
 <li><tt class="docutils literal"><span class="pre">ctrl-x</span></tt> - hold control and x both for a moment, <tt class="docutils literal"><span class="pre">x-y</span> z</tt> hold x and y for a moment, release both, hit z</li>
 <li><tt class="docutils literal">[BUTTON]</tt>  - hit a button labeled BUTTON on your keyboard</li>
@@ -680,11 +680,11 @@ Int the past many of these were separate partitions, hence some of the seemingly
 <li><tt class="docutils literal">/var</tt> - various data here, var/log is a default global spot for logs. often home to global data storage, such as the root of a  webserver with static content, or database disk footprint.</li>
 <li><tt class="docutils literal">/usr</tt> - user installed things generally.... comes with a lot in it these days. it is like an alternative root where u generally would modify things for system wide access. has the same directory structure as /</li>
 <li><tt class="docutils literal">/proc</tt> - process information emulated as block storage devices and stuff like this. can get info about some hardware from drivers, and access some other weird low level things, dynamic emulated files that are read from live executing daemons</li>
-<li><tt class="docutils literal">/dev</tt> - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it isa like proc, not actual files, but dynamic emulated files that make access to devices like accessing a file</li>
+<li><tt class="docutils literal">/dev</tt> - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it is a virtualized/emulated filesystem integrated representation of a group of non-file objects(very cool) like proc. these are not actual files, but dynamic emulated files that make access to devices like accessing a file. reading and writing to them is the same as a file</li>
 <li><tt class="docutils literal">/opt</tt> - not sure what it is supposed to be but it is often used to store globally accessed proprietary software that doesn't have facility to install in the typical global directory structure(where things are in /bin and /lib andprstuff</li>
 <li><tt class="docutils literal">/bin</tt> - binarys, these are where the commands are stored for the base system. most of the higher level stuff is in /usr/bin and /usr/local/bin</li>
-<li><tt class="docutils literal">/home</tt> - home diretorys for each user here. all user settings and information and data are in their home folder. copy it to an ew system an it will all be there</li>
-<li><tt class="docutils literal">/root</tt> - home direxdtory for admin/root user</li>
+<li><tt class="docutils literal">/home</tt> - home directories for each user here. all user settings and information and data are in their home folder. copy it to an ew system an it will all be there</li>
+<li><tt class="docutils literal">/root</tt> - home directory for admin/root user</li>
 <li><tt class="docutils literal">/boot</tt> - contains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a separate partition still</li>
 <li><tt class="docutils literal">/cdrom</tt> - vestigal artifact of a time when people used cdrom</li>
 <li><tt class="docutils literal">/mnt</tt> - this was originally where you would mount drives, IE, any drive that was not hosting system critical contents, like removable media, was mounted here. you added these to be automounted using /etc/fstab, and mounting had to be done by root</li>

@@ -101,7 +101,7 @@ this is notation used in this document and others like it, not syntax for the sh
 
 - ``<x>`` - a variable named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example ``ls <folder>`` is saying that putting a folder in that place makes sense.
 - ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available
-- ``<cmd> --<arg-name> -a`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words 
+- ``<cmd> --<arg-name> -a`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words. these are community habbits for manty decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace
 - RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages...
 - ``ctrl-x`` - hold control and x both for a moment, ``x-y z`` hold x and y for a moment, release both, hit z
 - ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard
