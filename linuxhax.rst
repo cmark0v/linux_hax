@@ -1,7 +1,7 @@
 
 
-Quintesential Unix Shell commands
-=================================
+Quintessential Unix Shell commands
+==================================
 
 - ``ls`` - list files
    - ``ls -al`` - list all files with extra information
@@ -36,17 +36,17 @@ Quintesential Unix Shell commands
 - ``nc`` -netcat, same as cat but uses raw tcp socket. can work on udp too
    - ``nc -l n`` - liston on port n, add -u for udp
 
-- ``sed`` -more advanced regular expression oriented grep with inplace editig focus
-- ``awk`` -similar to sed, complex grep type thing regepts inplace editing etc
+- ``sed`` -more advanced regular expression oriented grep with in-place editing focus
+- ``awk`` -similar to sed, complex grep type thing regexts inplace editing etc
 - ``perl`` -a whole language like python, partially specialized for the tasks sed and awk do, can write one liners in shell. regexps
 - ``chmod`` -modify permissions, uses a number code of 3 digits or letter
    - ``cmod +x file`` - set file to be executable
-   - ``chmod 777`` - let all users read write and execute. dont do it
+   - ``chmod 777`` - let all users read write and execute. don't do it
    - ``chmod 666`` - all users read and write, 
    - ``chmod 770`` owner user and group for owner user cab w r e\x
 
 - ``man`` -manual page, man <command> shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim. 
-- ``screen`` -make a new screen. ``ctrl-a (release) d`` detaches/exits from it, ctrol-a c closes. tis is the way you run things in the background
+- ``screen`` -make a new screen. ``ctrl-a (release) d`` detaches/exits from it, ``ctl-a c`` closes. this is one way you run things in the background
 - ``nohup`` -preceeds command/proram and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for backgrond process tat will persist on logout
 - ``md5sum`` -jsut called md5 on mac/bsd jsut does an md5 checksum hash of a file. for comparison of files of any size
 - ``sha256sum`` -same as above woth sha256 algorithm. also exists others. 
@@ -56,7 +56,7 @@ Quintesential Unix Shell commands
 - ``lsusb`` -list the usb devs. good to check if it can see a device
 - ``lspci`` -same but for pci devices
 - ``sort`` -sorts text file line by line
-- ``find`` -for searching the file system. most stupid way  can be done like find .|grep filenameiwant. recursive list of full dir tree uis the default behavior
+- ``find`` -for searching the file system. most stupid way can be done like ``find .|grep filenameiwant``. recursive list of full dir tree is the default behavior
 - ``uniq`` -deletes duplicate lines that appear next to eachother in text. 
 - ``echo`` -prints whatever is in its args to stdout
 - ``which`` -gives total path to an executable in the shell path
@@ -64,16 +64,16 @@ Quintesential Unix Shell commands
 - ``hexdump`` -spits out hex of a file
 - ``diff`` -gives u the difference of 2(text) files line by line. yes this is where the term diff comes from in git repos etc
 - ``tar`` -deals with tar archives. to untar a tar.gz tar xvzf file.tar.gz, for tar.bz2, tar xvjf
-- ``gzip`` -compression. works on one file, takes inut from file or stdout(!) good on text, fast
+- ``gzip`` -compression. works on one file, takes input from file or stdout(!) good on text, fast
 - ``bzip2`` -slower more intense compression
 - ``gunzip`` -un-gzipps file
 - ``bunzip2`` -unbz2 a file
 - ``zcat`` - gunzip and contents to stdout
 - ``zgrep`` - greps compressed data, IE same as ``zcat <file>|grep <word>``
-- ``bzgrep`` -grep a bzfile, handy, exists also bzless bzcat bzexe...
+- ``bzgrep`` -grep a bzfile, handy, exists also bzless bzcat bzexe... same as with above 
 - ``lsblk`` -list block devices. handy to se drives that are not mounted
-- ``df -h`` - lsits mounted drives with size ad free space in human readable format
-- ``du -h`` - check file size. it is recursive by default so it is good to set the max view deth with -d 0. du -h -d0 file
+- ``df -h`` - lists mounted drives with size ad free space in human readable format
+- ``du -h`` - check file size. it is recursive by default so it is good to set the max view depth with -d 0. ``du -h -d 0`` file
 - ``lsmod`` -list kernel modules(generally are drivers), whcih are code that can be hotplugged into the kernel. this is used when trubleshooting hardware and driver issues
 - ``modprobe`` -load up a module, they ahve a path thing built in so you can tab tab to see wahts abailable
 - ``time`` -TIMES A COMMAND in human readable down to ms
@@ -102,13 +102,14 @@ this is notation used in this document and others like it, not syntax for the sh
 - ``<x>`` - a variable named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example ``ls <folder>`` is saying that putting a folder in that place makes sense.
 - ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available
 - ``<cmd> --<arg-name> -a`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words 
-- RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby yet walks around like a grown ass man...
+- RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages...
+- ``ctrl-x`` - hold control and x both for a moment, ``x-y z`` hold x and y for a moment, release both, hit z
 - ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard
 
 editors:
 ========
 - ``vi`` -the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this 
-- ``vim`` -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quit RTFN with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides theeditor, returning when ytou exit
+- ``vim`` -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quit RTFN with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides the editor, returning when you exit
  
 - ``elvis`` - this is another editor, a better version of vi, lighter than vim(if i remember correctly)
 - ``neovim`` - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently
@@ -123,15 +124,15 @@ system things(debian based mint/ubuntu):
 ========================================
 - ``sudo`` -run following command as root (admin)
 - ``su`` -set user, defaults to root. can specify shell with -s
-- ``service`` -control a service. service <name of it> <start, stop, restart, reload>   ex: sudo service posrtgresl restart
+- ``service`` -control a service. service <name of it> <start, stop, restart, reload>   ex: sudo service postgresql restart
 - ``hostname`` -prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary
 - ``adduser`` -``adduser <newusername>`` maeks a new user. many options. none are really required, even a password. 
 - ``usermod`` -mod shell and stuff of a givemn user usermod -aG common for adding group
 - ``passwd`` -password change, ``passwd <user>`` does it for user when u are admin
-- ``dd`` -writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste objet to be read, of is the filesystem object to be written and bs is the block size which can be written human readablel ike 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem
+- ``dd`` -writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem
 - ``chsh``- change the shell for a user
 - ``chgroup``- change group of file... group ownership 
-- ``chmod``- change permissions of file chmod 777 file makes everyone read write ex it, chmod 666 is read write for all.... chmod 600 is antoeh common one ls -al will show the perms
+- ``chmod``- change permissions of file chmod 777 file makes everyone read write ex it, chmod 666 is read write for all.... chmod 600 is another common one ls -al will show the perms
 - ``mount`` - attaches a block device to a folder, allowing you to browse the filesystem
 - ``umount``- unmounts somethign takes mountpoint or /dev /device as target
 - ``dmesg``- prints messages generated at boot
@@ -144,10 +145,10 @@ system things(debian based mint/ubuntu):
 
 shells:
 =======
-- ``bash`` -common, youre prob on it. "bourne again shell" wahteve that means
+- ``bash`` -common, youre prob on it. "bourne again shell" whatever that means
 - ``csh`` -different, advanced too - C shell
 - ``tcsh`` -mac uses it? freebsd? its good too
-- ``zsh``` - another shell that some nerds are all about, like the previous 2
+- ``zsh`` - another shell that some nerds are all about, like the previous 2
 - ``sh`` - the most simple bare bones one used when there is nothing else in some broke-ass embedded system or something, no tab to complete, no features, you run it because its always there on every system, common hack entrypoint to spawn a shell in a priv upgrade or somesort of remote code exe sploit
 
 
@@ -158,7 +159,7 @@ the shell and other software uses many environment vars
 
 these give background information about your system and things to software that needs it
 
-this information is stored here because it doesntn eed to be chagned often, but always needs ot be sepcified
+this information is stored here because it doesnt need to be changed often, but always needs to be specified
 
 type env to see them all. echo $VAR to see VAR. export VAR=sgfsgs to set VAR to sgfsgs for your session. setting ``VAR=5 someprogram``, will modify VAR for that single line running someprogram. 
 
@@ -169,11 +170,14 @@ shell  vars in general have a $ infront of them when yolu access them. but not w
 - ``$PYTHONPATH`` - where python looks for modules
 - ``$USER, $HOME``, - username and home directory path
 - ``$_`` - arguments of last program ran? 
-- ``alias`` - it is a command that tells the shell to make a macro for other commands 
+- ``alias`` - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def 
 - ``env`` shows your env
-- ``export`` -declare env var for remainder of session until u clsoe this shell 
-- ``jobs`` - lists the jobs in shell(if you have pauzed iwth ctrl z) with jobid
+- ``export`` -declare env var for remainder of session until u close this shell 
+- ``jobs`` - lists the jobs in shell(if you have paused with ctrl-z) with jobid
 - ``bg <jobid>`` and ``fg <jobid>`` - background a paused job or foreground a paused job respectively. 
+
+advanced 
+
 
 strange obscure barely useful:
 ==============================
@@ -184,16 +188,25 @@ strange obscure barely useful:
 - ``rexima`` - command line sound volume control mixer thingy
 - ``beep`` - makes a console beep
 
-graphical
-=========
+graphical, featureful
+=====================
 - ``xterm`` -old school bare bones terminal emulator for x11
 - xorg/x11 - always started by scripts, but it is the name of the service that runs the GUI in linux generally. x1 was the old name xorg is the new one. there are forks...
 - ``xv`` -old and simple image viewer
 - ``mplayer`` -old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot
-- ``mpv`` - like mplayer but better
+- ``mpv`` - like mplayer but better, has no interface other than key bindings and cmdline
 - ``gimp`` - powerful image editing, old schoool MIT project, shit interface, opens any format basically
 - ``ibus`` - this is a package for controlling advanced input methods that are a lot more than a change of layout; like Chinese, Korean,
 - ``xviewer`` -seems to be the version of xv/xview available in modern ubuntu? stupid name
+
+
+high tier suckless
+==================
+- ``tmux`` - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager=
+- ``pass`` - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well
+
+
+
 
 
 network & hax
@@ -298,14 +311,30 @@ notable filesystem objects, global
 notable filesystem objects, local
 =================================
 - ``~`` - alias to your homefolder ``/home/username``
-- ``~/.ssh/authorized_keys`` - pt in a ocpy of someones id_rs.pub file as a line, and it allows the guy wti hteh private key to get in via passwordless ssh
+- ``~/.ssh/authorized_keys`` - put in a copy of someones id_rsa.pub file as a line, and it allows anyone with the corresponding private key to log into said account to whom ``~`` belongs. 
 - ``~/.ssh/config`` - lts u preconfig defults for various servers and things, pivotal wehn using scp and git reguarly. man ssh_config exists and shows syntax
-- ``~/.ssh/id_rsa.pub`` - dfault place for public ssh key, without the .pub its default for private
+- ``~/.ssh/id_rsa.pub`` - default place for public ssh key, without the ``.ssh/id_rsa`` is default for private, which, should be ``chmod 600`` for the perms
 - ``~/.bashrc`` - i u use bash, this is a place you can add commadns that run on login. such as adding things to ur $PATH
-- ``~/.bash_history`` - hitory of commands in bash, some cap length, grep this to find stuff you did and need th command for
-- ``.profile`` - tis is like .bashrc but not specific to bash. on many systems. efintiely check if you are not using bash
-- ``~/.local`` - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff gos here
-- ``~/.config`` - it is now considered bst practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~
+- ``~/.bash_history`` - hitory of commands in bash, some cap length by default, grep this to find stuff you did and need th command for
+- ``.profile`` - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe other BSD. defintiely check if you are not using bash
+- ``~/.local/`` - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff gos here
+- ``~/.config/`` - it is now considered bst practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~
+
+
+some good config file lines
+===========================
+
+``.ssh/config`` This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this
+
+>>>
+Host bob
+  HostName bob.com
+  User userb
+  IdentityFile ~/.ssh/id_rsa_bob
+
+this enables you to simply ``ssh bob``, and tab to complete works on this alias for te host. HostName is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry ``Host``
+
+
 
 host a git, barebones 
 =====================
