@@ -483,7 +483,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">yes</tt> -endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe</li>
 <li><tt class="docutils literal">wipefs</tt> -removed disk label</li>
 <li><tt class="docutils literal">shred</tt> - destroy files by writing random data to the location they were stored on disk(doesnt work on some filesystems) or write random data to a whole disk</li>
-<li><tt class="docutils literal">cryptsetup</tt> - setup luks volumes</li>
+<li><tt class="docutils literal">cryptsetup</tt> - setup luks volumes. rtfm on it</li>
 <li><tt class="docutils literal">cron</tt> -service for running periodic tasks.</li>
 <li><tt class="docutils literal">ranger</tt> - file explorer command line tool. vim bindings, written in python. navigate filesystem in ncurses text interface</li>
 <li><tt class="docutils literal">lfm</tt> - shitty version of ranger seems really old</li>
@@ -497,10 +497,10 @@ ul.auto-toc {
 <h1>Notation</h1>
 <p>this is notation used in this document and others like it, not syntax for the shell or anything else, and some general notes on style, common themes in this environment</p>
 <ul class="simple">
-<li><tt class="docutils literal">&lt;x&gt;</tt> - a variable named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example <tt class="docutils literal">ls &lt;folder&gt;</tt> is saying that putting a folder in that place makes sense.</li>
+<li><tt class="docutils literal">&lt;x&gt;</tt> - a variable/string(that you need to fill in based off of your situation) named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example <tt class="docutils literal">ls &lt;folder&gt;</tt> is saying that putting a path to a folder in that place makes sense.</li>
 <li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--help</span></tt> - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available</li>
-<li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--&lt;arg-name&gt;</span> <span class="pre">-a</span></tt> - it is very common for single character args to use a single <tt class="docutils literal">-</tt> and multi-char to use two like <tt class="docutils literal"><span class="pre">--arg</span></tt>, and use another <tt class="docutils literal">-</tt> to separate words. these are community habbits for manty decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace</li>
-<li>RTFM - means read the fucking manual IE check <tt class="docutils literal">man</tt>, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages...</li>
+<li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--&lt;arg-name&gt;</span> <span class="pre">-a</span></tt> - it is very common for single character args to use a single <tt class="docutils literal">-</tt> and multi-char to use two like <tt class="docutils literal"><span class="pre">--arg</span></tt>, and use another <tt class="docutils literal">-</tt> to separate words. these are community habbits for many decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace</li>
+<li>RTFM - means read the fucking manual IE check <tt class="docutils literal">man</tt>, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages... (you know who you are)</li>
 <li><tt class="docutils literal"><span class="pre">ctrl-x</span></tt> - hold control and x both for a moment, <tt class="docutils literal"><span class="pre">x-y</span> z</tt> hold x and y for a moment, release both, hit z</li>
 <li><tt class="docutils literal">[BUTTON]</tt>  - hit a button labeled BUTTON on your keyboard</li>
 </ul>
@@ -558,7 +558,7 @@ ul.auto-toc {
 <p>the shell and other software uses many environment vars</p>
 <p>these give background information about your system and things to software that needs it</p>
 <p>this information is stored here because it doesnt need to be changed often, but always needs to be specified</p>
-<p>type env to see them all. echo $VAR to see VAR. export VAR=sgfsgs to set VAR to sgfsgs for your session. setting <tt class="docutils literal">VAR=5 someprogram</tt>, will modify VAR for that single line running someprogram.</p>
+<p>type <tt class="docutils literal">env</tt> to see them all. echo $VAR to see VAR. <tt class="docutils literal">export VAR=sgfsgs</tt> to set VAR to sgfsgs for your session. setting <tt class="docutils literal">VAR=5 someprogram</tt>, will modify VAR for that single line running someprogram.</p>
 <p>shell  vars in general have a $ infront of them when yolu access them. but not when you set them</p>
 <ul class="simple">
 <li><tt class="docutils literal">$PATH</tt> - path to binarys, default is /bin /usr/bin /usr/local/bin  etc</li>
@@ -572,7 +572,6 @@ ul.auto-toc {
 <li><tt class="docutils literal">jobs</tt> - lists the jobs in shell(if you have paused with ctrl-z) with jobid</li>
 <li><tt class="docutils literal">bg &lt;jobid&gt;</tt> and <tt class="docutils literal">fg &lt;jobid&gt;</tt> - background a paused job or foreground a paused job respectively.</li>
 </ul>
-<p>advanced</p>
 </div>
 <div class="section" id="strange-obscure-barely-useful">
 <h1>strange obscure barely useful:</h1>
@@ -602,7 +601,8 @@ ul.auto-toc {
 <h1>high tier suckless</h1>
 <ul class="simple">
 <li><tt class="docutils literal">tmux</tt> - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager=</li>
-<li><tt class="docutils literal">pass</tt> - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well</li>
+<li><tt class="docutils literal">pass</tt> - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well. extensible with plugins. basic commands are <tt class="docutils literal">pass insert</tt>, <tt class="docutils literal">pass show &lt;name&gt;</tt>, <tt class="docutils literal">pass edit &lt;name&gt;</tt>. initialize with <tt class="docutils literal">pass init</tt> after making a keyriung with gnupg</li>
+<li><tt class="docutils literal">gnupg</tt> - gpg a goofy gnu implementation of pgp or something aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.</li>
 </ul>
 </div>
 <div class="section" id="network-hax">
@@ -654,21 +654,37 @@ ul.auto-toc {
 <h1>operators in shell(bash)</h1>
 <ul class="simple">
 <li><tt class="docutils literal">|</tt> pipe, puts stdout into stdin like <tt class="docutils literal">cat bob|grep &lt;word&gt;</tt></li>
-<li><tt class="docutils literal">&amp;</tt> - runs concurrently with following command.</li>
-<li><tt class="docutils literal">&amp;&amp;</tt> - run next program sequentially</li>
-<li><tt class="docutils literal">&gt;</tt> - stdout into a file cat bob &gt; bobfile. OVERWRITES THE FILE</li>
-<li><tt class="docutils literal">&gt;&gt;</tt> - APPENDS TO THE FILE like ls &gt;&gt; listfile will append to the botom of nugget list the folder contents</li>
-<li><tt class="docutils literal">2&gt;</tt>  - same as &gt; but does stderr,</li>
+<li><tt class="docutils literal">&amp;</tt>  runs concurrently with following command.</li>
+<li><tt class="docutils literal">&amp;&amp;</tt>  run next program sequentially</li>
+<li><tt class="docutils literal">&gt;</tt>  stdout into a file cat bob &gt; bobfile. OVERWRITES THE FILE</li>
+<li><tt class="docutils literal">&gt;&gt;</tt>  APPENDS TO THE FILE like ls &gt;&gt; listfile will append to the botom of nugget list the folder contents</li>
+<li><tt class="docutils literal">2&gt;</tt>  same as &gt; but does stderr,</li>
 <li><tt class="docutils literal">&lt;</tt> file on right into stdin of command on left</li>
-<li><tt class="docutils literal">&lt;&lt;&lt;</tt> - string on the right into stdin on the left</li>
-<li><tt class="docutils literal"><span class="pre">ctrl-z</span></tt> - pause - immediate effect always</li>
+<li><tt class="docutils literal">&lt;&lt;&lt;</tt>  string on the right into stdin on the left</li>
+<li><tt class="docutils literal"><span class="pre">ctrl-z</span></tt>  pause - immediate effect always</li>
 <li><tt class="docutils literal"><span class="pre">ctrl-c</span></tt> exit, doest leave shell(thats logout) clears the line though. sends a <tt class="docutils literal">kill <span class="pre">-s</span> 15</tt> to the thread in foreground</li>
 <li><tt class="docutils literal"><span class="pre">ctrl-d</span></tt> logout</li>
-<li><tt class="docutils literal">[TAB]</tt> - tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. <tt class="docutils literal">git add [TAB] [TAB]</tt> lists your changed files, for instance</li>
+<li><tt class="docutils literal">[TAB]</tt>  tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. <tt class="docutils literal">git add [TAB] [TAB]</tt> lists your changed files, for instance</li>
 <li>back quotes - <cite>kill `pgrep firefox</cite> `  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox</li>
-<li><tt class="docutils literal">*</tt> - wildcard, <tt class="docutils literal">ls *.py</tt> gives list of python scripts in current directory</li>
-<li><tt class="docutils literal"><span class="pre">[0-9]</span></tt> - matches digits in shell, <tt class="docutils literal">ls <span class="pre">[0-9]*</span></tt> list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...</li>
+<li><tt class="docutils literal">*</tt>  wildcard, <tt class="docutils literal">ls *.py</tt> gives list of python scripts in current directory</li>
+<li><tt class="docutils literal">!!</tt>  the last command, <tt class="docutils literal">!n</tt> nth command in history, <tt class="docutils literal"><span class="pre">!-n</span></tt> n commands back, IE <tt class="docutils literal"><span class="pre">!-2</span></tt> executes second last
+- <tt class="docutils literal">!*</tt> args from previous command</li>
+<li><tt class="docutils literal"><span class="pre">[0-9]</span></tt>  matches digits in shell, <tt class="docutils literal">ls <span class="pre">[0-9]*</span></tt> list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...</li>
 </ul>
+</div>
+<div class="section" id="patrician-word-processing">
+<h1>patrician word processing</h1>
+<p><tt class="docutils literal">latex</tt> - compiles to dvi and pics gotta be eps(a vector format)
+<tt class="docutils literal">pdflatex</tt>- compiles latex pics must be png and jpg i think. cna not be eps
+<tt class="docutils literal">htlatex</tt>- good compiles latex to html with pics for equations and other floats
+<tt class="docutils literal">latex2html</tt> - sucks. honorable mention thought
+<tt class="docutils literal">dvipdf</tt> - turn dvi to pdf common for use of <tt class="docutils literal">latex</tt>
+<tt class="docutils literal">rst2html</tt> - restructurted text to tml
+<tt class="docutils literal">rst2latex</tt> - restructurted text to latex
+<tt class="docutils literal">rst2man</tt> - restructurted text to man page
+<tt class="docutils literal">rst2odt</tt> - restructurted text to odt
+<tt class="docutils literal">rst2pdf</tt> - restructurted text to pdf
+<tt class="docutils literal">convert</tt> - very smartly interfqced front end for imagemagick. jsut <tt class="docutils literal">convert <span class="pre">bob.&lt;ext&gt;</span> bobout.jpg</tt> etc to convert between any image format</p>
 </div>
 <div class="section" id="root-filesystem-synopsis">
 <h1>root filesystem synopsis</h1>
@@ -697,12 +713,12 @@ Int the past many of these were separate partitions, hence some of the seemingly
 <li><tt class="docutils literal">/proc/cpuinfo</tt> - cpu core info, pretty great</li>
 <li><tt class="docutils literal">/dev/random</tt> - random data from hardware. cat this and u get a dump of real physical entropy</li>
 <li><tt class="docutils literal">/dev/urandom</tt> - output of a psrng using above as seed. cat this and get infinite 'random' data generated from finite entropy harvested from ahrdware</li>
-<li><tt class="docutils literal">/etc/passwd</tt> - old school place where some user info is stored, originally included encrypted passwords</li>
-<li><tt class="docutils literal">/etc/shadow</tt> - where they moved the encrypted passwords  from passwd to hide them from users when ti as realzied they could be cracked</li>
+<li><tt class="docutils literal">/etc/passwd</tt> - old school place where some user info is stored, originally included encrypted passwords. now it is where you go to look up info like groups and home directories and shells quickly. each line is a user and all of their <tt class="docutils literal">chsh</tt> / <tt class="docutils literal">usermod</tt> related properties</li>
+<li><tt class="docutils literal">/etc/shadow</tt> - where they moved the encrypted passwords and put them as only <tt class="docutils literal">r/w</tt> by root and <tt class="docutils literal">r</tt> group shadow  from passwd to hide them from users when ti as realzied they could be cracked</li>
 <li><tt class="docutils literal">/etc/hosts</tt> - lsit of hosts that are basically added to DNS, can put some of your servers here so u dont type ip</li>
-<li><tt class="docutils literal">/etc/hostname</tt> - yur hostname, for some reason i feel i usualy msut edit this and use the hostname command at the same time/session</li>
+<li><tt class="docutils literal">/etc/hostname</tt> - yur hostname, for some reason i feel i usualy must edit this and use the hostname command at the same time/session</li>
 <li><tt class="docutils literal">/etc/rc.local</tt> - old school palce to put commands to have them run on boot, on many linux systems.</li>
-<li><tt class="docutils literal">/etc/resolv.conf</tt> - old way of keeping global nameservers. depends on the system now....</li>
+<li><tt class="docutils literal">/etc/resolv.conf</tt> - old way of keeping global nameservers. depends on the system now. In theory you can just add lines to add hosts but generally there is osme crackpot software stack hiding behind a local service that this file points to. way to make something overcomplicated.</li>
 <li><tt class="docutils literal">/etc/motd</tt> - text displayed at login. put stuff here if you have users, info about the system, advertisements, cuss them out, etc</li>
 </ul>
 </div>
@@ -730,7 +746,7 @@ Host bob
   User userb
   IdentityFile ~/.ssh/id_rsa_bob
 </pre>
-<p>this enables you to simply <tt class="docutils literal">ssh bob</tt>, and tab to complete works on this alias for te host. HostName is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry <tt class="docutils literal">Host</tt></p>
+<p>this enables you to simply <tt class="docutils literal">ssh bob</tt>, and tab to complete works on this alias for te host. <tt class="docutils literal">HostName</tt> is a misleading label, as it is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry <tt class="docutils literal">Host</tt></p>
 </div>
 <div class="section" id="host-a-git-barebones">
 <h1>host a git, barebones</h1>

@@ -85,7 +85,7 @@ Quintessential Unix Shell commands
 - ``yes`` -endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe
 - ``wipefs`` -removed disk label
 - ``shred`` - destroy files by writing random data to the location they were stored on disk(doesnt work on some filesystems) or write random data to a whole disk
-- ``cryptsetup`` - setup luks volumes
+- ``cryptsetup`` - setup luks volumes. rtfm on it
 - ``cron`` -service for running periodic tasks. 
 - ``ranger`` - file explorer command line tool. vim bindings, written in python. navigate filesystem in ncurses text interface
 - ``lfm`` - shitty version of ranger seems really old
@@ -99,10 +99,10 @@ Notation
 
 this is notation used in this document and others like it, not syntax for the shell or anything else, and some general notes on style, common themes in this environment
 
-- ``<x>`` - a variable named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example ``ls <folder>`` is saying that putting a folder in that place makes sense.
+- ``<x>`` - a variable/string(that you need to fill in based off of your situation) named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example ``ls <folder>`` is saying that putting a path to a folder in that place makes sense.
 - ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available
-- ``<cmd> --<arg-name> -a`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words. these are community habbits for manty decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace
-- RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages...
+- ``<cmd> --<arg-name> -a`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words. these are community habbits for many decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace
+- RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages... (you know who you are)
 - ``ctrl-x`` - hold control and x both for a moment, ``x-y z`` hold x and y for a moment, release both, hit z
 - ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard
 
@@ -161,7 +161,7 @@ these give background information about your system and things to software that 
 
 this information is stored here because it doesnt need to be changed often, but always needs to be specified
 
-type env to see them all. echo $VAR to see VAR. export VAR=sgfsgs to set VAR to sgfsgs for your session. setting ``VAR=5 someprogram``, will modify VAR for that single line running someprogram. 
+type ``env`` to see them all. echo $VAR to see VAR. ``export VAR=sgfsgs`` to set VAR to sgfsgs for your session. setting ``VAR=5 someprogram``, will modify VAR for that single line running someprogram. 
 
 shell  vars in general have a $ infront of them when yolu access them. but not when you set them
 
@@ -175,8 +175,6 @@ shell  vars in general have a $ infront of them when yolu access them. but not w
 - ``export`` -declare env var for remainder of session until u close this shell 
 - ``jobs`` - lists the jobs in shell(if you have paused with ctrl-z) with jobid
 - ``bg <jobid>`` and ``fg <jobid>`` - background a paused job or foreground a paused job respectively. 
-
-advanced 
 
 
 strange obscure barely useful:
@@ -203,11 +201,8 @@ graphical, featureful
 high tier suckless
 ==================
 - ``tmux`` - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager=
-- ``pass`` - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well
-
-
-
-
+- ``pass`` - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well. extensible with plugins. basic commands are ``pass insert``, ``pass show <name>``, ``pass edit <name>``. initialize with ``pass init`` after making a keyriung with gnupg
+- ``gnupg`` - gpg a goofy gnu implementation of pgp or something aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  
 
 network & hax
 =============
@@ -256,20 +251,39 @@ operators in shell(bash)
 ========================
 
 - ``|`` pipe, puts stdout into stdin like ``cat bob|grep <word>``
-- ``&`` - runs concurrently with following command. 
-- ``&&`` - run next program sequentially
-- ``>`` - stdout into a file cat bob > bobfile. OVERWRITES THE FILE
-- ``>>`` - APPENDS TO THE FILE like ls >> listfile will append to the botom of nugget list the folder contents
-- ``2>``  - same as > but does stderr, 
+- ``&``  runs concurrently with following command. 
+- ``&&``  run next program sequentially
+- ``>``  stdout into a file cat bob > bobfile. OVERWRITES THE FILE
+- ``>>``  APPENDS TO THE FILE like ls >> listfile will append to the botom of nugget list the folder contents
+- ``2>``  same as > but does stderr, 
 - ``<`` file on right into stdin of command on left
-- ``<<<`` - string on the right into stdin on the left
-- ``ctrl-z`` - pause - immediate effect always
+- ``<<<``  string on the right into stdin on the left
+- ``ctrl-z``  pause - immediate effect always
 - ``ctrl-c`` exit, doest leave shell(thats logout) clears the line though. sends a ``kill -s 15`` to the thread in foreground
 - ``ctrl-d`` logout
-- ``[TAB]`` - tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. ``git add [TAB] [TAB]`` lists your changed files, for instance
+- ``[TAB]``  tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. ``git add [TAB] [TAB]`` lists your changed files, for instance
 - back quotes - `kill `pgrep firefox` `  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox
-- ``*`` - wildcard, ``ls *.py`` gives list of python scripts in current directory
-- ``[0-9]`` - matches digits in shell, ``ls [0-9]*`` list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...
+- ``*``  wildcard, ``ls *.py`` gives list of python scripts in current directory
+- ``!!``  the last command, ``!n`` nth command in history, ``!-n`` n commands back, IE ``!-2`` executes second last 
+  - ``!*`` args from previous command
+- ``[0-9]``  matches digits in shell, ``ls [0-9]*`` list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...
+
+
+patrician word processing
+=========================
+
+``latex`` - compiles to dvi and pics gotta be eps(a vector format)
+``pdflatex``- compiles latex pics must be png and jpg i think. cna not be eps
+``htlatex``- good compiles latex to html with pics for equations and other floats
+``latex2html`` - sucks. honorable mention thought
+``dvipdf`` - turn dvi to pdf common for use of ``latex``
+``rst2html`` - restructurted text to tml
+``rst2latex`` - restructurted text to latex
+``rst2man`` - restructurted text to man page
+``rst2odt`` - restructurted text to odt
+``rst2pdf`` - restructurted text to pdf
+``convert`` - very smartly interfqced front end for imagemagick. jsut ``convert bob.<ext> bobout.jpg`` etc to convert between any image format 
+
 
 
 
@@ -299,12 +313,12 @@ notable filesystem objects, global
 - ``/proc/cpuinfo`` - cpu core info, pretty great
 - ``/dev/random`` - random data from hardware. cat this and u get a dump of real physical entropy
 - ``/dev/urandom`` - output of a psrng using above as seed. cat this and get infinite 'random' data generated from finite entropy harvested from ahrdware
-- ``/etc/passwd`` - old school place where some user info is stored, originally included encrypted passwords
-- ``/etc/shadow`` - where they moved the encrypted passwords  from passwd to hide them from users when ti as realzied they could be cracked 
+- ``/etc/passwd`` - old school place where some user info is stored, originally included encrypted passwords. now it is where you go to look up info like groups and home directories and shells quickly. each line is a user and all of their ``chsh`` / ``usermod`` related properties
+- ``/etc/shadow`` - where they moved the encrypted passwords and put them as only ``r/w`` by root and ``r`` group shadow  from passwd to hide them from users when ti as realzied they could be cracked 
 - ``/etc/hosts`` - lsit of hosts that are basically added to DNS, can put some of your servers here so u dont type ip
-- ``/etc/hostname`` - yur hostname, for some reason i feel i usualy msut edit this and use the hostname command at the same time/session
+- ``/etc/hostname`` - yur hostname, for some reason i feel i usualy must edit this and use the hostname command at the same time/session
 - ``/etc/rc.local`` - old school palce to put commands to have them run on boot, on many linux systems. 
-- ``/etc/resolv.conf`` - old way of keeping global nameservers. depends on the system now....
+- ``/etc/resolv.conf`` - old way of keeping global nameservers. depends on the system now. In theory you can just add lines to add hosts but generally there is osme crackpot software stack hiding behind a local service that this file points to. way to make something overcomplicated.
 - ``/etc/motd`` - text displayed at login. put stuff here if you have users, info about the system, advertisements, cuss them out, etc
  
 
@@ -332,7 +346,7 @@ Host bob
   User userb
   IdentityFile ~/.ssh/id_rsa_bob
 
-this enables you to simply ``ssh bob``, and tab to complete works on this alias for te host. HostName is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry ``Host``
+this enables you to simply ``ssh bob``, and tab to complete works on this alias for te host. ``HostName`` is a misleading label, as it is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry ``Host``
 
 
 
