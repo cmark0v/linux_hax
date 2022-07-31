@@ -611,7 +611,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">nmap</tt> -port scanner highly advanced, many modes and options</li>
 <li><tt class="docutils literal">masscan</tt> -speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information</li>
 <li><tt class="docutils literal">nc</tt> -previously merntioned, netcat, raw conns</li>
-<li><tt class="docutils literal">ettercap</tt> -manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack</li>
+<li><tt class="docutils literal">ettercap</tt> -manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack. it is bad to the bone, it is a cyberweapon</li>
 <li><tt class="docutils literal">wireshark</tt> -watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon</li>
 <li><tt class="docutils literal">ngrep</tt> -network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for</li>
 <li><tt class="docutils literal">tcpdump</tt> -captures and dumps packets, dump files can be reloaded, minor dissection available with some calssification, can load the dumps up with anything</li>
@@ -655,7 +655,8 @@ ul.auto-toc {
 <ul class="simple">
 <li><tt class="docutils literal">|</tt> pipe, puts stdout into stdin like <tt class="docutils literal">cat bob|grep &lt;word&gt;</tt></li>
 <li><tt class="docutils literal">&amp;</tt>  runs concurrently with following command.</li>
-<li><tt class="docutils literal">&amp;&amp;</tt>  run next program sequentially</li>
+<li><tt class="docutils literal">&amp;&amp;</tt>  run next program sequentially, if the first succeeds</li>
+<li><tt class="docutils literal">||</tt> run command after only  if the previous command fails</li>
 <li><tt class="docutils literal">&gt;</tt>  stdout into a file cat bob &gt; bobfile. OVERWRITES THE FILE</li>
 <li><tt class="docutils literal">&gt;&gt;</tt>  APPENDS TO THE FILE like ls &gt;&gt; listfile will append to the botom of nugget list the folder contents</li>
 <li><tt class="docutils literal">2&gt;</tt>  same as &gt; but does stderr,</li>
@@ -667,24 +668,26 @@ ul.auto-toc {
 <li><tt class="docutils literal">[TAB]</tt>  tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. <tt class="docutils literal">git add [TAB] [TAB]</tt> lists your changed files, for instance</li>
 <li>back quotes - <cite>kill `pgrep firefox</cite> `  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox</li>
 <li><tt class="docutils literal">*</tt>  wildcard, <tt class="docutils literal">ls *.py</tt> gives list of python scripts in current directory</li>
-<li><tt class="docutils literal">!!</tt>  the last command, <tt class="docutils literal">!n</tt> nth command in history, <tt class="docutils literal"><span class="pre">!-n</span></tt> n commands back, IE <tt class="docutils literal"><span class="pre">!-2</span></tt> executes second last
-- <tt class="docutils literal">!*</tt> args from previous command</li>
+<li><tt class="docutils literal">!!</tt>  the last command, <tt class="docutils literal">!n</tt> nth command in history, <tt class="docutils literal"><span class="pre">!-n</span></tt> n commands back, IE <tt class="docutils literal"><span class="pre">!-2</span></tt> executes second last</li>
+<li><tt class="docutils literal">!*</tt> args from previous command</li>
 <li><tt class="docutils literal"><span class="pre">[0-9]</span></tt>  matches digits in shell, <tt class="docutils literal">ls <span class="pre">[0-9]*</span></tt> list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...</li>
 </ul>
 </div>
 <div class="section" id="patrician-word-processing">
 <h1>patrician word processing</h1>
-<p><tt class="docutils literal">latex</tt> - compiles to dvi and pics gotta be eps(a vector format)
-<tt class="docutils literal">pdflatex</tt>- compiles latex pics must be png and jpg i think. cna not be eps
-<tt class="docutils literal">htlatex</tt>- good compiles latex to html with pics for equations and other floats
-<tt class="docutils literal">latex2html</tt> - sucks. honorable mention thought
-<tt class="docutils literal">dvipdf</tt> - turn dvi to pdf common for use of <tt class="docutils literal">latex</tt>
-<tt class="docutils literal">rst2html</tt> - restructurted text to tml
-<tt class="docutils literal">rst2latex</tt> - restructurted text to latex
-<tt class="docutils literal">rst2man</tt> - restructurted text to man page
-<tt class="docutils literal">rst2odt</tt> - restructurted text to odt
-<tt class="docutils literal">rst2pdf</tt> - restructurted text to pdf
-<tt class="docutils literal">convert</tt> - very smartly interfqced front end for imagemagick. jsut <tt class="docutils literal">convert <span class="pre">bob.&lt;ext&gt;</span> bobout.jpg</tt> etc to convert between any image format</p>
+<ul class="simple">
+<li><tt class="docutils literal">latex</tt> - compiles to dvi and pics gotta be eps(a vector format)</li>
+<li><tt class="docutils literal">pdflatex</tt>- compiles latex pics must be png and jpg i think. cna not be eps</li>
+<li><tt class="docutils literal">htlatex</tt>- good compiles latex to html with pics for equations and other floats</li>
+<li><tt class="docutils literal">latex2html</tt> - sucks. honorable mention thought</li>
+<li><tt class="docutils literal">dvipdf</tt> - turn dvi to pdf common for use of <tt class="docutils literal">latex</tt></li>
+<li><tt class="docutils literal">rst2html</tt> - restructurted text to tml</li>
+<li><tt class="docutils literal">rst2latex</tt> - restructurted text to latex</li>
+<li><tt class="docutils literal">rst2man</tt> - restructurted text to man page</li>
+<li><tt class="docutils literal">rst2odt</tt> - restructurted text to odt</li>
+<li><tt class="docutils literal">rst2pdf</tt> - restructurted text to pdf</li>
+<li><tt class="docutils literal">convert</tt> - very smartly interfqced front end for imagemagick. jsut <tt class="docutils literal">convert <span class="pre">bob.&lt;ext&gt;</span> bobout.jpg</tt> etc to convert between any image format</li>
+</ul>
 </div>
 <div class="section" id="root-filesystem-synopsis">
 <h1>root filesystem synopsis</h1>

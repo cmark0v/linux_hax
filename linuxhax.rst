@@ -210,7 +210,7 @@ network & hax
 - ``nmap`` -port scanner highly advanced, many modes and options
 - ``masscan`` -speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information
 - ``nc`` -previously merntioned, netcat, raw conns
-- ``ettercap`` -manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack
+- ``ettercap`` -manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack. it is bad to the bone, it is a cyberweapon
 - ``wireshark`` -watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon
 - ``ngrep`` -network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for
 - ``tcpdump`` -captures and dumps packets, dump files can be reloaded, minor dissection available with some calssification, can load the dumps up with anything
@@ -252,7 +252,8 @@ operators in shell(bash)
 
 - ``|`` pipe, puts stdout into stdin like ``cat bob|grep <word>``
 - ``&``  runs concurrently with following command. 
-- ``&&``  run next program sequentially
+- ``&&``  run next program sequentially, if the first succeeds
+- ``||`` run command after only  if the previous command fails 
 - ``>``  stdout into a file cat bob > bobfile. OVERWRITES THE FILE
 - ``>>``  APPENDS TO THE FILE like ls >> listfile will append to the botom of nugget list the folder contents
 - ``2>``  same as > but does stderr, 
@@ -265,24 +266,24 @@ operators in shell(bash)
 - back quotes - `kill `pgrep firefox` `  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox
 - ``*``  wildcard, ``ls *.py`` gives list of python scripts in current directory
 - ``!!``  the last command, ``!n`` nth command in history, ``!-n`` n commands back, IE ``!-2`` executes second last 
-  - ``!*`` args from previous command
+- ``!*`` args from previous command
 - ``[0-9]``  matches digits in shell, ``ls [0-9]*`` list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...
 
 
 patrician word processing
 =========================
 
-``latex`` - compiles to dvi and pics gotta be eps(a vector format)
-``pdflatex``- compiles latex pics must be png and jpg i think. cna not be eps
-``htlatex``- good compiles latex to html with pics for equations and other floats
-``latex2html`` - sucks. honorable mention thought
-``dvipdf`` - turn dvi to pdf common for use of ``latex``
-``rst2html`` - restructurted text to tml
-``rst2latex`` - restructurted text to latex
-``rst2man`` - restructurted text to man page
-``rst2odt`` - restructurted text to odt
-``rst2pdf`` - restructurted text to pdf
-``convert`` - very smartly interfqced front end for imagemagick. jsut ``convert bob.<ext> bobout.jpg`` etc to convert between any image format 
+- ``latex`` - compiles to dvi and pics gotta be eps(a vector format)
+- ``pdflatex``- compiles latex pics must be png and jpg i think. cna not be eps
+- ``htlatex``- good compiles latex to html with pics for equations and other floats
+- ``latex2html`` - sucks. honorable mention thought
+- ``dvipdf`` - turn dvi to pdf common for use of ``latex``
+- ``rst2html`` - restructurted text to tml
+- ``rst2latex`` - restructurted text to latex
+- ``rst2man`` - restructurted text to man page
+- ``rst2odt`` - restructurted text to odt
+- ``rst2pdf`` - restructurted text to pdf
+- ``convert`` - very smartly interfqced front end for imagemagick. jsut ``convert bob.<ext> bobout.jpg`` etc to convert between any image format 
 
 
 
