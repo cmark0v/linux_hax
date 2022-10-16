@@ -1,5 +1,4 @@
 
-
 Quintessential Unix Shell commands
 ==================================
 
@@ -169,7 +168,7 @@ shell  vars in general have a $ infront of them when yolu access them. but not w
 - ``$DISPLAY`` - x11/xorg display, typically :0. machines can have multiple displays, like all unix things, its multiuser
 - ``$PYTHONPATH`` - where python looks for modules
 - ``$USER, $HOME``, - username and home directory path
-- ``$_`` - arguments of last program ran? 
+- ``$_`` - last arg from previous shell command run
 - ``alias`` - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def 
 - ``env`` shows your env
 - ``export`` -declare env var for remainder of session until u close this shell 
@@ -182,7 +181,7 @@ strange obscure barely useful:
 - ``motd`` - message of the day, displayed on login, not all systems have this command, its old school, but having an MOTD is not a dead art. 
 - ``links`` - text only browser
 - ``lynx`` - older more useless text only browser
-- ``irssi`` - irc client ncurses flavor. leet af
+- ``irssi`` - irc client ncurses flavor. leet af only good program in this section
 - ``rexima`` - command line sound volume control mixer thingy
 - ``beep`` - makes a console beep
 
@@ -202,7 +201,7 @@ high tier suckless
 ==================
 - ``tmux`` - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager=
 - ``pass`` - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well. extensible with plugins. basic commands are ``pass insert``, ``pass show <name>``, ``pass edit <name>``. initialize with ``pass init`` after making a keyriung with gnupg
-- ``gnupg`` - gpg a goofy gnu implementation of pgp or something aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  
+- ``gnupg`` - gpg a goofy gnu implementation of pgp or something aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  ``man gpg``
 
 network & hax
 =============
@@ -237,14 +236,14 @@ network & hax
 
 SSH STUFF
 =========
-- ``ssh`` -secure shell, replaced telnet when people realizsed u could ngrep peoples files out off the network
-- ``ssh-keygen`` - generates keypairs for ssh auth
-- ``scp`` -copies files over ssh, wil ldefault to copy locally for composibility and uses same args generally. typical use scp user@host:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB to complete. tab is slow though. remember you can copy to /tmp always, too.
-- ``ssh -X`` - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides)
-- ``ssh -D 8888`` - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host
-- ``ssh -L8888:host:8888`` - tunnel localhost 8888 to remove host's view of host:8888
-- ``ssh -R8888:host:8888`` - reverse tunnel, goes from remote host to localhsots view of host:8888
-- ``sftp`` - ftp like client thingy for scp. never use it, might be the original client and actual protocol name for the machinery that does scp
+- ``ssh <remotehost>`` -secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel
+- ``ssh-keygen <remotehost>`` - generates keypairs for ssh auth
+- ``scp localfile <user>@<remotehost>:/path/file`` -copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp user@host:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.
+- ``ssh -X <remotehost>`` - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides)
+- ``ssh -D 8888 <remotehost>`` - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host
+- ``ssh -L<lport>:host:<port> <remotehost>`` - tunnel localhost lport to remote host's view of host:port
+- ``ssh -R<lport>:host:<port> <remotehost>`` - reverse tunnel, goes from remote host to  view of host:<port>
+- ``sftp`` - ftp style shell client for scp-like and other extended functionality
 - ``sshfs`` - smount - use the above sftp facilities to emualted a mounted filesystem
 
 operators in shell(bash)

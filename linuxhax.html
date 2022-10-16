@@ -565,7 +565,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">$DISPLAY</tt> - x11/xorg display, typically :0. machines can have multiple displays, like all unix things, its multiuser</li>
 <li><tt class="docutils literal">$PYTHONPATH</tt> - where python looks for modules</li>
 <li><tt class="docutils literal">$USER, $HOME</tt>, - username and home directory path</li>
-<li><tt class="docutils literal">$_</tt> - arguments of last program ran?</li>
+<li><tt class="docutils literal">$_</tt> - last arg from previous shell command run</li>
 <li><tt class="docutils literal">alias</tt> - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def</li>
 <li><tt class="docutils literal">env</tt> shows your env</li>
 <li><tt class="docutils literal">export</tt> -declare env var for remainder of session until u close this shell</li>
@@ -579,7 +579,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">motd</tt> - message of the day, displayed on login, not all systems have this command, its old school, but having an MOTD is not a dead art.</li>
 <li><tt class="docutils literal">links</tt> - text only browser</li>
 <li><tt class="docutils literal">lynx</tt> - older more useless text only browser</li>
-<li><tt class="docutils literal">irssi</tt> - irc client ncurses flavor. leet af</li>
+<li><tt class="docutils literal">irssi</tt> - irc client ncurses flavor. leet af only good program in this section</li>
 <li><tt class="docutils literal">rexima</tt> - command line sound volume control mixer thingy</li>
 <li><tt class="docutils literal">beep</tt> - makes a console beep</li>
 </ul>
@@ -602,7 +602,7 @@ ul.auto-toc {
 <ul class="simple">
 <li><tt class="docutils literal">tmux</tt> - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager=</li>
 <li><tt class="docutils literal">pass</tt> - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well. extensible with plugins. basic commands are <tt class="docutils literal">pass insert</tt>, <tt class="docutils literal">pass show &lt;name&gt;</tt>, <tt class="docutils literal">pass edit &lt;name&gt;</tt>. initialize with <tt class="docutils literal">pass init</tt> after making a keyriung with gnupg</li>
-<li><tt class="docutils literal">gnupg</tt> - gpg a goofy gnu implementation of pgp or something aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.</li>
+<li><tt class="docutils literal">gnupg</tt> - gpg a goofy gnu implementation of pgp or something aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  <tt class="docutils literal">man gpg</tt></li>
 </ul>
 </div>
 <div class="section" id="network-hax">
@@ -639,14 +639,14 @@ ul.auto-toc {
 <div class="section" id="ssh-stuff">
 <h1>SSH STUFF</h1>
 <ul class="simple">
-<li><tt class="docutils literal">ssh</tt> -secure shell, replaced telnet when people realizsed u could ngrep peoples files out off the network</li>
-<li><tt class="docutils literal"><span class="pre">ssh-keygen</span></tt> - generates keypairs for ssh auth</li>
-<li><tt class="docutils literal">scp</tt> -copies files over ssh, wil ldefault to copy locally for composibility and uses same args generally. typical use scp <a class="reference external" href="mailto:user&#64;host">user&#64;host</a>:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB to complete. tab is slow though. remember you can copy to /tmp always, too.</li>
-<li><tt class="docutils literal">ssh <span class="pre">-X</span></tt> - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides)</li>
-<li><tt class="docutils literal">ssh <span class="pre">-D</span> 8888</tt> - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host</li>
-<li><tt class="docutils literal">ssh <span class="pre">-L8888:host:8888</span></tt> - tunnel localhost 8888 to remove host's view of host:8888</li>
-<li><tt class="docutils literal">ssh <span class="pre">-R8888:host:8888</span></tt> - reverse tunnel, goes from remote host to localhsots view of host:8888</li>
-<li><tt class="docutils literal">sftp</tt> - ftp like client thingy for scp. never use it, might be the original client and actual protocol name for the machinery that does scp</li>
+<li><tt class="docutils literal">ssh &lt;remotehost&gt;</tt> -secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel</li>
+<li><tt class="docutils literal"><span class="pre">ssh-keygen</span> &lt;remotehost&gt;</tt> - generates keypairs for ssh auth</li>
+<li><tt class="docutils literal">scp localfile <span class="pre">&lt;user&gt;&#64;&lt;remotehost&gt;:/path/file</span></tt> -copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp <a class="reference external" href="mailto:user&#64;host">user&#64;host</a>:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.</li>
+<li><tt class="docutils literal">ssh <span class="pre">-X</span> &lt;remotehost&gt;</tt> - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides)</li>
+<li><tt class="docutils literal">ssh <span class="pre">-D</span> 8888 &lt;remotehost&gt;</tt> - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host</li>
+<li><tt class="docutils literal">ssh <span class="pre">-L&lt;lport&gt;:host:&lt;port&gt;</span> &lt;remotehost&gt;</tt> - tunnel localhost lport to remote host's view of host:port</li>
+<li><tt class="docutils literal">ssh <span class="pre">-R&lt;lport&gt;:host:&lt;port&gt;</span> &lt;remotehost&gt;</tt> - reverse tunnel, goes from remote host to  view of host:&lt;port&gt;</li>
+<li><tt class="docutils literal">sftp</tt> - ftp style shell client for scp-like and other extended functionality</li>
 <li><tt class="docutils literal">sshfs</tt> - smount - use the above sftp facilities to emualted a mounted filesystem</li>
 </ul>
 </div>
