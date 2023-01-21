@@ -566,6 +566,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">$PYTHONPATH</tt> - where python looks for modules</li>
 <li><tt class="docutils literal">$USER, $HOME</tt>, - username and home directory path</li>
 <li><tt class="docutils literal">$_</tt> - last arg from previous shell command run</li>
+<li><tt class="docutils literal">$?</tt> - exit value/signal from prev command (0 if success which you manually throw in scripts with <tt class="docutils literal">exit 0</tt></li>
 <li><tt class="docutils literal">alias</tt> - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def</li>
 <li><tt class="docutils literal">env</tt> shows your env</li>
 <li><tt class="docutils literal">export</tt> -declare env var for remainder of session until u close this shell</li>
@@ -657,9 +658,10 @@ ul.auto-toc {
 <li><tt class="docutils literal">&amp;</tt>  runs concurrently with following command.</li>
 <li><tt class="docutils literal">&amp;&amp;</tt>  run next program sequentially, if the first succeeds</li>
 <li><tt class="docutils literal">||</tt> run command after only  if the previous command fails</li>
-<li><tt class="docutils literal">&gt;</tt>  stdout into a file cat bob &gt; bobfile. OVERWRITES THE FILE</li>
+<li><tt class="docutils literal">&gt;</tt>  stdout into a file cat <tt class="docutils literal">bob &gt; file_name</tt>. OVERWRITES THE FILE</li>
 <li><tt class="docutils literal">&gt;&gt;</tt>  APPENDS TO THE FILE like ls &gt;&gt; listfile will append to the botom of nugget list the folder contents</li>
-<li><tt class="docutils literal">2&gt;</tt>  same as &gt; but does stderr,</li>
+<li><tt class="docutils literal">2&gt;</tt>  same as &gt; but does stderr, where <tt class="docutils literal">1&gt;</tt> is just the default that <tt class="docutils literal">&gt;</tt> alone reverts to</li>
+<li><tt class="docutils literal">&amp;&gt;</tt> - writes both stderr and stdout to filename after it</li>
 <li><tt class="docutils literal">&lt;</tt> file on right into stdin of command on left</li>
 <li><tt class="docutils literal">&lt;&lt;&lt;</tt>  string on the right into stdin on the left</li>
 <li><tt class="docutils literal"><span class="pre">ctrl-z</span></tt>  pause - immediate effect always</li>
@@ -686,7 +688,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">rst2man</tt> - restructurted text to man page</li>
 <li><tt class="docutils literal">rst2odt</tt> - restructurted text to odt</li>
 <li><tt class="docutils literal">rst2pdf</tt> - restructurted text to pdf</li>
-<li><tt class="docutils literal">convert</tt> - very smartly interfqced front end for imagemagick. jsut <tt class="docutils literal">convert <span class="pre">bob.&lt;ext&gt;</span> bobout.jpg</tt> etc to convert between any image format</li>
+<li><tt class="docutils literal">convert</tt> - very smartly interfaced command line front end for imagemagick. just <tt class="docutils literal">convert <span class="pre">bob.&lt;ext&gt;</span> bobout.jpg</tt> etc to convert between any image format</li>
 </ul>
 </div>
 <div class="section" id="root-filesystem-synopsis">
@@ -707,7 +709,7 @@ Int the past many of these were separate partitions, hence some of the seemingly
 <li><tt class="docutils literal">/boot</tt> - contains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a separate partition still</li>
 <li><tt class="docutils literal">/cdrom</tt> - vestigal artifact of a time when people used cdrom</li>
 <li><tt class="docutils literal">/mnt</tt> - this was originally where you would mount drives, IE, any drive that was not hosting system critical contents, like removable media, was mounted here. you added these to be automounted using /etc/fstab, and mounting had to be done by root</li>
-<li><tt class="docutils literal">/media</tt> - this is where thigns are mounted now, un a path like /media/&lt;username&gt;/&lt;uuid serial thing&gt;</li>
+<li><tt class="docutils literal">/media</tt> - this is where thigns are mounted now, in a path like /media/&lt;username&gt;/&lt;uuid serial thing&gt;, this is now handled by some daemon that will do it for you as a setuid-to-root binary or something, to streamline the process of using removeable media since the proliferation of USB storage devices(previously portable storage media didnt carry its hardware interface with it, so the system wouldnt see new media as a new device entirely, but a change in state of a known device)</li>
 </ul>
 </div>
 <div class="section" id="notable-filesystem-objects-global">

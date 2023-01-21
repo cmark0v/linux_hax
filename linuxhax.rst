@@ -169,6 +169,7 @@ shell  vars in general have a $ infront of them when yolu access them. but not w
 - ``$PYTHONPATH`` - where python looks for modules
 - ``$USER, $HOME``, - username and home directory path
 - ``$_`` - last arg from previous shell command run
+- ``$?`` - exit value/signal from prev command (0 if success which you manually throw in scripts with ``exit 0``
 - ``alias`` - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def 
 - ``env`` shows your env
 - ``export`` -declare env var for remainder of session until u close this shell 
@@ -253,9 +254,10 @@ operators in shell(bash)
 - ``&``  runs concurrently with following command. 
 - ``&&``  run next program sequentially, if the first succeeds
 - ``||`` run command after only  if the previous command fails 
-- ``>``  stdout into a file cat bob > bobfile. OVERWRITES THE FILE
+- ``>``  stdout into a file cat ``bob > file_name``. OVERWRITES THE FILE
 - ``>>``  APPENDS TO THE FILE like ls >> listfile will append to the botom of nugget list the folder contents
-- ``2>``  same as > but does stderr, 
+- ``2>``  same as > but does stderr, where ``1>`` is just the default that ``>`` alone reverts to
+- ``&>`` - writes both stderr and stdout to filename after it
 - ``<`` file on right into stdin of command on left
 - ``<<<``  string on the right into stdin on the left
 - ``ctrl-z``  pause - immediate effect always
@@ -282,7 +284,7 @@ patrician word processing
 - ``rst2man`` - restructurted text to man page
 - ``rst2odt`` - restructurted text to odt
 - ``rst2pdf`` - restructurted text to pdf
-- ``convert`` - very smartly interfqced front end for imagemagick. jsut ``convert bob.<ext> bobout.jpg`` etc to convert between any image format 
+- ``convert`` - very smartly interfaced command line front end for imagemagick. just ``convert bob.<ext> bobout.jpg`` etc to convert between any image format 
 
 
 
@@ -305,7 +307,7 @@ root filesystem synopsis
 - ``/boot`` - contains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a separate partition still
 - ``/cdrom`` - vestigal artifact of a time when people used cdrom
 - ``/mnt`` - this was originally where you would mount drives, IE, any drive that was not hosting system critical contents, like removable media, was mounted here. you added these to be automounted using /etc/fstab, and mounting had to be done by root
-- ``/media`` - this is where thigns are mounted now, un a path like /media/<username>/<uuid serial thing>
+- ``/media`` - this is where thigns are mounted now, in a path like /media/<username>/<uuid serial thing>, this is now handled by some daemon that will do it for you as a setuid-to-root binary or something, to streamline the process of using removeable media since the proliferation of USB storage devices(previously portable storage media didnt carry its hardware interface with it, so the system wouldnt see new media as a new device entirely, but a change in state of a known device)
 
 notable filesystem objects, global
 ==================================
