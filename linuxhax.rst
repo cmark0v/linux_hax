@@ -33,8 +33,7 @@ Quintessential Unix Shell commands
 - ``cat`` -spit entire file to stout
 - ``curl`` -send http request and spit output to stdout
 - ``nc`` -netcat, same as cat but uses raw tcp socket. can work on udp too
-   - ``nc -l n`` - liston on port n, add -u for udp
-
+   - ``nc -l <n>`` - listen on on tcp port <n> , write received data to stdout, add ``-u`` for udp
 - ``sed`` -more advanced regular expression oriented grep with in-place editing focus
 - ``awk`` -similar to sed, complex grep type thing regexps in-place editing etc
 - ``perl`` -a whole language like python, partially specialized for the tasks sed and awk do, can write one liners in shell. regexps
