@@ -153,7 +153,7 @@ endobj
 <<
 /A <<
 /S /URI /Type /Action /URI (ssh://git@server:/home/git/package)
->> /Border [ 0 0 0 ] /Rect [ 148.2929 692.4872 305.1729 704.4872 ] /Subtype /Link /Type /Annot
+>> /Border [ 0 0 0 ] /Rect [ 148.2929 665.8236 305.1729 677.8236 ] /Subtype /Link /Type /Annot
 >>
 endobj
 20 0 obj
@@ -183,7 +183,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author () /CreationDate (D:20230129095626-09'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230129095626-09'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20230129101026-09'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230129101026-09'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
@@ -284,12 +284,12 @@ endobj
 endobj
 43 0 obj
 <<
-/Dest [ 20 0 R /XYZ 62.69291 644.4872 0 ] /Next 44 0 R /Parent 24 0 R /Prev 42 0 R /Title (git client side)
+/Dest [ 20 0 R /XYZ 62.69291 605.8236 0 ] /Next 44 0 R /Parent 24 0 R /Prev 42 0 R /Title (git client side)
 >>
 endobj
 44 0 obj
 <<
-/Dest [ 20 0 R /XYZ 62.69291 332.0043 0 ] /Parent 24 0 R /Prev 43 0 R /Title (docker)
+/Dest [ 20 0 R /XYZ 62.69291 293.3407 0 ] /Parent 24 0 R /Prev 43 0 R /Title (docker)
 >>
 endobj
 45 0 obj
@@ -6863,7 +6863,7 @@ endstream
 endobj
 56 0 obj
 <<
-/Length 7970
+/Length 7819
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -7206,20 +7206,20 @@ BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .50436 Tw (simple and dirty instructions alwa
 Q
 Q
 q
-1 0 0 1 62.69291 103.7443 cm
+1 0 0 1 62.69291 81.62362 cm
 q
 q
-.405357 0 0 .405357 0 0 cm
+1 0 0 1 0 0 cm
 q
-1 0 0 1 6.6 16.28195 cm
+1 0 0 1 6.6 6.6 cm
 q
 .662745 .662745 .662745 RG
 .5 w
 .960784 .960784 .862745 rg
-n -6 -6 1158 36 re B*
+n -6 -6 468.6898 36 re B*
 Q
 q
-BT 1 0 0 1 0 14 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj  T* (which git-shell #find path to git shell - comes with git, set this as the shell for the git user on the server. this prevents users from logging in with ssh but they can do the git operations) Tj T* ET
+BT 1 0 0 1 0 14 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj  T* (sudo useradd -s /home/git -s `which git-shell` -m git) Tj T* ET
 Q
 Q
 Q
@@ -7230,72 +7230,72 @@ endstream
 endobj
 57 0 obj
 <<
-/Length 5439
+/Length 4383
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 730.4872 cm
+1 0 0 1 62.69291 703.8236 cm
 q
 q
-.405357 0 0 .405357 0 0 cm
+1 0 0 1 0 0 cm
 q
-1 0 0 1 6.6 16.28195 cm
+1 0 0 1 6.6 6.6 cm
 q
 .662745 .662745 .662745 RG
 .5 w
 .960784 .960784 .862745 rg
-n -6 -6 672 84 re B*
+n -6 -6 468.6898 60 re B*
 Q
 q
-BT 1 0 0 1 0 62 Tm 12 TL /F3 10 Tf 0 0 0 rg (adduser # set git-shell full path to the shell as you go through the menu and set no password. SET NO PASSWORD) Tj T* (sudo su -s /bin/bash git# makes u git user and override shell so u can have an interactive session) Tj T* (#make folders as you need them in /home/git. cd into the folder. do:) Tj T* (mkdir package # to make git called package) Tj T* (git init) Tj T* (git config receive.denyCurrentBranch ignore # over rides some annoying check that maks the fist commit a pain) Tj T* ET
+BT 1 0 0 1 0 38 Tm 12 TL /F3 10 Tf 0 0 0 rg (sudo su -s /bin/bash git) Tj T* (mkdir package #to make git called package) Tj T* (git init) Tj T* (git config receive.denyCurrentBranch ignore) Tj T* ET
 Q
 Q
 Q
 Q
 Q
 q
-1 0 0 1 62.69291 710.4872 cm
+1 0 0 1 62.69291 683.8236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (put public keys in /home/git/.ssh/authorized_keys as a line, on the host n) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 692.4872 cm
+1 0 0 1 62.69291 665.8236 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (on cients: git clone ) Tj 0 0 .501961 rg (ssh://git@server:/home/git/package) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 674.4872 cm
+1 0 0 1 62.69291 647.8236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (then make an initial commit to master to make sure it works) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 656.4872 cm
+1 0 0 1 62.69291 617.8236 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pull requests seem like a thing you dont want to do without a web interface like github) Tj T* ET
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL -0.117907 Tw (without a web interface of some sort, pull requests don't really function or exist as a feature for pactical and) Tj T* 0 Tw (technical reasons) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 623.4872 cm
+1 0 0 1 62.69291 584.8236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (git client side) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 605.4872 cm
+1 0 0 1 62.69291 566.8236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (process of creating branch and merge:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 388.0043 cm
+1 0 0 1 62.69291 349.3407 cm
 q
 q
 .96447 0 0 .96447 0 0 cm
@@ -7315,75 +7315,84 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 344.0043 cm
+1 0 0 1 62.69291 305.3407 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL 1.712765 Tw (#there are other commands in betbween sometimes, but it will tell you waht they are git is very user) Tj T* 0 Tw .38332 Tw (friendly for a command line interface but remember to push after you merge, push and pull and clone are) Tj T* 0 Tw (remote commands. rest are local) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 311.0043 cm
+1 0 0 1 62.69291 272.3407 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (docker) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 281.0043 cm
+1 0 0 1 62.69291 242.3407 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .594488 Tw (docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your) Tj T* 0 Tw (baremetal system.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 251.0043 cm
+1 0 0 1 62.69291 212.3407 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL -0.021349 Tw (It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use) Tj T* 0 Tw (of a VM) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 233.0043 cm
+1 0 0 1 62.69291 194.3407 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (docker has a built in management system for images shared by project teams and the community) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 203.0043 cm
+1 0 0 1 62.69291 164.3407 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 2.645984 Tw (stuff in docker runs on your kernel but network and disk is sandboxed and communicates through) Tj T* 0 Tw (whatever avenues you specify\(shared folders and port forwards\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 185.0043 cm
+1 0 0 1 62.69291 146.3407 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (you can run things in docker like any other program) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 167.0043 cm
+1 0 0 1 62.69291 128.3407 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (if you dont use it youre basically failing at life) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 137.0043 cm
+1 0 0 1 62.69291 98.34075 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .383876 Tw (also a good way to give people root-like power on servers, without allowing them to trash the system and) Tj T* 0 Tw (spy on people through unfettered hardware access) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 131.0043 cm
+1 0 0 1 62.69291 92.34075 cm
 Q
 q
-1 0 0 1 62.69291 131.0043 cm
+1 0 0 1 62.69291 92.34075 cm
 Q
+ 
+endstream
+endobj
+58 0 obj
+<<
+/Length 1565
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 83.00434 cm
+1 0 0 1 62.69291 717.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7405,19 +7414,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 77.00434 cm
+1 0 0 1 62.69291 711.0236 cm
 Q
- 
-endstream
-endobj
-58 0 obj
-<<
-/Length 788
->>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 753.0236 cm
+1 0 0 1 62.69291 699.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7439,10 +7439,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 747.0236 cm
+1 0 0 1 62.69291 693.0236 cm
 Q
 q
-1 0 0 1 62.69291 735.0236 cm
+1 0 0 1 62.69291 681.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7464,7 +7464,7 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 735.0236 cm
+1 0 0 1 62.69291 681.0236 cm
 Q
  
 endstream
@@ -7600,26 +7600,26 @@ xref
 0000099102 00000 n 
 0000110610 00000 n 
 0000120926 00000 n 
-0000128948 00000 n 
-0000134439 00000 n 
-0000135278 00000 n 
-0000135436 00000 n 
-0000135470 00000 n 
-0000135504 00000 n 
-0000135538 00000 n 
-0000135572 00000 n 
-0000135606 00000 n 
-0000135640 00000 n 
-0000135674 00000 n 
-0000135708 00000 n 
-0000135742 00000 n 
-0000135777 00000 n 
-0000135812 00000 n 
-0000135847 00000 n 
+0000128797 00000 n 
+0000133232 00000 n 
+0000134849 00000 n 
+0000135007 00000 n 
+0000135041 00000 n 
+0000135075 00000 n 
+0000135109 00000 n 
+0000135143 00000 n 
+0000135177 00000 n 
+0000135211 00000 n 
+0000135245 00000 n 
+0000135279 00000 n 
+0000135313 00000 n 
+0000135348 00000 n 
+0000135383 00000 n 
+0000135418 00000 n 
 trailer
 <<
 /ID 
-[<4627feda82fed9f9b8cb8b3b3e194cda><4627feda82fed9f9b8cb8b3b3e194cda>]
+[<253e82377943efc9cddb342da95ad351><253e82377943efc9cddb342da95ad351>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 23 0 R
@@ -7627,5 +7627,5 @@ trailer
 /Size 73
 >>
 startxref
-135882
+135453
 %%EOF

@@ -365,13 +365,11 @@ always use passwordless SSH or this
 make git user on server. no password on it. NO PASSWORD ON IT. no way to log in with password
 
 >>>
-which git-shell #find path to git shell - comes with git, set this as the shell for the git user on the server. this prevents users from logging in with ssh but they can do the git operations
-adduser # set git-shell full path to the shell as you go through the menu and set no password. SET NO PASSWORD
-sudo su -s /bin/bash git# makes u git user and override shell so u can have an interactive session
-#make folders as you need them in /home/git. cd into the folder. do:
-mkdir package # to make git called package
+sudo useradd -s /home/git -s `which git-shell` -m git
+sudo su -s /bin/bash git
+mkdir package #to make git called package
 git init
-git config receive.denyCurrentBranch ignore # over rides some annoying check that maks the fist commit a pain
+git config receive.denyCurrentBranch ignore 
 
 put public keys in /home/git/.ssh/authorized_keys as a line, on the host n  
 
@@ -379,7 +377,7 @@ on cients:  git clone ssh://git@server:/home/git/package
 
 then make an initial commit to master to make sure it works
 
-pull requests seem like a thing you dont want to do without a web interface like github
+without a web interface of some sort, pull requests don't really function or exist as a feature for pactical and technical reasons
 
 git client side
 ===============
