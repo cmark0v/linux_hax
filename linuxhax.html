@@ -479,7 +479,9 @@ ul.auto-toc {
 <li><tt class="docutils literal">ln</tt> -typically invoked as <tt class="docutils literal">ln <span class="pre">-s</span></tt>, which creates a symbolic link</li>
 <li><tt class="docutils literal">fsck</tt> -checks hard drives</li>
 <li><tt class="docutils literal">fdisk</tt> -partition hard drves</li>
-<li><tt class="docutils literal">mkfs</tt> -makes the default fs, ext4 or whatever your system thinks is the default, for other fs do <tt class="docutils literal"><span class="pre">mkfs.&lt;x&gt;</span></tt> or <tt class="docutils literal">mkfs <span class="pre">-t</span> &lt;x&gt;</tt> - make other kinds of fs <tt class="docutils literal">&lt;x&gt;</tt>, IE format partitions</li>
+<li><tt class="docutils literal">parted</tt> -more up to date and full featured alternative to the archaic fdisk, graphical interface is <tt class="docutils literal">gparted</tt></li>
+<li><tt class="docutils literal">testdisk</tt> -advanced hard drive configuration, partitioning, analysis, forensic and data recovery tool. allows you to change things like logical sector size while fdisk and parted seem impotent to this effect</li>
+<li><tt class="docutils literal">mkfs</tt> -makes the default fs, ext4 or whatever your system thinks is the default, for other fs do <tt class="docutils literal"><span class="pre">mkfs.&lt;x&gt;</span></tt> or <tt class="docutils literal">mkfs <span class="pre">-t</span> &lt;x&gt;</tt> , examples for <tt class="docutils literal">&lt;x&gt;</tt> are <tt class="docutils literal">vfat, ext2, ext3, ext4, exfat, xfs</tt></li>
 <li><tt class="docutils literal">yes</tt> -endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe</li>
 <li><tt class="docutils literal">wipefs</tt> -removed disk label</li>
 <li><tt class="docutils literal">shred</tt> - destroy files by writing random data to the location they were stored on disk(doesnt work on some filesystems) or write random data to a whole disk</li>
@@ -596,6 +598,8 @@ ul.auto-toc {
 <li><tt class="docutils literal">gimp</tt> - powerful image editing, old schoool MIT project, shit interface, opens any format basically</li>
 <li><tt class="docutils literal">ibus</tt> - this is a package for controlling advanced input methods that are a lot more than a change of layout; like Chinese, Korean,</li>
 <li><tt class="docutils literal">xviewer</tt> -seems to be the version of xv/xview available in modern ubuntu? stupid name</li>
+<li><tt class="docutils literal">librewolf</tt> -probably best browser at time of writing this, chromium clone with telemetry removed and good privacy settings as default</li>
+<li><tt class="docutils literal">zathura</tt> - -good pdf viewer, cool kids use it these days, suckless minimalist</li>
 </ul>
 </div>
 <div class="section" id="high-tier-suckless">
@@ -635,6 +639,9 @@ ul.auto-toc {
 <li><tt class="docutils literal">bluetoothctl</tt>- shell style interface to bluetooth hardware. quite good</li>
 <li><tt class="docutils literal">yersinia</tt>- a powerful security analysis too that i am not too familiar with, but worth a mention. some kid in vegas looked at me like i was insane for not using it. appears very powerful.</li>
 <li><tt class="docutils literal">netstat</tt>- usually i invoke as netstat -n, lists the connections in and out of the machine. godo stuff is by the top so try netstat -n|head</li>
+<li><tt class="docutils literal"><span class="pre">fido2-token</span></tt> - manipulate and probe fido2 auth tokens such as yubikey etc</li>
+<li><tt class="docutils literal"><span class="pre">opensc-tool</span></tt> + <tt class="docutils literal"><span class="pre">opensc-explorer</span></tt> -cli util and interactive shell interface for smart card interactions a-la iso7816 and iso14443(contact chip and nfc interfaces respectively)</li>
+<li><tt class="docutils literal">pcsc_scan</tt> - report basic diagnostic info on connected smart cards</li>
 </ul>
 </div>
 <div class="section" id="ssh-stuff">

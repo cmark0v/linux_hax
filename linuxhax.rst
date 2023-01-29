@@ -80,7 +80,9 @@ Quintessential Unix Shell commands
 - ``ln`` -typically invoked as ``ln -s``, which creates a symbolic link
 - ``fsck`` -checks hard drives
 - ``fdisk`` -partition hard drves
-- ``mkfs`` -makes the default fs, ext4 or whatever your system thinks is the default, for other fs do ``mkfs.<x>`` or ``mkfs -t <x>`` - make other kinds of fs ``<x>``, IE format partitions
+- ``parted`` -more up to date and full featured alternative to the archaic fdisk, graphical interface is ``gparted``
+- ``testdisk`` -advanced hard drive configuration, partitioning, analysis, forensic and data recovery tool. allows you to change things like logical sector size while fdisk and parted seem impotent to this effect
+- ``mkfs`` -makes the default fs, ext4 or whatever your system thinks is the default, for other fs do ``mkfs.<x>`` or ``mkfs -t <x>`` , examples for ``<x>`` are ``vfat, ext2, ext3, ext4, exfat, xfs`` 
 - ``yes`` -endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe
 - ``wipefs`` -removed disk label
 - ``shred`` - destroy files by writing random data to the location they were stored on disk(doesnt work on some filesystems) or write random data to a whole disk
@@ -196,7 +198,8 @@ graphical, featureful
 - ``gimp`` - powerful image editing, old schoool MIT project, shit interface, opens any format basically
 - ``ibus`` - this is a package for controlling advanced input methods that are a lot more than a change of layout; like Chinese, Korean,
 - ``xviewer`` -seems to be the version of xv/xview available in modern ubuntu? stupid name
-
+- ``librewolf`` -probably best browser at time of writing this, chromium clone with telemetry removed and good privacy settings as default
+- ``zathura`` - -good pdf viewer, cool kids use it these days, suckless minimalist
 
 high tier suckless
 ==================
@@ -233,6 +236,9 @@ network & hax
 - ``bluetoothctl``- shell style interface to bluetooth hardware. quite good
 - ``yersinia``- a powerful security analysis too that i am not too familiar with, but worth a mention. some kid in vegas looked at me like i was insane for not using it. appears very powerful.
 - ``netstat``- usually i invoke as netstat -n, lists the connections in and out of the machine. godo stuff is by the top so try netstat -n|head
+- ``fido2-token`` - manipulate and probe fido2 auth tokens such as yubikey etc
+- ``opensc-tool`` + ``opensc-explorer`` -cli util and interactive shell interface for smart card interactions a-la iso7816 and iso14443(contact chip and nfc interfaces respectively)
+- ``pcsc_scan`` - report basic diagnostic info on connected smart cards
 
 
 SSH STUFF
