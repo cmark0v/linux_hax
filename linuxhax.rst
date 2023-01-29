@@ -371,9 +371,9 @@ mkdir package #to make git called package
 git init
 git config receive.denyCurrentBranch ignore 
 
-put public keys in /home/git/.ssh/authorized_keys as a line, on the host n  
+put public keys in ``/home/git/.ssh/authorized_keys`` as a line, on the host n  
 
-on cients:  git clone ssh://git@server:/home/git/package
+on cients:  ``git clone ssh://git@server:/home/git/package``
 
 then make an initial commit to master to make sure it works
 
@@ -397,11 +397,10 @@ git checkout master
 git pull #-make sure its up todate
 git merge mybranchname
 #now if theres conflicts, you make sure it works, correct them. 
-#you can checkout a file from master by git checkout file, and add that one, to 
-#blidnly tke the master verion of file
+#you can checkout a file from master by "git checkout <branch> <file>" to overwrite your version with one from another branch 
 git push
+git branch -d mybranchname
 
-#there are other commands in betbween sometimes, but it will tell you waht they are
 git is very user friendly for a command line interface
 but remember to push after you merge, push and pull and clone are remote commands. rest are local
 

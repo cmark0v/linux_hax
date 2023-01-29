@@ -773,8 +773,8 @@ mkdir package #to make git called package
 git init
 git config receive.denyCurrentBranch ignore
 </pre>
-<p>put public keys in /home/git/.ssh/authorized_keys as a line, on the host n</p>
-<p>on cients:  git clone <a class="reference external" href="ssh://git&#64;server:/home/git/package">ssh://git&#64;server:/home/git/package</a></p>
+<p>put public keys in <tt class="docutils literal"><span class="pre">/home/git/.ssh/authorized_keys</span></tt> as a line, on the host n</p>
+<p>on cients:  <tt class="docutils literal">git clone <span class="pre">ssh://git&#64;server:/home/git/package</span></tt></p>
 <p>then make an initial commit to master to make sure it works</p>
 <p>without a web interface of some sort, pull requests don't really function or exist as a feature for pactical and technical reasons</p>
 </div>
@@ -796,12 +796,11 @@ git checkout master
 git pull #-make sure its up todate
 git merge mybranchname
 #now if theres conflicts, you make sure it works, correct them.
-#you can checkout a file from master by git checkout file, and add that one, to
-#blidnly tke the master verion of file
+#you can checkout a file from master by &quot;git checkout &lt;branch&gt; &lt;file&gt;&quot; to overwrite your version with one from another branch
 git push
+git branch -d mybranchname
 </pre>
-<p>#there are other commands in betbween sometimes, but it will tell you waht they are
-git is very user friendly for a command line interface
+<p>git is very user friendly for a command line interface
 but remember to push after you merge, push and pull and clone are remote commands. rest are local</p>
 </div>
 <div class="section" id="docker">
