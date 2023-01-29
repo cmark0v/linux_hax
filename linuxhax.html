@@ -386,16 +386,26 @@ ul.auto-toc {
 <li><tt class="docutils literal">pwd</tt> - gives u the current directory, like which, full path</li>
 <li><tt class="docutils literal">rm</tt> - delete file</li>
 <li><tt class="docutils literal">rm <span class="pre">-rf</span></tt> - remove folder recursively and force, IE, ignore all warnings. yes it will delete the whole drive if run as sudo on /</li>
-<li><tt class="docutils literal">mkdir</tt> -makes an empty directory</li>
-<li><tt class="docutils literal">touch</tt> -makes an empty file</li>
-<li><tt class="docutils literal">rmdir</tt> -remove empty directory only(safety feature)</li>
-<li><tt class="docutils literal">less</tt> -read a file that is longer than the screen. scroll by hitting enter, space, arrows, pgdown, search with <tt class="docutils literal">/</tt> use q to quit</li>
+<li><tt class="docutils literal">mkdir</tt> - makes an empty directory</li>
+<li><tt class="docutils literal">touch</tt> - makes an empty file</li>
+<li><tt class="docutils literal">rmdir</tt> - remove empty directory only(safety feature)</li>
+<li><tt class="docutils literal">less</tt> - read a file that is longer than the screen. scroll by hitting enter, space, arrows, pgdown, search with <tt class="docutils literal">/</tt> use q to quit</li>
 <li><tt class="docutils literal">su</tt> - setuser/superuser its supposed to stand for, su bob will make your user bob, you need his password. su makes u root(if you have a root password</li>
 <li><tt class="docutils literal">sudo</tt> - run a command as root, became the normal way to do things in administration after a while. before it was just get a root shell with su. it will ask for a password and if you are an admin user yours will work. you have to be in the group sudoers.</li>
 <li><tt class="docutils literal">more</tt> - basically the same as less but slightly different in an unmemorable and barely perceivable way</li>
 <li><tt class="docutils literal">top</tt> - like task manager, list everything. full featured interface, can kill things, sort everything, etc</li>
 <li><dl class="first docutils">
-<dt><tt class="docutils literal">ps</tt> -list processes defaults to ones in your shell</dt>
+<dt><tt class="docutils literal">rsync</tt> - sync directories locally or over ssh or other transport</dt>
+<dd><ul class="first last">
+<li><tt class="docutils literal">rsync <span class="pre">-av</span> <span class="pre">--progress</span> &lt;folder1&gt; &lt;folder2&gt;</tt> - copy large folder with progress bar, preserve permissions</li>
+<li><tt class="docutils literal">rsync <span class="pre">-av</span> <span class="pre">--append-verify</span> <span class="pre">-rsh=ssh</span> <span class="pre">user&#64;host:/path/</span> <span class="pre">user&#64;host2:/path/backup</span></tt> - copy, omittings files with matching size that already exist in host2 at said path,</li>
+<li>use <tt class="docutils literal"><span class="pre">-c</span></tt> to use a checksum instead of just file size compare. omit ssh args to use locally</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">ps</tt> - list processes defaults to ones in your shell</dt>
 <dd><ul class="first last">
 <li><tt class="docutils literal">ps aux</tt>- lists processes from all users with more information</li>
 </ul>
@@ -412,28 +422,28 @@ ul.auto-toc {
 </dl>
 </li>
 <li><dl class="first docutils">
-<dt><tt class="docutils literal">kill</tt> -end process with signal 15, smooth exit</dt>
+<dt><tt class="docutils literal">kill</tt> - end process with signal 15, smooth exit</dt>
 <dd><ul class="first last">
 <li><tt class="docutils literal">kill <span class="pre">-s</span> 9</tt> - end it right now, no shutdown sequence</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><tt class="docutils literal">cat</tt> -spit entire file to stout</li>
-<li><tt class="docutils literal">curl</tt> -send http request and spit output to stdout</li>
+<li><tt class="docutils literal">cat</tt> - spit entire file to stout</li>
+<li><tt class="docutils literal">curl</tt> - send http request and spit output to stdout</li>
 <li><dl class="first docutils">
-<dt><tt class="docutils literal">nc</tt> -netcat, same as cat but uses raw tcp socket. can work on udp too</dt>
+<dt><tt class="docutils literal">nc</tt> - netcat, same as cat but uses raw tcp socket. can work on udp too</dt>
 <dd><ul class="first last">
-<li><tt class="docutils literal">nc <span class="pre">-l</span> &lt;n&gt;</tt> -listen on on tcp port &lt;n&gt; , write received data to stdout, add <tt class="docutils literal"><span class="pre">-u</span></tt> for udp</li>
+<li><tt class="docutils literal">nc <span class="pre">-l</span> &lt;n&gt;</tt> - listen on on tcp port &lt;n&gt; , write received data to stdout, add <tt class="docutils literal"><span class="pre">-u</span></tt> for udp</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><tt class="docutils literal">sed</tt> -more advanced regular expression oriented grep with in-place editing focus</li>
-<li><tt class="docutils literal">awk</tt> -similar to sed, complex grep type thing regexps in-place editing etc</li>
-<li><tt class="docutils literal">perl</tt> -a whole language like python, partially specialized for the tasks sed and awk do, can write one liners in shell. regexps</li>
+<li><tt class="docutils literal">sed</tt> - more advanced regular expression oriented grep with in-place editing focus</li>
+<li><tt class="docutils literal">awk</tt> - similar to sed, complex grep type thing regexps in-place editing etc</li>
+<li><tt class="docutils literal">perl</tt> - a whole language like python, partially specialized for the tasks sed and awk do, can write one liners in shell. regexps</li>
 <li><dl class="first docutils">
-<dt><tt class="docutils literal">chmod</tt> -modify permissions, uses a number code of 3 digits or letter</dt>
+<dt><tt class="docutils literal">chmod</tt> - modify permissions, uses a number code of 3 digits or letter</dt>
 <dd><ul class="first last">
 <li><tt class="docutils literal">cmod +x file</tt> - set file to be executable</li>
 <li><tt class="docutils literal">chmod 777</tt> - let all users read write and execute. don't do it</li>
@@ -443,50 +453,50 @@ ul.auto-toc {
 </dd>
 </dl>
 </li>
-<li><tt class="docutils literal">man</tt> -manual page, man &lt;command&gt; shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim.</li>
-<li><tt class="docutils literal">screen</tt> -make a new screen. <tt class="docutils literal"><span class="pre">ctrl-a</span> (release) d</tt> detaches/exits from it, <tt class="docutils literal"><span class="pre">ctl-a</span> c</tt> closes. this is one way you run things in the background</li>
+<li><tt class="docutils literal">man</tt> - manual page, man &lt;command&gt; shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim.</li>
+<li><tt class="docutils literal">screen</tt> - make a new screen. <tt class="docutils literal"><span class="pre">ctrl-a</span> (release) d</tt> detaches/exits from it, <tt class="docutils literal"><span class="pre">ctl-a</span> c</tt> closes. this is one way you run things in the background</li>
 <li><tt class="docutils literal">nohup</tt> - precedes command and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for background process tat will persist on logout</li>
-<li><tt class="docutils literal">md5sum</tt> -jsut called md5 on mac/bsd just does an md5 checksum hash of a file. for comparison of files of any size</li>
-<li><tt class="docutils literal">sha256sum</tt> -same as above woth sha256 algorithm. also exists others.</li>
-<li><tt class="docutils literal">who</tt> -lists out the current logins/screens. shows u who is logged in(which users and where)</li>
-<li><tt class="docutils literal">whoami</tt> -tells u which user u are. used to check if you've successfully hacked things and became root. or in innocent shell scripts</li>
-<li><tt class="docutils literal">lsof</tt> -spit out data about various things going on with processes and devices and filesystem. example lsof -i:8000 gives u info about proc using port 8000</li>
-<li><tt class="docutils literal">lsusb</tt> -list the usb devs. good to check if it can see a device</li>
-<li><tt class="docutils literal">lspci</tt> -same but for pci devices</li>
-<li><tt class="docutils literal">sort</tt> -sorts text file line by line</li>
-<li><tt class="docutils literal">find</tt> -for searching the file system. most stupid way can be done like <tt class="docutils literal">find .|grep filenameiwant</tt>. recursive list of full dir tree is the default behavior</li>
-<li><tt class="docutils literal">uniq</tt> -deletes duplicate lines that appear next to eachother in text.</li>
-<li><tt class="docutils literal">echo</tt> -prints whatever is in its args to stdout</li>
-<li><tt class="docutils literal">which</tt> -gives total path to an executable in the shell path</li>
-<li><tt class="docutils literal">strings</tt> -spits strings out from binary file</li>
-<li><tt class="docutils literal">hexdump</tt> -spits out hex of a file</li>
-<li><tt class="docutils literal">diff</tt> -gives u the difference of 2(text) files line by line. yes this is where the term diff comes from in git repos etc</li>
-<li><tt class="docutils literal">tar</tt> -deals with tar archives. to untar a tar.gz tar xvzf file.tar.gz, for tar.bz2, tar xvjf</li>
-<li><tt class="docutils literal">gzip</tt> -compression. works on one file, takes input from file or stdout(!) good on text, fast</li>
-<li><tt class="docutils literal">bzip2</tt> -slower more intense compression</li>
-<li><tt class="docutils literal">gunzip</tt> -un-gzipps file</li>
-<li><tt class="docutils literal">bunzip2</tt> -unbz2 a file</li>
+<li><tt class="docutils literal">md5sum</tt> - jsut called md5 on mac/bsd just does an md5 checksum hash of a file. for comparison of files of any size</li>
+<li><tt class="docutils literal">sha256sum</tt> - same as above woth sha256 algorithm. also exists others.</li>
+<li><tt class="docutils literal">who</tt> - lists out the current logins/screens. shows u who is logged in(which users and where)</li>
+<li><tt class="docutils literal">whoami</tt> - tells u which user u are. used to check if you've successfully hacked things and became root. or in innocent shell scripts</li>
+<li><tt class="docutils literal">lsof</tt> - spit out data about various things going on with processes and devices and filesystem. example lsof -i:8000 gives u info about proc using port 8000</li>
+<li><tt class="docutils literal">lsusb</tt> - list the usb devs. good to check if it can see a device</li>
+<li><tt class="docutils literal">lspci</tt> - same but for pci devices</li>
+<li><tt class="docutils literal">sort</tt> - sorts text file line by line</li>
+<li><tt class="docutils literal">find</tt> - for searching the file system. most stupid way can be done like <tt class="docutils literal">find .|grep filenameiwant</tt>. recursive list of full dir tree is the default behavior</li>
+<li><tt class="docutils literal">uniq</tt> - deletes duplicate lines that appear next to eachother in text.</li>
+<li><tt class="docutils literal">echo</tt> - prints whatever is in its args to stdout</li>
+<li><tt class="docutils literal">which</tt> - gives total path to an executable in the shell path</li>
+<li><tt class="docutils literal">strings</tt> - spits strings out from binary file</li>
+<li><tt class="docutils literal">hexdump</tt> - spits out hex of a file</li>
+<li><tt class="docutils literal">diff</tt> - gives u the difference of 2(text) files line by line. yes this is where the term diff comes from in git repos etc</li>
+<li><tt class="docutils literal">tar</tt> - deals with tar archives. to untar a tar.gz tar xvzf file.tar.gz, for tar.bz2, tar xvjf</li>
+<li><tt class="docutils literal">gzip</tt> - compression. works on one file, takes input from file or stdout(!) good on text, fast</li>
+<li><tt class="docutils literal">bzip2</tt> - slower more intense compression</li>
+<li><tt class="docutils literal">gunzip</tt> - un-gzipps file</li>
+<li><tt class="docutils literal">bunzip2</tt> - unbz2 a file</li>
 <li><tt class="docutils literal">zcat</tt> - gunzip and contents to stdout</li>
 <li><tt class="docutils literal">zgrep</tt> - greps compressed data, IE same as <tt class="docutils literal">zcat <span class="pre">&lt;file&gt;|grep</span> &lt;word&gt;</tt></li>
-<li><tt class="docutils literal">bzgrep</tt> -grep a bzfile, handy, exists also bzless bzcat bzexe... same as with above</li>
-<li><tt class="docutils literal">lsblk</tt> -list block devices. handy to se drives that are not mounted</li>
+<li><tt class="docutils literal">bzgrep</tt> - grep a bzfile, handy, exists also bzless bzcat bzexe... same as with above</li>
+<li><tt class="docutils literal">lsblk</tt> - list block devices. handy to se drives that are not mounted</li>
 <li><tt class="docutils literal">df <span class="pre">-h</span></tt> - lists mounted drives with size ad free space in human readable format</li>
 <li><tt class="docutils literal">du <span class="pre">-h</span></tt> - check file size. it is recursive by default so it is good to set the max view depth with -d 0. <tt class="docutils literal">du <span class="pre">-h</span> <span class="pre">-d</span> 0</tt> file</li>
-<li><tt class="docutils literal">lsmod</tt> -list kernel modules(generally are drivers), whcih are code that can be hotplugged into the kernel. this is used when trubleshooting hardware and driver issues</li>
-<li><tt class="docutils literal">modprobe</tt> -load up a module, they ahve a path thing built in so you can tab tab to see whats available</li>
-<li><tt class="docutils literal">time</tt> -TIMES A COMMAND in human readable down to ms</li>
-<li><tt class="docutils literal">date</tt> -the timestamp in a human readable format, can spit out other formats check man page</li>
-<li><tt class="docutils literal">ln</tt> -typically invoked as <tt class="docutils literal">ln <span class="pre">-s</span></tt>, which creates a symbolic link</li>
-<li><tt class="docutils literal">fsck</tt> -checks hard drives</li>
-<li><tt class="docutils literal">fdisk</tt> -partition hard drves</li>
-<li><tt class="docutils literal">parted</tt> -more up to date and full featured alternative to the archaic fdisk, graphical interface is <tt class="docutils literal">gparted</tt></li>
-<li><tt class="docutils literal">testdisk</tt> -advanced hard drive configuration, partitioning, analysis, forensic and data recovery tool. allows you to change things like logical sector size while fdisk and parted seem impotent to this effect</li>
-<li><tt class="docutils literal">mkfs</tt> -makes the default fs, ext4 or whatever your system thinks is the default, for other fs do <tt class="docutils literal"><span class="pre">mkfs.&lt;x&gt;</span></tt> or <tt class="docutils literal">mkfs <span class="pre">-t</span> &lt;x&gt;</tt> , examples for <tt class="docutils literal">&lt;x&gt;</tt> are <tt class="docutils literal">vfat, ext2, ext3, ext4, exfat, xfs</tt></li>
-<li><tt class="docutils literal">yes</tt> -endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe</li>
-<li><tt class="docutils literal">wipefs</tt> -removed disk label</li>
+<li><tt class="docutils literal">lsmod</tt> - list kernel modules(generally are drivers), whcih are code that can be hotplugged into the kernel. this is used when trubleshooting hardware and driver issues</li>
+<li><tt class="docutils literal">modprobe</tt> - load up a module, they ahve a path thing built in so you can tab tab to see whats available</li>
+<li><tt class="docutils literal">time</tt> - TIMES A COMMAND in human readable down to ms</li>
+<li><tt class="docutils literal">date</tt> - the timestamp in a human readable format, can spit out other formats check man page</li>
+<li><tt class="docutils literal">ln</tt> - typically invoked as <tt class="docutils literal">ln <span class="pre">-s</span></tt>, which creates a symbolic link</li>
+<li><tt class="docutils literal">fsck</tt> - checks hard drives</li>
+<li><tt class="docutils literal">fdisk</tt> - partition hard drves</li>
+<li><tt class="docutils literal">parted</tt> - more up to date and full featured alternative to the archaic fdisk, graphical interface is <tt class="docutils literal">gparted</tt></li>
+<li><tt class="docutils literal">testdisk</tt> - advanced hard drive configuration, partitioning, analysis, forensic and data recovery tool. allows you to change things like logical sector size while fdisk and parted seem impotent to this effect</li>
+<li><tt class="docutils literal">mkfs</tt> - makes the default fs, ext4 or whatever your system thinks is the default, for other fs do <tt class="docutils literal"><span class="pre">mkfs.&lt;x&gt;</span></tt> or <tt class="docutils literal">mkfs <span class="pre">-t</span> &lt;x&gt;</tt> , examples for <tt class="docutils literal">&lt;x&gt;</tt> are <tt class="docutils literal">vfat, ext2, ext3, ext4, exfat, xfs</tt></li>
+<li><tt class="docutils literal">yes</tt> - endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe</li>
+<li><tt class="docutils literal">wipefs</tt> - removed disk label</li>
 <li><tt class="docutils literal">shred</tt> - destroy files by writing random data to the location they were stored on disk(doesnt work on some filesystems) or write random data to a whole disk</li>
 <li><tt class="docutils literal">cryptsetup</tt> - setup luks volumes. rtfm on it</li>
-<li><tt class="docutils literal">cron</tt> -service for running periodic tasks.</li>
+<li><tt class="docutils literal">cron</tt> - service for running periodic tasks.</li>
 <li><tt class="docutils literal">ranger</tt> - file explorer command line tool. vim bindings, written in python. navigate filesystem in ncurses text interface</li>
 <li><tt class="docutils literal">lfm</tt> - shitty version of ranger seems really old</li>
 <li><tt class="docutils literal">lf</tt> - newer unfinished version of ranger lighter and focused on the use of external tools to open things, not in repos <a class="reference external" href="https://github.com/gokcehan/lf">https://github.com/gokcehan/lf</a></li>
@@ -510,28 +520,28 @@ ul.auto-toc {
 <div class="section" id="editors">
 <h1>editors:</h1>
 <ul class="simple">
-<li><tt class="docutils literal">vi</tt> -the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this</li>
-<li><tt class="docutils literal">vim</tt> -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter <tt class="docutils literal">i</tt> is insert (normal edit mode), <tt class="docutils literal">v</tt> is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual <tt class="docutils literal">d</tt> is delete, hit it twice to delete a line. visual mode <tt class="docutils literal">d</tt> deletes selection. <tt class="docutils literal">u</tt> is undo. the  <tt class="docutils literal">:</tt> char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. <tt class="docutils literal">:w</tt> is write. <tt class="docutils literal">:wq</tt> is write and quit. <tt class="docutils literal">:q</tt> is quit. <tt class="docutils literal">q!</tt> is quit RTFN with no confirmation. <tt class="docutils literal">:r &lt;file&gt;</tt> is read(a file and output it at current cursor position). <tt class="docutils literal">:read !&lt;commands&gt;</tt> does the same for a shell command <tt class="docutils literal">! &lt;cmd&gt;</tt> opens the shell and hides the editor, returning when you exit</li>
+<li><tt class="docutils literal">vi</tt> - the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this</li>
+<li><tt class="docutils literal">vim</tt> - the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter <tt class="docutils literal">i</tt> is insert (normal edit mode), <tt class="docutils literal">v</tt> is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual <tt class="docutils literal">d</tt> is delete, hit it twice to delete a line. visual mode <tt class="docutils literal">d</tt> deletes selection. <tt class="docutils literal">u</tt> is undo. the  <tt class="docutils literal">:</tt> char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. <tt class="docutils literal">:w</tt> is write. <tt class="docutils literal">:wq</tt> is write and quit. <tt class="docutils literal">:q</tt> is quit. <tt class="docutils literal">q!</tt> is quit RTFN with no confirmation. <tt class="docutils literal">:r &lt;file&gt;</tt> is read(a file and output it at current cursor position). <tt class="docutils literal">:read !&lt;commands&gt;</tt> does the same for a shell command <tt class="docutils literal">! &lt;cmd&gt;</tt> opens the shell and hides the editor, returning when you exit</li>
 <li><tt class="docutils literal">elvis</tt> - this is another editor, a better version of vi, lighter than vim(if i remember correctly)</li>
 <li><tt class="docutils literal">neovim</tt> - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently</li>
-<li><tt class="docutils literal">pico</tt> -simple old editor not sure its ever used anymore.</li>
-<li><tt class="docutils literal">nano</tt> -a fork/copy/something of pico, newer, good for noobs, often used and well respected. commands are on the screen when using it and ctrl-X based.</li>
-<li><tt class="docutils literal">emacs</tt> -a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it.</li>
-<li><tt class="docutils literal">ed</tt> -the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use.</li>
+<li><tt class="docutils literal">pico</tt> - simple old editor not sure its ever used anymore.</li>
+<li><tt class="docutils literal">nano</tt> - a fork/copy/something of pico, newer, good for noobs, often used and well respected. commands are on the screen when using it and ctrl-X based.</li>
+<li><tt class="docutils literal">emacs</tt> - a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it.</li>
+<li><tt class="docutils literal">ed</tt> - the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use.</li>
 <li><tt class="docutils literal">gedit</tt> - simple grpahical editor, good, basically notepad with syntax highlighting.</li>
 </ul>
 </div>
 <div class="section" id="system-things-debian-based-mint-ubuntu">
 <h1>system things(debian based mint/ubuntu):</h1>
 <ul class="simple">
-<li><tt class="docutils literal">sudo</tt> -run following command as root (admin)</li>
-<li><tt class="docutils literal">su</tt> -set user, defaults to root. can specify shell with -s</li>
-<li><tt class="docutils literal">service</tt> -control a service. service &lt;name of it&gt; &lt;start, stop, restart, reload&gt;   ex: sudo service postgresql restart</li>
-<li><tt class="docutils literal">hostname</tt> -prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary</li>
+<li><tt class="docutils literal">sudo</tt> - run following command as root (admin)</li>
+<li><tt class="docutils literal">su</tt> - set user, defaults to root. can specify shell with -s</li>
+<li><tt class="docutils literal">service</tt> - control a service. service &lt;name of it&gt; &lt;start, stop, restart, reload&gt;   ex: sudo service postgresql restart</li>
+<li><tt class="docutils literal">hostname</tt> - prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary</li>
 <li><tt class="docutils literal">adduser</tt> -<tt class="docutils literal">adduser &lt;newusername&gt;</tt> maeks a new user. many options. none are really required, even a password.</li>
-<li><tt class="docutils literal">usermod</tt> -mod shell and stuff of a givemn user usermod -aG common for adding group</li>
-<li><tt class="docutils literal">passwd</tt> -password change, <tt class="docutils literal">passwd &lt;user&gt;</tt> does it for user when u are admin</li>
-<li><tt class="docutils literal">dd</tt> -writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem</li>
+<li><tt class="docutils literal">usermod</tt> - mod shell and stuff of a givemn user usermod -aG common for adding group</li>
+<li><tt class="docutils literal">passwd</tt> - password change, <tt class="docutils literal">passwd &lt;user&gt;</tt> does it for user when u are admin</li>
+<li><tt class="docutils literal">dd</tt> - writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem</li>
 <li><tt class="docutils literal">chsh</tt>- change the shell for a user</li>
 <li><tt class="docutils literal">chgroup</tt>- change group of file... group ownership</li>
 <li><tt class="docutils literal">chmod</tt>- change permissions of file chmod 777 file makes everyone read write ex it, chmod 666 is read write for all.... chmod 600 is another common one ls -al will show the perms</li>
@@ -548,9 +558,9 @@ ul.auto-toc {
 <div class="section" id="shells">
 <h1>shells:</h1>
 <ul class="simple">
-<li><tt class="docutils literal">bash</tt> -common, youre prob on it. &quot;bourne again shell&quot; whatever that means</li>
-<li><tt class="docutils literal">csh</tt> -different, advanced too - C shell</li>
-<li><tt class="docutils literal">tcsh</tt> -mac uses it? freebsd? its good too</li>
+<li><tt class="docutils literal">bash</tt> - common, youre prob on it. &quot;bourne again shell&quot; whatever that means</li>
+<li><tt class="docutils literal">csh</tt> - different, advanced too - C shell</li>
+<li><tt class="docutils literal">tcsh</tt> - mac uses it? freebsd? its good too</li>
 <li><tt class="docutils literal">zsh</tt> - another shell that some nerds are all about, like the previous 2</li>
 <li><tt class="docutils literal">sh</tt> - the most simple bare bones one used when there is nothing else in some broke-ass embedded system or something, no tab to complete, no features, you run it because its always there on every system, common hack entrypoint to spawn a shell in a priv upgrade or somesort of remote code exe sploit</li>
 </ul>
@@ -571,7 +581,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">$?</tt> - exit value/signal from prev command (0 if success which you manually throw in scripts with <tt class="docutils literal">exit 0</tt></li>
 <li><tt class="docutils literal">alias</tt> - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def</li>
 <li><tt class="docutils literal">env</tt> shows your env</li>
-<li><tt class="docutils literal">export</tt> -declare env var for remainder of session until u close this shell</li>
+<li><tt class="docutils literal">export</tt> - declare env var for remainder of session until u close this shell</li>
 <li><tt class="docutils literal">jobs</tt> - lists the jobs in shell(if you have paused with ctrl-z) with jobid</li>
 <li><tt class="docutils literal">bg &lt;jobid&gt;</tt> and <tt class="docutils literal">fg &lt;jobid&gt;</tt> - background a paused job or foreground a paused job respectively.</li>
 </ul>
@@ -590,15 +600,15 @@ ul.auto-toc {
 <div class="section" id="graphical-featureful">
 <h1>graphical, featureful</h1>
 <ul class="simple">
-<li><tt class="docutils literal">xterm</tt> -old school bare bones terminal emulator for x11</li>
+<li><tt class="docutils literal">xterm</tt> - old school bare bones terminal emulator for x11</li>
 <li>xorg/x11 - always started by scripts, but it is the name of the service that runs the GUI in linux generally. x1 was the old name xorg is the new one. there are forks...</li>
-<li><tt class="docutils literal">xv</tt> -old and simple image viewer</li>
-<li><tt class="docutils literal">mplayer</tt> -old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot</li>
+<li><tt class="docutils literal">xv</tt> - old and simple image viewer</li>
+<li><tt class="docutils literal">mplayer</tt> - old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot</li>
 <li><tt class="docutils literal">mpv</tt> - like mplayer but better, has no interface other than key bindings and cmdline</li>
 <li><tt class="docutils literal">gimp</tt> - powerful image editing, old schoool MIT project, shit interface, opens any format basically</li>
 <li><tt class="docutils literal">ibus</tt> - this is a package for controlling advanced input methods that are a lot more than a change of layout; like Chinese, Korean,</li>
-<li><tt class="docutils literal">xviewer</tt> -seems to be the version of xv/xview available in modern ubuntu? stupid name</li>
-<li><tt class="docutils literal">librewolf</tt> -probably best browser at time of writing this, chromium clone with telemetry removed and good privacy settings as default</li>
+<li><tt class="docutils literal">xviewer</tt> - seems to be the version of xv/xview available in modern ubuntu? stupid name</li>
+<li><tt class="docutils literal">librewolf</tt> - probably best browser at time of writing this, chromium clone with telemetry removed and good privacy settings as default</li>
 <li><tt class="docutils literal">zathura</tt> - -good pdf viewer, cool kids use it these days, suckless minimalist</li>
 </ul>
 </div>
@@ -613,25 +623,25 @@ ul.auto-toc {
 <div class="section" id="network-hax">
 <h1>network &amp; hax</h1>
 <ul class="simple">
-<li><tt class="docutils literal">nmap</tt> -port scanner highly advanced, many modes and options</li>
-<li><tt class="docutils literal">masscan</tt> -speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information</li>
-<li><tt class="docutils literal">nc</tt> -previously merntioned, netcat, raw conns</li>
-<li><tt class="docutils literal">ettercap</tt> -manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack. it is bad to the bone, it is a cyberweapon</li>
-<li><tt class="docutils literal">wireshark</tt> -watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon</li>
-<li><tt class="docutils literal">ngrep</tt> -network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for</li>
-<li><tt class="docutils literal">tcpdump</tt> -captures and dumps packets, dump files can be reloaded, minor dissection available with some calssification, can load the dumps up with anything</li>
-<li><tt class="docutils literal">ifconfig</tt> -old network interface config command line utility. windows ipconfig is the ripoff version with a weird name</li>
-<li><tt class="docutils literal">ip</tt> -the newer, 'better' network interface and routing table configuration tool</li>
-<li><tt class="docutils literal">route</tt> -orouting table edit and explore</li>
-<li><tt class="docutils literal">httping</tt> -sends a http packet to a server on default prot of 80, gives response time</li>
-<li><tt class="docutils literal">ping</tt> -normal old school icmp ping. not waht it used to be</li>
-<li><tt class="docutils literal">telnet</tt> -old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. helpful for testing connections, manual single prot probing like tenet &lt;host&gt; 80 to connect to port 80 on &lt;host&gt;</li>
-<li><tt class="docutils literal">nslookup</tt> -look up an ip or hostname in DNS</li>
-<li><tt class="docutils literal">john</tt> -old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-disection enthusiast)</li>
-<li><tt class="docutils literal">whois</tt> -information on domain ownership, reverse look up of IP addresses. just an entry from a database about the owner and registrar stuff for IPs and domains.</li>
-<li><tt class="docutils literal">traceroute</tt> -old school packet routing trace, not sure if it really works the same anymore, but shows you the path packets take to a server. seems like maye routers out in the widl drop the packets it uses now often? not sure. dont use it much and its not what it used to be is the word</li>
-<li><tt class="docutils literal">arping</tt> -executes a ping-analogous function using the arp protocol. v nice.</li>
-<li><tt class="docutils literal">tsocks</tt> -wrap any protocol through socks</li>
+<li><tt class="docutils literal">nmap</tt> - port scanner highly advanced, many modes and options</li>
+<li><tt class="docutils literal">masscan</tt> - speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information</li>
+<li><tt class="docutils literal">nc</tt> - previously merntioned, netcat, raw conns</li>
+<li><tt class="docutils literal">ettercap</tt> - manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack. it is bad to the bone, it is a cyberweapon</li>
+<li><tt class="docutils literal">wireshark</tt> - watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon</li>
+<li><tt class="docutils literal">ngrep</tt> - network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for</li>
+<li><tt class="docutils literal">tcpdump</tt> - captures and dumps packets, dump files can be reloaded, minor dissection available with some calssification, can load the dumps up with anything</li>
+<li><tt class="docutils literal">ifconfig</tt> - old network interface config command line utility. windows ipconfig is the ripoff version with a weird name</li>
+<li><tt class="docutils literal">ip</tt> - the newer, 'better' network interface and routing table configuration tool</li>
+<li><tt class="docutils literal">route</tt> - orouting table edit and explore</li>
+<li><tt class="docutils literal">httping</tt> - sends a http packet to a server on default prot of 80, gives response time</li>
+<li><tt class="docutils literal">ping</tt> - normal old school icmp ping. not waht it used to be</li>
+<li><tt class="docutils literal">telnet</tt> - old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. helpful for testing connections, manual single prot probing like tenet &lt;host&gt; 80 to connect to port 80 on &lt;host&gt;</li>
+<li><tt class="docutils literal">nslookup</tt> - look up an ip or hostname in DNS</li>
+<li><tt class="docutils literal">john</tt> - old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-disection enthusiast)</li>
+<li><tt class="docutils literal">whois</tt> - information on domain ownership, reverse look up of IP addresses. just an entry from a database about the owner and registrar stuff for IPs and domains.</li>
+<li><tt class="docutils literal">traceroute</tt> - old school packet routing trace, not sure if it really works the same anymore, but shows you the path packets take to a server. seems like maye routers out in the widl drop the packets it uses now often? not sure. dont use it much and its not what it used to be is the word</li>
+<li><tt class="docutils literal">arping</tt> - executes a ping-analogous function using the arp protocol. v nice.</li>
+<li><tt class="docutils literal">tsocks</tt> - wrap any protocol through socks</li>
 <li><tt class="docutils literal">httping</tt>- ping a http server. IE, give the response time to a http service</li>
 <li><tt class="docutils literal"><span class="pre">aircrack-ng</span></tt> - a suite of utilities for security analysis of wifi networks</li>
 <li><tt class="docutils literal">iwconfig</tt>-ike ifconfig but with specific features for wifi adapters/driver interfaces. it is old school</li>
@@ -640,16 +650,16 @@ ul.auto-toc {
 <li><tt class="docutils literal">yersinia</tt>- a powerful security analysis too that i am not too familiar with, but worth a mention. some kid in vegas looked at me like i was insane for not using it. appears very powerful.</li>
 <li><tt class="docutils literal">netstat</tt>- usually i invoke as netstat -n, lists the connections in and out of the machine. godo stuff is by the top so try netstat -n|head</li>
 <li><tt class="docutils literal"><span class="pre">fido2-token</span></tt> - manipulate and probe fido2 auth tokens such as yubikey etc</li>
-<li><tt class="docutils literal"><span class="pre">opensc-tool</span></tt> + <tt class="docutils literal"><span class="pre">opensc-explorer</span></tt> -cli util and interactive shell interface for smart card interactions a-la iso7816 and iso14443(contact chip and nfc interfaces respectively)</li>
+<li><tt class="docutils literal"><span class="pre">opensc-tool</span></tt> + <tt class="docutils literal"><span class="pre">opensc-explorer</span></tt> - cli util and interactive shell interface for smart card interactions a-la iso7816 and iso14443(contact chip and nfc interfaces respectively)</li>
 <li><tt class="docutils literal">pcsc_scan</tt> - report basic diagnostic info on connected smart cards</li>
 </ul>
 </div>
 <div class="section" id="ssh-stuff">
 <h1>SSH STUFF</h1>
 <ul class="simple">
-<li><tt class="docutils literal">ssh &lt;remotehost&gt;</tt> -secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel</li>
+<li><tt class="docutils literal">ssh &lt;remotehost&gt;</tt> - secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel</li>
 <li><tt class="docutils literal"><span class="pre">ssh-keygen</span> &lt;remotehost&gt;</tt> - generates keypairs for ssh auth</li>
-<li><tt class="docutils literal">scp localfile <span class="pre">&lt;user&gt;&#64;&lt;remotehost&gt;:/path/file</span></tt> -copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp <a class="reference external" href="mailto:user&#64;host">user&#64;host</a>:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.</li>
+<li><tt class="docutils literal">scp localfile <span class="pre">&lt;user&gt;&#64;&lt;remotehost&gt;:/path/file</span></tt> - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp <a class="reference external" href="mailto:user&#64;host">user&#64;host</a>:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.</li>
 <li><tt class="docutils literal">ssh <span class="pre">-X</span> &lt;remotehost&gt;</tt> - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides)</li>
 <li><tt class="docutils literal">ssh <span class="pre">-D</span> 8888 &lt;remotehost&gt;</tt> - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host</li>
 <li><tt class="docutils literal">ssh <span class="pre">-L&lt;lport&gt;:host:&lt;port&gt;</span> &lt;remotehost&gt;</tt> - tunnel localhost lport to remote host's view of host:port</li>

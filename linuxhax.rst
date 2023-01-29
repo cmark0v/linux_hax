@@ -12,82 +12,86 @@ Quintessential Unix Shell commands
 - ``pwd`` - gives u the current directory, like which, full path
 - ``rm`` - delete file
 - ``rm -rf`` - remove folder recursively and force, IE, ignore all warnings. yes it will delete the whole drive if run as sudo on /
-- ``mkdir`` -makes an empty directory
-- ``touch`` -makes an empty file
-- ``rmdir`` -remove empty directory only(safety feature)
-- ``less`` -read a file that is longer than the screen. scroll by hitting enter, space, arrows, pgdown, search with ``/`` use q to quit
+- ``mkdir`` - makes an empty directory
+- ``touch`` - makes an empty file
+- ``rmdir`` - remove empty directory only(safety feature)
+- ``less`` - read a file that is longer than the screen. scroll by hitting enter, space, arrows, pgdown, search with ``/`` use q to quit
 - ``su`` - setuser/superuser its supposed to stand for, su bob will make your user bob, you need his password. su makes u root(if you have a root password
 - ``sudo`` - run a command as root, became the normal way to do things in administration after a while. before it was just get a root shell with su. it will ask for a password and if you are an admin user yours will work. you have to be in the group sudoers. 
 - ``more`` - basically the same as less but slightly different in an unmemorable and barely perceivable way
 - ``top`` - like task manager, list everything. full featured interface, can kill things, sort everything, etc
-- ``ps`` -list processes defaults to ones in your shell
+- ``rsync`` - sync directories locally or over ssh or other transport
+    - ``rsync -av --progress <folder1> <folder2>`` - copy large folder with progress bar, preserve permissions
+    - ``rsync -av --append-verify -rsh=ssh user@host:/path/ user@host2:/path/backup`` - copy, omittings files with matching size that already exist in host2 at said path, 
+    - use ``-c`` to use a checksum instead of just file size compare. omit ssh args to use locally
+- ``ps`` - list processes defaults to ones in your shell
    - ``ps aux``- lists processes from all users with more information
 
 - ``grep`` - search files for string or regular expression, print whole line
    - ``grep -v`` - exclude files 
    - ``grep -A n -B m`` - print lines n after matching line and m before matching line
 
-- ``kill`` -end process with signal 15, smooth exit
+- ``kill`` - end process with signal 15, smooth exit
    - ``kill -s 9`` - end it right now, no shutdown sequence
 
-- ``cat`` -spit entire file to stout
-- ``curl`` -send http request and spit output to stdout
-- ``nc`` -netcat, same as cat but uses raw tcp socket. can work on udp too
-   - ``nc -l <n>`` -listen on on tcp port <n> , write received data to stdout, add ``-u`` for udp
+- ``cat`` - spit entire file to stout
+- ``curl`` - send http request and spit output to stdout
+- ``nc`` - netcat, same as cat but uses raw tcp socket. can work on udp too
+   - ``nc -l <n>`` - listen on on tcp port <n> , write received data to stdout, add ``-u`` for udp
 
-- ``sed`` -more advanced regular expression oriented grep with in-place editing focus
-- ``awk`` -similar to sed, complex grep type thing regexps in-place editing etc
-- ``perl`` -a whole language like python, partially specialized for the tasks sed and awk do, can write one liners in shell. regexps
-- ``chmod`` -modify permissions, uses a number code of 3 digits or letter
+- ``sed`` - more advanced regular expression oriented grep with in-place editing focus
+- ``awk`` - similar to sed, complex grep type thing regexps in-place editing etc
+- ``perl`` - a whole language like python, partially specialized for the tasks sed and awk do, can write one liners in shell. regexps
+- ``chmod`` - modify permissions, uses a number code of 3 digits or letter
    - ``cmod +x file`` - set file to be executable
    - ``chmod 777`` - let all users read write and execute. don't do it
    - ``chmod 666`` - all users read and write, 
    - ``chmod 770`` owner user and group for owner user cab w r e\x
 
-- ``man`` -manual page, man <command> shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim. 
-- ``screen`` -make a new screen. ``ctrl-a (release) d`` detaches/exits from it, ``ctl-a c`` closes. this is one way you run things in the background
+- ``man`` - manual page, man <command> shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim. 
+- ``screen`` - make a new screen. ``ctrl-a (release) d`` detaches/exits from it, ``ctl-a c`` closes. this is one way you run things in the background
 - ``nohup`` - precedes command and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for background process tat will persist on logout
-- ``md5sum`` -jsut called md5 on mac/bsd just does an md5 checksum hash of a file. for comparison of files of any size
-- ``sha256sum`` -same as above woth sha256 algorithm. also exists others. 
-- ``who`` -lists out the current logins/screens. shows u who is logged in(which users and where)
-- ``whoami`` -tells u which user u are. used to check if you've successfully hacked things and became root. or in innocent shell scripts
-- ``lsof`` -spit out data about various things going on with processes and devices and filesystem. example lsof -i:8000 gives u info about proc using port 8000
-- ``lsusb`` -list the usb devs. good to check if it can see a device
-- ``lspci`` -same but for pci devices
-- ``sort`` -sorts text file line by line
-- ``find`` -for searching the file system. most stupid way can be done like ``find .|grep filenameiwant``. recursive list of full dir tree is the default behavior
-- ``uniq`` -deletes duplicate lines that appear next to eachother in text. 
-- ``echo`` -prints whatever is in its args to stdout
-- ``which`` -gives total path to an executable in the shell path
-- ``strings`` -spits strings out from binary file
-- ``hexdump`` -spits out hex of a file
-- ``diff`` -gives u the difference of 2(text) files line by line. yes this is where the term diff comes from in git repos etc
-- ``tar`` -deals with tar archives. to untar a tar.gz tar xvzf file.tar.gz, for tar.bz2, tar xvjf
-- ``gzip`` -compression. works on one file, takes input from file or stdout(!) good on text, fast
-- ``bzip2`` -slower more intense compression
-- ``gunzip`` -un-gzipps file
-- ``bunzip2`` -unbz2 a file
+- ``md5sum`` - jsut called md5 on mac/bsd just does an md5 checksum hash of a file. for comparison of files of any size
+- ``sha256sum`` - same as above woth sha256 algorithm. also exists others. 
+- ``who`` - lists out the current logins/screens. shows u who is logged in(which users and where)
+- ``whoami`` - tells u which user u are. used to check if you've successfully hacked things and became root. or in innocent shell scripts
+- ``lsof`` - spit out data about various things going on with processes and devices and filesystem. example lsof -i:8000 gives u info about proc using port 8000
+- ``lsusb`` - list the usb devs. good to check if it can see a device
+- ``lspci`` - same but for pci devices
+- ``sort`` - sorts text file line by line
+- ``find`` - for searching the file system. most stupid way can be done like ``find .|grep filenameiwant``. recursive list of full dir tree is the default behavior
+- ``uniq`` - deletes duplicate lines that appear next to eachother in text. 
+- ``echo`` - prints whatever is in its args to stdout
+- ``which`` - gives total path to an executable in the shell path
+- ``strings`` - spits strings out from binary file
+- ``hexdump`` - spits out hex of a file
+- ``diff`` - gives u the difference of 2(text) files line by line. yes this is where the term diff comes from in git repos etc
+- ``tar`` - deals with tar archives. to untar a tar.gz tar xvzf file.tar.gz, for tar.bz2, tar xvjf
+- ``gzip`` - compression. works on one file, takes input from file or stdout(!) good on text, fast
+- ``bzip2`` - slower more intense compression
+- ``gunzip`` - un-gzipps file
+- ``bunzip2`` - unbz2 a file
 - ``zcat`` - gunzip and contents to stdout
 - ``zgrep`` - greps compressed data, IE same as ``zcat <file>|grep <word>``
-- ``bzgrep`` -grep a bzfile, handy, exists also bzless bzcat bzexe... same as with above 
-- ``lsblk`` -list block devices. handy to se drives that are not mounted
+- ``bzgrep`` - grep a bzfile, handy, exists also bzless bzcat bzexe... same as with above 
+- ``lsblk`` - list block devices. handy to se drives that are not mounted
 - ``df -h`` - lists mounted drives with size ad free space in human readable format
 - ``du -h`` - check file size. it is recursive by default so it is good to set the max view depth with -d 0. ``du -h -d 0`` file
-- ``lsmod`` -list kernel modules(generally are drivers), whcih are code that can be hotplugged into the kernel. this is used when trubleshooting hardware and driver issues
-- ``modprobe`` -load up a module, they ahve a path thing built in so you can tab tab to see whats available
-- ``time`` -TIMES A COMMAND in human readable down to ms
-- ``date`` -the timestamp in a human readable format, can spit out other formats check man page
-- ``ln`` -typically invoked as ``ln -s``, which creates a symbolic link
-- ``fsck`` -checks hard drives
-- ``fdisk`` -partition hard drves
-- ``parted`` -more up to date and full featured alternative to the archaic fdisk, graphical interface is ``gparted``
-- ``testdisk`` -advanced hard drive configuration, partitioning, analysis, forensic and data recovery tool. allows you to change things like logical sector size while fdisk and parted seem impotent to this effect
-- ``mkfs`` -makes the default fs, ext4 or whatever your system thinks is the default, for other fs do ``mkfs.<x>`` or ``mkfs -t <x>`` , examples for ``<x>`` are ``vfat, ext2, ext3, ext4, exfat, xfs`` 
-- ``yes`` -endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe
-- ``wipefs`` -removed disk label
+- ``lsmod`` - list kernel modules(generally are drivers), whcih are code that can be hotplugged into the kernel. this is used when trubleshooting hardware and driver issues
+- ``modprobe`` - load up a module, they ahve a path thing built in so you can tab tab to see whats available
+- ``time`` - TIMES A COMMAND in human readable down to ms
+- ``date`` - the timestamp in a human readable format, can spit out other formats check man page
+- ``ln`` - typically invoked as ``ln -s``, which creates a symbolic link
+- ``fsck`` - checks hard drives
+- ``fdisk`` - partition hard drves
+- ``parted`` - more up to date and full featured alternative to the archaic fdisk, graphical interface is ``gparted``
+- ``testdisk`` - advanced hard drive configuration, partitioning, analysis, forensic and data recovery tool. allows you to change things like logical sector size while fdisk and parted seem impotent to this effect
+- ``mkfs`` - makes the default fs, ext4 or whatever your system thinks is the default, for other fs do ``mkfs.<x>`` or ``mkfs -t <x>`` , examples for ``<x>`` are ``vfat, ext2, ext3, ext4, exfat, xfs`` 
+- ``yes`` - endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe
+- ``wipefs`` - removed disk label
 - ``shred`` - destroy files by writing random data to the location they were stored on disk(doesnt work on some filesystems) or write random data to a whole disk
 - ``cryptsetup`` - setup luks volumes. rtfm on it
-- ``cron`` -service for running periodic tasks. 
+- ``cron`` - service for running periodic tasks. 
 - ``ranger`` - file explorer command line tool. vim bindings, written in python. navigate filesystem in ncurses text interface
 - ``lfm`` - shitty version of ranger seems really old
 - ``lf`` - newer unfinished version of ranger lighter and focused on the use of external tools to open things, not in repos https://github.com/gokcehan/lf
@@ -109,28 +113,28 @@ this is notation used in this document and others like it, not syntax for the sh
 
 editors:
 ========
-- ``vi`` -the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this 
-- ``vim`` -the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quit RTFN with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides the editor, returning when you exit
+- ``vi`` - the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this 
+- ``vim`` - the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quit RTFN with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides the editor, returning when you exit
  
 - ``elvis`` - this is another editor, a better version of vi, lighter than vim(if i remember correctly)
 - ``neovim`` - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently
-- ``pico`` -simple old editor not sure its ever used anymore. 
-- ``nano`` -a fork/copy/something of pico, newer, good for noobs, often used and well respected. commands are on the screen when using it and ctrl-X based. 
-- ``emacs`` -a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it. 
-- ``ed`` -the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use. 
+- ``pico`` - simple old editor not sure its ever used anymore. 
+- ``nano`` - a fork/copy/something of pico, newer, good for noobs, often used and well respected. commands are on the screen when using it and ctrl-X based. 
+- ``emacs`` - a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it. 
+- ``ed`` - the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use. 
 - ``gedit`` - simple grpahical editor, good, basically notepad with syntax highlighting. 
 
 
 system things(debian based mint/ubuntu):
 ========================================
-- ``sudo`` -run following command as root (admin)
-- ``su`` -set user, defaults to root. can specify shell with -s
-- ``service`` -control a service. service <name of it> <start, stop, restart, reload>   ex: sudo service postgresql restart
-- ``hostname`` -prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary
+- ``sudo`` - run following command as root (admin)
+- ``su`` - set user, defaults to root. can specify shell with -s
+- ``service`` - control a service. service <name of it> <start, stop, restart, reload>   ex: sudo service postgresql restart
+- ``hostname`` - prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary
 - ``adduser`` -``adduser <newusername>`` maeks a new user. many options. none are really required, even a password. 
-- ``usermod`` -mod shell and stuff of a givemn user usermod -aG common for adding group
-- ``passwd`` -password change, ``passwd <user>`` does it for user when u are admin
-- ``dd`` -writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem
+- ``usermod`` - mod shell and stuff of a givemn user usermod -aG common for adding group
+- ``passwd`` - password change, ``passwd <user>`` does it for user when u are admin
+- ``dd`` - writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem
 - ``chsh``- change the shell for a user
 - ``chgroup``- change group of file... group ownership 
 - ``chmod``- change permissions of file chmod 777 file makes everyone read write ex it, chmod 666 is read write for all.... chmod 600 is another common one ls -al will show the perms
@@ -146,9 +150,9 @@ system things(debian based mint/ubuntu):
 
 shells:
 =======
-- ``bash`` -common, youre prob on it. "bourne again shell" whatever that means
-- ``csh`` -different, advanced too - C shell
-- ``tcsh`` -mac uses it? freebsd? its good too
+- ``bash`` - common, youre prob on it. "bourne again shell" whatever that means
+- ``csh`` - different, advanced too - C shell
+- ``tcsh`` - mac uses it? freebsd? its good too
 - ``zsh`` - another shell that some nerds are all about, like the previous 2
 - ``sh`` - the most simple bare bones one used when there is nothing else in some broke-ass embedded system or something, no tab to complete, no features, you run it because its always there on every system, common hack entrypoint to spawn a shell in a priv upgrade or somesort of remote code exe sploit
 
@@ -174,7 +178,7 @@ shell  vars in general have a $ infront of them when yolu access them. but not w
 - ``$?`` - exit value/signal from prev command (0 if success which you manually throw in scripts with ``exit 0``
 - ``alias`` - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def 
 - ``env`` shows your env
-- ``export`` -declare env var for remainder of session until u close this shell 
+- ``export`` - declare env var for remainder of session until u close this shell 
 - ``jobs`` - lists the jobs in shell(if you have paused with ctrl-z) with jobid
 - ``bg <jobid>`` and ``fg <jobid>`` - background a paused job or foreground a paused job respectively. 
 
@@ -190,15 +194,15 @@ strange obscure barely useful:
 
 graphical, featureful
 =====================
-- ``xterm`` -old school bare bones terminal emulator for x11
+- ``xterm`` - old school bare bones terminal emulator for x11
 - xorg/x11 - always started by scripts, but it is the name of the service that runs the GUI in linux generally. x1 was the old name xorg is the new one. there are forks...
-- ``xv`` -old and simple image viewer
-- ``mplayer`` -old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot
+- ``xv`` - old and simple image viewer
+- ``mplayer`` - old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot
 - ``mpv`` - like mplayer but better, has no interface other than key bindings and cmdline
 - ``gimp`` - powerful image editing, old schoool MIT project, shit interface, opens any format basically
 - ``ibus`` - this is a package for controlling advanced input methods that are a lot more than a change of layout; like Chinese, Korean,
-- ``xviewer`` -seems to be the version of xv/xview available in modern ubuntu? stupid name
-- ``librewolf`` -probably best browser at time of writing this, chromium clone with telemetry removed and good privacy settings as default
+- ``xviewer`` - seems to be the version of xv/xview available in modern ubuntu? stupid name
+- ``librewolf`` - probably best browser at time of writing this, chromium clone with telemetry removed and good privacy settings as default
 - ``zathura`` - -good pdf viewer, cool kids use it these days, suckless minimalist
 
 high tier suckless
@@ -210,25 +214,25 @@ high tier suckless
 network & hax
 =============
 
-- ``nmap`` -port scanner highly advanced, many modes and options
-- ``masscan`` -speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information
-- ``nc`` -previously merntioned, netcat, raw conns
-- ``ettercap`` -manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack. it is bad to the bone, it is a cyberweapon
-- ``wireshark`` -watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon
-- ``ngrep`` -network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for
-- ``tcpdump`` -captures and dumps packets, dump files can be reloaded, minor dissection available with some calssification, can load the dumps up with anything
-- ``ifconfig`` -old network interface config command line utility. windows ipconfig is the ripoff version with a weird name
-- ``ip`` -the newer, 'better' network interface and routing table configuration tool
-- ``route`` -orouting table edit and explore
-- ``httping`` -sends a http packet to a server on default prot of 80, gives response time
-- ``ping`` -normal old school icmp ping. not waht it used to be
-- ``telnet`` -old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. helpful for testing connections, manual single prot probing like tenet <host> 80 to connect to port 80 on <host>
-- ``nslookup`` -look up an ip or hostname in DNS
-- ``john`` -old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-disection enthusiast)
-- ``whois`` -information on domain ownership, reverse look up of IP addresses. just an entry from a database about the owner and registrar stuff for IPs and domains. 
-- ``traceroute`` -old school packet routing trace, not sure if it really works the same anymore, but shows you the path packets take to a server. seems like maye routers out in the widl drop the packets it uses now often? not sure. dont use it much and its not what it used to be is the word
-- ``arping`` -executes a ping-analogous function using the arp protocol. v nice. 
-- ``tsocks`` -wrap any protocol through socks
+- ``nmap`` - port scanner highly advanced, many modes and options
+- ``masscan`` - speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information
+- ``nc`` - previously merntioned, netcat, raw conns
+- ``ettercap`` - manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack. it is bad to the bone, it is a cyberweapon
+- ``wireshark`` - watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon
+- ``ngrep`` - network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for
+- ``tcpdump`` - captures and dumps packets, dump files can be reloaded, minor dissection available with some calssification, can load the dumps up with anything
+- ``ifconfig`` - old network interface config command line utility. windows ipconfig is the ripoff version with a weird name
+- ``ip`` - the newer, 'better' network interface and routing table configuration tool
+- ``route`` - orouting table edit and explore
+- ``httping`` - sends a http packet to a server on default prot of 80, gives response time
+- ``ping`` - normal old school icmp ping. not waht it used to be
+- ``telnet`` - old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. helpful for testing connections, manual single prot probing like tenet <host> 80 to connect to port 80 on <host>
+- ``nslookup`` - look up an ip or hostname in DNS
+- ``john`` - old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-disection enthusiast)
+- ``whois`` - information on domain ownership, reverse look up of IP addresses. just an entry from a database about the owner and registrar stuff for IPs and domains. 
+- ``traceroute`` - old school packet routing trace, not sure if it really works the same anymore, but shows you the path packets take to a server. seems like maye routers out in the widl drop the packets it uses now often? not sure. dont use it much and its not what it used to be is the word
+- ``arping`` - executes a ping-analogous function using the arp protocol. v nice. 
+- ``tsocks`` - wrap any protocol through socks
 - ``httping``- ping a http server. IE, give the response time to a http service 
 - ``aircrack-ng`` - a suite of utilities for security analysis of wifi networks
 - ``iwconfig``-ike ifconfig but with specific features for wifi adapters/driver interfaces. it is old school
@@ -237,15 +241,15 @@ network & hax
 - ``yersinia``- a powerful security analysis too that i am not too familiar with, but worth a mention. some kid in vegas looked at me like i was insane for not using it. appears very powerful.
 - ``netstat``- usually i invoke as netstat -n, lists the connections in and out of the machine. godo stuff is by the top so try netstat -n|head
 - ``fido2-token`` - manipulate and probe fido2 auth tokens such as yubikey etc
-- ``opensc-tool`` + ``opensc-explorer`` -cli util and interactive shell interface for smart card interactions a-la iso7816 and iso14443(contact chip and nfc interfaces respectively)
+- ``opensc-tool`` + ``opensc-explorer`` - cli util and interactive shell interface for smart card interactions a-la iso7816 and iso14443(contact chip and nfc interfaces respectively)
 - ``pcsc_scan`` - report basic diagnostic info on connected smart cards
 
 
 SSH STUFF
 =========
-- ``ssh <remotehost>`` -secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel
+- ``ssh <remotehost>`` - secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel
 - ``ssh-keygen <remotehost>`` - generates keypairs for ssh auth
-- ``scp localfile <user>@<remotehost>:/path/file`` -copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp user@host:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.
+- ``scp localfile <user>@<remotehost>:/path/file`` - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp user@host:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.
 - ``ssh -X <remotehost>`` - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides)
 - ``ssh -D 8888 <remotehost>`` - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host
 - ``ssh -L<lport>:host:<port> <remotehost>`` - tunnel localhost lport to remote host's view of host:port
