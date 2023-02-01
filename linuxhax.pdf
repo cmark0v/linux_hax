@@ -176,7 +176,7 @@ endobj
 endobj
 22 0 obj
 <<
-/Author () /CreationDate (D:20230129104014-09'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230129104014-09'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20230202003251-09'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230202003251-09'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
@@ -4448,7 +4448,7 @@ endstream
 endobj
 51 0 obj
 <<
-/Length 10034
+/Length 10022
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -4467,7 +4467,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .674269 Tw 12 TL /F3 10 Tf 0 0 0 rg (librewolf) Tj /F1 10 Tf ( - probably best browser at time of writing this, chromium clone with telemetry removed) Tj T* 0 Tw (and good privacy settings as default) Tj T* ET
+BT 1 0 0 1 0 14 Tm .516651 Tw 12 TL /F3 10 Tf 0 0 0 rg (librewolf) Tj /F1 10 Tf ( - probably best browser at time of writing this, firefox with telemetry removed and other) Tj T* 0 Tw (security enhancements) Tj T* ET
 Q
 Q
 q
@@ -7697,30 +7697,30 @@ xref
 0000054374 00000 n 
 0000065116 00000 n 
 0000076382 00000 n 
-0000086469 00000 n 
-0000097682 00000 n 
-0000110195 00000 n 
-0000120165 00000 n 
-0000129352 00000 n 
-0000134187 00000 n 
-0000136702 00000 n 
-0000136860 00000 n 
-0000136894 00000 n 
-0000136928 00000 n 
-0000136962 00000 n 
-0000136996 00000 n 
-0000137030 00000 n 
-0000137064 00000 n 
-0000137098 00000 n 
-0000137132 00000 n 
-0000137166 00000 n 
-0000137201 00000 n 
-0000137236 00000 n 
-0000137271 00000 n 
+0000086457 00000 n 
+0000097670 00000 n 
+0000110183 00000 n 
+0000120153 00000 n 
+0000129340 00000 n 
+0000134175 00000 n 
+0000136690 00000 n 
+0000136848 00000 n 
+0000136882 00000 n 
+0000136916 00000 n 
+0000136950 00000 n 
+0000136984 00000 n 
+0000137018 00000 n 
+0000137052 00000 n 
+0000137086 00000 n 
+0000137120 00000 n 
+0000137154 00000 n 
+0000137189 00000 n 
+0000137224 00000 n 
+0000137259 00000 n 
 trailer
 <<
 /ID 
-[<ac86955903dc270e39bd52d9428b6ea9><ac86955903dc270e39bd52d9428b6ea9>]
+[<cf8f559ccd804b874b1b65225da6a5e5><cf8f559ccd804b874b1b65225da6a5e5>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 22 0 R
@@ -7728,5 +7728,5 @@ trailer
 /Size 72
 >>
 startxref
-137306
+137294
 %%EOF

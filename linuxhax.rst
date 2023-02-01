@@ -202,7 +202,7 @@ graphical, featureful
 - ``gimp`` - powerful image editing, old schoool MIT project, shit interface, opens any format basically
 - ``ibus`` - this is a package for controlling advanced input methods that are a lot more than a change of layout; like Chinese, Korean,
 - ``xviewer`` - seems to be the version of xv/xview available in modern ubuntu? stupid name
-- ``librewolf`` - probably best browser at time of writing this, chromium clone with telemetry removed and good privacy settings as default
+- ``librewolf`` - probably best browser at time of writing this, firefox with telemetry removed and other security enhancements
 - ``zathura`` - -good pdf viewer, cool kids use it these days, suckless minimalist
 
 high tier suckless
