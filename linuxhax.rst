@@ -19,10 +19,10 @@ Quintessential Unix Shell commands
 - ``su`` - setuser/superuser its supposed to stand for, su bob will make your user bob, you need his password. su makes u root(if you have a root password
 - ``sudo`` - run a command as root, became the normal way to do things in administration after a while. before it was just get a root shell with su. it will ask for a password and if you are an admin user yours will work. you have to be in the group sudoers. 
 - ``more`` - basically the same as less but slightly different in an unmemorable and barely perceivable way
-- ``top`` - like task manager, list everything. full featured interface, can kill things, sort everything, etc
+- ``top`` - like task manager, list everything. full featured interface, can kill things, sort everything, etc ``htop`` is very similar with a more attractive ncurses interface
 - ``rsync`` - sync directories locally or over ssh or other transport
     - ``rsync -av --progress <folder1> <folder2>`` - copy large folder with progress bar, preserve permissions
-    - ``rsync -av --append-verify -rsh=ssh user@host:/path/ user@host2:/path/backup`` - copy, omittings files with matching size that already exist in host2 at said path, 
+    - ``rsync -avP --append-verify -rsh=ssh user@host:/path/ user@host2:/path/backup`` - copy, omittings files with matching size that already exist in host2 at said path, 
     - use ``-c`` to use a checksum instead of just file size compare. omit ssh args to use locally
 - ``ps`` - list processes defaults to ones in your shell
    - ``ps aux``- lists processes from all users with more information
@@ -46,7 +46,8 @@ Quintessential Unix Shell commands
    - ``cmod +x file`` - set file to be executable
    - ``chmod 777`` - let all users read write and execute. don't do it
    - ``chmod 666`` - all users read and write, 
-   - ``chmod 770`` owner user and group for owner user cab w r e\x
+   - ``chmod 600`` - your user can read and write
+   - ``chmod 770`` - owner user and owner group can read write and execute
 
 - ``man`` - manual page, man <command> shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim. 
 - ``screen`` - make a new screen. ``ctrl-a (release) d`` detaches/exits from it, ``ctl-a c`` closes. this is one way you run things in the background
@@ -196,12 +197,12 @@ graphical, featureful
 =====================
 - ``xterm`` - old school bare bones terminal emulator for x11
 - xorg/x11 - always started by scripts, but it is the name of the service that runs the GUI in linux generally. x1 was the old name xorg is the new one. there are forks...
-- ``xv`` - old and simple image viewer
+- ``xv`` - old and simple image viewer. seems to be somehow replaced by ``xviewer`` and some systems may have it as ``xview``
 - ``mplayer`` - old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot
 - ``mpv`` - like mplayer but better, has no interface other than key bindings and cmdline
 - ``gimp`` - powerful image editing, old schoool MIT project, shit interface, opens any format basically
 - ``ibus`` - this is a package for controlling advanced input methods that are a lot more than a change of layout; like Chinese, Korean,
-- ``xviewer`` - seems to be the version of xv/xview available in modern ubuntu? stupid name
+- ``display`` -  another nice CLI for imgmagick. functionally same/similar to xviewer only it will take input from STDIN which is great. 
 - ``librewolf`` - probably best browser at time of writing this, firefox with telemetry removed and other security enhancements
 - ``zathura`` - -good pdf viewer, cool kids use it these days, suckless minimalist
 
@@ -228,11 +229,11 @@ network & hax
 - ``ping`` - normal old school icmp ping. not waht it used to be
 - ``telnet`` - old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. helpful for testing connections, manual single prot probing like tenet <host> 80 to connect to port 80 on <host>
 - ``nslookup`` - look up an ip or hostname in DNS
-- ``john`` - old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-disection enthusiast)
+- ``john`` - old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-vivisection enthusiast)
 - ``whois`` - information on domain ownership, reverse look up of IP addresses. just an entry from a database about the owner and registrar stuff for IPs and domains. 
 - ``traceroute`` - old school packet routing trace, not sure if it really works the same anymore, but shows you the path packets take to a server. seems like maye routers out in the widl drop the packets it uses now often? not sure. dont use it much and its not what it used to be is the word
 - ``arping`` - executes a ping-analogous function using the arp protocol. v nice. 
-- ``tsocks`` - wrap any protocol through socks
+- ``tsocks`` - wrap any protocol through socks generally config in etc
 - ``httping``- ping a http server. IE, give the response time to a http service 
 - ``aircrack-ng`` - a suite of utilities for security analysis of wifi networks
 - ``iwconfig``-ike ifconfig but with specific features for wifi adapters/driver interfaces. it is old school

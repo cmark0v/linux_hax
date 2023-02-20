@@ -393,12 +393,12 @@ ul.auto-toc {
 <li><tt class="docutils literal">su</tt> - setuser/superuser its supposed to stand for, su bob will make your user bob, you need his password. su makes u root(if you have a root password</li>
 <li><tt class="docutils literal">sudo</tt> - run a command as root, became the normal way to do things in administration after a while. before it was just get a root shell with su. it will ask for a password and if you are an admin user yours will work. you have to be in the group sudoers.</li>
 <li><tt class="docutils literal">more</tt> - basically the same as less but slightly different in an unmemorable and barely perceivable way</li>
-<li><tt class="docutils literal">top</tt> - like task manager, list everything. full featured interface, can kill things, sort everything, etc</li>
+<li><tt class="docutils literal">top</tt> - like task manager, list everything. full featured interface, can kill things, sort everything, etc <tt class="docutils literal">htop</tt> is very similar with a more attractive ncurses interface</li>
 <li><dl class="first docutils">
 <dt><tt class="docutils literal">rsync</tt> - sync directories locally or over ssh or other transport</dt>
 <dd><ul class="first last">
 <li><tt class="docutils literal">rsync <span class="pre">-av</span> <span class="pre">--progress</span> &lt;folder1&gt; &lt;folder2&gt;</tt> - copy large folder with progress bar, preserve permissions</li>
-<li><tt class="docutils literal">rsync <span class="pre">-av</span> <span class="pre">--append-verify</span> <span class="pre">-rsh=ssh</span> <span class="pre">user&#64;host:/path/</span> <span class="pre">user&#64;host2:/path/backup</span></tt> - copy, omittings files with matching size that already exist in host2 at said path,</li>
+<li><tt class="docutils literal">rsync <span class="pre">-avP</span> <span class="pre">--append-verify</span> <span class="pre">-rsh=ssh</span> <span class="pre">user&#64;host:/path/</span> <span class="pre">user&#64;host2:/path/backup</span></tt> - copy, omittings files with matching size that already exist in host2 at said path,</li>
 <li>use <tt class="docutils literal"><span class="pre">-c</span></tt> to use a checksum instead of just file size compare. omit ssh args to use locally</li>
 </ul>
 </dd>
@@ -448,7 +448,8 @@ ul.auto-toc {
 <li><tt class="docutils literal">cmod +x file</tt> - set file to be executable</li>
 <li><tt class="docutils literal">chmod 777</tt> - let all users read write and execute. don't do it</li>
 <li><tt class="docutils literal">chmod 666</tt> - all users read and write,</li>
-<li><tt class="docutils literal">chmod 770</tt> owner user and group for owner user cab w r ex</li>
+<li><tt class="docutils literal">chmod 600</tt> - your user can read and write</li>
+<li><tt class="docutils literal">chmod 770</tt> - owner user and owner group can read write and execute</li>
 </ul>
 </dd>
 </dl>
@@ -602,12 +603,12 @@ ul.auto-toc {
 <ul class="simple">
 <li><tt class="docutils literal">xterm</tt> - old school bare bones terminal emulator for x11</li>
 <li>xorg/x11 - always started by scripts, but it is the name of the service that runs the GUI in linux generally. x1 was the old name xorg is the new one. there are forks...</li>
-<li><tt class="docutils literal">xv</tt> - old and simple image viewer</li>
+<li><tt class="docutils literal">xv</tt> - old and simple image viewer. seems to be somehow replaced by <tt class="docutils literal">xviewer</tt> and some systems may have it as <tt class="docutils literal">xview</tt></li>
 <li><tt class="docutils literal">mplayer</tt> - old simple and great media player. no GUI, just do mplayer file.mp4 or whatnot</li>
 <li><tt class="docutils literal">mpv</tt> - like mplayer but better, has no interface other than key bindings and cmdline</li>
 <li><tt class="docutils literal">gimp</tt> - powerful image editing, old schoool MIT project, shit interface, opens any format basically</li>
 <li><tt class="docutils literal">ibus</tt> - this is a package for controlling advanced input methods that are a lot more than a change of layout; like Chinese, Korean,</li>
-<li><tt class="docutils literal">xviewer</tt> - seems to be the version of xv/xview available in modern ubuntu? stupid name</li>
+<li><tt class="docutils literal">display</tt> -  another nice CLI for imgmagick. functionally same/similar to xviewer only it will take input from STDIN which is great.</li>
 <li><tt class="docutils literal">librewolf</tt> - probably best browser at time of writing this, firefox with telemetry removed and other security enhancements</li>
 <li><tt class="docutils literal">zathura</tt> - -good pdf viewer, cool kids use it these days, suckless minimalist</li>
 </ul>
@@ -637,11 +638,11 @@ ul.auto-toc {
 <li><tt class="docutils literal">ping</tt> - normal old school icmp ping. not waht it used to be</li>
 <li><tt class="docutils literal">telnet</tt> - old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. helpful for testing connections, manual single prot probing like tenet &lt;host&gt; 80 to connect to port 80 on &lt;host&gt;</li>
 <li><tt class="docutils literal">nslookup</tt> - look up an ip or hostname in DNS</li>
-<li><tt class="docutils literal">john</tt> - old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-disection enthusiast)</li>
+<li><tt class="docutils literal">john</tt> - old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-vivisection enthusiast)</li>
 <li><tt class="docutils literal">whois</tt> - information on domain ownership, reverse look up of IP addresses. just an entry from a database about the owner and registrar stuff for IPs and domains.</li>
 <li><tt class="docutils literal">traceroute</tt> - old school packet routing trace, not sure if it really works the same anymore, but shows you the path packets take to a server. seems like maye routers out in the widl drop the packets it uses now often? not sure. dont use it much and its not what it used to be is the word</li>
 <li><tt class="docutils literal">arping</tt> - executes a ping-analogous function using the arp protocol. v nice.</li>
-<li><tt class="docutils literal">tsocks</tt> - wrap any protocol through socks</li>
+<li><tt class="docutils literal">tsocks</tt> - wrap any protocol through socks generally config in etc</li>
 <li><tt class="docutils literal">httping</tt>- ping a http server. IE, give the response time to a http service</li>
 <li><tt class="docutils literal"><span class="pre">aircrack-ng</span></tt> - a suite of utilities for security analysis of wifi networks</li>
 <li><tt class="docutils literal">iwconfig</tt>-ike ifconfig but with specific features for wifi adapters/driver interfaces. it is old school</li>
