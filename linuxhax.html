@@ -530,6 +530,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">emacs</tt> - a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it.</li>
 <li><tt class="docutils literal">ed</tt> - the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use.</li>
 <li><tt class="docutils literal">gedit</tt> - simple grpahical editor, good, basically notepad with syntax highlighting.</li>
+<li><tt class="docutils literal">xpra</tt> - like screen but for graphical apps. useful for video editing on a server with a big GPU remotely. normal x forwarding over ssh just forwards the commands and renders on the client, but this can render on the server and compress it, send it to you as a video stream.</li>
 </ul>
 </div>
 <div class="section" id="system-things-debian-based-mint-ubuntu">
@@ -655,16 +656,24 @@ ul.auto-toc {
 <li><tt class="docutils literal">pcsc_scan</tt> - report basic diagnostic info on connected smart cards</li>
 </ul>
 </div>
+<div class="section" id="services">
+<h1>services</h1>
+<p>these are the names used if you were to <tt class="docutils literal">service &lt;name&gt; &lt;start|stop|status&gt;</tt> services are started stopped etc by scripts which are used by systemd and this command or in general your setup might use a different service manager, which will be similar. This is because some services need a sequence of commands and checks etc before starting or stopping safely.</p>
+<ul class="simple">
+<li><tt class="docutils literal">fail2ban</tt> - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.</li>
+<li><tt class="docutils literal">nginx</tt> - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.</li>
+</ul>
+</div>
 <div class="section" id="ssh-stuff">
 <h1>SSH STUFF</h1>
 <ul class="simple">
 <li><tt class="docutils literal">ssh &lt;remotehost&gt;</tt> - secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel</li>
 <li><tt class="docutils literal"><span class="pre">ssh-keygen</span> &lt;remotehost&gt;</tt> - generates keypairs for ssh auth</li>
 <li><tt class="docutils literal">scp localfile <span class="pre">&lt;user&gt;&#64;&lt;remotehost&gt;:/path/file</span></tt> - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp <a class="reference external" href="mailto:user&#64;host">user&#64;host</a>:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.</li>
-<li><tt class="docutils literal">ssh <span class="pre">-X</span> &lt;remotehost&gt;</tt> - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides)</li>
+<li><tt class="docutils literal">ssh <span class="pre">-X</span> &lt;remotehost&gt;</tt> - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides) <tt class="docutils literal">ssh <span class="pre">-Y</span></tt> is equivalent but was meant to be a more lightweight connection</li>
 <li><tt class="docutils literal">ssh <span class="pre">-D</span> 8888 &lt;remotehost&gt;</tt> - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host</li>
-<li><tt class="docutils literal">ssh <span class="pre">-L&lt;lport&gt;:host:&lt;port&gt;</span> &lt;remotehost&gt;</tt> - tunnel localhost lport to remote host's view of host:port</li>
-<li><tt class="docutils literal">ssh <span class="pre">-R&lt;lport&gt;:host:&lt;port&gt;</span> &lt;remotehost&gt;</tt> - reverse tunnel, goes from remote host to  view of host:&lt;port&gt;</li>
+<li><tt class="docutils literal">ssh <span class="pre">-L&lt;bindaddress&gt;:&lt;listen_port&gt;host:&lt;port&gt;</span> user&#64;remotehost</tt> - tunnel localhost lport to remote host's view of host:port</li>
+<li><tt class="docutils literal">ssh <span class="pre">-R&lt;bindaddress&gt;:&lt;lport&gt;:host:&lt;port&gt;</span> user&#64;remotehost</tt> - reverse tunnel, goes from remote host to  view of host:&lt;port&gt;</li>
 <li><tt class="docutils literal">sftp</tt> - ftp style shell client for scp-like and other extended functionality</li>
 <li><tt class="docutils literal">sshfs</tt> - smount - use the above sftp facilities to emualted a mounted filesystem</li>
 </ul>

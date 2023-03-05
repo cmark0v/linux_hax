@@ -124,6 +124,7 @@ editors:
 - ``emacs`` - a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it. 
 - ``ed`` - the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use. 
 - ``gedit`` - simple grpahical editor, good, basically notepad with syntax highlighting. 
+- ``xpra`` - like screen but for graphical apps. useful for video editing on a server with a big GPU remotely. normal x forwarding over ssh just forwards the commands and renders on the client, but this can render on the server and compress it, send it to you as a video stream. 
 
 
 system things(debian based mint/ubuntu):
@@ -246,15 +247,22 @@ network & hax
 - ``pcsc_scan`` - report basic diagnostic info on connected smart cards
 
 
+services
+========
+these are the names used if you were to ``service <name> <start|stop|status>`` services are started stopped etc by scripts which are used by systemd and this command or in general your setup might use a different service manager, which will be similar. This is because some services need a sequence of commands and checks etc before starting or stopping safely. 
+
+- ``fail2ban`` - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.  
+- ``nginx`` - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.  
+
 SSH STUFF
 =========
 - ``ssh <remotehost>`` - secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel
 - ``ssh-keygen <remotehost>`` - generates keypairs for ssh auth
 - ``scp localfile <user>@<remotehost>:/path/file`` - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp user@host:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.
-- ``ssh -X <remotehost>`` - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides)
+- ``ssh -X <remotehost>`` - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides) ``ssh -Y`` is equivalent but was meant to be a more lightweight connection
 - ``ssh -D 8888 <remotehost>`` - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host
-- ``ssh -L<lport>:host:<port> <remotehost>`` - tunnel localhost lport to remote host's view of host:port
-- ``ssh -R<lport>:host:<port> <remotehost>`` - reverse tunnel, goes from remote host to  view of host:<port>
+- ``ssh -L<bindaddress>:<listen_port>host:<port> user@remotehost`` - tunnel localhost lport to remote host's view of host:port
+- ``ssh -R<bindaddress>:<lport>:host:<port> user@remotehost`` - reverse tunnel, goes from remote host to  view of host:<port>
 - ``sftp`` - ftp style shell client for scp-like and other extended functionality
 - ``sshfs`` - smount - use the above sftp facilities to emualted a mounted filesystem
 
