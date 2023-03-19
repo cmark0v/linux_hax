@@ -487,7 +487,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">modprobe</tt> - load up a module, they ahve a path thing built in so you can tab tab to see whats available</li>
 <li><tt class="docutils literal">time</tt> - TIMES A COMMAND in human readable down to ms</li>
 <li><tt class="docutils literal">date</tt> - the timestamp in a human readable format, can spit out other formats check man page</li>
-<li><tt class="docutils literal">ln</tt> - typically invoked as <tt class="docutils literal">ln <span class="pre">-s</span></tt>, which creates a symbolic link</li>
+<li><tt class="docutils literal">ln</tt> - typically invoked as <tt class="docutils literal">ln <span class="pre">-s</span> &lt;target&gt; &lt;link_name&gt;</tt>, which creates a symbolic link</li>
 <li><tt class="docutils literal">fsck</tt> - checks hard drives</li>
 <li><tt class="docutils literal">fdisk</tt> - partition hard drves</li>
 <li><tt class="docutils literal">parted</tt> - more up to date and full featured alternative to the archaic fdisk, graphical interface is <tt class="docutils literal">gparted</tt></li>
@@ -503,19 +503,20 @@ ul.auto-toc {
 <li><tt class="docutils literal">lf</tt> - newer unfinished version of ranger lighter and focused on the use of external tools to open things, not in repos <a class="reference external" href="https://github.com/gokcehan/lf">https://github.com/gokcehan/lf</a></li>
 <li><tt class="docutils literal">head</tt>- get top 10 lines of the file, use -n to specify numlines</li>
 <li><tt class="docutils literal">tail</tt>- some as above, last 10 lines as default</li>
-<li><tt class="docutils literal">cut</tt>- more general than the 2 above, check the manpage, cuts chars bytes lines....</li>
+<li><tt class="docutils literal">cut</tt>- more general than the 2 above, check the manpage, cuts on chars, bytes, lines, delimiter separated fields....</li>
+<li><tt class="docutils literal">fold</tt>- chop up input from stdin and wrap it with newlines to enforce a certain width on text.</li>
 </ul>
 </div>
-<div class="section" id="notation">
-<h1>Notation</h1>
-<p>this is notation used in this document and others like it, not syntax for the shell or anything else, and some general notes on style, common themes in this environment</p>
+<div class="section" id="convention">
+<h1>Convention</h1>
+<p>this is notation and syntactic commonalities reflected in this document and others like it, not strict syntax but some generally unspoken entrenched cultural features that might confuse unix noobs</p>
 <ul class="simple">
-<li><tt class="docutils literal">&lt;x&gt;</tt> - a variable/string(that you need to fill in based off of your situation) named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example <tt class="docutils literal">ls &lt;folder&gt;</tt> is saying that putting a path to a folder in that place makes sense.</li>
-<li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--help</span></tt> - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available</li>
-<li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--&lt;arg-name&gt;</span> <span class="pre">-a</span></tt> - it is very common for single character args to use a single <tt class="docutils literal">-</tt> and multi-char to use two like <tt class="docutils literal"><span class="pre">--arg</span></tt>, and use another <tt class="docutils literal">-</tt> to separate words. these are community habbits for many decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace</li>
+<li><tt class="docutils literal">&lt;x&gt;</tt> - a variable/string(that you need to fill in based off of your situation) named x, this is common parlance in documents like this,  think it comes from some shell scripting syntax, for example <tt class="docutils literal">ls &lt;folder&gt;</tt> is saying that putting a path to a folder</li>
+<li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--help</span></tt> - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available.</li>
+<li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--&lt;arg-name&gt;</span> <span class="pre">-a</span></tt> - it is very common for single character args to use a single <tt class="docutils literal">-</tt> and multi-char to use two like <tt class="docutils literal"><span class="pre">--arg</span></tt>, and use another <tt class="docutils literal">-</tt> to separate words. these are community habbits for many decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace. sometimes args must come before inputs, sometimes they can go anywhere, sometimes the <tt class="docutils literal">-</tt> is optional. there is more variation in older software.</li>
 <li>RTFM - means read the fucking manual IE check <tt class="docutils literal">man</tt>, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages... (you know who you are)</li>
 <li><tt class="docutils literal"><span class="pre">ctrl-x</span></tt> - hold control and x both for a moment, <tt class="docutils literal"><span class="pre">x-y</span> z</tt> hold x and y for a moment, release both, hit z</li>
-<li><tt class="docutils literal">[BUTTON]</tt>  - hit a button labeled BUTTON on your keyboard</li>
+<li><tt class="docutils literal">[BUTTON]</tt>  - hit a button labeled BUTTON on your keyboard, square parenthesis like this are also often used for optional arguments to show their position in the man pages and such</li>
 </ul>
 </div>
 <div class="section" id="editors">
@@ -540,7 +541,8 @@ ul.auto-toc {
 <li><tt class="docutils literal">su</tt> - set user, defaults to root. can specify shell with -s</li>
 <li><tt class="docutils literal">service</tt> - control a service. service &lt;name of it&gt; &lt;start, stop, restart, reload&gt;   ex: sudo service postgresql restart</li>
 <li><tt class="docutils literal">hostname</tt> - prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary</li>
-<li><tt class="docutils literal">adduser</tt> -<tt class="docutils literal">adduser &lt;newusername&gt;</tt> maeks a new user. many options. none are really required, even a password.</li>
+<li><tt class="docutils literal">adduser</tt> -<tt class="docutils literal">adduser &lt;newusername&gt;</tt> makes a new user. many options. none are really required, even a password. interactive walk through</li>
+<li><tt class="docutils literal">useradd</tt> - more l33t version of <tt class="docutils literal">adduser</tt>. more useful noninteractively and non-user-friendly</li>
 <li><tt class="docutils literal">usermod</tt> - mod shell and stuff of a givemn user usermod -aG common for adding group</li>
 <li><tt class="docutils literal">passwd</tt> - password change, <tt class="docutils literal">passwd &lt;user&gt;</tt> does it for user when u are admin</li>
 <li><tt class="docutils literal">dd</tt> - writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem</li>
@@ -617,7 +619,7 @@ ul.auto-toc {
 <div class="section" id="high-tier-suckless">
 <h1>high tier suckless</h1>
 <ul class="simple">
-<li><tt class="docutils literal">tmux</tt> - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager=</li>
+<li><tt class="docutils literal">tmux</tt> - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager</li>
 <li><tt class="docutils literal">pass</tt> - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well. extensible with plugins. basic commands are <tt class="docutils literal">pass insert</tt>, <tt class="docutils literal">pass show &lt;name&gt;</tt>, <tt class="docutils literal">pass edit &lt;name&gt;</tt>. initialize with <tt class="docutils literal">pass init</tt> after making a keyriung with gnupg</li>
 <li><tt class="docutils literal">gnupg</tt> - gpg a goofy gnu implementation of pgp or something aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  <tt class="docutils literal">man gpg</tt></li>
 </ul>
@@ -627,7 +629,7 @@ ul.auto-toc {
 <ul class="simple">
 <li><tt class="docutils literal">nmap</tt> - port scanner highly advanced, many modes and options</li>
 <li><tt class="docutils literal">masscan</tt> - speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information</li>
-<li><tt class="docutils literal">nc</tt> - previously merntioned, netcat, raw conns</li>
+<li><tt class="docutils literal">nc</tt> - previously merntioned, netcat, raw conns <tt class="docutils literal">nc &lt;host&gt; &lt;port&gt;</tt> does tcp conn. <tt class="docutils literal"><span class="pre">-u</span></tt> arg does udp and <tt class="docutils literal"><span class="pre">-l</span></tt> is listen</li>
 <li><tt class="docutils literal">ettercap</tt> - manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack. it is bad to the bone, it is a cyberweapon</li>
 <li><tt class="docutils literal">wireshark</tt> - watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon</li>
 <li><tt class="docutils literal">ngrep</tt> - network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for</li>
@@ -662,6 +664,7 @@ ul.auto-toc {
 <ul class="simple">
 <li><tt class="docutils literal">fail2ban</tt> - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.</li>
 <li><tt class="docutils literal">nginx</tt> - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.</li>
+<li><tt class="docutils literal">snort</tt> - network util for traffic capture and parsing, logging. can be run in the background</li>
 </ul>
 </div>
 <div class="section" id="ssh-stuff">
@@ -676,6 +679,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">ssh <span class="pre">-R&lt;bindaddress&gt;:&lt;lport&gt;:host:&lt;port&gt;</span> user&#64;remotehost</tt> - reverse tunnel, goes from remote host to  view of host:&lt;port&gt;</li>
 <li><tt class="docutils literal">sftp</tt> - ftp style shell client for scp-like and other extended functionality</li>
 <li><tt class="docutils literal">sshfs</tt> - smount - use the above sftp facilities to emualted a mounted filesystem</li>
+<li><tt class="docutils literal"><span class="pre">ssh-copy-id,</span> <span class="pre">ssh-keyscan,</span> <span class="pre">ssh-agent</span></tt> - other useful key management tools</li>
 </ul>
 </div>
 <div class="section" id="operators-in-shell-bash">
@@ -787,10 +791,11 @@ always use passwordless SSH or this
 make git user on server. no password on it. NO PASSWORD ON IT. no way to log in with password</p>
 <pre class="doctest-block">
 &gt;&gt;&gt;
-sudo useradd -s /home/git -s `which git-shell` -m git
+sudo useradd  -s `which git-shell`
 sudo su -s /bin/bash git
-mkdir package #to make git called package
-git init
+mkdir &lt;package-name&gt;
+cd &lt;package-name&gt;
+git init .
 git config receive.denyCurrentBranch ignore
 </pre>
 <p>put public keys in <tt class="docutils literal"><span class="pre">/home/git/.ssh/authorized_keys</span></tt> as a line, on the host n</p>

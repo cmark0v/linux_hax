@@ -24,6 +24,7 @@ Quintessential Unix Shell commands
     - ``rsync -av --progress <folder1> <folder2>`` - copy large folder with progress bar, preserve permissions
     - ``rsync -avP --append-verify -rsh=ssh user@host:/path/ user@host2:/path/backup`` - copy, omittings files with matching size that already exist in host2 at said path, 
     - use ``-c`` to use a checksum instead of just file size compare. omit ssh args to use locally
+
 - ``ps`` - list processes defaults to ones in your shell
    - ``ps aux``- lists processes from all users with more information
 
