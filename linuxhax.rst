@@ -82,7 +82,7 @@ Quintessential Unix Shell commands
 - ``modprobe`` - load up a module, they ahve a path thing built in so you can tab tab to see whats available
 - ``time`` - TIMES A COMMAND in human readable down to ms
 - ``date`` - the timestamp in a human readable format, can spit out other formats check man page
-- ``ln`` - typically invoked as ``ln -s``, which creates a symbolic link
+- ``ln`` - typically invoked as ``ln -s <target> <link_name>``, which creates a symbolic link
 - ``fsck`` - checks hard drives
 - ``fdisk`` - partition hard drves
 - ``parted`` - more up to date and full featured alternative to the archaic fdisk, graphical interface is ``gparted``
@@ -98,19 +98,19 @@ Quintessential Unix Shell commands
 - ``lf`` - newer unfinished version of ranger lighter and focused on the use of external tools to open things, not in repos https://github.com/gokcehan/lf
 - ``head``- get top 10 lines of the file, use -n to specify numlines
 - ``tail``- some as above, last 10 lines as default
-- ``cut``- more general than the 2 above, check the manpage, cuts chars bytes lines....
+- ``cut``- more general than the 2 above, check the manpage, cuts on chars, bytes, lines, delimiter separated fields....
+- ``fold``- chop up input from stdin and wrap it with newlines to enforce a certain width on text. 
 
-Notation 
-========
+Convention
+==========
+this is notation and syntactic commonalities reflected in this document and others like it, not strict syntax but some generally unspoken entrenched cultural features that might confuse unix noobs
 
-this is notation used in this document and others like it, not syntax for the shell or anything else, and some general notes on style, common themes in this environment
-
-- ``<x>`` - a variable/string(that you need to fill in based off of your situation) named x, this is common parlance in documents like this, not sure why, its old school and not syntax in any shell or scripting language i know, for example ``ls <folder>`` is saying that putting a path to a folder in that place makes sense.
-- ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available
-- ``<cmd> --<arg-name> -a`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words. these are community habbits for many decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace
+- ``<x>`` - a variable/string(that you need to fill in based off of your situation) named x, this is common parlance in documents like this,  think it comes from some shell scripting syntax, for example ``ls <folder>`` is saying that putting a path to a folder
+- ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available.
+- ``<cmd> --<arg-name> -a`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words. these are community habbits for many decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace. sometimes args must come before inputs, sometimes they can go anywhere, sometimes the ``-`` is optional. there is more variation in older software. 
 - RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages... (you know who you are)
 - ``ctrl-x`` - hold control and x both for a moment, ``x-y z`` hold x and y for a moment, release both, hit z
-- ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard
+- ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard, square parenthesis like this are also often used for optional arguments to show their position in the man pages and such
 
 editors:
 ========
@@ -133,7 +133,8 @@ system things(debian based mint/ubuntu):
 - ``su`` - set user, defaults to root. can specify shell with -s
 - ``service`` - control a service. service <name of it> <start, stop, restart, reload>   ex: sudo service postgresql restart
 - ``hostname`` - prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary
-- ``adduser`` -``adduser <newusername>`` maeks a new user. many options. none are really required, even a password. 
+- ``adduser`` -``adduser <newusername>`` makes a new user. many options. none are really required, even a password. interactive walk through
+- ``useradd`` - more l33t version of ``adduser``. more useful noninteractively and non-user-friendly 
 - ``usermod`` - mod shell and stuff of a givemn user usermod -aG common for adding group
 - ``passwd`` - password change, ``passwd <user>`` does it for user when u are admin
 - ``dd`` - writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem
@@ -209,7 +210,7 @@ graphical, featureful
 
 high tier suckless
 ==================
-- ``tmux`` - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager=
+- ``tmux`` - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager
 - ``pass`` - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well. extensible with plugins. basic commands are ``pass insert``, ``pass show <name>``, ``pass edit <name>``. initialize with ``pass init`` after making a keyriung with gnupg
 - ``gnupg`` - gpg a goofy gnu implementation of pgp or something aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  ``man gpg``
 
@@ -218,7 +219,7 @@ network & hax
 
 - ``nmap`` - port scanner highly advanced, many modes and options
 - ``masscan`` - speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information
-- ``nc`` - previously merntioned, netcat, raw conns
+- ``nc`` - previously merntioned, netcat, raw conns ``nc <host> <port>`` does tcp conn. ``-u`` arg does udp and ``-l`` is listen
 - ``ettercap`` - manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack. it is bad to the bone, it is a cyberweapon
 - ``wireshark`` - watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon
 - ``ngrep`` - network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for
@@ -253,6 +254,8 @@ these are the names used if you were to ``service <name> <start|stop|status>`` s
 
 - ``fail2ban`` - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.  
 - ``nginx`` - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.  
+- ``snort`` - network util for traffic capture and parsing, logging. can be run in the background 
+  
 
 SSH STUFF
 =========
@@ -265,6 +268,7 @@ SSH STUFF
 - ``ssh -R<bindaddress>:<lport>:host:<port> user@remotehost`` - reverse tunnel, goes from remote host to  view of host:<port>
 - ``sftp`` - ftp style shell client for scp-like and other extended functionality
 - ``sshfs`` - smount - use the above sftp facilities to emualted a mounted filesystem
+- ``ssh-copy-id, ssh-keyscan, ssh-agent`` - other useful key management tools
 
 operators in shell(bash)
 ========================
@@ -378,10 +382,11 @@ always use passwordless SSH or this
 make git user on server. no password on it. NO PASSWORD ON IT. no way to log in with password
 
 >>>
-sudo useradd -s /home/git -s `which git-shell` -m git
+sudo useradd  -s `which git-shell` 
 sudo su -s /bin/bash git
-mkdir package #to make git called package
-git init
+mkdir <package-name>
+cd <package-name>
+git init .
 git config receive.denyCurrentBranch ignore 
 
 put public keys in ``/home/git/.ssh/authorized_keys`` as a line, on the host n  
