@@ -504,6 +504,8 @@ ul.auto-toc {
 <li><tt class="docutils literal">head</tt>- get top 10 lines of the file, use -n to specify numlines</li>
 <li><tt class="docutils literal">tail</tt>- some as above, last 10 lines as default</li>
 <li><tt class="docutils literal">cut</tt>- more general than the 2 above, check the manpage, cuts chars bytes lines....</li>
+<li><tt class="docutils literal">last</tt> - show log of your users logins</li>
+<li><tt class="docutils literal">lslogins</tt> - list login statistics for all accounts</li>
 </ul>
 </div>
 <div class="section" id="notation">
@@ -662,6 +664,7 @@ ul.auto-toc {
 <ul class="simple">
 <li><tt class="docutils literal">fail2ban</tt> - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.</li>
 <li><tt class="docutils literal">nginx</tt> - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.</li>
+<li><tt class="docutils literal">snort</tt> - this is a packet sniffing daemon that generates logs based off of your raw network traffic on specified interface(s). When I first came upon it it seemed marketed as a packet sniffer where these days it seems to be branded as an intrusion detection system. It is a great utility. like a cross between fail2ban and ngrep.</li>
 </ul>
 </div>
 <div class="section" id="ssh-stuff">

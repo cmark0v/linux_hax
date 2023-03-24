@@ -99,6 +99,8 @@ Quintessential Unix Shell commands
 - ``head``- get top 10 lines of the file, use -n to specify numlines
 - ``tail``- some as above, last 10 lines as default
 - ``cut``- more general than the 2 above, check the manpage, cuts chars bytes lines....
+- ``last`` - show log of your users logins
+- ``lslogins`` - list login statistics for all accounts
 
 Notation 
 ========
@@ -253,6 +255,7 @@ these are the names used if you were to ``service <name> <start|stop|status>`` s
 
 - ``fail2ban`` - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.  
 - ``nginx`` - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.  
+- ``snort`` - this is a packet sniffing daemon that generates logs based off of your raw network traffic on specified interface(s). When I first came upon it it seemed marketed as a packet sniffer where these days it seems to be branded as an intrusion detection system. It is a great utility. like a cross between fail2ban and ngrep. 
 
 SSH STUFF
 =========
