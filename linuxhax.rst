@@ -52,6 +52,7 @@ Quintessential Unix Shell commands
 
 - ``man`` - manual page, man <command> shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim. 
 - ``screen`` - make a new screen. ``ctrl-a (release) d`` detaches/exits from it, ``ctl-a c`` closes. this is one way you run things in the background
+- ``tmux`` - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager
 - ``nohup`` - precedes command and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for background process tat will persist on logout
 - ``md5sum`` - jsut called md5 on mac/bsd just does an md5 checksum hash of a file. for comparison of files of any size
 - ``sha256sum`` - same as above woth sha256 algorithm. also exists others. 
@@ -92,7 +93,6 @@ Quintessential Unix Shell commands
 - ``yes`` - endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe
 - ``wipefs`` - removed disk label
 - ``shred`` - destroy files by writing random data to the location they were stored on disk(doesnt work on some filesystems) or write random data to a whole disk
-- ``cryptsetup`` - setup luks volumes. rtfm on it
 - ``cron`` - service for running periodic tasks. 
 - ``ranger`` - file explorer command line tool. vim bindings, written in python. navigate filesystem in ncurses text interface
 - ``lfm`` - shitty version of ranger seems really old
@@ -101,6 +101,8 @@ Quintessential Unix Shell commands
 - ``tail``- some as above, last 10 lines as default
 - ``cut``- more general than the 2 above, check the manpage, cuts on chars, bytes, lines, delimiter separated fields....
 - ``fold``- chop up input from stdin and wrap it with newlines to enforce a certain width on text. 
+- ``last`` - show log of your users logins
+- ``lslogins`` - list login statistics for all accounts
 
 Convention
 ==========
@@ -125,7 +127,6 @@ editors:
 - ``emacs`` - a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it. 
 - ``ed`` - the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use. 
 - ``gedit`` - simple grpahical editor, good, basically notepad with syntax highlighting. 
-- ``xpra`` - like screen but for graphical apps. useful for video editing on a server with a big GPU remotely. normal x forwarding over ssh just forwards the commands and renders on the client, but this can render on the server and compress it, send it to you as a video stream. 
 
 
 system things(debian based mint/ubuntu):
@@ -208,12 +209,19 @@ graphical, featureful
 - ``display`` -  another nice CLI for imgmagick. functionally same/similar to xviewer only it will take input from STDIN which is great. 
 - ``librewolf`` - probably best browser at time of writing this, firefox with telemetry removed and other security enhancements
 - ``zathura`` - -good pdf viewer, cool kids use it these days, suckless minimalist
+- ``xpra`` - like screen but for graphical apps. useful for video editing on a server with a big GPU remotely. normal x forwarding over ssh just forwards the X11 instructions and renders on the client, but this can render on the server and compress it, send it to you as a video stream. 
 
 high tier suckless
 ==================
-- ``tmux`` - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager
+
+crypto
+======
+
+- ``gnupg`` - ``gpg`` a gnu implementation of pgp aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  as per gnu naming conventions, its name is a goofy acronym based pun of sorts.
+- ``cryptsetup`` - setup luks volumes. rtfm on it
+- ``ssh-keygen`` - generate public-private keypairs for (passwordless) authentication of ssh sessions
+- ``openssl`` - CLI for openssl library functionality, very handy for some specialty tasks, generating keys and hashking things
 - ``pass`` - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well. extensible with plugins. basic commands are ``pass insert``, ``pass show <name>``, ``pass edit <name>``. initialize with ``pass init`` after making a keyriung with gnupg
-- ``gnupg`` - gpg a goofy gnu implementation of pgp or something aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  ``man gpg``
 
 network & hax
 =============
@@ -255,7 +263,7 @@ these are the names used if you were to ``service <name> <start|stop|status>`` s
 
 - ``fail2ban`` - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.  
 - ``nginx`` - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.  
-- ``snort`` - network util for traffic capture and parsing, logging. can be run in the background 
+- ``snort`` - network util for traffic capture and parsing, logging. can be run in the background as a system service to construct intrusion detection functionality, or used like ngrep
   
 
 SSH STUFF
@@ -279,7 +287,7 @@ operators in shell(bash)
 - ``&&``  run next program sequentially, if the first succeeds
 - ``||`` run command after only  if the previous command fails 
 - ``>``  stdout into a file cat ``bob > file_name``. OVERWRITES THE FILE
-- ``>>``  APPENDS TO THE FILE like ls >> listfile will append to the botom of nugget list the folder contents
+- ``>>``  APPENDS TO THE FILE like ``ls >> listfile`` will append contents of current directory to file listfile
 - ``2>``  same as > but does stderr, where ``1>`` is just the default that ``>`` alone reverts to
 - ``&>`` - writes both stderr and stdout to filename after it
 - ``<`` file on right into stdin of command on left
@@ -354,11 +362,11 @@ notable filesystem objects, local
 - ``~/.ssh/authorized_keys`` - put in a copy of someones id_rsa.pub file as a line, and it allows anyone with the corresponding private key to log into said account to whom ``~`` belongs. 
 - ``~/.ssh/config`` - lts u preconfig defults for various servers and things, pivotal wehn using scp and git reguarly. man ssh_config exists and shows syntax
 - ``~/.ssh/id_rsa.pub`` - default place for public ssh key, without the ``.ssh/id_rsa`` is default for private, which, should be ``chmod 600`` for the perms
-- ``~/.bashrc`` - i u use bash, this is a place you can add commadns that run on login. such as adding things to ur $PATH
+- ``~/.bashrc`` - if you use bash, this is a place you can add commands that run on login. such as adding things to your $PATH
 - ``~/.bash_history`` - hitory of commands in bash, some cap length by default, grep this to find stuff you did and need th command for
 - ``.profile`` - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe other BSD. defintiely check if you are not using bash
 - ``~/.local/`` - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff gos here
-- ``~/.config/`` - it is now considered bst practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~
+- ``~/.config/`` - it is now considered best practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~
 
 
 some good config file lines
@@ -372,18 +380,19 @@ Host bob
   User userb
   IdentityFile ~/.ssh/id_rsa_bob
 
-this enables you to simply ``ssh bob``, and tab to complete works on this alias for te host. ``HostName`` is a misleading label, as it is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry ``Host``
+this enables you to simply ``ssh bob``, and tab to complete works on this alias for te host. ``HostName`` is a misleading label, as it is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry ``Host``. these aliases carry over to git commands and scp, etc
 
 
 
 host a git, barebones 
 =====================
 simple and dirty instructions
-always use passwordless SSH or this
-make git user on server. no password on it. NO PASSWORD ON IT. no way to log in with password
+always use passwordless SSH for this
+make git user on server. NO PASSWORD ON IT. no way to log in with password, furthermore, use git-shell
+
 
 >>>
-sudo useradd  -s `which git-shell` 
+sudo useradd  -s `which git-shell` git 
 sudo su -s /bin/bash git
 mkdir <package-name>
 cd <package-name>
@@ -396,7 +405,7 @@ on cients:  ``git clone ssh://git@server:/home/git/package``
 
 then make an initial commit to master to make sure it works
 
-without a web interface of some sort, pull requests don't really function or exist as a feature for pactical and technical reasons
+pull requests are a social media feature tied to the web interface and dont reallt exist in this setting. 
 
 git client side
 ===============
@@ -421,24 +430,32 @@ git push
 git branch -d mybranchname
 
 git is very user friendly for a command line interface
-but remember to push after you merge, push and pull and clone are remote commands. rest are local
+but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation of the underlying repo datastructure an your interaction with it. 
 
 
 docker
 ======
 docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your baremetal system. 
 
-It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM 
+It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM. apps in docker runs on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards). you can run things in docker seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation between peoples systems on a dev team. it has a built in management system for images shared by project teams and the community. 
 
-docker has a built in management system for images shared by project teams and the community 
+if you dont use it youre basically failing at life. 
 
-stuff in docker runs on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards)
+to get started you need to add user to docker group ``usermod -aG docker <user>``, and then make a empty directory and put a file in it called Dockerfile, in which you list a series of commands building your custom system, generally starting with something from the docker repo. example: 
 
-you can run things in docker like any other program
+>>>
+FROM ubuntu
+RUN apt-get update
+RUN apt-get upgrade -y --force-yes
+RUN apt-get install -y --no-install-recommends <packages>
+RUN groupadd -g 1000 ubuntu
+RUN useradd -d /home/ubuntu -s /bin/bash -m ubuntu -u 1000 -g 1000
+USER ubuntu
+ENV HOME /home/ubuntu
+#clean up, rm -rf basically anything you dont need to run the entrypoint
+CMD <command>
 
-if you dont use it youre basically failing at life
-
-also a good way to give people root-like power on servers, without allowing them to trash the system and spy on people through unfettered hardware access
+then build with ``docker build`` and run with ``docker run`` with appropriate settings for network exposure and volume sharing etc. 
 
 - ``docker-compose`` - utility for launching a few differentd ocker containers of different services, allowig you to easily config them to be interconnected in one file. simply put ``docker-compose.yml`` in an empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due to autistic standards with whitespace and stuff. so work off of a copypaste
 - ``docker`` - the normal interface to docker to run one container

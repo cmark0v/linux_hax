@@ -456,6 +456,7 @@ ul.auto-toc {
 </li>
 <li><tt class="docutils literal">man</tt> - manual page, man &lt;command&gt; shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim.</li>
 <li><tt class="docutils literal">screen</tt> - make a new screen. <tt class="docutils literal"><span class="pre">ctrl-a</span> (release) d</tt> detaches/exits from it, <tt class="docutils literal"><span class="pre">ctl-a</span> c</tt> closes. this is one way you run things in the background</li>
+<li><tt class="docutils literal">tmux</tt> - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager</li>
 <li><tt class="docutils literal">nohup</tt> - precedes command and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for background process tat will persist on logout</li>
 <li><tt class="docutils literal">md5sum</tt> - jsut called md5 on mac/bsd just does an md5 checksum hash of a file. for comparison of files of any size</li>
 <li><tt class="docutils literal">sha256sum</tt> - same as above woth sha256 algorithm. also exists others.</li>
@@ -496,7 +497,6 @@ ul.auto-toc {
 <li><tt class="docutils literal">yes</tt> - endless loop of 'y'... for dealign with annoying menus with the y/n? prompts using pipe</li>
 <li><tt class="docutils literal">wipefs</tt> - removed disk label</li>
 <li><tt class="docutils literal">shred</tt> - destroy files by writing random data to the location they were stored on disk(doesnt work on some filesystems) or write random data to a whole disk</li>
-<li><tt class="docutils literal">cryptsetup</tt> - setup luks volumes. rtfm on it</li>
 <li><tt class="docutils literal">cron</tt> - service for running periodic tasks.</li>
 <li><tt class="docutils literal">ranger</tt> - file explorer command line tool. vim bindings, written in python. navigate filesystem in ncurses text interface</li>
 <li><tt class="docutils literal">lfm</tt> - shitty version of ranger seems really old</li>
@@ -505,6 +505,8 @@ ul.auto-toc {
 <li><tt class="docutils literal">tail</tt>- some as above, last 10 lines as default</li>
 <li><tt class="docutils literal">cut</tt>- more general than the 2 above, check the manpage, cuts on chars, bytes, lines, delimiter separated fields....</li>
 <li><tt class="docutils literal">fold</tt>- chop up input from stdin and wrap it with newlines to enforce a certain width on text.</li>
+<li><tt class="docutils literal">last</tt> - show log of your users logins</li>
+<li><tt class="docutils literal">lslogins</tt> - list login statistics for all accounts</li>
 </ul>
 </div>
 <div class="section" id="convention">
@@ -531,7 +533,6 @@ ul.auto-toc {
 <li><tt class="docutils literal">emacs</tt> - a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it.</li>
 <li><tt class="docutils literal">ed</tt> - the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use.</li>
 <li><tt class="docutils literal">gedit</tt> - simple grpahical editor, good, basically notepad with syntax highlighting.</li>
-<li><tt class="docutils literal">xpra</tt> - like screen but for graphical apps. useful for video editing on a server with a big GPU remotely. normal x forwarding over ssh just forwards the commands and renders on the client, but this can render on the server and compress it, send it to you as a video stream.</li>
 </ul>
 </div>
 <div class="section" id="system-things-debian-based-mint-ubuntu">
@@ -614,14 +615,20 @@ ul.auto-toc {
 <li><tt class="docutils literal">display</tt> -  another nice CLI for imgmagick. functionally same/similar to xviewer only it will take input from STDIN which is great.</li>
 <li><tt class="docutils literal">librewolf</tt> - probably best browser at time of writing this, firefox with telemetry removed and other security enhancements</li>
 <li><tt class="docutils literal">zathura</tt> - -good pdf viewer, cool kids use it these days, suckless minimalist</li>
+<li><tt class="docutils literal">xpra</tt> - like screen but for graphical apps. useful for video editing on a server with a big GPU remotely. normal x forwarding over ssh just forwards the X11 instructions and renders on the client, but this can render on the server and compress it, send it to you as a video stream.</li>
 </ul>
 </div>
 <div class="section" id="high-tier-suckless">
 <h1>high tier suckless</h1>
+</div>
+<div class="section" id="crypto">
+<h1>crypto</h1>
 <ul class="simple">
-<li><tt class="docutils literal">tmux</tt> - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager</li>
+<li><tt class="docutils literal">gnupg</tt> - <tt class="docutils literal">gpg</tt> a gnu implementation of pgp aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  as per gnu naming conventions, its name is a goofy acronym based pun of sorts.</li>
+<li><tt class="docutils literal">cryptsetup</tt> - setup luks volumes. rtfm on it</li>
+<li><tt class="docutils literal"><span class="pre">ssh-keygen</span></tt> - generate public-private keypairs for (passwordless) authentication of ssh sessions</li>
+<li><tt class="docutils literal">openssl</tt> - CLI for openssl library functionality, very handy for some specialty tasks, generating keys and hashking things</li>
 <li><tt class="docutils literal">pass</tt> - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well. extensible with plugins. basic commands are <tt class="docutils literal">pass insert</tt>, <tt class="docutils literal">pass show &lt;name&gt;</tt>, <tt class="docutils literal">pass edit &lt;name&gt;</tt>. initialize with <tt class="docutils literal">pass init</tt> after making a keyriung with gnupg</li>
-<li><tt class="docutils literal">gnupg</tt> - gpg a goofy gnu implementation of pgp or something aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  <tt class="docutils literal">man gpg</tt></li>
 </ul>
 </div>
 <div class="section" id="network-hax">
@@ -664,7 +671,7 @@ ul.auto-toc {
 <ul class="simple">
 <li><tt class="docutils literal">fail2ban</tt> - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.</li>
 <li><tt class="docutils literal">nginx</tt> - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.</li>
-<li><tt class="docutils literal">snort</tt> - network util for traffic capture and parsing, logging. can be run in the background</li>
+<li><tt class="docutils literal">snort</tt> - network util for traffic capture and parsing, logging. can be run in the background as a system service to construct intrusion detection functionality, or used like ngrep</li>
 </ul>
 </div>
 <div class="section" id="ssh-stuff">
@@ -690,7 +697,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">&amp;&amp;</tt>  run next program sequentially, if the first succeeds</li>
 <li><tt class="docutils literal">||</tt> run command after only  if the previous command fails</li>
 <li><tt class="docutils literal">&gt;</tt>  stdout into a file cat <tt class="docutils literal">bob &gt; file_name</tt>. OVERWRITES THE FILE</li>
-<li><tt class="docutils literal">&gt;&gt;</tt>  APPENDS TO THE FILE like ls &gt;&gt; listfile will append to the botom of nugget list the folder contents</li>
+<li><tt class="docutils literal">&gt;&gt;</tt>  APPENDS TO THE FILE like <tt class="docutils literal">ls &gt;&gt; listfile</tt> will append contents of current directory to file listfile</li>
 <li><tt class="docutils literal">2&gt;</tt>  same as &gt; but does stderr, where <tt class="docutils literal">1&gt;</tt> is just the default that <tt class="docutils literal">&gt;</tt> alone reverts to</li>
 <li><tt class="docutils literal">&amp;&gt;</tt> - writes both stderr and stdout to filename after it</li>
 <li><tt class="docutils literal">&lt;</tt> file on right into stdin of command on left</li>
@@ -765,11 +772,11 @@ Int the past many of these were separate partitions, hence some of the seemingly
 <li><tt class="docutils literal"><span class="pre">~/.ssh/authorized_keys</span></tt> - put in a copy of someones id_rsa.pub file as a line, and it allows anyone with the corresponding private key to log into said account to whom <tt class="docutils literal">~</tt> belongs.</li>
 <li><tt class="docutils literal"><span class="pre">~/.ssh/config</span></tt> - lts u preconfig defults for various servers and things, pivotal wehn using scp and git reguarly. man ssh_config exists and shows syntax</li>
 <li><tt class="docutils literal"><span class="pre">~/.ssh/id_rsa.pub</span></tt> - default place for public ssh key, without the <tt class="docutils literal">.ssh/id_rsa</tt> is default for private, which, should be <tt class="docutils literal">chmod 600</tt> for the perms</li>
-<li><tt class="docutils literal"><span class="pre">~/.bashrc</span></tt> - i u use bash, this is a place you can add commadns that run on login. such as adding things to ur $PATH</li>
+<li><tt class="docutils literal"><span class="pre">~/.bashrc</span></tt> - if you use bash, this is a place you can add commands that run on login. such as adding things to your $PATH</li>
 <li><tt class="docutils literal"><span class="pre">~/.bash_history</span></tt> - hitory of commands in bash, some cap length by default, grep this to find stuff you did and need th command for</li>
 <li><tt class="docutils literal">.profile</tt> - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe other BSD. defintiely check if you are not using bash</li>
 <li><tt class="docutils literal"><span class="pre">~/.local/</span></tt> - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff gos here</li>
-<li><tt class="docutils literal"><span class="pre">~/.config/</span></tt> - it is now considered bst practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~</li>
+<li><tt class="docutils literal"><span class="pre">~/.config/</span></tt> - it is now considered best practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~</li>
 </ul>
 </div>
 <div class="section" id="some-good-config-file-lines">
@@ -782,16 +789,16 @@ Host bob
   User userb
   IdentityFile ~/.ssh/id_rsa_bob
 </pre>
-<p>this enables you to simply <tt class="docutils literal">ssh bob</tt>, and tab to complete works on this alias for te host. <tt class="docutils literal">HostName</tt> is a misleading label, as it is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry <tt class="docutils literal">Host</tt></p>
+<p>this enables you to simply <tt class="docutils literal">ssh bob</tt>, and tab to complete works on this alias for te host. <tt class="docutils literal">HostName</tt> is a misleading label, as it is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry <tt class="docutils literal">Host</tt>. these aliases carry over to git commands and scp, etc</p>
 </div>
 <div class="section" id="host-a-git-barebones">
 <h1>host a git, barebones</h1>
 <p>simple and dirty instructions
-always use passwordless SSH or this
-make git user on server. no password on it. NO PASSWORD ON IT. no way to log in with password</p>
+always use passwordless SSH for this
+make git user on server. NO PASSWORD ON IT. no way to log in with password, furthermore, use git-shell</p>
 <pre class="doctest-block">
 &gt;&gt;&gt;
-sudo useradd  -s `which git-shell`
+sudo useradd  -s `which git-shell` git
 sudo su -s /bin/bash git
 mkdir &lt;package-name&gt;
 cd &lt;package-name&gt;
@@ -801,7 +808,7 @@ git config receive.denyCurrentBranch ignore
 <p>put public keys in <tt class="docutils literal"><span class="pre">/home/git/.ssh/authorized_keys</span></tt> as a line, on the host n</p>
 <p>on cients:  <tt class="docutils literal">git clone <span class="pre">ssh://git&#64;server:/home/git/package</span></tt></p>
 <p>then make an initial commit to master to make sure it works</p>
-<p>without a web interface of some sort, pull requests don't really function or exist as a feature for pactical and technical reasons</p>
+<p>pull requests are a social media feature tied to the web interface and dont reallt exist in this setting.</p>
 </div>
 <div class="section" id="git-client-side">
 <h1>git client side</h1>
@@ -826,17 +833,28 @@ git push
 git branch -d mybranchname
 </pre>
 <p>git is very user friendly for a command line interface
-but remember to push after you merge, push and pull and clone are remote commands. rest are local</p>
+but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation of the underlying repo datastructure an your interaction with it.</p>
 </div>
 <div class="section" id="docker">
 <h1>docker</h1>
 <p>docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your baremetal system.</p>
-<p>It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM</p>
-<p>docker has a built in management system for images shared by project teams and the community</p>
-<p>stuff in docker runs on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards)</p>
-<p>you can run things in docker like any other program</p>
-<p>if you dont use it youre basically failing at life</p>
-<p>also a good way to give people root-like power on servers, without allowing them to trash the system and spy on people through unfettered hardware access</p>
+<p>It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM. apps in docker runs on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards). you can run things in docker seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation between peoples systems on a dev team. it has a built in management system for images shared by project teams and the community.</p>
+<p>if you dont use it youre basically failing at life.</p>
+<p>to get started you need to add user to docker group <tt class="docutils literal">usermod <span class="pre">-aG</span> docker &lt;user&gt;</tt>, and then make a empty directory and put a file in it called Dockerfile, in which you list a series of commands building your custom system, generally starting with something from the docker repo. example:</p>
+<pre class="doctest-block">
+&gt;&gt;&gt;
+FROM ubuntu
+RUN apt-get update
+RUN apt-get upgrade -y --force-yes
+RUN apt-get install -y --no-install-recommends &lt;packages&gt;
+RUN groupadd -g 1000 ubuntu
+RUN useradd -d /home/ubuntu -s /bin/bash -m ubuntu -u 1000 -g 1000
+USER ubuntu
+ENV HOME /home/ubuntu
+#clean up, rm -rf basically anything you dont need to run the entrypoint
+CMD &lt;command&gt;
+</pre>
+<p>then build with <tt class="docutils literal">docker build</tt> and run with <tt class="docutils literal">docker run</tt> with appropriate settings for network exposure and volume sharing etc.</p>
 <ul class="simple">
 <li><tt class="docutils literal"><span class="pre">docker-compose</span></tt> - utility for launching a few differentd ocker containers of different services, allowig you to easily config them to be interconnected in one file. simply put <tt class="docutils literal"><span class="pre">docker-compose.yml</span></tt> in an empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due to autistic standards with whitespace and stuff. so work off of a copypaste</li>
 <li><tt class="docutils literal">docker</tt> - the normal interface to docker to run one container</li>
