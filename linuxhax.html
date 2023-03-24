@@ -618,17 +618,15 @@ ul.auto-toc {
 <li><tt class="docutils literal">xpra</tt> - like screen but for graphical apps. useful for video editing on a server with a big GPU remotely. normal x forwarding over ssh just forwards the X11 instructions and renders on the client, but this can render on the server and compress it, send it to you as a video stream.</li>
 </ul>
 </div>
-<div class="section" id="high-tier-suckless">
-<h1>high tier suckless</h1>
-</div>
 <div class="section" id="crypto">
 <h1>crypto</h1>
 <ul class="simple">
 <li><tt class="docutils literal">gnupg</tt> - <tt class="docutils literal">gpg</tt> a gnu implementation of pgp aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  as per gnu naming conventions, its name is a goofy acronym based pun of sorts.</li>
 <li><tt class="docutils literal">cryptsetup</tt> - setup luks volumes. rtfm on it</li>
-<li><tt class="docutils literal"><span class="pre">ssh-keygen</span></tt> - generate public-private keypairs for (passwordless) authentication of ssh sessions</li>
 <li><tt class="docutils literal">openssl</tt> - CLI for openssl library functionality, very handy for some specialty tasks, generating keys and hashking things</li>
 <li><tt class="docutils literal">pass</tt> - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well. extensible with plugins. basic commands are <tt class="docutils literal">pass insert</tt>, <tt class="docutils literal">pass show &lt;name&gt;</tt>, <tt class="docutils literal">pass edit &lt;name&gt;</tt>. initialize with <tt class="docutils literal">pass init</tt> after making a keyriung with gnupg</li>
+<li><tt class="docutils literal"><span class="pre">openpgp-tool</span></tt> - openpgp smartcard device control.</li>
+<li><tt class="docutils literal"><span class="pre">fido2-token</span></tt> - manage, manipulate fido2 security keys</li>
 </ul>
 </div>
 <div class="section" id="network-hax">
@@ -677,10 +675,15 @@ ul.auto-toc {
 <div class="section" id="ssh-stuff">
 <h1>SSH STUFF</h1>
 <ul class="simple">
-<li><tt class="docutils literal">ssh &lt;remotehost&gt;</tt> - secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel</li>
-<li><tt class="docutils literal"><span class="pre">ssh-keygen</span> &lt;remotehost&gt;</tt> - generates keypairs for ssh auth</li>
+<li><tt class="docutils literal">ssh <span class="pre">&lt;user&gt;&#64;&lt;remotehost&gt;</span></tt> - secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel</li>
+<li><tt class="docutils literal"><span class="pre">ssh-keygen</span></tt> - generates keypairs for ssh auth
+- <tt class="docutils literal"><span class="pre">ssh-keygen</span> <span class="pre">-lf</span> .ssh/id_rsa <span class="pre">-E</span> sha256</tt> - generate fingerprint of key
+- <tt class="docutils literal"><span class="pre">ssh-keygen</span> <span class="pre">-t</span> <span class="pre">ed25519-sk</span> <span class="pre">-O</span> resident <span class="pre">-O</span> <span class="pre">application=ssh:&lt;description&gt;</span> <span class="pre">-f</span> <span class="pre">~/.ssh/id_ed_sk</span></tt> - generate key on fido2 token as resident on key, type can alternatively be <tt class="docutils literal"><span class="pre">ecdsa-sk</span></tt>, omitting <tt class="docutils literal"><span class="pre">-O</span> resident</tt> makes a key that requires the fido token but is not stored on it. not discoverable from the key. <tt class="docutils literal"><span class="pre">-O</span> <span class="pre">verify-required</span></tt> or <tt class="docutils literal"><span class="pre">-O</span> <span class="pre">no-touch-required</span></tt> control the physical prescene requirements(touching the key)
+- <tt class="docutils literal"><span class="pre">ssh-keygen</span> <span class="pre">-K</span></tt> - importing resident keys to new machine from security token</li>
+<li><tt class="docutils literal"><span class="pre">ssh-add</span> <span class="pre">-L</span></tt> - print all your public keys in .ssh</li>
 <li><tt class="docutils literal">scp localfile <span class="pre">&lt;user&gt;&#64;&lt;remotehost&gt;:/path/file</span></tt> - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp <a class="reference external" href="mailto:user&#64;host">user&#64;host</a>:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.</li>
 <li><tt class="docutils literal">ssh <span class="pre">-X</span> &lt;remotehost&gt;</tt> - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides) <tt class="docutils literal">ssh <span class="pre">-Y</span></tt> is equivalent but was meant to be a more lightweight connection</li>
+<li><tt class="docutils literal">ssh <span class="pre">-A</span> &lt;remotehost&gt;</tt> - forward ssh agent to foreign server, allowing scure access to local keys on foreign server, including hardware tokens</li>
 <li><tt class="docutils literal">ssh <span class="pre">-D</span> 8888 &lt;remotehost&gt;</tt> - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host</li>
 <li><tt class="docutils literal">ssh <span class="pre">-L&lt;bindaddress&gt;:&lt;listen_port&gt;host:&lt;port&gt;</span> user&#64;remotehost</tt> - tunnel localhost lport to remote host's view of host:port</li>
 <li><tt class="docutils literal">ssh <span class="pre">-R&lt;bindaddress&gt;:&lt;lport&gt;:host:&lt;port&gt;</span> user&#64;remotehost</tt> - reverse tunnel, goes from remote host to  view of host:&lt;port&gt;</li>

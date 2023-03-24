@@ -211,17 +211,17 @@ graphical, featureful
 - ``zathura`` - -good pdf viewer, cool kids use it these days, suckless minimalist
 - ``xpra`` - like screen but for graphical apps. useful for video editing on a server with a big GPU remotely. normal x forwarding over ssh just forwards the X11 instructions and renders on the client, but this can render on the server and compress it, send it to you as a video stream. 
 
-high tier suckless
-==================
 
 crypto
 ======
 
 - ``gnupg`` - ``gpg`` a gnu implementation of pgp aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  as per gnu naming conventions, its name is a goofy acronym based pun of sorts.
 - ``cryptsetup`` - setup luks volumes. rtfm on it
-- ``ssh-keygen`` - generate public-private keypairs for (passwordless) authentication of ssh sessions
 - ``openssl`` - CLI for openssl library functionality, very handy for some specialty tasks, generating keys and hashking things
 - ``pass`` - password manager that uses gnupg. integrates with git, can be used to run google auth type 2fa, responds to tab to complete well. extensible with plugins. basic commands are ``pass insert``, ``pass show <name>``, ``pass edit <name>``. initialize with ``pass init`` after making a keyriung with gnupg
+- ``openpgp-tool`` - openpgp smartcard device control. 
+- ``fido2-token`` - manage, manipulate fido2 security keys 
+
 
 network & hax
 =============
@@ -268,10 +268,15 @@ these are the names used if you were to ``service <name> <start|stop|status>`` s
 
 SSH STUFF
 =========
-- ``ssh <remotehost>`` - secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel
-- ``ssh-keygen <remotehost>`` - generates keypairs for ssh auth
+- ``ssh <user>@<remotehost>`` - secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel
+- ``ssh-keygen`` - generates keypairs for ssh auth
+  - ``ssh-keygen -lf .ssh/id_rsa -E sha256`` - generate fingerprint of key
+  - ``ssh-keygen -t ed25519-sk -O resident -O application=ssh:<description> -f ~/.ssh/id_ed_sk`` - generate key on fido2 token as resident on key, type can alternatively be ``ecdsa-sk``, omitting ``-O resident`` makes a key that requires the fido token but is not stored on it. not discoverable from the key. ``-O verify-required`` or ``-O no-touch-required`` control the physical prescene requirements(touching the key)
+  - ``ssh-keygen -K`` - importing resident keys to new machine from security token
+- ``ssh-add -L`` - print all your public keys in .ssh
 - ``scp localfile <user>@<remotehost>:/path/file`` - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp user@host:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.
 - ``ssh -X <remotehost>`` - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides) ``ssh -Y`` is equivalent but was meant to be a more lightweight connection
+- ``ssh -A <remotehost>`` - forward ssh agent to foreign server, allowing scure access to local keys on foreign server, including hardware tokens
 - ``ssh -D 8888 <remotehost>`` - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host
 - ``ssh -L<bindaddress>:<listen_port>host:<port> user@remotehost`` - tunnel localhost lport to remote host's view of host:port
 - ``ssh -R<bindaddress>:<lport>:host:<port> user@remotehost`` - reverse tunnel, goes from remote host to  view of host:<port>
