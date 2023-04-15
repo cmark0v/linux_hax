@@ -1,8 +1,6 @@
-linux/general unix cheat sheet for noobs trying to be hackers, developers, scientists, sysadmins, operators, mechanics, wizards, engineers, eunuchs, network ninjas, parents, kids, jobdevs, devjobs, hackjobs, stevejobs...
+linux/general unix cheat sheet for noobs trying to be hackers, developers, scientists, sysadmins, operators, mechanics, wizards, engineers, eunuchs, network ninjas, parents, kids, jobdevs, devjobs, stevejobs... hackjobs....
 
-it is written in rst, reStructuredText, aka plebian latex. 
-
-rst2html and rst2pdf are the requirements  
+it is written in rst, reStructuredText, ``make.sh`` compiles it using rst2html and rst2pdf 
 
 
-``apt install rst2pdf``, not sure about rst2html but it should come with ``sphinx``
+``apt install rst2pdf python3-docutils`` should have you sorted out
