@@ -186,7 +186,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author () /CreationDate (D:20230324220214-09'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230324220214-09'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20230416212714-09'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230416212714-09'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
@@ -202,37 +202,37 @@ endobj
 endobj
 26 0 obj
 <<
-/Dest [ 9 0 R /XYZ 62.69291 705.0236 0 ] /Next 27 0 R /Parent 24 0 R /Prev 25 0 R /Title (Convention)
+/Dest [ 9 0 R /XYZ 62.69291 666.0236 0 ] /Next 27 0 R /Parent 24 0 R /Prev 25 0 R /Title (Convention)
 >>
 endobj
 27 0 obj
 <<
-/Dest [ 9 0 R /XYZ 62.69291 402.0236 0 ] /Next 28 0 R /Parent 24 0 R /Prev 26 0 R /Title (editors:)
+/Dest [ 9 0 R /XYZ 62.69291 363.0236 0 ] /Next 28 0 R /Parent 24 0 R /Prev 26 0 R /Title (editors:)
 >>
 endobj
 28 0 obj
 <<
-/Dest [ 10 0 R /XYZ 62.69291 711.0236 0 ] /Next 29 0 R /Parent 24 0 R /Prev 27 0 R /Title (system things\(debian based mint/ubuntu\):)
+/Dest [ 10 0 R /XYZ 62.69291 681.0236 0 ] /Next 29 0 R /Parent 24 0 R /Prev 27 0 R /Title (system things\(debian based mint/ubuntu\):)
 >>
 endobj
 29 0 obj
 <<
-/Dest [ 10 0 R /XYZ 62.69291 216.0236 0 ] /Next 30 0 R /Parent 24 0 R /Prev 28 0 R /Title (shells:)
+/Dest [ 10 0 R /XYZ 62.69291 186.0236 0 ] /Next 30 0 R /Parent 24 0 R /Prev 28 0 R /Title (shells:)
 >>
 endobj
 30 0 obj
 <<
-/Dest [ 11 0 R /XYZ 62.69291 729.0236 0 ] /Next 31 0 R /Parent 24 0 R /Prev 29 0 R /Title (env vars:)
+/Dest [ 11 0 R /XYZ 62.69291 705.0236 0 ] /Next 31 0 R /Parent 24 0 R /Prev 29 0 R /Title (env vars:)
 >>
 endobj
 31 0 obj
 <<
-/Dest [ 11 0 R /XYZ 62.69291 336.0236 0 ] /Next 32 0 R /Parent 24 0 R /Prev 30 0 R /Title (strange obscure barely useful:)
+/Dest [ 11 0 R /XYZ 62.69291 312.0236 0 ] /Next 32 0 R /Parent 24 0 R /Prev 30 0 R /Title (strange obscure barely useful:)
 >>
 endobj
 32 0 obj
 <<
-/Dest [ 11 0 R /XYZ 62.69291 177.0236 0 ] /Next 33 0 R /Parent 24 0 R /Prev 31 0 R /Title (graphical, featureful)
+/Dest [ 11 0 R /XYZ 62.69291 153.0236 0 ] /Next 33 0 R /Parent 24 0 R /Prev 31 0 R /Title (graphical, featureful)
 >>
 endobj
 33 0 obj
@@ -2725,7 +2725,7 @@ endstream
 endobj
 50 0 obj
 <<
-/Length 10385
+/Length 10697
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -2802,29 +2802,95 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 717.0236 cm
+1 0 0 1 62.69291 711.0236 cm
 Q
 q
-1 0 0 1 62.69291 684.0236 cm
+1 0 0 1 62.69291 678.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 18 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 18 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (bc) Tj /F2 10 Tf ( - basic calculator, supports arbitrary precision) Tj T* ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 8 Tm  T* ET
+q
+1 0 0 1 20 12 cm
+Q
+q
+1 0 0 1 20 12 cm
+Q
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (echo) Tj ( ) Tj ("1) Tj ( ) Tj (+) Tj ( ) Tj (1") Tj ( ) Tj (|) Tj ( ) Tj (bc) Tj /F1 10 Tf ( -) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 20 0 cm
+Q
+q
+Q
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 678.0236 cm
+Q
+q
+1 0 0 1 62.69291 645.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (Convention) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 654.0236 cm
+1 0 0 1 62.69291 615.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .67561 Tw (this is notation and syntactic commonalities reflected in this document and others like it, not strict syntax) Tj T* 0 Tw (but some generally unspoken entrenched cultural features that might confuse unix noobs) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 648.0236 cm
+1 0 0 1 62.69291 609.0236 cm
 Q
 q
-1 0 0 1 62.69291 648.0236 cm
+1 0 0 1 62.69291 609.0236 cm
 Q
 q
-1 0 0 1 62.69291 612.0236 cm
+1 0 0 1 62.69291 573.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2846,10 +2912,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 606.0236 cm
+1 0 0 1 62.69291 567.0236 cm
 Q
 q
-1 0 0 1 62.69291 582.0236 cm
+1 0 0 1 62.69291 543.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2871,10 +2937,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 576.0236 cm
+1 0 0 1 62.69291 537.0236 cm
 Q
 q
-1 0 0 1 62.69291 504.0236 cm
+1 0 0 1 62.69291 465.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2896,10 +2962,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 498.0236 cm
+1 0 0 1 62.69291 459.0236 cm
 Q
 q
-1 0 0 1 62.69291 462.0236 cm
+1 0 0 1 62.69291 423.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2921,10 +2987,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 456.0236 cm
+1 0 0 1 62.69291 417.0236 cm
 Q
 q
-1 0 0 1 62.69291 444.0236 cm
+1 0 0 1 62.69291 405.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2946,10 +3012,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 438.0236 cm
+1 0 0 1 62.69291 399.0236 cm
 Q
 q
-1 0 0 1 62.69291 414.0236 cm
+1 0 0 1 62.69291 375.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -2971,22 +3037,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 414.0236 cm
+1 0 0 1 62.69291 375.0236 cm
 Q
 q
-1 0 0 1 62.69291 381.0236 cm
+1 0 0 1 62.69291 342.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (editors:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 369.0236 cm
+1 0 0 1 62.69291 330.0236 cm
 Q
 q
-1 0 0 1 62.69291 369.0236 cm
+1 0 0 1 62.69291 330.0236 cm
 Q
 q
-1 0 0 1 62.69291 345.0236 cm
+1 0 0 1 62.69291 306.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3008,10 +3074,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 339.0236 cm
+1 0 0 1 62.69291 300.0236 cm
 Q
 q
-1 0 0 1 62.69291 219.0236 cm
+1 0 0 1 62.69291 180.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3033,10 +3099,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 213.0236 cm
+1 0 0 1 62.69291 174.0236 cm
 Q
 q
-1 0 0 1 62.69291 201.0236 cm
+1 0 0 1 62.69291 162.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3058,10 +3124,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 195.0236 cm
+1 0 0 1 62.69291 156.0236 cm
 Q
 q
-1 0 0 1 62.69291 171.0236 cm
+1 0 0 1 62.69291 132.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3083,10 +3149,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 165.0236 cm
+1 0 0 1 62.69291 126.0236 cm
 Q
 q
-1 0 0 1 62.69291 153.0236 cm
+1 0 0 1 62.69291 114.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3108,10 +3174,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 147.0236 cm
+1 0 0 1 62.69291 108.0236 cm
 Q
 q
-1 0 0 1 62.69291 123.0236 cm
+1 0 0 1 62.69291 84.02362 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3133,10 +3199,19 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 117.0236 cm
+1 0 0 1 62.69291 78.02362 cm
 Q
+ 
+endstream
+endobj
+51 0 obj
+<<
+/Length 11610
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 93.02362 cm
+1 0 0 1 62.69291 741.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3158,19 +3233,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 87.02362 cm
+1 0 0 1 62.69291 735.0236 cm
 Q
- 
-endstream
-endobj
-51 0 obj
-<<
-/Length 11598
->>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 741.0236 cm
+1 0 0 1 62.69291 711.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3192,10 +3258,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 735.0236 cm
+1 0 0 1 62.69291 705.0236 cm
 Q
 q
-1 0 0 1 62.69291 723.0236 cm
+1 0 0 1 62.69291 693.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3217,22 +3283,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 723.0236 cm
+1 0 0 1 62.69291 693.0236 cm
 Q
 q
-1 0 0 1 62.69291 690.0236 cm
+1 0 0 1 62.69291 660.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (system things\(debian based mint/ubuntu\):) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 678.0236 cm
+1 0 0 1 62.69291 648.0236 cm
 Q
 q
-1 0 0 1 62.69291 678.0236 cm
+1 0 0 1 62.69291 648.0236 cm
 Q
 q
-1 0 0 1 62.69291 666.0236 cm
+1 0 0 1 62.69291 636.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3254,10 +3320,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 660.0236 cm
+1 0 0 1 62.69291 630.0236 cm
 Q
 q
-1 0 0 1 62.69291 648.0236 cm
+1 0 0 1 62.69291 618.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -3272,31 +3338,6 @@ q
 1 0 0 1 23 -3 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (su) Tj /F1 10 Tf ( - set user, defaults to root. can specify shell with -s) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 642.0236 cm
-Q
-q
-1 0 0 1 62.69291 618.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 1.796651 Tw 12 TL /F3 10 Tf 0 0 0 rg (service) Tj /F1 10 Tf ( - control a service. service <) Tj (name of it) Tj (> <) Tj (start, stop, restart, reload) Tj (> ex: sudo service) Tj T* 0 Tw (postgresql restart) Tj T* ET
 Q
 Q
 q
@@ -3321,7 +3362,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .407488 Tw 12 TL /F3 10 Tf 0 0 0 rg (hostname) Tj /F1 10 Tf ( - prints hostname, if given arg it will set the hostname to the arg. if u do this, should also) Tj T* 0 Tw (manually change /etc/hostname and make sure /etc/hosts refects that change if necessary) Tj T* ET
+BT 1 0 0 1 0 14 Tm 1.796651 Tw 12 TL /F3 10 Tf 0 0 0 rg (service) Tj /F1 10 Tf ( - control a service. service <) Tj (name of it) Tj (> <) Tj (start, stop, restart, reload) Tj (> ex: sudo service) Tj T* 0 Tw (postgresql restart) Tj T* ET
 Q
 Q
 q
@@ -3346,7 +3387,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .824147 Tw 12 TL /F3 10 Tf 0 0 0 rg (adduser) Tj /F1 10 Tf ( -) Tj /F3 10 Tf (adduser) Tj ( ) Tj (<) Tj (newusername) Tj (>) Tj /F1 10 Tf ( makes a new user. many options. none are really required,) Tj T* 0 Tw (even a password. interactive walk through) Tj T* ET
+BT 1 0 0 1 0 14 Tm .407488 Tw 12 TL /F3 10 Tf 0 0 0 rg (hostname) Tj /F1 10 Tf ( - prints hostname, if given arg it will set the hostname to the arg. if u do this, should also) Tj T* 0 Tw (manually change /etc/hostname and make sure /etc/hosts refects that change if necessary) Tj T* ET
 Q
 Q
 q
@@ -3357,645 +3398,12 @@ q
 1 0 0 1 62.69291 552.0236 cm
 Q
 q
-1 0 0 1 62.69291 540.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (useradd) Tj /F1 10 Tf ( - more l33t version of ) Tj /F3 10 Tf (adduser) Tj /F1 10 Tf (. more useful noninteractively and non-user-friendly) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 534.0236 cm
-Q
-q
-1 0 0 1 62.69291 522.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (usermod) Tj /F1 10 Tf ( - mod shell and stuff of a givemn user usermod -aG common for adding group) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 516.0236 cm
-Q
-q
-1 0 0 1 62.69291 504.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (passwd) Tj /F1 10 Tf ( - password change, ) Tj /F3 10 Tf (passwd) Tj ( ) Tj (<) Tj (user) Tj (>) Tj /F1 10 Tf ( does it for user when u are admin) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 498.0236 cm
-Q
-q
-1 0 0 1 62.69291 438.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 45 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 50 Tm .699988 Tw 12 TL /F3 10 Tf 0 0 0 rg (dd) Tj /F1 10 Tf ( - writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the) Tj T* 0 Tw .372765 Tw (filesystem object to be written and bs is the block size which can be written human readable like 1M) Tj T* 0 Tw .58832 Tw (2M 4M and in bytes like 1024\(the old way\). you use this when wipeing disks with random data. you) Tj T* 0 Tw 1.264104 Tw (use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you) Tj T* 0 Tw (mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 432.0236 cm
-Q
-q
-1 0 0 1 62.69291 420.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (chsh) Tj /F1 10 Tf (- change the shell for a user) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 414.0236 cm
-Q
-q
-1 0 0 1 62.69291 402.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (chgroup) Tj /F1 10 Tf (- change group of file... group ownership) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 396.0236 cm
-Q
-q
-1 0 0 1 62.69291 372.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 1.149985 Tw 12 TL /F3 10 Tf 0 0 0 rg (chmod) Tj /F1 10 Tf (- change permissions of file chmod 777 file makes everyone read write ex it, chmod 666 is) Tj T* 0 Tw (read write for all.... chmod 600 is another common one ls -al will show the perms) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 366.0236 cm
-Q
-q
-1 0 0 1 62.69291 354.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (mount) Tj /F1 10 Tf ( - attaches a block device to a folder, allowing you to browse the filesystem) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 348.0236 cm
-Q
-q
-1 0 0 1 62.69291 336.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (umount) Tj /F1 10 Tf (- unmounts somethign takes mountpoint or /dev /device as target) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 330.0236 cm
-Q
-q
-1 0 0 1 62.69291 318.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (dmesg) Tj /F1 10 Tf (- prints messages generated at boot) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 312.0236 cm
-Q
-q
-1 0 0 1 62.69291 300.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (env) Tj /F1 10 Tf (- show ur environment vars, set them then run command\(too\)) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 294.0236 cm
-Q
-q
-1 0 0 1 62.69291 282.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (uptime) Tj /F1 10 Tf (- time up) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 276.0236 cm
-Q
-q
-1 0 0 1 62.69291 264.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (wipefs) Tj /F1 10 Tf (- removed disk label) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 258.0236 cm
-Q
-q
-1 0 0 1 62.69291 246.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (cryptsetup) Tj /F1 10 Tf ( - setup luks volumes) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 240.0236 cm
-Q
-q
-1 0 0 1 62.69291 228.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (cron) Tj /F1 10 Tf (- service for running periodic tasks.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 228.0236 cm
-Q
-q
-1 0 0 1 62.69291 195.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (shells:) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 183.0236 cm
-Q
-q
-1 0 0 1 62.69291 183.0236 cm
-Q
-q
-1 0 0 1 62.69291 171.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (bash) Tj /F1 10 Tf ( - common, youre prob on it. "bourne again shell" whatever that means) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 165.0236 cm
-Q
-q
-1 0 0 1 62.69291 153.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (csh) Tj /F1 10 Tf ( - different, advanced too - C shell) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 147.0236 cm
-Q
-q
-1 0 0 1 62.69291 135.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (tcsh) Tj /F1 10 Tf ( - mac uses it? freebsd? its good too) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 129.0236 cm
-Q
-q
-1 0 0 1 62.69291 117.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (zsh) Tj /F1 10 Tf ( - another shell that some nerds are all about, like the previous 2) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 111.0236 cm
-Q
-q
-1 0 0 1 62.69291 76.86614 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 19.15748 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 7.15748 cm
-q
-BT 1 0 0 1 0 14 Tm .341163 Tw 12 TL /F3 10 Tf 0 0 0 rg (sh) Tj /F1 10 Tf ( - the most simple bare bones one used when there is nothing else in some broke-ass embedded) Tj T* 0 Tw .654692 Tw (system or something, no tab to complete, no features, you run it because its always there on every) Tj T* 0 Tw ET
-Q
-Q
-q
-Q
-Q
-Q
- 
-endstream
-endobj
-52 0 obj
-<<
-/Length 9614
->>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
-q
-1 0 0 1 62.69291 741.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 6 11 Tm  T* ET
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .296457 Tw 12 TL /F1 10 Tf 0 0 0 rg (system, common hack entrypoint to spawn a shell in a priv upgrade or somesort of remote code exe) Tj T* 0 Tw (sploit) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 741.0236 cm
-Q
-q
-1 0 0 1 62.69291 708.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (env vars:) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 690.0236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (the shell and other software uses many environment vars) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 672.0236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (these give background information about your system and things to software that needs it) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 642.0236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.972339 Tw (this information is stored here because it doesnt need to be changed often, but always needs to be) Tj T* 0 Tw (specified) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 612.0236 cm
-q
-BT 1 0 0 1 0 14 Tm .804198 Tw 12 TL /F1 10 Tf 0 0 0 rg (type ) Tj /F3 10 Tf (env) Tj /F1 10 Tf ( to see them all. echo $VAR to see VAR. ) Tj /F3 10 Tf (export) Tj ( ) Tj (VAR=sgfsgs) Tj /F1 10 Tf ( to set VAR to sgfsgs for your) Tj T* 0 Tw (session. setting ) Tj /F3 10 Tf (VAR=5) Tj ( ) Tj (someprogram) Tj /F1 10 Tf (, will modify VAR for that single line running someprogram.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 594.0236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (shell vars in general have a $ infront of them when yolu access them. but not when you set them) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 588.0236 cm
-Q
-q
-1 0 0 1 62.69291 588.0236 cm
-Q
-q
-1 0 0 1 62.69291 576.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($PATH) Tj /F1 10 Tf ( - path to binarys, default is /bin /usr/bin /usr/local/bin etc) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 570.0236 cm
-Q
-q
-1 0 0 1 62.69291 546.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm -0.120682 Tw 12 TL /F3 10 Tf 0 0 0 rg ($DISPLAY) Tj /F1 10 Tf ( - x11/xorg display, typically :0. machines can have multiple displays, like all unix things, its) Tj T* 0 Tw (multiuser) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 540.0236 cm
-Q
-q
 1 0 0 1 62.69291 528.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 -3 cm
+1 0 0 1 6 9 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
@@ -4004,7 +3412,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($PYTHONPATH) Tj /F1 10 Tf ( - where python looks for modules) Tj T* ET
+BT 1 0 0 1 0 14 Tm .824147 Tw 12 TL /F3 10 Tf 0 0 0 rg (adduser) Tj /F1 10 Tf ( -) Tj /F3 10 Tf (adduser) Tj ( ) Tj (<) Tj (newusername) Tj (>) Tj /F1 10 Tf ( makes a new user. many options. none are really required,) Tj T* 0 Tw (even a password. interactive walk through) Tj T* ET
 Q
 Q
 q
@@ -4029,7 +3437,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($USER,) Tj ( ) Tj ($HOME) Tj /F1 10 Tf (, - username and home directory path) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (useradd) Tj /F1 10 Tf ( - more l33t version of ) Tj /F3 10 Tf (adduser) Tj /F1 10 Tf (. more useful noninteractively and non-user-friendly) Tj T* ET
 Q
 Q
 q
@@ -4054,7 +3462,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($_) Tj /F1 10 Tf ( - last arg from previous shell command run) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (usermod) Tj /F1 10 Tf ( - mod shell and stuff of a givemn user usermod -aG common for adding group) Tj T* ET
 Q
 Q
 q
@@ -4065,7 +3473,649 @@ q
 1 0 0 1 62.69291 486.0236 cm
 Q
 q
+1 0 0 1 62.69291 474.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (passwd) Tj /F1 10 Tf ( - password change, ) Tj /F3 10 Tf (passwd) Tj ( ) Tj (<) Tj (user) Tj (>) Tj /F1 10 Tf ( does it for user when u are admin) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 468.0236 cm
+Q
+q
+1 0 0 1 62.69291 408.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 50 Tm .699988 Tw 12 TL /F3 10 Tf 0 0 0 rg (dd) Tj /F1 10 Tf ( - writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the) Tj T* 0 Tw .372765 Tw (filesystem object to be written and bs is the block size which can be written human readable like 1M) Tj T* 0 Tw .58832 Tw (2M 4M and in bytes like 1024\(the old way\). you use this when wipeing disks with random data. you) Tj T* 0 Tw 1.264104 Tw (use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you) Tj T* 0 Tw (mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 402.0236 cm
+Q
+q
+1 0 0 1 62.69291 390.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (chsh) Tj /F1 10 Tf (- change the shell for a user) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 384.0236 cm
+Q
+q
+1 0 0 1 62.69291 372.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (chgroup) Tj /F1 10 Tf (- change group of file... group ownership) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 366.0236 cm
+Q
+q
+1 0 0 1 62.69291 342.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.149985 Tw 12 TL /F3 10 Tf 0 0 0 rg (chmod) Tj /F1 10 Tf (- change permissions of file chmod 777 file makes everyone read write ex it, chmod 666 is) Tj T* 0 Tw (read write for all.... chmod 600 is another common one ls -al will show the perms) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 336.0236 cm
+Q
+q
+1 0 0 1 62.69291 324.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (mount) Tj /F1 10 Tf ( - attaches a block device to a folder, allowing you to browse the filesystem) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 318.0236 cm
+Q
+q
+1 0 0 1 62.69291 306.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (umount) Tj /F1 10 Tf (- unmounts somethign takes mountpoint or /dev /device as target) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 300.0236 cm
+Q
+q
+1 0 0 1 62.69291 288.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (dmesg) Tj /F1 10 Tf (- prints messages generated at boot) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 282.0236 cm
+Q
+q
+1 0 0 1 62.69291 270.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (env) Tj /F1 10 Tf (- show ur environment vars, set them then run command\(too\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 264.0236 cm
+Q
+q
+1 0 0 1 62.69291 252.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (uptime) Tj /F1 10 Tf (- time up) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 246.0236 cm
+Q
+q
+1 0 0 1 62.69291 234.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (wipefs) Tj /F1 10 Tf (- removed disk label) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 228.0236 cm
+Q
+q
+1 0 0 1 62.69291 216.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (cryptsetup) Tj /F1 10 Tf ( - setup luks volumes) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 210.0236 cm
+Q
+q
+1 0 0 1 62.69291 198.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (cron) Tj /F1 10 Tf (- service for running periodic tasks.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 198.0236 cm
+Q
+q
+1 0 0 1 62.69291 165.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (shells:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 153.0236 cm
+Q
+q
+1 0 0 1 62.69291 153.0236 cm
+Q
+q
+1 0 0 1 62.69291 141.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (bash) Tj /F1 10 Tf ( - common, youre prob on it. "bourne again shell" whatever that means) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 135.0236 cm
+Q
+q
+1 0 0 1 62.69291 123.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (csh) Tj /F1 10 Tf ( - different, advanced too - C shell) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 117.0236 cm
+Q
+q
+1 0 0 1 62.69291 105.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (tcsh) Tj /F1 10 Tf ( - mac uses it? freebsd? its good too) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 99.02362 cm
+Q
+q
+1 0 0 1 62.69291 87.02362 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (zsh) Tj /F1 10 Tf ( - another shell that some nerds are all about, like the previous 2) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 81.02362 cm
+Q
+ 
+endstream
+endobj
+52 0 obj
+<<
+/Length 9950
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 717.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 38 Tm .341163 Tw 12 TL /F3 10 Tf 0 0 0 rg (sh) Tj /F1 10 Tf ( - the most simple bare bones one used when there is nothing else in some broke-ass embedded) Tj T* 0 Tw .654692 Tw (system or something, no tab to complete, no features, you run it because its always there on every) Tj T* 0 Tw .296457 Tw (system, common hack entrypoint to spawn a shell in a priv upgrade or somesort of remote code exe) Tj T* 0 Tw (sploit) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+Q
+q
+1 0 0 1 62.69291 684.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (env vars:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 666.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (the shell and other software uses many environment vars) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 648.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (these give background information about your system and things to software that needs it) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 618.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.972339 Tw (this information is stored here because it doesnt need to be changed often, but always needs to be) Tj T* 0 Tw (specified) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 588.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .804198 Tw 12 TL /F1 10 Tf 0 0 0 rg (type ) Tj /F3 10 Tf (env) Tj /F1 10 Tf ( to see them all. echo $VAR to see VAR. ) Tj /F3 10 Tf (export) Tj ( ) Tj (VAR=sgfsgs) Tj /F1 10 Tf ( to set VAR to sgfsgs for your) Tj T* 0 Tw (session. setting ) Tj /F3 10 Tf (VAR=5) Tj ( ) Tj (someprogram) Tj /F1 10 Tf (, will modify VAR for that single line running someprogram.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 570.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (shell vars in general have a $ infront of them when yolu access them. but not when you set them) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 564.0236 cm
+Q
+q
+1 0 0 1 62.69291 564.0236 cm
+Q
+q
+1 0 0 1 62.69291 552.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($PATH) Tj /F1 10 Tf ( - path to binarys, default is /bin /usr/bin /usr/local/bin etc) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 546.0236 cm
+Q
+q
+1 0 0 1 62.69291 522.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm -0.120682 Tw 12 TL /F3 10 Tf 0 0 0 rg ($DISPLAY) Tj /F1 10 Tf ( - x11/xorg display, typically :0. machines can have multiple displays, like all unix things, its) Tj T* 0 Tw (multiuser) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 516.0236 cm
+Q
+q
+1 0 0 1 62.69291 504.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($PYTHONPATH) Tj /F1 10 Tf ( - where python looks for modules) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 498.0236 cm
+Q
+q
+1 0 0 1 62.69291 486.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($USER,) Tj ( ) Tj ($HOME) Tj /F1 10 Tf (, - username and home directory path) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 480.0236 cm
+Q
+q
+1 0 0 1 62.69291 468.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($_) Tj /F1 10 Tf ( - last arg from previous shell command run) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
 1 0 0 1 62.69291 462.0236 cm
+Q
+q
+1 0 0 1 62.69291 438.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4087,10 +4137,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 456.0236 cm
+1 0 0 1 62.69291 432.0236 cm
 Q
 q
-1 0 0 1 62.69291 420.0236 cm
+1 0 0 1 62.69291 396.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4112,10 +4162,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 414.0236 cm
+1 0 0 1 62.69291 390.0236 cm
 Q
 q
-1 0 0 1 62.69291 402.0236 cm
+1 0 0 1 62.69291 378.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4137,10 +4187,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 396.0236 cm
+1 0 0 1 62.69291 372.0236 cm
 Q
 q
-1 0 0 1 62.69291 384.0236 cm
+1 0 0 1 62.69291 360.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4162,10 +4212,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 378.0236 cm
+1 0 0 1 62.69291 354.0236 cm
 Q
 q
-1 0 0 1 62.69291 366.0236 cm
+1 0 0 1 62.69291 342.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4187,10 +4237,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 360.0236 cm
+1 0 0 1 62.69291 336.0236 cm
 Q
 q
-1 0 0 1 62.69291 348.0236 cm
+1 0 0 1 62.69291 324.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4212,22 +4262,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 348.0236 cm
+1 0 0 1 62.69291 324.0236 cm
 Q
 q
-1 0 0 1 62.69291 315.0236 cm
+1 0 0 1 62.69291 291.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (strange obscure barely useful:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 303.0236 cm
-Q
-q
-1 0 0 1 62.69291 303.0236 cm
+1 0 0 1 62.69291 279.0236 cm
 Q
 q
 1 0 0 1 62.69291 279.0236 cm
+Q
+q
+1 0 0 1 62.69291 255.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4249,10 +4299,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 273.0236 cm
+1 0 0 1 62.69291 249.0236 cm
 Q
 q
-1 0 0 1 62.69291 261.0236 cm
+1 0 0 1 62.69291 237.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4274,10 +4324,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 255.0236 cm
+1 0 0 1 62.69291 231.0236 cm
 Q
 q
-1 0 0 1 62.69291 243.0236 cm
+1 0 0 1 62.69291 219.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4299,10 +4349,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 237.0236 cm
+1 0 0 1 62.69291 213.0236 cm
 Q
 q
-1 0 0 1 62.69291 225.0236 cm
+1 0 0 1 62.69291 201.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4324,10 +4374,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 219.0236 cm
+1 0 0 1 62.69291 195.0236 cm
 Q
 q
-1 0 0 1 62.69291 207.0236 cm
+1 0 0 1 62.69291 183.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4349,10 +4399,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 201.0236 cm
+1 0 0 1 62.69291 177.0236 cm
 Q
 q
-1 0 0 1 62.69291 189.0236 cm
+1 0 0 1 62.69291 165.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4374,22 +4424,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 189.0236 cm
+1 0 0 1 62.69291 165.0236 cm
 Q
 q
-1 0 0 1 62.69291 156.0236 cm
+1 0 0 1 62.69291 132.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (graphical, featureful) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 144.0236 cm
+1 0 0 1 62.69291 120.0236 cm
 Q
 q
-1 0 0 1 62.69291 144.0236 cm
+1 0 0 1 62.69291 120.0236 cm
 Q
 q
-1 0 0 1 62.69291 132.0236 cm
+1 0 0 1 62.69291 108.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4411,10 +4461,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 126.0236 cm
+1 0 0 1 62.69291 102.0236 cm
 Q
 q
-1 0 0 1 62.69291 102.0236 cm
+1 0 0 1 62.69291 78.02362 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4437,7 +4487,7 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 96.02362 cm
+1 0 0 1 62.69291 76.86614 cm
 Q
  
 endstream
@@ -8108,35 +8158,35 @@ xref
 0000019550 00000 n 
 0000032239 00000 n 
 0000045180 00000 n 
-0000055618 00000 n 
-0000067269 00000 n 
-0000076935 00000 n 
-0000087156 00000 n 
-0000098486 00000 n 
-0000109161 00000 n 
-0000121150 00000 n 
-0000131767 00000 n 
-0000140367 00000 n 
-0000145624 00000 n 
-0000148338 00000 n 
-0000148506 00000 n 
-0000148540 00000 n 
-0000148574 00000 n 
-0000148608 00000 n 
-0000148642 00000 n 
-0000148676 00000 n 
-0000148710 00000 n 
-0000148744 00000 n 
-0000148778 00000 n 
-0000148812 00000 n 
-0000148847 00000 n 
-0000148882 00000 n 
-0000148917 00000 n 
-0000148952 00000 n 
+0000055930 00000 n 
+0000067593 00000 n 
+0000077595 00000 n 
+0000087816 00000 n 
+0000099146 00000 n 
+0000109821 00000 n 
+0000121810 00000 n 
+0000132427 00000 n 
+0000141027 00000 n 
+0000146284 00000 n 
+0000148998 00000 n 
+0000149166 00000 n 
+0000149200 00000 n 
+0000149234 00000 n 
+0000149268 00000 n 
+0000149302 00000 n 
+0000149336 00000 n 
+0000149370 00000 n 
+0000149404 00000 n 
+0000149438 00000 n 
+0000149472 00000 n 
+0000149507 00000 n 
+0000149542 00000 n 
+0000149577 00000 n 
+0000149612 00000 n 
 trailer
 <<
 /ID 
-[<ea5482d31ddcd7e5db3fa74c15a74e8a><ea5482d31ddcd7e5db3fa74c15a74e8a>]
+[<8a5585c3c3cd6a660b836c01e4283a29><8a5585c3c3cd6a660b836c01e4283a29>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 23 0 R
@@ -8144,5 +8194,5 @@ trailer
 /Size 76
 >>
 startxref
-148987
+149647
 %%EOF

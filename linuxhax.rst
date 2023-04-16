@@ -103,6 +103,8 @@ Quintessential Unix Shell commands
 - ``fold``- chop up input from stdin and wrap it with newlines to enforce a certain width on text. 
 - ``last`` - show log of your users logins
 - ``lslogins`` - list login statistics for all accounts
+- ``bc`` - basic calculator, supports arbitrary precision
+    - ``echo "1 + 1" | bc`` - 
 
 Convention
 ==========
