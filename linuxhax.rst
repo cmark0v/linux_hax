@@ -477,7 +477,7 @@ then build with ``docker build`` and run with ``docker run`` with appropriate se
 - ``docker`` - the normal interface to docker to run one container
 - ``docker stats`` shows current running containers with resource use. important for noobs becuase people forget and leave them running 
 - ``docker <obj> prune``- <obj> may be ``container``, ``image``, ``volume``, ``network`` and maybe others i forget. this deletes the unused objects of said type, freeing up space. 
-- ``docker run --rm -it --name imagenamerun --device /dev/snd -v /etc/localtime:/etc/localtime:ro -v ~/stuffcfg:/etc/stuffcfg.d --net host  imagename:latest <cmd>`` - reading this from left to right: run, remove when done, interactice session(dont run in background like nohup), name imagenamerun on the running container, share host device /dev/snd, mount read only host /etc/localtime respectively in container, mount folder ~/stuffcfg to /etc/stuffcfg.d , share same network as host, run latest version of imagename, use <cmd> instead of default entrypoint
+- ``docker run --rm -it --name box0 --device /dev/snd -v /etc/file:/etc/file:ro -v ~/stuff:/etc/stuff.d --net host  imagename:latest <cmd>`` - reading this from left to right: run, remove when done, interactice session(dont run in background like nohup), name box0 on the running container, share host device /dev/snd, mount read only host /etc/file respectively in container, mount folder ~/stuff to /etc/stuff.d , share same network as host, run latest version of imagename, use <cmd> instead of default entrypoint
 
 DONT
 ----

@@ -196,7 +196,7 @@ endobj
 endobj
 24 0 obj
 <<
-/Author () /CreationDate (D:20230816212551+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230816212551+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20230817080559+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230817080559+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Linux Hax) /Trapped /False
 >>
 endobj
@@ -313,7 +313,7 @@ endobj
 endobj
 47 0 obj
 <<
-/Dest [ 22 0 R /XYZ 62.69291 717.0236 0 ] /Parent 46 0 R /Title (DONT)
+/Dest [ 22 0 R /XYZ 62.69291 705.0236 0 ] /Parent 46 0 R /Title (DONT)
 >>
 endobj
 48 0 obj
@@ -8170,17 +8170,17 @@ endstream
 endobj
 63 0 obj
 <<
-/Length 1964
+/Length 1937
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 -187.8622 729.0236 cm
+1 0 0 1 -115.8622 717.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 21 cm
+1 0 0 1 6 33 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
@@ -8189,7 +8189,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 26 Tm 12 TL /F3 10 Tf 0 0 0 rg (docker) Tj ( ) Tj (run) Tj ( ) Tj (--rm) Tj ( ) Tj (-it) Tj ( ) Tj (--name) Tj ( ) Tj (imagenamerun) Tj ( ) Tj (--device) Tj ( ) Tj (/dev/snd) Tj ( ) Tj (-v) Tj ( ) Tj (/etc/localti) Tj (me:/etc/localtime:ro) Tj ( ) Tj (-v) Tj ( ) Tj (~/stuffcfg:/etc/stuffcfg.d) Tj ( ) Tj (--net) Tj ( ) Tj (host) Tj ( ) Tj ( ) Tj (imagename:) Tj (latest) Tj ( ) Tj (<) Tj (cmd) Tj (>) Tj /F1 10 Tf  T* .907097 Tw (- reading this from left to right: run, remove when done, interactice session\(dont run in background like nohup\), name imagenamerun on the running container, share host device /dev/snd, mount read only host) Tj T* 0 Tw (/etc/localtime respectively in container, mount folder ~/stuffcfg to /etc/stuffcfg.d , share same network as host, run latest version of imagename, use <) Tj (cmd) Tj (> instead of default entrypoint) Tj T* ET
+BT 1 0 0 1 0 38 Tm 12 TL /F3 10 Tf 0 0 0 rg (docker) Tj ( ) Tj (run) Tj ( ) Tj (--rm) Tj ( ) Tj (-it) Tj ( ) Tj (--name) Tj ( ) Tj (box0) Tj ( ) Tj (--device) Tj ( ) Tj (/dev/snd) Tj ( ) Tj (-v) Tj ( ) Tj (/etc/file:/etc/file:) Tj (ro) Tj ( ) Tj (-v) Tj ( ) Tj (~/stuff:/etc/stuff.d) Tj ( ) Tj (--net) Tj ( ) Tj (host) Tj ( ) Tj ( ) Tj (imagename:latest) Tj ( ) Tj (<) Tj (cmd) Tj (>) Tj /F1 10 Tf  T* .936667 Tw (- reading this from left to right: run, remove when done, interactice session\(dont run in background like nohup\), name box0 on the running container, share host device /dev/snd,) Tj T* 0 Tw -0.02 Tw (mount read only host /etc/file respectively in container, mount folder ~/stuff to /etc/stuff.d , share same network as host, run latest version of imagename, use <) Tj (cmd) Tj (> instead of default) Tj T* 0 Tw (entrypoint) Tj T* ET
 Q
 Q
 q
@@ -8197,16 +8197,16 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 729.0236 cm
+1 0 0 1 62.69291 717.0236 cm
 Q
 q
-1 0 0 1 62.69291 699.0236 cm
+1 0 0 1 62.69291 687.0236 cm
 q
 BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (DONT) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 633.0236 cm
+1 0 0 1 62.69291 621.0236 cm
 q
 BT 1 0 0 1 0 50 Tm 1.369985 Tw 12 TL /F1 10 Tf 0 0 0 rg (store data in docker. you store that in volumes or shared/mounted directories on host filesystem try to) Tj T* 0 Tw .179986 Tw (keep persistent systems in docker, it is better to always ) Tj /F3 10 Tf (docker) Tj ( ) Tj (run) Tj ( ) Tj (--rm) Tj /F1 10 Tf ( to auto remove the container) Tj T* 0 Tw .596654 Tw (when you are done, and any changes that were needed should go to the Dockerfile. any config files and) Tj T* 0 Tw .051984 Tw (things should be in shared directories, safely stored on the host. containers should always be reproducible) Tj T* 0 Tw (by automated build process defined in the Dockerfile) Tj T* ET
 Q
@@ -8362,26 +8362,26 @@ xref
 0000141930 00000 n 
 0000146991 00000 n 
 0000154471 00000 n 
-0000156487 00000 n 
-0000156665 00000 n 
-0000156699 00000 n 
-0000156733 00000 n 
-0000156767 00000 n 
-0000156801 00000 n 
-0000156835 00000 n 
-0000156869 00000 n 
-0000156903 00000 n 
-0000156937 00000 n 
-0000156971 00000 n 
-0000157006 00000 n 
-0000157041 00000 n 
-0000157076 00000 n 
-0000157111 00000 n 
-0000157146 00000 n 
+0000156460 00000 n 
+0000156638 00000 n 
+0000156672 00000 n 
+0000156706 00000 n 
+0000156740 00000 n 
+0000156774 00000 n 
+0000156808 00000 n 
+0000156842 00000 n 
+0000156876 00000 n 
+0000156910 00000 n 
+0000156944 00000 n 
+0000156979 00000 n 
+0000157014 00000 n 
+0000157049 00000 n 
+0000157084 00000 n 
+0000157119 00000 n 
 trailer
 <<
 /ID 
-[<60171ea4f507402ae680afd8fcdf2cf8><60171ea4f507402ae680afd8fcdf2cf8>]
+[<3558a28e30f423db1b491218c5089f49><3558a28e30f423db1b491218c5089f49>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 24 0 R
@@ -8389,5 +8389,5 @@ trailer
 /Size 80
 >>
 startxref
-157181
+157154
 %%EOF
