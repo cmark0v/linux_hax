@@ -1,6 +1,21 @@
+Linux Hax
++++++++++
+This started out as a general unix shell primer/reference page for noobs, inspired by a lot of emails written to help collegues that were getting used to unix based operating systems. I tried to focus on features and cultural norms that are so fundamental to experienced users that they often dont mention them. I have seen this manifest in stark realities such as people that are unaware of tab-to-complete after an embarassingly long period of daily linux use. It has widened in scope a little to include brief tutorial on important basic userland tools, and reference notes for myself and other advanced users on things that see helpful but infrequent use.
 
-Quintessential Unix Shell commands
-==================================
+Convention
+==========
+This is notation and syntactic commonalities reflected in this document and others like it, not strict syntax but some generally unspoken entrenched cultural features that might confuse unix noobs when they take a look at a man page or a document like this.
+
+- ``<x>`` - a common notation for unspecified parameters in unix man pages and such is surrounding a name or description of a quantity or string with the ``<`` and ``>``.  es: ``ls <folder>`` 
+- ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available. This is however, a feature of the package itself and only ubiquitious due to cultural convention and voluntary adherence thereof. 
+- ``<cmd> --arg-name -a <VAL1> --arg2 <VAL2>`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words. This is also cultural convention, command line args can be anything and are tokenized on whitespace. flag options like ``-a -b`` are generally commutative(order doesnt matter) and can be grouped. so ``-ab`` and ``-ba`` and ``-b -a`` would all be the same to the former. argument values (denoted ``<VAL`>`` and ``<VAL2>`` above, are not commutative and sometimes option flags are grouped with argument values so they are only commutative within that block rather than on the whole line.  
+- RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages... (you know who you are)
+- ``ctrl-x`` - hold control and x both for a moment, ``x-y z`` hold x and y for a moment, release both, hit z
+- ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard, square parenthesis like this are also often used for optional arguments to show their position in the man pages and such
+
+
+Basic general unix shell commands
+=================================
 
 - ``ls`` - list files
    - ``ls -al`` - list all files with extra information
@@ -106,16 +121,6 @@ Quintessential Unix Shell commands
 - ``bc`` - basic calculator, supports arbitrary precision
     - ``echo "1 + 1" | bc`` - 
 
-Convention
-==========
-this is notation and syntactic commonalities reflected in this document and others like it, not strict syntax but some generally unspoken entrenched cultural features that might confuse unix noobs
-
-- ``<x>`` - a variable/string(that you need to fill in based off of your situation) named x, this is common parlance in documents like this,  think it comes from some shell scripting syntax, for example ``ls <folder>`` is saying that putting a path to a folder
-- ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available.
-- ``<cmd> --<arg-name> -a`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words. these are community habbits for many decades and not technical limitations or hard rules. command line args can be anything but are generally tokenized by splitting on the whitespace. sometimes args must come before inputs, sometimes they can go anywhere, sometimes the ``-`` is optional. there is more variation in older software. 
-- RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages... (you know who you are)
-- ``ctrl-x`` - hold control and x both for a moment, ``x-y z`` hold x and y for a moment, release both, hit z
-- ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard, square parenthesis like this are also often used for optional arguments to show their position in the man pages and such
 
 editors:
 ========
@@ -334,10 +339,12 @@ root filesystem synopsis
  Int the past many of these were separate partitions, hence some of the seemingly redundant things. Now this is not as important with solid state drives and (i supposed) more modern file systems
 
 - ``/tmp`` - temp folder, anyone can write in it. it is there on every system and great place to copy things to if you are not sure where to do it
-- ``/etc`` - pronounced et-SEE. all the configuration files and global settings are in here by default. in the past administration could be done exclusively by modificaion of files here, more or less. programs like passwd are tools to automatically edit files here
+- ``/etc`` - pronounced et-SEE. all the configuration files and global settings are in here by default. in the past administration could be done exclusively by modificaion of files here, more or less. programs like passwd and usermod are tools to automatically edit files here. Disk usage is small as it is mostly text files and it is definitely something you want to back up, as it contains any system settings you took time configuring.
 - ``/var`` - various data here, var/log is a default global spot for logs. often home to global data storage, such as the root of a  webserver with static content, or database disk footprint. 
 - ``/usr`` - user installed things generally.... comes with a lot in it these days. it is like an alternative root where u generally would modify things for system wide access. has the same directory structure as /
-- ``/proc`` - process information emulated as block storage devices and stuff like this. can get info about some hardware from drivers, and access some other weird low level things, dynamic emulated files that are read from live executing daemons
+- ``/proc`` - process information emulated as block storage devices and stuff like this. can get info about some hardware from drivers, and access some other kernel level information pertaining to active system processes
+- ``/sys`` - kernel emulated filesystem tree allowing information and interaction of various kernel level functionality and hardware devices. This includes the ability to read parameters from live kernel modules and set them by writing to said file as well, for example.
+- ``/run`` - contains filesystem socket devices and other quasi-file dynamic objects written by userland software (as opposed to kernel level features in proc and sys)
 - ``/dev`` - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it is a virtualized/emulated filesystem integrated representation of a group of non-file objects(very cool) like proc. these are not actual files, but dynamic emulated files that make access to devices like accessing a file. reading and writing to them is the same as a file
 - ``/opt`` - not sure what it is supposed to be but it is often used to store globally accessed proprietary software that doesn't have facility to install in the typical global directory structure(where things are in /bin and /lib andprstuff
 - ``/bin`` - binarys, these are where the commands are stored for the base system. most of the higher level stuff is in /usr/bin and /usr/local/bin
@@ -404,7 +411,7 @@ sudo su -s /bin/bash git
 mkdir <package-name>
 cd <package-name>
 git init .
-git config receive.denyCurrentBranch ignore 
+git config receive.denyCurrentBranch ignore #lets you push to bare repo
 
 put public keys in ``/home/git/.ssh/authorized_keys`` as a line, on the host n  
 
@@ -412,7 +419,7 @@ on cients:  ``git clone ssh://git@server:/home/git/package``
 
 then make an initial commit to master to make sure it works
 
-pull requests are a social media feature tied to the web interface and dont reallt exist in this setting. 
+pull requests are a social media feature tied to the web interface and dont really exist in this setting. 
 
 git client side
 ===============
@@ -470,11 +477,10 @@ then build with ``docker build`` and run with ``docker run`` with appropriate se
 - ``docker`` - the normal interface to docker to run one container
 - ``docker stats`` shows current running containers with resource use. important for noobs becuase people forget and leave them running 
 - ``docker <obj> prune``- <obj> may be ``container``, ``image``, ``volume``, ``network`` and maybe others i forget. this deletes the unused objects of said type, freeing up space. 
+- ``docker run --rm -it --name imagenamerun --device /dev/snd -v /etc/localtime:/etc/localtime:ro -v ~/stuffcfg:/etc/stuffcfg.d --net host  imagename:latest <cmd>`` - reading this from left to right: run, remove when done, interactice session(dont run in background like nohup), name imagenamerun on the running container, share host device /dev/snd, mount read only host /etc/localtime respectively in container, mount folder ~/stuffcfg to /etc/stuffcfg.d , share same network as host, run latest version of imagename, use <cmd> instead of default entrypoint
 
-reference example for run command
-``docker run --rm -it --name imagenamerun --device /dev/snd -v /etc/localtime:/etc/localtime:ro -v ~/stuffcfg:/etc/stuffcfg.d --net host  imagename:latest <cmd>`` - reading this from left to right: run, remove when done, interactice session(dont run in background like nohup), name imagenamerun on the running container, share host device /dev/snd, mount read only host /etc/localtime respectively in container, mount folder ~/stuffcfg to /etc/stuffcfg.d , share same network as host, run latest version of imagename, use <cmd> instead of default entrypoint
-
-DONT:
+DONT
+----
 
 store data in docker. you store that in volumes or shared/mounted directories on host filesystem
 try to keep persistent systems in docker, it is better to always ``docker run --rm`` to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile
