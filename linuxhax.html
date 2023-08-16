@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.16: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 <title>linuxhax.rst</title>
 <style type="text/css">
 
@@ -827,10 +827,10 @@ git config receive.denyCurrentBranch ignore
 <pre class="doctest-block">
 &gt;&gt;&gt;
 git checkout master
-git pull# - make sure its up to date
-git branch mybranchname #- make a branch
-git cheeckout mybranchname #- now you are on it, it is forekd off main
-#do stuff
+git pull  # make sure its up to date
+git branch mybranchname # make a branch
+git checkout mybranchname #- now you are on it, it is forekd off main
+#do stuff, write code
 git add stuff
 git commit -m&quot;new stuff&quot;
 git push #- upload it to the remove server
@@ -841,36 +841,44 @@ git merge mybranchname
 #now if theres conflicts, you make sure it works, correct them.
 #you can checkout a file from master by &quot;git checkout &lt;branch&gt; &lt;file&gt;&quot; to overwrite your version with one from another branch
 git push
-git branch -d mybranchname
+git branch -d mybranchname #delete the branch that you merged in, keep it from cluttering repo
 </pre>
-<p>git is very user friendly for a command line interface
-but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation of the underlying repo datastructure an your interaction with it.</p>
+<p>git is very user friendly for a command line interface, gives useful messages
+but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation and interfacing with the underlying repo datastructure that is entirely local. Git can be useful without a remote, just to track progress and allow you to undo things if you mess up your code. noobs and people in the past that didnt have version control used to keep many copies of their code.</p>
 </div>
 <div class="section" id="docker">
 <h1>docker</h1>
 <p>docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your baremetal system.</p>
-<p>It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM. apps in docker runs on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards). you can run things in docker seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation between peoples systems on a dev team. it has a built in management system for images shared by project teams and the community.</p>
-<p>if you dont use it youre basically failing at life.</p>
-<p>to get started you need to add user to docker group <tt class="docutils literal">usermod <span class="pre">-aG</span> docker &lt;user&gt;</tt>, and then make a empty directory and put a file in it called Dockerfile, in which you list a series of commands building your custom system, generally starting with something from the docker repo. example:</p>
+<p>It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM. apps in docker run on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards). you can run things in docker seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation between peoples systems on a dev team. it has a built in management system for images shared by project teams and the community.</p>
+<p>if you dont use it youre basically failing at life. It is not something that requires a ton of knowledge or practice to benefit from.</p>
+<p>to get started you need to add user to docker group <tt class="docutils literal">usermod <span class="pre">-aG</span> docker &lt;user&gt;</tt>, and then make a empty directory and put a file in it called Dockerfile, in which you list a series of commands building your custom system, generally starting with something from the docker repo. example including most of what you need:</p>
 <pre class="doctest-block">
 &gt;&gt;&gt;
-FROM ubuntu
+FROM ubuntu:latest #start with the baseline latest image
 RUN apt-get update
 RUN apt-get upgrade -y --force-yes
-RUN apt-get install -y --no-install-recommends &lt;packages&gt;
+RUN apt-get install -y --no-install-recommends &lt;packages&gt; #only install the requirements and avoid any extra dependencies
 RUN groupadd -g 1000 ubuntu
 RUN useradd -d /home/ubuntu -s /bin/bash -m ubuntu -u 1000 -g 1000
-USER ubuntu
-ENV HOME /home/ubuntu
+USER ubuntu #rest of lines are as this user, as is runtime(default is root)
+ENV HOME /home/ubuntu #set environment variable $HOME
+RUN apt-get clean
 #clean up, rm -rf basically anything you dont need to run the entrypoint
-CMD &lt;command&gt;
+WORKDIR /workspace #in this file after this command and at runtime launch we are in /workspace
+CMD &lt;command&gt; #whatever you put in for &lt;command&gt; will be the default entrypoint
 </pre>
 <p>then build with <tt class="docutils literal">docker build</tt> and run with <tt class="docutils literal">docker run</tt> with appropriate settings for network exposure and volume sharing etc.</p>
 <ul class="simple">
 <li><tt class="docutils literal"><span class="pre">docker-compose</span></tt> - utility for launching a few differentd ocker containers of different services, allowig you to easily config them to be interconnected in one file. simply put <tt class="docutils literal"><span class="pre">docker-compose.yml</span></tt> in an empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due to autistic standards with whitespace and stuff. so work off of a copypaste</li>
 <li><tt class="docutils literal">docker</tt> - the normal interface to docker to run one container</li>
-<li><tt class="docutils literal">docker stats</tt> shows current running containers wioth resource use</li>
+<li><tt class="docutils literal">docker stats</tt> shows current running containers with resource use. important for noobs becuase people forget and leave them running</li>
+<li><tt class="docutils literal">docker &lt;obj&gt; prune</tt>- &lt;obj&gt; may be <tt class="docutils literal">container</tt>, <tt class="docutils literal">image</tt>, <tt class="docutils literal">volume</tt>, <tt class="docutils literal">network</tt> and maybe others i forget. this deletes the unused objects of said type, freeing up space.</li>
 </ul>
+<p>reference example for run command
+<tt class="docutils literal">docker run <span class="pre">--rm</span> <span class="pre">-it</span> <span class="pre">--name</span> imagenamerun <span class="pre">--device</span> /dev/snd <span class="pre">-v</span> <span class="pre">/etc/localtime:/etc/localtime:ro</span> <span class="pre">-v</span> <span class="pre">~/stuffcfg:/etc/stuffcfg.d</span> <span class="pre">--net</span> host&nbsp; imagename:latest &lt;cmd&gt;</tt> - reading this from left to right: run, remove when done, interactice session(dont run in background like nohup), name imagenamerun on the running container, share host device /dev/snd, mount read only host /etc/localtime respectively in container, mount folder ~/stuffcfg to /etc/stuffcfg.d , share same network as host, run latest version of imagename, use &lt;cmd&gt; instead of default entrypoint</p>
+<p>DONT:</p>
+<p>store data in docker. you store that in volumes or shared/mounted directories on host filesystem
+try to keep persistent systems in docker, it is better to always <tt class="docutils literal">docker run <span class="pre">--rm</span></tt> to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile</p>
 </div>
 </div>
 </body>

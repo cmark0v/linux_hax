@@ -186,7 +186,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author () /CreationDate (D:20230416212714-09'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230416212714-09'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20230816183135+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230816183135+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title () /Trapped /False
 >>
 endobj
@@ -297,7 +297,7 @@ endobj
 endobj
 45 0 obj
 <<
-/Dest [ 20 0 R /XYZ 62.69291 286.0971 0 ] /Parent 24 0 R /Prev 44 0 R /Title (docker)
+/Dest [ 20 0 R /XYZ 62.69291 262.0971 0 ] /Parent 24 0 R /Prev 44 0 R /Title (docker)
 >>
 endobj
 46 0 obj
@@ -7773,7 +7773,7 @@ endstream
 endobj
 59 0 obj
 <<
-/Length 5205
+/Length 5185
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -7863,50 +7863,44 @@ q
 n -6 -6 762 216 re B*
 Q
 q
-BT 1 0 0 1 0 194 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj  T* (git checkout master) Tj T* (git pull# - make sure its up to date) Tj T* (git branch mybranchname #- make a branch) Tj T* (git cheeckout mybranchname #- now you are on it, it is forekd off main) Tj T* (#do stuff) Tj T* (git add stuff) Tj T* (git commit -m"new stuff") Tj T* (git push #- upload it to the remove server) Tj T* (#keep doing stuff, eventually ready to merge) Tj T* (git checkout master) Tj T* (git pull #-make sure its up todate) Tj T* (git merge mybranchname) Tj T* (#now if theres conflicts, you make sure it works, correct them.) Tj T* (#you can checkout a file from master by "git checkout ) Tj (<) Tj (branch) Tj (>) Tj ( ) Tj (<) Tj (file) Tj (>) Tj (" to overwrite your version with one from another branch) Tj T* (git push) Tj T* (git branch -d mybranchname) Tj T* ET
+BT 1 0 0 1 0 194 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj  T* (git checkout master) Tj T* (git pull  # make sure its up to date) Tj T* (git branch mybranchname # make a branch) Tj T* (git checkout mybranchname #- now you are on it, it is forekd off main) Tj T* (#do stuff, write code) Tj T* (git add stuff) Tj T* (git commit -m"new stuff") Tj T* (git push #- upload it to the remove server) Tj T* (#keep doing stuff, eventually ready to merge) Tj T* (git checkout master) Tj T* (git pull #-make sure its up todate) Tj T* (git merge mybranchname) Tj T* (#now if theres conflicts, you make sure it works, correct them.) Tj T* (#you can checkout a file from master by "git checkout ) Tj (<) Tj (branch) Tj (>) Tj ( ) Tj (<) Tj (file) Tj (>) Tj (" to overwrite your version with one from another branch) Tj T* (git push) Tj T* (git branch -d mybranchname #delete the branch that you merged in, keep it from cluttering repo) Tj T* ET
 Q
 Q
 Q
 Q
 Q
 q
-1 0 0 1 62.69291 298.0971 cm
+1 0 0 1 62.69291 274.0971 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 26 Tm /F1 10 Tf 12 TL .159461 Tw (git is very user friendly for a command line interface but remember to push after you merge, push and pull) Tj T* 0 Tw .573555 Tw (and clone are remote commands. commit, checkout, merge, etc, are local manipulation of the underlying) Tj T* 0 Tw (repo datastructure an your interaction with it.) Tj T* ET
+BT 1 0 0 1 0 50 Tm /F1 10 Tf 12 TL .669398 Tw (git is very user friendly for a command line interface, gives useful messages but remember to push after) Tj T* 0 Tw 1.943318 Tw (you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local) Tj T* 0 Tw .422651 Tw (manipulation and interfacing with the underlying repo datastructure that is entirely local. Git can be useful) Tj T* 0 Tw .093988 Tw (without a remote, just to track progress and allow you to undo things if you mess up your code. noobs and) Tj T* 0 Tw (people in the past that didnt have version control used to keep many copies of their code.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 265.0971 cm
+1 0 0 1 62.69291 241.0971 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (docker) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 235.0971 cm
+1 0 0 1 62.69291 211.0971 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .594488 Tw (docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your) Tj T* 0 Tw (baremetal system.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 145.0971 cm
+1 0 0 1 62.69291 121.0971 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 74 Tm /F1 10 Tf 12 TL -0.021349 Tw (It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use) Tj T* 0 Tw 1.97528 Tw (of a VM. apps in docker runs on your kernel but network and disk is sandboxed and communicates) Tj T* 0 Tw 1.287126 Tw (through whatever avenues you specify\(shared folders and port forwards\). you can run things in docker) Tj T* 0 Tw 6.554147 Tw (seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial) Tj T* 0 Tw .080976 Tw (spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation) Tj T* 0 Tw 1.615868 Tw (between peoples systems on a dev team. it has a built in management system for images shared by) Tj T* 0 Tw (project teams and the community.) Tj T* ET
+BT 1 0 0 1 0 74 Tm /F1 10 Tf 12 TL -0.021349 Tw (It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use) Tj T* 0 Tw .104987 Tw (of a VM. apps in docker run on your kernel but network and disk is sandboxed and communicates through) Tj T* 0 Tw -0.021445 Tw (whatever avenues you specify\(shared folders and port forwards\). you can run things in docker seamlessly,) Tj T* 0 Tw .94998 Tw (including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages.) Tj T* 0 Tw .436647 Tw (good way to keep reproducible devleopment environments to remove variation between peoples systems) Tj T* 0 Tw 2.575542 Tw (on a dev team. it has a built in management system for images shared by project teams and the) Tj T* 0 Tw (community.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 127.0971 cm
+1 0 0 1 62.69291 91.09713 cm
 q
 0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (if you dont use it youre basically failing at life.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 85.09713 cm
-q
-BT 1 0 0 1 0 26 Tm .538876 Tw 12 TL /F1 10 Tf 0 0 0 rg (to get started you need to add user to docker group ) Tj /F3 10 Tf (usermod) Tj ( ) Tj (-aG) Tj ( ) Tj (docker) Tj ( ) Tj (<) Tj (user) Tj (>) Tj /F1 10 Tf (, and then make a) Tj T* 0 Tw .599461 Tw (empty directory and put a file in it called Dockerfile, in which you list a series of commands building your) Tj T* 0 Tw (custom system, generally starting with something from the docker repo. example:) Tj T* ET
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.455988 Tw (if you dont use it youre basically failing at life. It is not something that requires a ton of knowledge or) Tj T* 0 Tw (practice to benefit from.) Tj T* ET
 Q
 Q
  
@@ -7914,44 +7908,50 @@ endstream
 endobj
 60 0 obj
 <<
-/Length 2662
+/Length 6312
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 619.8236 cm
+1 0 0 1 62.69291 717.0236 cm
+q
+BT 1 0 0 1 0 38 Tm .538876 Tw 12 TL /F1 10 Tf 0 0 0 rg (to get started you need to add user to docker group ) Tj /F3 10 Tf (usermod) Tj ( ) Tj (-aG) Tj ( ) Tj (docker) Tj ( ) Tj (<) Tj (user) Tj (>) Tj /F1 10 Tf (, and then make a) Tj T* 0 Tw .599461 Tw (empty directory and put a file in it called Dockerfile, in which you list a series of commands building your) Tj T* 0 Tw .85284 Tw (custom system, generally starting with something from the docker repo. example including most of what) Tj T* 0 Tw (you need:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 601.4677 cm
 q
 q
-1 0 0 1 0 0 cm
+.635673 0 0 .635673 0 0 cm
 q
-1 0 0 1 6.6 6.6 cm
+1 0 0 1 6.6 10.38269 cm
 q
 .662745 .662745 .662745 RG
 .5 w
 .960784 .960784 .862745 rg
-n -6 -6 468.6898 144 re B*
+n -6 -6 738 168 re B*
 Q
 q
-BT 1 0 0 1 0 122 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj  T* (FROM ubuntu) Tj T* (RUN apt-get update) Tj T* (RUN apt-get upgrade -y --force-yes) Tj T* (RUN apt-get install -y --no-install-recommends ) Tj (<) Tj (packages) Tj (>) Tj  T* (RUN groupadd -g 1000 ubuntu) Tj T* (RUN useradd -d /home/ubuntu -s /bin/bash -m ubuntu -u 1000 -g 1000) Tj T* (USER ubuntu) Tj T* (ENV HOME /home/ubuntu) Tj T* (#clean up, rm -rf basically anything you dont need to run the entrypoint) Tj T* (CMD ) Tj (<) Tj (command) Tj (>) Tj T* ET
+BT 1 0 0 1 0 146 Tm 12 TL /F3 10 Tf 0 0 0 rg (>) Tj (>) Tj (>) Tj  T* (FROM ubuntu:latest #start with the baseline latest image) Tj T* (RUN apt-get update) Tj T* (RUN apt-get upgrade -y --force-yes) Tj T* (RUN apt-get install -y --no-install-recommends ) Tj (<) Tj (packages) Tj (>) Tj ( #only install the requirements and avoid any extra dependencies) Tj T* (RUN groupadd -g 1000 ubuntu) Tj T* (RUN useradd -d /home/ubuntu -s /bin/bash -m ubuntu -u 1000 -g 1000) Tj T* (USER ubuntu #rest of lines are as this user, as is runtime\(default is root\)) Tj T* (ENV HOME /home/ubuntu #set environment variable $HOME) Tj T* (RUN apt-get clean) Tj T* (#clean up, rm -rf basically anything you dont need to run the entrypoint) Tj T* (WORKDIR /workspace #in this file after this command and at runtime launch we are in /workspace) Tj T* (CMD ) Tj (<) Tj (command) Tj (>) Tj ( #whatever you put in for ) Tj (<) Tj (command) Tj (>) Tj ( will be the default entrypoint) Tj T* ET
 Q
 Q
 Q
 Q
 Q
 q
-1 0 0 1 62.69291 587.8236 cm
+1 0 0 1 62.69291 569.4677 cm
 q
 BT 1 0 0 1 0 14 Tm .256651 Tw 12 TL /F1 10 Tf 0 0 0 rg (then build with ) Tj /F3 10 Tf (docker) Tj ( ) Tj (build) Tj /F1 10 Tf ( and run with ) Tj /F3 10 Tf (docker) Tj ( ) Tj (run) Tj /F1 10 Tf ( with appropriate settings for network exposure) Tj T* 0 Tw (and volume sharing etc.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 581.8236 cm
+1 0 0 1 62.69291 563.4677 cm
 Q
 q
-1 0 0 1 62.69291 581.8236 cm
+1 0 0 1 62.69291 563.4677 cm
 Q
 q
-1 0 0 1 62.69291 533.8236 cm
+1 0 0 1 62.69291 515.4677 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7965,7 +7965,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 38 Tm 2.636647 Tw 12 TL /F3 10 Tf 0 0 0 rg (docker-compose) Tj /F1 10 Tf ( - utility for launching a few differentd ocker containers of different services,) Tj T* 0 Tw .227126 Tw (allowig you to easily config them to be interconnected in one file. simply put ) Tj /F3 10 Tf (docker-compose.yml) Tj /F1 10 Tf  T* 0 Tw .359398 Tw (in an empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due) Tj T* 0 Tw (to autistic standards with whitespace and stuff. so work off of a copypaste) Tj T* ET
+BT 1 0 0 1 0 38 Tm -0.130787 Tw 12 TL /F3 10 Tf 0 0 0 rg (docker-compose) Tj /F1 10 Tf ( - utility for launching a few differentd ocker containers of different services, allowig) Tj T* 0 Tw .803984 Tw (you to easily config them to be interconnected in one file. simply put ) Tj /F3 10 Tf (docker-compose.yml) Tj /F1 10 Tf ( in an) Tj T* 0 Tw 1.21561 Tw (empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due to) Tj T* 0 Tw (autistic standards with whitespace and stuff. so work off of a copypaste) Tj T* ET
 Q
 Q
 q
@@ -7973,10 +7973,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 527.8236 cm
+1 0 0 1 62.69291 509.4677 cm
 Q
 q
-1 0 0 1 62.69291 515.8236 cm
+1 0 0 1 62.69291 497.4677 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7998,15 +7998,15 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 509.8236 cm
+1 0 0 1 62.69291 491.4677 cm
 Q
 q
-1 0 0 1 62.69291 497.8236 cm
+1 0 0 1 62.69291 467.4677 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 -3 cm
+1 0 0 1 6 9 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
@@ -8015,7 +8015,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (docker) Tj ( ) Tj (stats) Tj /F1 10 Tf ( shows current running containers wioth resource use) Tj T* ET
+BT 1 0 0 1 0 14 Tm .94998 Tw 12 TL /F3 10 Tf 0 0 0 rg (docker) Tj ( ) Tj (stats) Tj /F1 10 Tf ( shows current running containers with resource use. important for noobs becuase) Tj T* 0 Tw (people forget and leave them running) Tj T* ET
 Q
 Q
 q
@@ -8023,7 +8023,51 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 497.8236 cm
+1 0 0 1 62.69291 461.4677 cm
+Q
+q
+1 0 0 1 62.69291 437.4677 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .223828 Tw 12 TL /F3 10 Tf 0 0 0 rg (docker) Tj ( ) Tj (<) Tj (obj) Tj (>) Tj ( ) Tj (prune) Tj /F1 10 Tf (- <) Tj (obj) Tj (> may be ) Tj /F3 10 Tf (container) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (image) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (volume) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (network) Tj /F1 10 Tf ( and maybe others i) Tj T* 0 Tw (forget. this deletes the unused objects of said type, freeing up space.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 437.4677 cm
+Q
+q
+1 0 0 1 62.69291 347.4677 cm
+q
+BT 1 0 0 1 0 74 Tm .49498 Tw 12 TL /F1 10 Tf 0 0 0 rg (reference example for run command ) Tj /F3 10 Tf (docker) Tj ( ) Tj (run) Tj ( ) Tj (--rm) Tj ( ) Tj (-it) Tj ( ) Tj (--name) Tj ( ) Tj (imagenamerun) Tj ( ) Tj (--device) Tj ( ) Tj (/) Tj  T* 0 Tw .377953 Tw (dev/snd) Tj ( ) Tj (-v) Tj ( ) Tj (/etc/localtime:/etc/localtime:ro) Tj ( ) Tj (-v) Tj ( ) Tj (~/stuffcfg:/etc/stuffcfg.d) Tj ( ) Tj (--ne) Tj T* 0 Tw 2.911318 Tw (t) Tj ( ) Tj (host) Tj ( ) Tj ( ) Tj (imagename:latest) Tj ( ) Tj (<) Tj (cmd) Tj (>) Tj /F1 10 Tf ( - reading this from left to right: run, remove when done,) Tj T* 0 Tw 1.408314 Tw (interactice session\(dont run in background like nohup\), name imagenamerun on the running container,) Tj T* 0 Tw 1.514597 Tw (share host device /dev/snd, mount read only host /etc/localtime respectively in container, mount folder) Tj T* 0 Tw 1.292651 Tw (~/stuffcfg to /etc/stuffcfg.d , share same network as host, run latest version of imagename, use <) Tj (cmd) Tj (>) Tj T* 0 Tw (instead of default entrypoint) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 329.4677 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (DONT:) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 263.4677 cm
+q
+BT 1 0 0 1 0 50 Tm 1.369985 Tw 12 TL /F1 10 Tf 0 0 0 rg (store data in docker. you store that in volumes or shared/mounted directories on host filesystem try to) Tj T* 0 Tw .179986 Tw (keep persistent systems in docker, it is better to always ) Tj /F3 10 Tf (docker) Tj ( ) Tj (run) Tj ( ) Tj (--rm) Tj /F1 10 Tf ( to auto remove the container) Tj T* 0 Tw .596654 Tw (when you are done, and any changes that were needed should go to the Dockerfile. any config files and) Tj T* 0 Tw .051984 Tw (things should be in shared directories, safely stored on the host. containers should always be reproducible) Tj T* 0 Tw (by automated build process defined in the Dockerfile) Tj T* ET
+Q
 Q
  
 endstream
@@ -8167,26 +8211,26 @@ xref
 0000121810 00000 n 
 0000132427 00000 n 
 0000141027 00000 n 
-0000146284 00000 n 
-0000148998 00000 n 
-0000149166 00000 n 
-0000149200 00000 n 
-0000149234 00000 n 
-0000149268 00000 n 
-0000149302 00000 n 
-0000149336 00000 n 
-0000149370 00000 n 
-0000149404 00000 n 
-0000149438 00000 n 
-0000149472 00000 n 
-0000149507 00000 n 
-0000149542 00000 n 
-0000149577 00000 n 
-0000149612 00000 n 
+0000146264 00000 n 
+0000152628 00000 n 
+0000152796 00000 n 
+0000152830 00000 n 
+0000152864 00000 n 
+0000152898 00000 n 
+0000152932 00000 n 
+0000152966 00000 n 
+0000153000 00000 n 
+0000153034 00000 n 
+0000153068 00000 n 
+0000153102 00000 n 
+0000153137 00000 n 
+0000153172 00000 n 
+0000153207 00000 n 
+0000153242 00000 n 
 trailer
 <<
 /ID 
-[<8a5585c3c3cd6a660b836c01e4283a29><8a5585c3c3cd6a660b836c01e4283a29>]
+[<b890bd423eba8e0e8cefa95265f464e7><b890bd423eba8e0e8cefa95265f464e7>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 23 0 R
@@ -8194,5 +8238,5 @@ trailer
 /Size 76
 >>
 startxref
-149647
+153277
 %%EOF

@@ -420,10 +420,10 @@ process of creating branch and merge:
 
 >>>
 git checkout master
-git pull# - make sure its up to date
-git branch mybranchname #- make a branch
-git cheeckout mybranchname #- now you are on it, it is forekd off main
-#do stuff
+git pull  # make sure its up to date
+git branch mybranchname # make a branch
+git checkout mybranchname #- now you are on it, it is forekd off main
+#do stuff, write code
 git add stuff
 git commit -m"new stuff"
 git push #- upload it to the remove server
@@ -434,37 +434,47 @@ git merge mybranchname
 #now if theres conflicts, you make sure it works, correct them. 
 #you can checkout a file from master by "git checkout <branch> <file>" to overwrite your version with one from another branch 
 git push
-git branch -d mybranchname
+git branch -d mybranchname #delete the branch that you merged in, keep it from cluttering repo
 
-git is very user friendly for a command line interface
-but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation of the underlying repo datastructure an your interaction with it. 
+git is very user friendly for a command line interface, gives useful messages
+but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation and interfacing with the underlying repo datastructure that is entirely local. Git can be useful without a remote, just to track progress and allow you to undo things if you mess up your code. noobs and people in the past that didnt have version control used to keep many copies of their code.
 
 
 docker
 ======
 docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your baremetal system. 
 
-It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM. apps in docker runs on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards). you can run things in docker seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation between peoples systems on a dev team. it has a built in management system for images shared by project teams and the community. 
+It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM. apps in docker run on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards). you can run things in docker seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation between peoples systems on a dev team. it has a built in management system for images shared by project teams and the community. 
 
-if you dont use it youre basically failing at life. 
+if you dont use it youre basically failing at life. It is not something that requires a ton of knowledge or practice to benefit from. 
 
-to get started you need to add user to docker group ``usermod -aG docker <user>``, and then make a empty directory and put a file in it called Dockerfile, in which you list a series of commands building your custom system, generally starting with something from the docker repo. example: 
+to get started you need to add user to docker group ``usermod -aG docker <user>``, and then make a empty directory and put a file in it called Dockerfile, in which you list a series of commands building your custom system, generally starting with something from the docker repo. example including most of what you need: 
 
 >>>
-FROM ubuntu
+FROM ubuntu:latest #start with the baseline latest image
 RUN apt-get update
 RUN apt-get upgrade -y --force-yes
-RUN apt-get install -y --no-install-recommends <packages>
+RUN apt-get install -y --no-install-recommends <packages> #only install the requirements and avoid any extra dependencies
 RUN groupadd -g 1000 ubuntu
 RUN useradd -d /home/ubuntu -s /bin/bash -m ubuntu -u 1000 -g 1000
-USER ubuntu
-ENV HOME /home/ubuntu
+USER ubuntu #rest of lines are as this user, as is runtime(default is root)
+ENV HOME /home/ubuntu #set environment variable $HOME
+RUN apt-get clean
 #clean up, rm -rf basically anything you dont need to run the entrypoint
-CMD <command>
+WORKDIR /workspace #in this file after this command and at runtime launch we are in /workspace
+CMD <command> #whatever you put in for <command> will be the default entrypoint
 
 then build with ``docker build`` and run with ``docker run`` with appropriate settings for network exposure and volume sharing etc. 
 
 - ``docker-compose`` - utility for launching a few differentd ocker containers of different services, allowig you to easily config them to be interconnected in one file. simply put ``docker-compose.yml`` in an empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due to autistic standards with whitespace and stuff. so work off of a copypaste
 - ``docker`` - the normal interface to docker to run one container
-- ``docker stats`` shows current running containers wioth resource use
+- ``docker stats`` shows current running containers with resource use. important for noobs becuase people forget and leave them running 
+- ``docker <obj> prune``- <obj> may be ``container``, ``image``, ``volume``, ``network`` and maybe others i forget. this deletes the unused objects of said type, freeing up space. 
 
+reference example for run command
+``docker run --rm -it --name imagenamerun --device /dev/snd -v /etc/localtime:/etc/localtime:ro -v ~/stuffcfg:/etc/stuffcfg.d --net host  imagename:latest <cmd>`` - reading this from left to right: run, remove when done, interactice session(dont run in background like nohup), name imagenamerun on the running container, share host device /dev/snd, mount read only host /etc/localtime respectively in container, mount folder ~/stuffcfg to /etc/stuffcfg.d , share same network as host, run latest version of imagename, use <cmd> instead of default entrypoint
+
+DONT:
+
+store data in docker. you store that in volumes or shared/mounted directories on host filesystem
+try to keep persistent systems in docker, it is better to always ``docker run --rm`` to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile
