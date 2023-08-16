@@ -1,6 +1,9 @@
-linux/general unix cheat sheet for noobs trying to be hackers, developers, scientists, sysadmins, operators, mechanics, wizards, engineers, eunuchs, network ninjas, parents, kids, jobdevs, devjobs, stevejobs... hackjobs....
+Linux shell reference sheet and spread spectrum primer for peple that want to learn how to use a computer
 
-it is written in rst, reStructuredText, ``make.sh`` compiles it using rst2html and rst2pdf 
+written in rst. made to be read as text but compiles to pdf and html with ``make`` 
 
+
+requirements
+===========
 
 ``apt install rst2pdf python3-docutils`` should have you sorted out
