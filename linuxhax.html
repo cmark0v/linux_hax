@@ -549,7 +549,8 @@ ul.auto-toc {
 <ul class="simple">
 <li><tt class="docutils literal">sudo</tt> - run following command as root (admin)</li>
 <li><tt class="docutils literal">su</tt> - set user, defaults to root. can specify shell with -s</li>
-<li><tt class="docutils literal">service</tt> - control a service. service &lt;name of it&gt; &lt;start, stop, restart, reload&gt;   ex: sudo service postgresql restart</li>
+<li><tt class="docutils literal">service</tt> - control a service's ephemeral state and status check. service &lt;name of it&gt; &lt;start, stop, restart, reload&gt;   ex: sudo service postgresql restart</li>
+<li><tt class="docutils literal">systemctl</tt> - controls systemd services state and settings. This includes everything that you can control with the above command, plus user services, startup behavior of system and user services. <tt class="docutils literal">systemctl &lt;start, stop, enable, disable , mask, unmask&gt; <span class="pre">&lt;Service-name&gt;</span></tt> covers most of the stuff you use</li>
 <li><tt class="docutils literal">hostname</tt> - prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary</li>
 <li><tt class="docutils literal">adduser</tt> -<tt class="docutils literal">adduser &lt;newusername&gt;</tt> makes a new user. many options. none are really required, even a password. interactive walk through</li>
 <li><tt class="docutils literal">useradd</tt> - more l33t version of <tt class="docutils literal">adduser</tt>. more useful noninteractively and non-user-friendly</li>
@@ -690,7 +691,7 @@ ul.auto-toc {
 - <tt class="docutils literal"><span class="pre">ssh-keygen</span> <span class="pre">-t</span> <span class="pre">ed25519-sk</span> <span class="pre">-O</span> resident <span class="pre">-O</span> <span class="pre">application=ssh:&lt;description&gt;</span> <span class="pre">-f</span> <span class="pre">~/.ssh/id_ed_sk</span></tt> - generate key on fido2 token as resident on key, type can alternatively be <tt class="docutils literal"><span class="pre">ecdsa-sk</span></tt>, omitting <tt class="docutils literal"><span class="pre">-O</span> resident</tt> makes a key that requires the fido token but is not stored on it. not discoverable from the key. <tt class="docutils literal"><span class="pre">-O</span> <span class="pre">verify-required</span></tt> or <tt class="docutils literal"><span class="pre">-O</span> <span class="pre">no-touch-required</span></tt> control the physical prescene requirements(touching the key)
 - <tt class="docutils literal"><span class="pre">ssh-keygen</span> <span class="pre">-K</span></tt> - importing resident keys to new machine from security token</li>
 <li><tt class="docutils literal"><span class="pre">ssh-add</span> <span class="pre">-L</span></tt> - print all your public keys in .ssh</li>
-<li><tt class="docutils literal">scp localfile <span class="pre">&lt;user&gt;&#64;&lt;remotehost&gt;:/path/file</span></tt> - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp <a class="reference external" href="mailto:user&#64;host">user&#64;host</a>:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.</li>
+<li><tt class="docutils literal">scp localfile <span class="pre">&lt;user&gt;&#64;&lt;remotehost&gt;:/path/file</span></tt> - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use <tt class="docutils literal">scp <span class="pre">user&#64;host:/home/user/stuff</span> stuff</tt>. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too, if perms are giving you grief.</li>
 <li><tt class="docutils literal">ssh <span class="pre">-X</span> &lt;remotehost&gt;</tt> - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides) <tt class="docutils literal">ssh <span class="pre">-Y</span></tt> is equivalent but was meant to be a more lightweight connection</li>
 <li><tt class="docutils literal">ssh <span class="pre">-A</span> &lt;remotehost&gt;</tt> - forward ssh agent to foreign server, allowing scure access to local keys on foreign server, including hardware tokens</li>
 <li><tt class="docutils literal">ssh <span class="pre">-D</span> 8888 &lt;remotehost&gt;</tt> - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host</li>
@@ -727,9 +728,10 @@ ul.auto-toc {
 </div>
 <div class="section" id="patrician-word-processing">
 <h1>patrician word processing</h1>
+<p>if youre writing text then please be a man and use a text based interface</p>
 <ul class="simple">
-<li><tt class="docutils literal">latex</tt> - compiles to dvi and pics gotta be eps(a vector format)</li>
-<li><tt class="docutils literal">pdflatex</tt>- compiles latex pics must be png and jpg i think. cna not be eps</li>
+<li><tt class="docutils literal">latex</tt> - compiles to dvi, pics gotta be eps(a vector format)</li>
+<li><tt class="docutils literal">pdflatex</tt>- compiles latex pics must be png and jpg i think. cant use vector format eps</li>
 <li><tt class="docutils literal">htlatex</tt>- good compiles latex to html with pics for equations and other floats</li>
 <li><tt class="docutils literal">latex2html</tt> - sucks. honorable mention thought</li>
 <li><tt class="docutils literal">dvipdf</tt> - turn dvi to pdf common for use of <tt class="docutils literal">latex</tt></li>
@@ -738,7 +740,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">rst2man</tt> - restructurted text to man page</li>
 <li><tt class="docutils literal">rst2odt</tt> - restructurted text to odt</li>
 <li><tt class="docutils literal">rst2pdf</tt> - restructurted text to pdf</li>
-<li><tt class="docutils literal">convert</tt> - very smartly interfaced command line front end for imagemagick. just <tt class="docutils literal">convert <span class="pre">bob.&lt;ext&gt;</span> bobout.jpg</tt> etc to convert between any image format</li>
+<li><tt class="docutils literal">convert</tt> - very smartly interfaced command line front end for imagemagick. just <tt class="docutils literal">convert <span class="pre">bob.&lt;ext&gt;</span> bobout.jpg</tt> etc to convert between any image format. this is helpful for latex etc.</li>
 </ul>
 </div>
 <div class="section" id="root-filesystem-synopsis">
@@ -795,7 +797,7 @@ Int the past many of these were separate partitions, hence some of the seemingly
 </div>
 <div class="section" id="some-good-config-file-lines">
 <h1>some good config file lines</h1>
-<p><tt class="docutils literal">.ssh/config</tt> This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this</p>
+<p><tt class="docutils literal"><span class="pre">~/.ssh/config</span></tt> This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this</p>
 <pre class="doctest-block">
 &gt;&gt;&gt;
 Host bob
@@ -875,13 +877,17 @@ CMD &lt;command&gt; #whatever you put in for &lt;command&gt; will be the default
 <li><tt class="docutils literal"><span class="pre">docker-compose</span></tt> - utility for launching a few differentd ocker containers of different services, allowig you to easily config them to be interconnected in one file. simply put <tt class="docutils literal"><span class="pre">docker-compose.yml</span></tt> in an empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due to autistic standards with whitespace and stuff. so work off of a copypaste</li>
 <li><tt class="docutils literal">docker</tt> - the normal interface to docker to run one container</li>
 <li><tt class="docutils literal">docker stats</tt> shows current running containers with resource use. important for noobs becuase people forget and leave them running</li>
-<li><tt class="docutils literal">docker &lt;obj&gt; prune</tt>- &lt;obj&gt; may be <tt class="docutils literal">container</tt>, <tt class="docutils literal">image</tt>, <tt class="docutils literal">volume</tt>, <tt class="docutils literal">network</tt> and maybe others i forget. this deletes the unused objects of said type, freeing up space.</li>
-<li><tt class="docutils literal">docker run <span class="pre">--rm</span> <span class="pre">-it</span> <span class="pre">--name</span> box0 <span class="pre">--device</span> /dev/snd <span class="pre">-v</span> <span class="pre">/etc/file:/etc/file:ro</span> <span class="pre">-v</span> <span class="pre">~/stuff:/etc/stuff.d</span> <span class="pre">--net</span> host&nbsp; imagename:latest &lt;cmd&gt;</tt> - reading this from left to right: run, remove when done, interactice session(dont run in background like nohup), name box0 on the running container, share host device /dev/snd, mount read only host /etc/file respectively in container, mount folder ~/stuff to /etc/stuff.d , share same network as host, run latest version of imagename, use &lt;cmd&gt; instead of default entrypoint</li>
+<li><tt class="docutils literal">docker &lt;obj&gt; prune</tt>- <tt class="docutils literal">&lt;obj&gt;</tt> may be <tt class="docutils literal">container</tt>, <tt class="docutils literal">image</tt>, <tt class="docutils literal">volume</tt>, <tt class="docutils literal">network</tt> and maybe others i forget. this deletes the unused objects of said type, freeing up space.</li>
+<li><tt class="docutils literal">docker run <span class="pre">--rm</span> <span class="pre">-it</span> <span class="pre">--name</span> box0 <span class="pre">--device</span> /dev/snd <span class="pre">-v</span> <span class="pre">/etc/file:/etc/file:ro</span> <span class="pre">-v</span> <span class="pre">~/stuff:/etc/stuff.d</span> <span class="pre">--net</span> host&nbsp; imagename:latest &lt;cmd&gt;</tt> - reading this from left to right: run, remove when done, interactice session(dont run in background like nohup), name box0 on the running container, share host device /dev/snd, mount read only host /etc/file respectively in container, mount folder ~/stuff to /etc/stuff.d , share same network as host, run latest version of imagename, use <tt class="docutils literal">&lt;cmd&gt;</tt> instead of default entrypoint</li>
 </ul>
 <div class="section" id="dont">
 <h2>DONT</h2>
-<p>store data in docker. you store that in volumes or shared/mounted directories on host filesystem
-try to keep persistent systems in docker, it is better to always <tt class="docutils literal">docker run <span class="pre">--rm</span></tt> to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile</p>
+<ul class="simple">
+<li><em>DONT</em> store data in docker. you store that in volumes or shared/mounted directories on host filesystem</li>
+<li>try to keep persistent systems in docker, it is better to always <tt class="docutils literal">docker run <span class="pre">--rm</span></tt> to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile</li>
+<li><em>DONT</em> not run <tt class="docutils literal"><span class="pre">apt-get</span> clean</tt> in Dockerfile not use <tt class="docutils literal"><span class="pre">apt-get</span> <span class="pre">--no-install-recomends</span></tt></li>
+<li><em>DONT</em> forget <tt class="docutils literal">DEBIAN_FRONTEND=noninteractive <span class="pre">apt-get</span> <span class="pre">-y</span> &lt;pkgs&gt;</tt></li>
+</ul>
 </div>
 </div>
 </div>

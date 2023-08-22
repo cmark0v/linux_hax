@@ -140,7 +140,8 @@ system things(debian based mint/ubuntu):
 ========================================
 - ``sudo`` - run following command as root (admin)
 - ``su`` - set user, defaults to root. can specify shell with -s
-- ``service`` - control a service. service <name of it> <start, stop, restart, reload>   ex: sudo service postgresql restart
+- ``service`` - control a service's ephemeral state and status check. service <name of it> <start, stop, restart, reload>   ex: sudo service postgresql restart
+- ``systemctl`` - controls systemd services state and settings. This includes everything that you can control with the above command, plus user services, startup behavior of system and user services. ``systemctl <start, stop, enable, disable , mask, unmask> <Service-name>`` covers most of the stuff you use
 - ``hostname`` - prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary
 - ``adduser`` -``adduser <newusername>`` makes a new user. many options. none are really required, even a password. interactive walk through
 - ``useradd`` - more l33t version of ``adduser``. more useful noninteractively and non-user-friendly 
@@ -281,7 +282,7 @@ SSH STUFF
   - ``ssh-keygen -t ed25519-sk -O resident -O application=ssh:<description> -f ~/.ssh/id_ed_sk`` - generate key on fido2 token as resident on key, type can alternatively be ``ecdsa-sk``, omitting ``-O resident`` makes a key that requires the fido token but is not stored on it. not discoverable from the key. ``-O verify-required`` or ``-O no-touch-required`` control the physical prescene requirements(touching the key)
   - ``ssh-keygen -K`` - importing resident keys to new machine from security token
 - ``ssh-add -L`` - print all your public keys in .ssh
-- ``scp localfile <user>@<remotehost>:/path/file`` - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use scp user@host:/home/user/stuff stuff. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too.
+- ``scp localfile <user>@<remotehost>:/path/file`` - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use ``scp user@host:/home/user/stuff stuff``. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too, if perms are giving you grief.
 - ``ssh -X <remotehost>`` - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides) ``ssh -Y`` is equivalent but was meant to be a more lightweight connection
 - ``ssh -A <remotehost>`` - forward ssh agent to foreign server, allowing scure access to local keys on foreign server, including hardware tokens
 - ``ssh -D 8888 <remotehost>`` - runs a socks5 proxy on prot 8888 that tunnels connections from localhsot through the remote host
@@ -317,9 +318,10 @@ operators in shell(bash)
 
 patrician word processing
 =========================
+if youre writing text then please be a man and use a text based interface
 
-- ``latex`` - compiles to dvi and pics gotta be eps(a vector format)
-- ``pdflatex``- compiles latex pics must be png and jpg i think. cna not be eps
+- ``latex`` - compiles to dvi, pics gotta be eps(a vector format)
+- ``pdflatex``- compiles latex pics must be png and jpg i think. cant use vector format eps
 - ``htlatex``- good compiles latex to html with pics for equations and other floats
 - ``latex2html`` - sucks. honorable mention thought
 - ``dvipdf`` - turn dvi to pdf common for use of ``latex``
@@ -328,7 +330,7 @@ patrician word processing
 - ``rst2man`` - restructurted text to man page
 - ``rst2odt`` - restructurted text to odt
 - ``rst2pdf`` - restructurted text to pdf
-- ``convert`` - very smartly interfaced command line front end for imagemagick. just ``convert bob.<ext> bobout.jpg`` etc to convert between any image format 
+- ``convert`` - very smartly interfaced command line front end for imagemagick. just ``convert bob.<ext> bobout.jpg`` etc to convert between any image format. this is helpful for latex etc.
 
 
 
@@ -386,7 +388,7 @@ notable filesystem objects, local
 some good config file lines
 ===========================
 
-``.ssh/config`` This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this
+``~/.ssh/config`` This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this
 
 >>>
 Host bob
@@ -476,11 +478,13 @@ then build with ``docker build`` and run with ``docker run`` with appropriate se
 - ``docker-compose`` - utility for launching a few differentd ocker containers of different services, allowig you to easily config them to be interconnected in one file. simply put ``docker-compose.yml`` in an empty folder and edit/generate/write it to your specs. editing yaml can be kind of annoying due to autistic standards with whitespace and stuff. so work off of a copypaste
 - ``docker`` - the normal interface to docker to run one container
 - ``docker stats`` shows current running containers with resource use. important for noobs becuase people forget and leave them running 
-- ``docker <obj> prune``- <obj> may be ``container``, ``image``, ``volume``, ``network`` and maybe others i forget. this deletes the unused objects of said type, freeing up space. 
-- ``docker run --rm -it --name box0 --device /dev/snd -v /etc/file:/etc/file:ro -v ~/stuff:/etc/stuff.d --net host  imagename:latest <cmd>`` - reading this from left to right: run, remove when done, interactice session(dont run in background like nohup), name box0 on the running container, share host device /dev/snd, mount read only host /etc/file respectively in container, mount folder ~/stuff to /etc/stuff.d , share same network as host, run latest version of imagename, use <cmd> instead of default entrypoint
+- ``docker <obj> prune``- ``<obj>`` may be ``container``, ``image``, ``volume``, ``network`` and maybe others i forget. this deletes the unused objects of said type, freeing up space. 
+- ``docker run --rm -it --name box0 --device /dev/snd -v /etc/file:/etc/file:ro -v ~/stuff:/etc/stuff.d --net host  imagename:latest <cmd>`` - reading this from left to right: run, remove when done, interactice session(dont run in background like nohup), name box0 on the running container, share host device /dev/snd, mount read only host /etc/file respectively in container, mount folder ~/stuff to /etc/stuff.d , share same network as host, run latest version of imagename, use ``<cmd>`` instead of default entrypoint
 
 DONT
 ----
 
-store data in docker. you store that in volumes or shared/mounted directories on host filesystem
-try to keep persistent systems in docker, it is better to always ``docker run --rm`` to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile
+- *DONT* store data in docker. you store that in volumes or shared/mounted directories on host filesystem
+- try to keep persistent systems in docker, it is better to always ``docker run --rm`` to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile
+- *DONT* not run ``apt-get clean`` in Dockerfile not use ``apt-get --no-install-recomends``
+- *DONT* forget ``DEBIAN_FRONTEND=noninteractive apt-get -y <pkgs>``
