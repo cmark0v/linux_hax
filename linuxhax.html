@@ -598,6 +598,8 @@ ul.auto-toc {
 <li><tt class="docutils literal">$DISPLAY</tt> - x11/xorg display, typically :0. machines can have multiple displays, like all unix things, its multiuser</li>
 <li><tt class="docutils literal">$PYTHONPATH</tt> - where python looks for modules</li>
 <li><tt class="docutils literal">$USER, $HOME</tt>, - username and home directory path</li>
+<li><tt class="docutils literal">$PWD</tt> - absolute path to current working directory</li>
+<li><tt class="docutils literal">$EDITOR</tt> - default editor, adults set to <tt class="docutils literal">vim</tt> kids set to <tt class="docutils literal">nano</tt></li>
 <li><tt class="docutils literal">$_</tt> - last arg from previous shell command run</li>
 <li><tt class="docutils literal">$?</tt> - exit value/signal from prev command (0 if success which you manually throw in scripts with <tt class="docutils literal">exit 0</tt></li>
 <li><tt class="docutils literal">alias</tt> - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def</li>
@@ -768,7 +770,7 @@ Int the past many of these were separate partitions, hence some of the seemingly
 <li><tt class="docutils literal">/proc</tt> - process information emulated as block storage devices and stuff like this. can get info about some hardware from drivers, and access some other kernel level information pertaining to active system processes</li>
 <li><tt class="docutils literal">/sys</tt> - kernel emulated filesystem tree allowing information and interaction of various kernel level functionality and hardware devices. This includes the ability to read parameters from live kernel modules and set them by writing to said file as well, for example.</li>
 <li><tt class="docutils literal">/run</tt> - contains filesystem socket devices and other quasi-file dynamic objects written by userland software (as opposed to kernel level features in proc and sys)</li>
-<li><tt class="docutils literal">/dev</tt> - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it is a virtualized/emulated filesystem integrated representation of a group of non-file objects(very cool) like proc. these are not actual files, but dynamic emulated files that make access to devices like accessing a file. reading and writing to them is the same as a file</li>
+<li><tt class="docutils literal">/dev</tt> - devices, access to raw hardware. it is a virtualized/emulated filesystem integrated representation of a group of non-file objects(very cool) like proc. these are not actual files, but dynamic emulated files that make access to devices like accessing a file. reading and writing to them is the same as a file. there are two styles of io, &quot;block&quot; and &quot;character&quot; devices. io is done by blocks(fixed size binary packets) or bytewise respectively</li>
 <li><tt class="docutils literal">/opt</tt> - not sure what it is supposed to be but it is often used to store globally accessed proprietary software that doesn't have facility to install in the typical global directory structure(where things are in /bin and /lib andprstuff</li>
 <li><tt class="docutils literal">/bin</tt> - binarys, these are where the commands are stored for the base system. most of the higher level stuff is in /usr/bin and /usr/local/bin</li>
 <li><tt class="docutils literal">/home</tt> - home directories for each user here. all user settings and information and data are in their home folder. copy it to an ew system an it will all be there</li>
@@ -797,19 +799,19 @@ Int the past many of these were separate partitions, hence some of the seemingly
 <div class="section" id="notable-filesystem-objects-local">
 <h1>notable filesystem objects, local</h1>
 <ul class="simple">
-<li><tt class="docutils literal">~</tt> - alias to your homefolder <tt class="docutils literal">/home/username</tt></li>
+<li><tt class="docutils literal">~</tt> - alias to your homefolder <tt class="docutils literal"><span class="pre">/home/&lt;username&gt;</span></tt> also available as <tt class="docutils literal">$HOME</tt></li>
 <li><tt class="docutils literal"><span class="pre">~/.ssh/authorized_keys</span></tt> - put in a copy of someones id_rsa.pub file as a line, and it allows anyone with the corresponding private key to log into said account to whom <tt class="docutils literal">~</tt> belongs.</li>
 <li><tt class="docutils literal"><span class="pre">~/.ssh/config</span></tt> - lts u preconfig defults for various servers and things, pivotal wehn using scp and git reguarly. man ssh_config exists and shows syntax</li>
 <li><tt class="docutils literal"><span class="pre">~/.ssh/id_rsa.pub</span></tt> - default place for public ssh key, without the <tt class="docutils literal">.ssh/id_rsa</tt> is default for private, which, should be <tt class="docutils literal">chmod 600</tt> for the perms</li>
 <li><tt class="docutils literal"><span class="pre">~/.bashrc</span></tt> - if you use bash, this is a place you can add commands that run on login. such as adding things to your $PATH</li>
 <li><tt class="docutils literal"><span class="pre">~/.bash_history</span></tt> - hitory of commands in bash, some cap length by default, grep this to find stuff you did and need th command for</li>
-<li><tt class="docutils literal">.profile</tt> - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe other BSD. defintiely check if you are not using bash</li>
+<li><tt class="docutils literal"><span class="pre">~/.profile</span></tt> - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe other BSD. defintiely check if you are not using bash</li>
 <li><tt class="docutils literal"><span class="pre">~/.local/</span></tt> - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff gos here</li>
 <li><tt class="docutils literal"><span class="pre">~/.config/</span></tt> - it is now considered best practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~</li>
 </ul>
 </div>
-<div class="section" id="some-good-config-file-lines">
-<h1>some good config file lines</h1>
+<div class="section" id="user-ssh-config">
+<h1>user ssh config</h1>
 <p><tt class="docutils literal"><span class="pre">~/.ssh/config</span></tt> This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this</p>
 <pre class="doctest-block">
 &gt;&gt;&gt;

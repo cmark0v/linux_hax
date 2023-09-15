@@ -189,7 +189,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author () /CreationDate (D:20230916021216+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230916021216+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20230916022511+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230916022511+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Linux Hax) /Trapped /False
 >>
 endobj
@@ -230,83 +230,83 @@ endobj
 endobj
 31 0 obj
 <<
-/Dest [ 12 0 R /XYZ 62.69291 705.0236 0 ] /Next 32 0 R /Parent 24 0 R /Prev 30 0 R /Title (strange obscure barely useful:)
+/Dest [ 12 0 R /XYZ 62.69291 645.0236 0 ] /Next 32 0 R /Parent 24 0 R /Prev 30 0 R /Title (strange obscure barely useful:)
 >>
 endobj
 32 0 obj
 <<
-/Dest [ 12 0 R /XYZ 62.69291 546.0236 0 ] /Next 33 0 R /Parent 24 0 R /Prev 31 0 R /Title (graphical, featureful)
+/Dest [ 12 0 R /XYZ 62.69291 486.0236 0 ] /Next 33 0 R /Parent 24 0 R /Prev 31 0 R /Title (graphical, featureful)
 >>
 endobj
 33 0 obj
 <<
-/Dest [ 12 0 R /XYZ 62.69291 225.0236 0 ] /Next 34 0 R /Parent 24 0 R /Prev 32 0 R /Title (crypto)
+/Dest [ 12 0 R /XYZ 62.69291 165.0236 0 ] /Next 34 0 R /Parent 24 0 R /Prev 32 0 R /Title (crypto)
 >>
 endobj
 34 0 obj
 <<
-/Dest [ 13 0 R /XYZ 62.69291 669.0236 0 ] /Next 35 0 R /Parent 24 0 R /Prev 33 0 R /Title (network & hax)
+/Dest [ 13 0 R /XYZ 62.69291 621.0236 0 ] /Next 35 0 R /Parent 24 0 R /Prev 33 0 R /Title (network & hax)
 >>
 endobj
 35 0 obj
 <<
-/Dest [ 14 0 R /XYZ 62.69291 561.0236 0 ] /Next 36 0 R /Parent 24 0 R /Prev 34 0 R /Title (services)
+/Dest [ 14 0 R /XYZ 62.69291 525.0236 0 ] /Next 36 0 R /Parent 24 0 R /Prev 34 0 R /Title (services)
 >>
 endobj
 36 0 obj
 <<
-/Dest [ 14 0 R /XYZ 62.69291 360.0236 0 ] /Next 37 0 R /Parent 24 0 R /Prev 35 0 R /Title (SSH STUFF)
+/Dest [ 14 0 R /XYZ 62.69291 324.0236 0 ] /Next 37 0 R /Parent 24 0 R /Prev 35 0 R /Title (SSH STUFF)
 >>
 endobj
 37 0 obj
 <<
-/Dest [ 15 0 R /XYZ 62.69291 555.0236 0 ] /Next 38 0 R /Parent 24 0 R /Prev 36 0 R /Title (operators in shell\(bash\))
+/Dest [ 15 0 R /XYZ 62.69291 513.0236 0 ] /Next 38 0 R /Parent 24 0 R /Prev 36 0 R /Title (operators in shell\(bash\))
 >>
 endobj
 38 0 obj
 <<
-/Dest [ 16 0 R /XYZ 62.69291 729.0236 0 ] /Next 39 0 R /Parent 24 0 R /Prev 37 0 R /Title (patrician word processing)
+/Dest [ 16 0 R /XYZ 62.69291 681.0236 0 ] /Next 39 0 R /Parent 24 0 R /Prev 37 0 R /Title (patrician word processing)
 >>
 endobj
 39 0 obj
 <<
-/Dest [ 16 0 R /XYZ 62.69291 456.0236 0 ] /Next 40 0 R /Parent 24 0 R /Prev 38 0 R /Title (root filesystem synopsis)
+/Dest [ 16 0 R /XYZ 62.69291 408.0236 0 ] /Next 40 0 R /Parent 24 0 R /Prev 38 0 R /Title (root filesystem synopsis)
 >>
 endobj
 40 0 obj
 <<
-/Dest [ 17 0 R /XYZ 62.69291 453.0236 0 ] /Next 41 0 R /Parent 24 0 R /Prev 39 0 R /Title (notable filesystem objects, global)
+/Dest [ 17 0 R /XYZ 62.69291 417.0236 0 ] /Next 41 0 R /Parent 24 0 R /Prev 39 0 R /Title (notable filesystem objects, global)
 >>
 endobj
 41 0 obj
 <<
-/Dest [ 17 0 R /XYZ 62.69291 114.0236 0 ] /Next 42 0 R /Parent 24 0 R /Prev 40 0 R /Title (notable filesystem objects, local)
+/Dest [ 18 0 R /XYZ 62.69291 765.0236 0 ] /Next 42 0 R /Parent 24 0 R /Prev 40 0 R /Title (notable filesystem objects, local)
 >>
 endobj
 42 0 obj
 <<
-/Dest [ 18 0 R /XYZ 62.69291 501.0236 0 ] /Next 43 0 R /Parent 24 0 R /Prev 41 0 R /Title (some good config file lines)
+/Dest [ 18 0 R /XYZ 62.69291 468.0236 0 ] /Next 43 0 R /Parent 24 0 R /Prev 41 0 R /Title (user ssh config)
 >>
 endobj
 43 0 obj
 <<
-/Dest [ 18 0 R /XYZ 62.69291 276.8236 0 ] /Next 44 0 R /Parent 24 0 R /Prev 42 0 R /Title (host a git, barebones)
+/Dest [ 18 0 R /XYZ 62.69291 243.8236 0 ] /Next 44 0 R /Parent 24 0 R /Prev 42 0 R /Title (host a git, barebones)
 >>
 endobj
 44 0 obj
 <<
-/Dest [ 19 0 R /XYZ 62.69291 723.0236 0 ] /Next 45 0 R /Parent 24 0 R /Prev 43 0 R /Title (git client side)
+/Dest [ 19 0 R /XYZ 62.69291 687.0236 0 ] /Next 45 0 R /Parent 24 0 R /Prev 43 0 R /Title (git client side)
 >>
 endobj
 45 0 obj
 <<
-/Count 1 /Dest [ 19 0 R /XYZ 62.69291 462.2971 0 ] /First 46 0 R /Last 46 0 R /Parent 24 0 R /Prev 44 0 R 
+/Count 1 /Dest [ 19 0 R /XYZ 62.69291 426.2971 0 ] /First 46 0 R /Last 46 0 R /Parent 24 0 R /Prev 44 0 R 
   /Title (docker)
 >>
 endobj
 46 0 obj
 <<
-/Dest [ 21 0 R /XYZ 62.69291 573.0236 0 ] /Parent 45 0 R /Title (DONT)
+/Dest [ 21 0 R /XYZ 62.69291 543.0236 0 ] /Parent 45 0 R /Title (DONT)
 >>
 endobj
 47 0 obj
@@ -3710,7 +3710,7 @@ endstream
 endobj
 53 0 obj
 <<
-/Length 10206
+/Length 10083
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -4237,7 +4237,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($_) Tj /F1 10 Tf ( - last arg from previous shell command run) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($PWD) Tj /F1 10 Tf ( - absolute path to current working directory) Tj T* ET
 Q
 Q
 q
@@ -4248,7 +4248,57 @@ q
 1 0 0 1 62.69291 177.0236 cm
 Q
 q
-1 0 0 1 62.69291 153.0236 cm
+1 0 0 1 62.69291 165.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($EDITOR) Tj /F1 10 Tf ( - default editor, adults set to ) Tj /F3 10 Tf (vim) Tj /F1 10 Tf ( kids set to ) Tj /F3 10 Tf (nano) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 159.0236 cm
+Q
+q
+1 0 0 1 62.69291 147.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg ($_) Tj /F1 10 Tf ( - last arg from previous shell command run) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 141.0236 cm
+Q
+q
+1 0 0 1 62.69291 117.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4270,10 +4320,19 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 147.0236 cm
-Q
-q
 1 0 0 1 62.69291 111.0236 cm
+Q
+ 
+endstream
+endobj
+54 0 obj
+<<
+/Length 10546
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 729.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4295,10 +4354,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 105.0236 cm
+1 0 0 1 62.69291 723.0236 cm
 Q
 q
-1 0 0 1 62.69291 93.02362 cm
+1 0 0 1 62.69291 711.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4320,19 +4379,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 87.02362 cm
+1 0 0 1 62.69291 705.0236 cm
 Q
- 
-endstream
-endobj
-54 0 obj
-<<
-/Length 10454
->>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 753.0236 cm
+1 0 0 1 62.69291 693.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4354,10 +4404,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 747.0236 cm
+1 0 0 1 62.69291 687.0236 cm
 Q
 q
-1 0 0 1 62.69291 735.0236 cm
+1 0 0 1 62.69291 675.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4379,10 +4429,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 729.0236 cm
+1 0 0 1 62.69291 669.0236 cm
 Q
 q
-1 0 0 1 62.69291 717.0236 cm
+1 0 0 1 62.69291 657.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4404,22 +4454,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 717.0236 cm
+1 0 0 1 62.69291 657.0236 cm
 Q
 q
-1 0 0 1 62.69291 684.0236 cm
+1 0 0 1 62.69291 624.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (strange obscure barely useful:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 672.0236 cm
+1 0 0 1 62.69291 612.0236 cm
 Q
 q
-1 0 0 1 62.69291 672.0236 cm
+1 0 0 1 62.69291 612.0236 cm
 Q
 q
-1 0 0 1 62.69291 648.0236 cm
+1 0 0 1 62.69291 588.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4441,10 +4491,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 642.0236 cm
+1 0 0 1 62.69291 582.0236 cm
 Q
 q
-1 0 0 1 62.69291 630.0236 cm
+1 0 0 1 62.69291 570.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4466,10 +4516,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 624.0236 cm
+1 0 0 1 62.69291 564.0236 cm
 Q
 q
-1 0 0 1 62.69291 612.0236 cm
+1 0 0 1 62.69291 552.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4491,10 +4541,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 606.0236 cm
+1 0 0 1 62.69291 546.0236 cm
 Q
 q
-1 0 0 1 62.69291 594.0236 cm
+1 0 0 1 62.69291 534.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4516,10 +4566,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 588.0236 cm
+1 0 0 1 62.69291 528.0236 cm
 Q
 q
-1 0 0 1 62.69291 576.0236 cm
+1 0 0 1 62.69291 516.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4541,10 +4591,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 570.0236 cm
+1 0 0 1 62.69291 510.0236 cm
 Q
 q
-1 0 0 1 62.69291 558.0236 cm
+1 0 0 1 62.69291 498.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4566,22 +4616,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 558.0236 cm
+1 0 0 1 62.69291 498.0236 cm
 Q
 q
-1 0 0 1 62.69291 525.0236 cm
+1 0 0 1 62.69291 465.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (graphical, featureful) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 513.0236 cm
+1 0 0 1 62.69291 453.0236 cm
 Q
 q
-1 0 0 1 62.69291 513.0236 cm
+1 0 0 1 62.69291 453.0236 cm
 Q
 q
-1 0 0 1 62.69291 501.0236 cm
+1 0 0 1 62.69291 441.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4603,10 +4653,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 495.0236 cm
+1 0 0 1 62.69291 435.0236 cm
 Q
 q
-1 0 0 1 62.69291 471.0236 cm
+1 0 0 1 62.69291 411.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4629,10 +4679,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 465.0236 cm
+1 0 0 1 62.69291 405.0236 cm
 Q
 q
-1 0 0 1 62.69291 441.0236 cm
+1 0 0 1 62.69291 381.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4654,10 +4704,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 435.0236 cm
+1 0 0 1 62.69291 375.0236 cm
 Q
 q
-1 0 0 1 62.69291 423.0236 cm
+1 0 0 1 62.69291 363.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4679,10 +4729,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 417.0236 cm
+1 0 0 1 62.69291 357.0236 cm
 Q
 q
-1 0 0 1 62.69291 405.0236 cm
+1 0 0 1 62.69291 345.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4704,10 +4754,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 399.0236 cm
+1 0 0 1 62.69291 339.0236 cm
 Q
 q
-1 0 0 1 62.69291 387.0236 cm
+1 0 0 1 62.69291 327.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4722,56 +4772,6 @@ q
 1 0 0 1 23 -3 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (gimp) Tj /F1 10 Tf ( - powerful image editing, old schoool MIT project, shit interface, opens any format basically) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 381.0236 cm
-Q
-q
-1 0 0 1 62.69291 357.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .198935 Tw 12 TL /F3 10 Tf 0 0 0 rg (ibus) Tj /F1 10 Tf ( - this is a package for controlling advanced input methods that are a lot more than a change of) Tj T* 0 Tw (layout; like Chinese, Korean,) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 351.0236 cm
-Q
-q
-1 0 0 1 62.69291 327.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .243984 Tw 12 TL /F3 10 Tf 0 0 0 rg (display) Tj /F1 10 Tf ( - another nice CLI for imgmagick. functionally same/similar to xviewer only it will take input) Tj T* 0 Tw (from STDIN which is great.) Tj T* ET
 Q
 Q
 q
@@ -4796,7 +4796,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .516651 Tw 12 TL /F3 10 Tf 0 0 0 rg (librewolf) Tj /F1 10 Tf ( - probably best browser at time of writing this, firefox with telemetry removed and other) Tj T* 0 Tw (security enhancements) Tj T* ET
+BT 1 0 0 1 0 14 Tm .198935 Tw 12 TL /F3 10 Tf 0 0 0 rg (ibus) Tj /F1 10 Tf ( - this is a package for controlling advanced input methods that are a lot more than a change of) Tj T* 0 Tw (layout; like Chinese, Korean,) Tj T* ET
 Q
 Q
 q
@@ -4807,7 +4807,57 @@ q
 1 0 0 1 62.69291 291.0236 cm
 Q
 q
-1 0 0 1 62.69291 279.0236 cm
+1 0 0 1 62.69291 267.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .243984 Tw 12 TL /F3 10 Tf 0 0 0 rg (display) Tj /F1 10 Tf ( - another nice CLI for imgmagick. functionally same/similar to xviewer only it will take input) Tj T* 0 Tw (from STDIN which is great.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 261.0236 cm
+Q
+q
+1 0 0 1 62.69291 237.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .516651 Tw 12 TL /F3 10 Tf 0 0 0 rg (librewolf) Tj /F1 10 Tf ( - probably best browser at time of writing this, firefox with telemetry removed and other) Tj T* 0 Tw (security enhancements) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 231.0236 cm
+Q
+q
+1 0 0 1 62.69291 219.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4829,10 +4879,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 273.0236 cm
+1 0 0 1 62.69291 213.0236 cm
 Q
 q
-1 0 0 1 62.69291 237.0236 cm
+1 0 0 1 62.69291 177.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4854,22 +4904,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 237.0236 cm
+1 0 0 1 62.69291 177.0236 cm
 Q
 q
-1 0 0 1 62.69291 204.0236 cm
+1 0 0 1 62.69291 144.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (crypto) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 192.0236 cm
+1 0 0 1 62.69291 132.0236 cm
 Q
 q
-1 0 0 1 62.69291 192.0236 cm
+1 0 0 1 62.69291 132.0236 cm
 Q
 q
-1 0 0 1 62.69291 144.0236 cm
+1 0 0 1 62.69291 84.02362 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4891,10 +4941,19 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 138.0236 cm
+1 0 0 1 62.69291 78.02362 cm
 Q
+ 
+endstream
+endobj
+55 0 obj
+<<
+/Length 11169
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 126.0236 cm
+1 0 0 1 62.69291 753.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4916,10 +4975,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 120.0236 cm
+1 0 0 1 62.69291 747.0236 cm
 Q
 q
-1 0 0 1 62.69291 96.02362 cm
+1 0 0 1 62.69291 723.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4941,19 +5000,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 90.02362 cm
-Q
- 
-endstream
-endobj
-55 0 obj
-<<
-/Length 11118
->>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
-q
 1 0 0 1 62.69291 717.0236 cm
+Q
+q
+1 0 0 1 62.69291 669.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -4975,10 +5025,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 711.0236 cm
+1 0 0 1 62.69291 663.0236 cm
 Q
 q
-1 0 0 1 62.69291 699.0236 cm
+1 0 0 1 62.69291 651.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -5000,10 +5050,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 693.0236 cm
+1 0 0 1 62.69291 645.0236 cm
 Q
 q
-1 0 0 1 62.69291 681.0236 cm
+1 0 0 1 62.69291 633.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -5025,22 +5075,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 681.0236 cm
+1 0 0 1 62.69291 633.0236 cm
 Q
 q
-1 0 0 1 62.69291 648.0236 cm
+1 0 0 1 62.69291 600.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (network & hax) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 636.0236 cm
+1 0 0 1 62.69291 588.0236 cm
 Q
 q
-1 0 0 1 62.69291 636.0236 cm
+1 0 0 1 62.69291 588.0236 cm
 Q
 q
-1 0 0 1 62.69291 624.0236 cm
+1 0 0 1 62.69291 576.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -5062,10 +5112,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 618.0236 cm
+1 0 0 1 62.69291 570.0236 cm
 Q
 q
-1 0 0 1 62.69291 594.0236 cm
+1 0 0 1 62.69291 546.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -5087,10 +5137,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 588.0236 cm
+1 0 0 1 62.69291 540.0236 cm
 Q
 q
-1 0 0 1 62.69291 564.0236 cm
+1 0 0 1 62.69291 516.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -5112,10 +5162,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 558.0236 cm
+1 0 0 1 62.69291 510.0236 cm
 Q
 q
-1 0 0 1 62.69291 534.0236 cm
+1 0 0 1 62.69291 486.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -5137,658 +5187,6 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 528.0236 cm
-Q
-q
-1 0 0 1 62.69291 480.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 33 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 38 Tm .387633 Tw 12 TL /F3 10 Tf 0 0 0 rg (wireshark) Tj /F1 10 Tf ( - watch network packets go by. need to change group to work properly. can run as root) Tj T* 0 Tw .621751 Tw (and always works that way, but not recomended. used to be called ethereal - the new name sucks.) Tj T* 0 Tw .344751 Tw (still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a) Tj T* 0 Tw (korean children's cartoon) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 474.0236 cm
-Q
-q
-1 0 0 1 62.69291 450.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .322619 Tw 12 TL /F3 10 Tf 0 0 0 rg (ngrep) Tj /F1 10 Tf ( - network grep, just reads packets going by your box and spits that out to stdout if it matches) Tj T* 0 Tw (what ur looking for) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 444.0236 cm
-Q
-q
-1 0 0 1 62.69291 420.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .138555 Tw 12 TL /F3 10 Tf 0 0 0 rg (tcpdump) Tj /F1 10 Tf ( - captures and dumps packets, dump files can be reloaded, minor dissection available with) Tj T* 0 Tw (some calssification, can load the dumps up with anything) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 414.0236 cm
-Q
-q
-1 0 0 1 62.69291 390.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .704269 Tw 12 TL /F3 10 Tf 0 0 0 rg (ifconfig) Tj /F1 10 Tf ( - old network interface config command line utility. windows ipconfig is the ripoff version) Tj T* 0 Tw (with a weird name) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 384.0236 cm
-Q
-q
-1 0 0 1 62.69291 372.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (ip) Tj /F1 10 Tf ( - the newer, 'better' network interface and routing table configuration tool) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 366.0236 cm
-Q
-q
-1 0 0 1 62.69291 354.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (route) Tj /F1 10 Tf ( - orouting table edit and explore) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 348.0236 cm
-Q
-q
-1 0 0 1 62.69291 336.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (httping) Tj /F1 10 Tf ( - sends a http packet to a server on default prot of 80, gives response time) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 330.0236 cm
-Q
-q
-1 0 0 1 62.69291 318.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (ping) Tj /F1 10 Tf ( - normal old school icmp ping. not waht it used to be) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 312.0236 cm
-Q
-q
-1 0 0 1 62.69291 276.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 26 Tm .91229 Tw 12 TL /F3 10 Tf 0 0 0 rg (telnet) Tj /F1 10 Tf ( - old school shell/terminal over the wire. completely unencrypted, not much more complex) Tj T* 0 Tw 2.499269 Tw (than netcat. helpful for testing connections, manual single prot probing like tenet <) Tj (host) Tj (> 80 to) Tj T* 0 Tw (connect to port 80 on <) Tj (host) Tj (>) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 270.0236 cm
-Q
-q
-1 0 0 1 62.69291 258.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (nslookup) Tj /F1 10 Tf ( - look up an ip or hostname in DNS) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 252.0236 cm
-Q
-q
-1 0 0 1 62.69291 216.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 26 Tm -0.004682 Tw 12 TL /F3 10 Tf 0 0 0 rg (john) Tj /F1 10 Tf ( - old school powerful password hash cracker. supports extensions and a lot of hash algorithms.) Tj T* 0 Tw 1.224651 Tw (parallelism exists too, not sure about GPU kernels. likely better things these days. called john the) Tj T* 0 Tw (ripper\(after the famous amteur serial hooker-vivisection enthusiast\)) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 210.0236 cm
-Q
-q
-1 0 0 1 62.69291 186.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 1.46186 Tw 12 TL /F3 10 Tf 0 0 0 rg (whois) Tj /F1 10 Tf ( - information on domain ownership, reverse look up of IP addresses. just an entry from a) Tj T* 0 Tw (database about the owner and registrar stuff for IPs and domains.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 180.0236 cm
-Q
-q
-1 0 0 1 62.69291 144.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 26 Tm 1.532485 Tw 12 TL /F3 10 Tf 0 0 0 rg (traceroute) Tj /F1 10 Tf ( - old school packet routing trace, not sure if it really works the same anymore, but) Tj T* 0 Tw 1.915542 Tw (shows you the path packets take to a server. seems like maye routers out in the widl drop the) Tj T* 0 Tw (packets it uses now often? not sure. dont use it much and its not what it used to be is the word) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 138.0236 cm
-Q
-q
-1 0 0 1 62.69291 126.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (arping) Tj /F1 10 Tf ( - executes a ping-analogous function using the arp protocol. v nice.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 120.0236 cm
-Q
-q
-1 0 0 1 62.69291 108.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (tsocks) Tj /F1 10 Tf ( - wrap any protocol through socks generally config in etc) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 102.0236 cm
-Q
-q
-1 0 0 1 62.69291 90.02362 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (httping) Tj /F1 10 Tf (- ping a http server. IE, give the response time to a http service) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 84.02362 cm
-Q
- 
-endstream
-endobj
-56 0 obj
-<<
-/Length 10058
->>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
-q
-1 0 0 1 62.69291 753.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (aircrack-ng) Tj /F1 10 Tf ( - a suite of utilities for security analysis of wifi networks) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 747.0236 cm
-Q
-q
-1 0 0 1 62.69291 735.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (iwconfig) Tj /F1 10 Tf (-ike ifconfig but with specific features for wifi adapters/driver interfaces. it is old school) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 729.0236 cm
-Q
-q
-1 0 0 1 62.69291 717.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (iw) Tj /F1 10 Tf ( - same as above but not as old school) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 711.0236 cm
-Q
-q
-1 0 0 1 62.69291 699.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (bluetoothctl) Tj /F1 10 Tf (- shell style interface to bluetooth hardware. quite good) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 693.0236 cm
-Q
-q
-1 0 0 1 62.69291 669.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .023516 Tw 12 TL /F3 10 Tf 0 0 0 rg (yersinia) Tj /F1 10 Tf (- a powerful security analysis too that i am not too familiar with, but worth a mention. some) Tj T* 0 Tw (kid in vegas looked at me like i was insane for not using it. appears very powerful.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 663.0236 cm
-Q
-q
-1 0 0 1 62.69291 639.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .167765 Tw 12 TL /F3 10 Tf 0 0 0 rg (netstat) Tj /F1 10 Tf (- usually i invoke as netstat -n, lists the connections in and out of the machine. godo stuff is) Tj T* 0 Tw (by the top so try netstat -n|head) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 633.0236 cm
-Q
-q
-1 0 0 1 62.69291 621.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (fido2-token) Tj /F1 10 Tf ( - manipulate and probe fido2 auth tokens such as yubikey etc) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 615.0236 cm
-Q
-q
-1 0 0 1 62.69291 591.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 4.071647 Tw 12 TL /F3 10 Tf 0 0 0 rg (opensc-tool) Tj /F1 10 Tf ( + ) Tj /F3 10 Tf (opensc-explorer) Tj /F1 10 Tf ( - cli util and interactive shell interface for smart card) Tj T* 0 Tw (interactions a-la iso7816 and iso14443\(contact chip and nfc interfaces respectively\)) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 585.0236 cm
-Q
-q
-1 0 0 1 62.69291 573.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (pcsc_scan) Tj /F1 10 Tf ( - report basic diagnostic info on connected smart cards) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 573.0236 cm
-Q
-q
-1 0 0 1 62.69291 540.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (services) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 486.0236 cm
-q
-BT 1 0 0 1 0 38 Tm 2.196905 Tw 12 TL /F1 10 Tf 0 0 0 rg (these are the names used if you were to ) Tj /F3 10 Tf (service) Tj ( ) Tj (<) Tj (name) Tj (>) Tj ( ) Tj (<) Tj (start|stop|status) Tj (>) Tj /F1 10 Tf ( services are) Tj T* 0 Tw 1.419986 Tw (started stopped etc by scripts which are used by systemd and this command or in general your setup) Tj T* 0 Tw 2.13686 Tw (might use a different service manager, which will be similar. This is because some services need a) Tj T* 0 Tw (sequence of commands and checks etc before starting or stopping safely.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 480.0236 cm
-Q
-q
 1 0 0 1 62.69291 480.0236 cm
 Q
 q
@@ -5806,7 +5204,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 38 Tm 2.247318 Tw 12 TL /F3 10 Tf 0 0 0 rg (fail2ban) Tj /F1 10 Tf ( - great utility that watches update of logs from whatever you want and responds to) Tj T* 0 Tw .334651 Tw (predined events \(you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are) Tj T* 0 Tw 1.037318 Tw (responses, filters define events and jails define groups of events and how they trigger actiobs abd) Tj T* 0 Tw (expire. all bans are cleared on restart by default.) Tj T* ET
+BT 1 0 0 1 0 38 Tm .387633 Tw 12 TL /F3 10 Tf 0 0 0 rg (wireshark) Tj /F1 10 Tf ( - watch network packets go by. need to change group to work properly. can run as root) Tj T* 0 Tw .621751 Tw (and always works that way, but not recomended. used to be called ethereal - the new name sucks.) Tj T* 0 Tw .344751 Tw (still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a) Tj T* 0 Tw (korean children's cartoon) Tj T* ET
 Q
 Q
 q
@@ -5831,7 +5229,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .19881 Tw 12 TL /F3 10 Tf 0 0 0 rg (nginx) Tj /F1 10 Tf ( - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask) Tj T* 0 Tw (or similar, to provide robust features that come with a real web server.) Tj T* ET
+BT 1 0 0 1 0 14 Tm .322619 Tw 12 TL /F3 10 Tf 0 0 0 rg (ngrep) Tj /F1 10 Tf ( - network grep, just reads packets going by your box and spits that out to stdout if it matches) Tj T* 0 Tw (what ur looking for) Tj T* ET
 Q
 Q
 q
@@ -5856,7 +5254,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm 1.766457 Tw 12 TL /F3 10 Tf 0 0 0 rg (snort) Tj /F1 10 Tf ( - network util for traffic capture and parsing, logging. can be run in the background as a) Tj T* 0 Tw (system service to construct intrusion detection functionality, or used like ngrep) Tj T* ET
+BT 1 0 0 1 0 14 Tm .138555 Tw 12 TL /F3 10 Tf 0 0 0 rg (tcpdump) Tj /F1 10 Tf ( - captures and dumps packets, dump files can be reloaded, minor dissection available with) Tj T* 0 Tw (some calssification, can load the dumps up with anything) Tj T* ET
 Q
 Q
 q
@@ -5864,22 +5262,135 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 372.0236 cm
+1 0 0 1 62.69291 366.0236 cm
 Q
 q
-1 0 0 1 62.69291 339.0236 cm
+1 0 0 1 62.69291 342.0236 cm
 q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (SSH STUFF) Tj T* ET
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
 Q
 Q
 q
-1 0 0 1 62.69291 327.0236 cm
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .704269 Tw 12 TL /F3 10 Tf 0 0 0 rg (ifconfig) Tj /F1 10 Tf ( - old network interface config command line utility. windows ipconfig is the ripoff version) Tj T* 0 Tw (with a weird name) Tj T* ET
+Q
 Q
 q
-1 0 0 1 62.69291 327.0236 cm
+Q
+Q
 Q
 q
-1 0 0 1 62.69291 291.0236 cm
+1 0 0 1 62.69291 336.0236 cm
+Q
+q
+1 0 0 1 62.69291 324.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (ip) Tj /F1 10 Tf ( - the newer, 'better' network interface and routing table configuration tool) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 318.0236 cm
+Q
+q
+1 0 0 1 62.69291 306.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (route) Tj /F1 10 Tf ( - orouting table edit and explore) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 300.0236 cm
+Q
+q
+1 0 0 1 62.69291 288.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (httping) Tj /F1 10 Tf ( - sends a http packet to a server on default prot of 80, gives response time) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 282.0236 cm
+Q
+q
+1 0 0 1 62.69291 270.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (ping) Tj /F1 10 Tf ( - normal old school icmp ping. not waht it used to be) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 264.0236 cm
+Q
+q
+1 0 0 1 62.69291 228.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -5893,7 +5404,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 26 Tm .03816 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (<) Tj (user) Tj (>) Tj (@) Tj (<) Tj (remotehost) Tj (>) Tj /F1 10 Tf ( - secure shell, replaced telnet when people realizsed doing password) Tj T* 0 Tw .20936 Tw (based auth and all your work over cleartext in telnet was retarded and more dangerous than working) Tj T* 0 Tw (in a liberian brothel) Tj T* ET
+BT 1 0 0 1 0 26 Tm .91229 Tw 12 TL /F3 10 Tf 0 0 0 rg (telnet) Tj /F1 10 Tf ( - old school shell/terminal over the wire. completely unencrypted, not much more complex) Tj T* 0 Tw 2.499269 Tw (than netcat. helpful for testing connections, manual single prot probing like tenet <) Tj (host) Tj (> 80 to) Tj T* 0 Tw (connect to port 80 on <) Tj (host) Tj (>) Tj T* ET
 Q
 Q
 q
@@ -5901,35 +5412,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 285.0236 cm
+1 0 0 1 62.69291 222.0236 cm
 Q
 q
-1 0 0 1 22.1378 201.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 69 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 74 Tm -0.059333 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh-keygen) Tj /F1 10 Tf ( - generates keypairs for ssh auth - ) Tj /F3 10 Tf (ssh-keygen) Tj ( ) Tj (-lf) Tj ( ) Tj (.ssh/id_rsa) Tj ( ) Tj (-E) Tj ( ) Tj (sha256) Tj /F1 10 Tf ( - generate fingerprint) Tj T* 0 Tw 247.605 Tw (of key -) Tj T* 0 Tw /F3 10 Tf (ssh-keygen) Tj ( ) Tj (-t) Tj ( ) Tj (ed25519-sk) Tj ( ) Tj (-O) Tj ( ) Tj (resident) Tj ( ) Tj (-O) Tj ( ) Tj (application=ssh:) Tj (<) Tj (description) Tj (>) Tj ( ) Tj (-f) Tj ( ) Tj (~/.ssh/id_ed_sk) Tj /F1 10 Tf  T* .024211 Tw (- generate key on fido2 token as resident on key, type can alternatively be ) Tj /F3 10 Tf (ecdsa-sk) Tj /F1 10 Tf (, omitting ) Tj /F3 10 Tf (-O) Tj ( ) Tj (resident) Tj /F1 10 Tf ( makes a) Tj T* 0 Tw 1.802632 Tw (key that requires the fido token but is not stored on it. not discoverable from the key. ) Tj /F3 10 Tf (-O) Tj ( ) Tj (verify-required) Tj /F1 10 Tf ( or) Tj T* 0 Tw 3.509167 Tw /F3 10 Tf (-O) Tj ( ) Tj (no-touch-required) Tj /F1 10 Tf ( control the physical prescene requirements\(touching the key\) - ) Tj /F3 10 Tf (ssh-keygen) Tj ( ) Tj (-K) Tj /F1 10 Tf ( -) Tj T* 0 Tw (importing resident keys to new machine from security token) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 195.0236 cm
-Q
-q
-1 0 0 1 62.69291 183.0236 cm
+1 0 0 1 62.69291 210.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -5943,7 +5429,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (ssh-add) Tj ( ) Tj (-L) Tj /F1 10 Tf ( - print all your public keys in .ssh) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (nslookup) Tj /F1 10 Tf ( - look up an ip or hostname in DNS) Tj T* ET
 Q
 Q
 q
@@ -5951,15 +5437,15 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 177.0236 cm
+1 0 0 1 62.69291 204.0236 cm
 Q
 q
-1 0 0 1 62.69291 93.02362 cm
+1 0 0 1 62.69291 168.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 69 cm
+1 0 0 1 6 21 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
@@ -5968,7 +5454,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 74 Tm .131085 Tw 12 TL /F3 10 Tf 0 0 0 rg (scp) Tj ( ) Tj (localfile) Tj ( ) Tj (<) Tj (user) Tj (>) Tj (@) Tj (<) Tj (remotehost) Tj (>) Tj (:/path/file) Tj /F1 10 Tf ( - copies files over ssh bidirectionally, will) Tj T* 0 Tw 1.030751 Tw (default to copy locally for composibility/compatibility and uses same args generally, which must be) Tj T* 0 Tw 5.51622 Tw (before the locations provided. typical use ) Tj /F3 10 Tf (scp) Tj ( ) Tj (user@host:/home/user/stuff) Tj ( ) Tj (stuff) Tj /F1 10 Tf (.) Tj T* 0 Tw 1.73811 Tw (username is often needed. tab to complete works if you have passwordless ssh set up. USE IT) Tj T* 0 Tw .523735 Tw (PASSWORDLESS AND USE TAB. tab is slow though\(it must open auth and close a ssh session in) Tj T* 0 Tw 1.07936 Tw (the background silently to achieve this\). remember you can copy to /tmp always, too, if perms are) Tj T* 0 Tw (giving you grief.) Tj T* ET
+BT 1 0 0 1 0 26 Tm -0.004682 Tw 12 TL /F3 10 Tf 0 0 0 rg (john) Tj /F1 10 Tf ( - old school powerful password hash cracker. supports extensions and a lot of hash algorithms.) Tj T* 0 Tw 1.224651 Tw (parallelism exists too, not sure about GPU kernels. likely better things these days. called john the) Tj T* 0 Tw (ripper\(after the famous amteur serial hooker-vivisection enthusiast\)) Tj T* ET
 Q
 Q
 q
@@ -5976,24 +5462,99 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 87.02362 cm
+1 0 0 1 62.69291 162.0236 cm
+Q
+q
+1 0 0 1 62.69291 138.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.46186 Tw 12 TL /F3 10 Tf 0 0 0 rg (whois) Tj /F1 10 Tf ( - information on domain ownership, reverse look up of IP addresses. just an entry from a) Tj T* 0 Tw (database about the owner and registrar stuff for IPs and domains.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 132.0236 cm
+Q
+q
+1 0 0 1 62.69291 96.02362 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm 1.532485 Tw 12 TL /F3 10 Tf 0 0 0 rg (traceroute) Tj /F1 10 Tf ( - old school packet routing trace, not sure if it really works the same anymore, but) Tj T* 0 Tw 1.915542 Tw (shows you the path packets take to a server. seems like maye routers out in the widl drop the) Tj T* 0 Tw (packets it uses now often? not sure. dont use it much and its not what it used to be is the word) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 90.02362 cm
+Q
+q
+1 0 0 1 62.69291 78.02362 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (arping) Tj /F1 10 Tf ( - executes a ping-analogous function using the arp protocol. v nice.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 76.86614 cm
 Q
  
 endstream
 endobj
-57 0 obj
+56 0 obj
 <<
-/Length 12554
+/Length 10520
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 741.0236 cm
+1 0 0 1 62.69291 753.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 9 cm
+1 0 0 1 6 -3 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
@@ -6002,23 +5563,23 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm 1.25061 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-X) Tj ( ) Tj (<) Tj (remotehost) Tj (>) Tj /F1 10 Tf ( - this arg will forward x11, IE, let u run graphicalprograms over ssh\(if u) Tj T* 0 Tw (have x11 on both sides\) ) Tj /F3 10 Tf (ssh) Tj ( ) Tj (-Y) Tj /F1 10 Tf ( is equivalent but was meant to be a more lightweight connection) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (tsocks) Tj /F1 10 Tf ( - wrap any protocol through socks generally config in etc) Tj T* ET
 Q
 Q
 q
 Q
 Q
+Q
+q
+1 0 0 1 62.69291 747.0236 cm
 Q
 q
 1 0 0 1 62.69291 735.0236 cm
-Q
-q
-1 0 0 1 62.69291 711.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 9 cm
+1 0 0 1 6 -3 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
@@ -6027,7 +5588,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .591984 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-A) Tj ( ) Tj (<) Tj (remotehost) Tj (>) Tj /F1 10 Tf ( - forward ssh agent to foreign server, allowing scure access to local keys) Tj T* 0 Tw (on foreign server, including hardware tokens) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (httping) Tj /F1 10 Tf (- ping a http server. IE, give the response time to a http service) Tj T* ET
 Q
 Q
 q
@@ -6035,7 +5596,57 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 705.0236 cm
+1 0 0 1 62.69291 729.0236 cm
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (aircrack-ng) Tj /F1 10 Tf ( - a suite of utilities for security analysis of wifi networks) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 711.0236 cm
+Q
+q
+1 0 0 1 62.69291 699.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (iwconfig) Tj /F1 10 Tf (-ike ifconfig but with specific features for wifi adapters/driver interfaces. it is old school) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 693.0236 cm
 Q
 q
 1 0 0 1 62.69291 681.0236 cm
@@ -6043,7 +5654,7 @@ q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
 q
-1 0 0 1 6 9 cm
+1 0 0 1 6 -3 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
@@ -6052,7 +5663,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .849984 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-D) Tj ( ) Tj (8888) Tj ( ) Tj (<) Tj (remotehost) Tj (>) Tj /F1 10 Tf ( - runs a socks5 proxy on prot 8888 that tunnels connections from) Tj T* 0 Tw (localhsot through the remote host) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (iw) Tj /F1 10 Tf ( - same as above but not as old school) Tj T* ET
 Q
 Q
 q
@@ -6063,57 +5674,7 @@ q
 1 0 0 1 62.69291 675.0236 cm
 Q
 q
-1 0 0 1 62.69291 651.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 1.703953 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-L) Tj (<) Tj (bindaddress) Tj (>) Tj (:) Tj (<) Tj (listen_port) Tj (>) Tj (host:) Tj (<) Tj (port) Tj (>) Tj ( ) Tj (user@remotehost) Tj /F1 10 Tf ( - tunnel localhost) Tj T* 0 Tw (lport to remote host's view of host:port) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 645.0236 cm
-Q
-q
-1 0 0 1 62.69291 621.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 2.899961 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-R) Tj (<) Tj (bindaddress) Tj (>) Tj (:) Tj (<) Tj (lport) Tj (>) Tj (:host:) Tj (<) Tj (port) Tj (>) Tj ( ) Tj (user@remotehost) Tj /F1 10 Tf ( - reverse tunnel, goes) Tj T* 0 Tw (from remote host to view of host:) Tj (<) Tj (port) Tj (>) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 615.0236 cm
-Q
-q
-1 0 0 1 62.69291 603.0236 cm
+1 0 0 1 62.69291 663.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6127,7 +5688,57 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (sftp) Tj /F1 10 Tf ( - ftp style shell client for scp-like and other extended functionality) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (bluetoothctl) Tj /F1 10 Tf (- shell style interface to bluetooth hardware. quite good) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 657.0236 cm
+Q
+q
+1 0 0 1 62.69291 633.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .023516 Tw 12 TL /F3 10 Tf 0 0 0 rg (yersinia) Tj /F1 10 Tf (- a powerful security analysis too that i am not too familiar with, but worth a mention. some) Tj T* 0 Tw (kid in vegas looked at me like i was insane for not using it. appears very powerful.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 627.0236 cm
+Q
+q
+1 0 0 1 62.69291 603.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .167765 Tw 12 TL /F3 10 Tf 0 0 0 rg (netstat) Tj /F1 10 Tf (- usually i invoke as netstat -n, lists the connections in and out of the machine. godo stuff is) Tj T* 0 Tw (by the top so try netstat -n|head) Tj T* ET
 Q
 Q
 q
@@ -6152,7 +5763,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (sshfs) Tj /F1 10 Tf ( - smount - use the above sftp facilities to emualted a mounted filesystem) Tj T* ET
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (fido2-token) Tj /F1 10 Tf ( - manipulate and probe fido2 auth tokens such as yubikey etc) Tj T* ET
 Q
 Q
 q
@@ -6163,7 +5774,462 @@ q
 1 0 0 1 62.69291 579.0236 cm
 Q
 q
-1 0 0 1 62.69291 567.0236 cm
+1 0 0 1 62.69291 555.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 4.071647 Tw 12 TL /F3 10 Tf 0 0 0 rg (opensc-tool) Tj /F1 10 Tf ( + ) Tj /F3 10 Tf (opensc-explorer) Tj /F1 10 Tf ( - cli util and interactive shell interface for smart card) Tj T* 0 Tw (interactions a-la iso7816 and iso14443\(contact chip and nfc interfaces respectively\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 549.0236 cm
+Q
+q
+1 0 0 1 62.69291 537.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (pcsc_scan) Tj /F1 10 Tf ( - report basic diagnostic info on connected smart cards) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 537.0236 cm
+Q
+q
+1 0 0 1 62.69291 504.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (services) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 450.0236 cm
+q
+BT 1 0 0 1 0 38 Tm 2.196905 Tw 12 TL /F1 10 Tf 0 0 0 rg (these are the names used if you were to ) Tj /F3 10 Tf (service) Tj ( ) Tj (<) Tj (name) Tj (>) Tj ( ) Tj (<) Tj (start|stop|status) Tj (>) Tj /F1 10 Tf ( services are) Tj T* 0 Tw 1.419986 Tw (started stopped etc by scripts which are used by systemd and this command or in general your setup) Tj T* 0 Tw 2.13686 Tw (might use a different service manager, which will be similar. This is because some services need a) Tj T* 0 Tw (sequence of commands and checks etc before starting or stopping safely.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 444.0236 cm
+Q
+q
+1 0 0 1 62.69291 444.0236 cm
+Q
+q
+1 0 0 1 62.69291 396.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 33 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 38 Tm 2.247318 Tw 12 TL /F3 10 Tf 0 0 0 rg (fail2ban) Tj /F1 10 Tf ( - great utility that watches update of logs from whatever you want and responds to) Tj T* 0 Tw .334651 Tw (predined events \(you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are) Tj T* 0 Tw 1.037318 Tw (responses, filters define events and jails define groups of events and how they trigger actiobs abd) Tj T* 0 Tw (expire. all bans are cleared on restart by default.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 390.0236 cm
+Q
+q
+1 0 0 1 62.69291 366.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .19881 Tw 12 TL /F3 10 Tf 0 0 0 rg (nginx) Tj /F1 10 Tf ( - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask) Tj T* 0 Tw (or similar, to provide robust features that come with a real web server.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 360.0236 cm
+Q
+q
+1 0 0 1 62.69291 336.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.766457 Tw 12 TL /F3 10 Tf 0 0 0 rg (snort) Tj /F1 10 Tf ( - network util for traffic capture and parsing, logging. can be run in the background as a) Tj T* 0 Tw (system service to construct intrusion detection functionality, or used like ngrep) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 336.0236 cm
+Q
+q
+1 0 0 1 62.69291 303.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (SSH STUFF) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 291.0236 cm
+Q
+q
+1 0 0 1 62.69291 291.0236 cm
+Q
+q
+1 0 0 1 62.69291 255.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm .03816 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (<) Tj (user) Tj (>) Tj (@) Tj (<) Tj (remotehost) Tj (>) Tj /F1 10 Tf ( - secure shell, replaced telnet when people realizsed doing password) Tj T* 0 Tw .20936 Tw (based auth and all your work over cleartext in telnet was retarded and more dangerous than working) Tj T* 0 Tw (in a liberian brothel) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 249.0236 cm
+Q
+q
+1 0 0 1 22.1378 165.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 69 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 74 Tm -0.059333 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh-keygen) Tj /F1 10 Tf ( - generates keypairs for ssh auth - ) Tj /F3 10 Tf (ssh-keygen) Tj ( ) Tj (-lf) Tj ( ) Tj (.ssh/id_rsa) Tj ( ) Tj (-E) Tj ( ) Tj (sha256) Tj /F1 10 Tf ( - generate fingerprint) Tj T* 0 Tw 247.605 Tw (of key -) Tj T* 0 Tw /F3 10 Tf (ssh-keygen) Tj ( ) Tj (-t) Tj ( ) Tj (ed25519-sk) Tj ( ) Tj (-O) Tj ( ) Tj (resident) Tj ( ) Tj (-O) Tj ( ) Tj (application=ssh:) Tj (<) Tj (description) Tj (>) Tj ( ) Tj (-f) Tj ( ) Tj (~/.ssh/id_ed_sk) Tj /F1 10 Tf  T* .024211 Tw (- generate key on fido2 token as resident on key, type can alternatively be ) Tj /F3 10 Tf (ecdsa-sk) Tj /F1 10 Tf (, omitting ) Tj /F3 10 Tf (-O) Tj ( ) Tj (resident) Tj /F1 10 Tf ( makes a) Tj T* 0 Tw 1.802632 Tw (key that requires the fido token but is not stored on it. not discoverable from the key. ) Tj /F3 10 Tf (-O) Tj ( ) Tj (verify-required) Tj /F1 10 Tf ( or) Tj T* 0 Tw 3.509167 Tw /F3 10 Tf (-O) Tj ( ) Tj (no-touch-required) Tj /F1 10 Tf ( control the physical prescene requirements\(touching the key\) - ) Tj /F3 10 Tf (ssh-keygen) Tj ( ) Tj (-K) Tj /F1 10 Tf ( -) Tj T* 0 Tw (importing resident keys to new machine from security token) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 159.0236 cm
+Q
+q
+1 0 0 1 62.69291 147.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (ssh-add) Tj ( ) Tj (-L) Tj /F1 10 Tf ( - print all your public keys in .ssh) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 141.0236 cm
+Q
+q
+1 0 0 1 62.69291 76.86614 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 49.15748 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 13.15748 cm
+q
+BT 1 0 0 1 0 38 Tm .131085 Tw 12 TL /F3 10 Tf 0 0 0 rg (scp) Tj ( ) Tj (localfile) Tj ( ) Tj (<) Tj (user) Tj (>) Tj (@) Tj (<) Tj (remotehost) Tj (>) Tj (:/path/file) Tj /F1 10 Tf ( - copies files over ssh bidirectionally, will) Tj T* 0 Tw 1.030751 Tw (default to copy locally for composibility/compatibility and uses same args generally, which must be) Tj T* 0 Tw 5.51622 Tw (before the locations provided. typical use ) Tj /F3 10 Tf (scp) Tj ( ) Tj (user@host:/home/user/stuff) Tj ( ) Tj (stuff) Tj /F1 10 Tf (.) Tj T* 0 Tw 1.73811 Tw (username is often needed. tab to complete works if you have passwordless ssh set up. USE IT) Tj T* 0 Tw ET
+Q
+Q
+q
+Q
+Q
+Q
+ 
+endstream
+endobj
+57 0 obj
+<<
+/Length 12167
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 729.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 6 23 Tm  T* ET
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm .523735 Tw 12 TL /F1 10 Tf 0 0 0 rg (PASSWORDLESS AND USE TAB. tab is slow though\(it must open auth and close a ssh session in) Tj T* 0 Tw 1.07936 Tw (the background silently to achieve this\). remember you can copy to /tmp always, too, if perms are) Tj T* 0 Tw (giving you grief.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 723.0236 cm
+Q
+q
+1 0 0 1 62.69291 699.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.25061 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-X) Tj ( ) Tj (<) Tj (remotehost) Tj (>) Tj /F1 10 Tf ( - this arg will forward x11, IE, let u run graphicalprograms over ssh\(if u) Tj T* 0 Tw (have x11 on both sides\) ) Tj /F3 10 Tf (ssh) Tj ( ) Tj (-Y) Tj /F1 10 Tf ( is equivalent but was meant to be a more lightweight connection) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 693.0236 cm
+Q
+q
+1 0 0 1 62.69291 669.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .591984 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-A) Tj ( ) Tj (<) Tj (remotehost) Tj (>) Tj /F1 10 Tf ( - forward ssh agent to foreign server, allowing scure access to local keys) Tj T* 0 Tw (on foreign server, including hardware tokens) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
+Q
+q
+1 0 0 1 62.69291 639.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .849984 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-D) Tj ( ) Tj (8888) Tj ( ) Tj (<) Tj (remotehost) Tj (>) Tj /F1 10 Tf ( - runs a socks5 proxy on prot 8888 that tunnels connections from) Tj T* 0 Tw (localhsot through the remote host) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 633.0236 cm
+Q
+q
+1 0 0 1 62.69291 609.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.703953 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-L) Tj (<) Tj (bindaddress) Tj (>) Tj (:) Tj (<) Tj (listen_port) Tj (>) Tj (host:) Tj (<) Tj (port) Tj (>) Tj ( ) Tj (user@remotehost) Tj /F1 10 Tf ( - tunnel localhost) Tj T* 0 Tw (lport to remote host's view of host:port) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 603.0236 cm
+Q
+q
+1 0 0 1 62.69291 579.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 2.899961 Tw 12 TL /F3 10 Tf 0 0 0 rg (ssh) Tj ( ) Tj (-R) Tj (<) Tj (bindaddress) Tj (>) Tj (:) Tj (<) Tj (lport) Tj (>) Tj (:host:) Tj (<) Tj (port) Tj (>) Tj ( ) Tj (user@remotehost) Tj /F1 10 Tf ( - reverse tunnel, goes) Tj T* 0 Tw (from remote host to view of host:) Tj (<) Tj (port) Tj (>) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 573.0236 cm
+Q
+q
+1 0 0 1 62.69291 561.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (sftp) Tj /F1 10 Tf ( - ftp style shell client for scp-like and other extended functionality) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 555.0236 cm
+Q
+q
+1 0 0 1 62.69291 543.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (sshfs) Tj /F1 10 Tf ( - smount - use the above sftp facilities to emualted a mounted filesystem) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 537.0236 cm
+Q
+q
+1 0 0 1 62.69291 525.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6185,22 +6251,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 567.0236 cm
+1 0 0 1 62.69291 525.0236 cm
 Q
 q
-1 0 0 1 62.69291 534.0236 cm
+1 0 0 1 62.69291 492.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (operators in shell\(bash\)) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 522.0236 cm
+1 0 0 1 62.69291 480.0236 cm
 Q
 q
-1 0 0 1 62.69291 522.0236 cm
+1 0 0 1 62.69291 480.0236 cm
 Q
 q
-1 0 0 1 62.69291 465.0236 cm
+1 0 0 1 62.69291 423.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6263,10 +6329,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 459.0236 cm
+1 0 0 1 62.69291 417.0236 cm
 Q
 q
-1 0 0 1 62.69291 447.0236 cm
+1 0 0 1 62.69291 405.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6288,10 +6354,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 441.0236 cm
+1 0 0 1 62.69291 399.0236 cm
 Q
 q
-1 0 0 1 62.69291 429.0236 cm
+1 0 0 1 62.69291 387.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6313,10 +6379,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 423.0236 cm
+1 0 0 1 62.69291 381.0236 cm
 Q
 q
-1 0 0 1 62.69291 411.0236 cm
+1 0 0 1 62.69291 369.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6338,10 +6404,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 405.0236 cm
+1 0 0 1 62.69291 363.0236 cm
 Q
 q
-1 0 0 1 62.69291 393.0236 cm
+1 0 0 1 62.69291 351.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6363,10 +6429,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 387.0236 cm
+1 0 0 1 62.69291 345.0236 cm
 Q
 q
-1 0 0 1 62.69291 363.0236 cm
+1 0 0 1 62.69291 321.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6388,10 +6454,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 357.0236 cm
+1 0 0 1 62.69291 315.0236 cm
 Q
 q
-1 0 0 1 62.69291 345.0236 cm
+1 0 0 1 62.69291 303.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6413,10 +6479,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 339.0236 cm
+1 0 0 1 62.69291 297.0236 cm
 Q
 q
-1 0 0 1 62.69291 327.0236 cm
+1 0 0 1 62.69291 285.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6438,10 +6504,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 321.0236 cm
+1 0 0 1 62.69291 279.0236 cm
 Q
 q
-1 0 0 1 62.69291 309.0236 cm
+1 0 0 1 62.69291 267.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6463,10 +6529,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 303.0236 cm
+1 0 0 1 62.69291 261.0236 cm
 Q
 q
-1 0 0 1 62.69291 291.0236 cm
+1 0 0 1 62.69291 249.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6488,10 +6554,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 285.0236 cm
+1 0 0 1 62.69291 243.0236 cm
 Q
 q
-1 0 0 1 62.69291 273.0236 cm
+1 0 0 1 62.69291 231.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6513,10 +6579,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 267.0236 cm
+1 0 0 1 62.69291 225.0236 cm
 Q
 q
-1 0 0 1 62.69291 243.0236 cm
+1 0 0 1 62.69291 201.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6538,10 +6604,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 237.0236 cm
+1 0 0 1 62.69291 195.0236 cm
 Q
 q
-1 0 0 1 62.69291 225.0236 cm
+1 0 0 1 62.69291 183.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -6556,6 +6622,569 @@ q
 1 0 0 1 23 -3 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (ctrl-d) Tj /F1 10 Tf ( logout) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 177.0236 cm
+Q
+q
+1 0 0 1 62.69291 153.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.002988 Tw 12 TL /F3 10 Tf 0 0 0 rg ([TAB]) Tj /F1 10 Tf ( tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot) Tj T* 0 Tw (anything. ) Tj /F3 10 Tf (git) Tj ( ) Tj (add) Tj ( ) Tj ([TAB]) Tj ( ) Tj ([TAB]) Tj /F1 10 Tf ( lists your changed files, for instance) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 147.0236 cm
+Q
+q
+1 0 0 1 62.69291 111.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm .634651 Tw 12 TL /F1 10 Tf 0 0 0 rg (back quotes - ) Tj /F3 10 Tf (kill) Tj ( ) Tj (`pgrep) Tj ( ) Tj (firefox`) Tj /F1 10 Tf ( - inserts stdout from the command in backquotes into the) Tj T* 0 Tw .605898 Tw (shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is) Tj T* 0 Tw (being picked up by kill so that it kills anything that matches firefox) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 105.0236 cm
+Q
+q
+1 0 0 1 62.69291 93.02362 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (*) Tj /F1 10 Tf ( wildcard, ) Tj /F3 10 Tf (ls) Tj ( ) Tj (*.py) Tj /F1 10 Tf ( gives list of python scripts in current directory) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 87.02362 cm
+Q
+ 
+endstream
+endobj
+58 0 obj
+<<
+/Length 10623
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 741.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .52436 Tw 12 TL /F3 10 Tf 0 0 0 rg (!!) Tj /F1 10 Tf ( the last command, ) Tj /F3 10 Tf (!n) Tj /F1 10 Tf ( nth command in history, ) Tj /F3 10 Tf (!-n) Tj /F1 10 Tf ( n commands back, IE ) Tj /F3 10 Tf (!-2) Tj /F1 10 Tf ( executes second) Tj T* 0 Tw (last) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 735.0236 cm
+Q
+q
+1 0 0 1 62.69291 723.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (!*) Tj /F1 10 Tf ( args from previous command) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+Q
+q
+1 0 0 1 62.69291 693.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.248735 Tw 12 TL /F3 10 Tf 0 0 0 rg ([0-9]) Tj /F1 10 Tf ( matches digits in shell, ) Tj /F3 10 Tf (ls) Tj ( ) Tj ([0-9]*) Tj /F1 10 Tf ( list everything that starts with a digit. can use comma) Tj T* 0 Tw (separated singletons, works with letters too [a-z]...) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 693.0236 cm
+Q
+q
+1 0 0 1 62.69291 660.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (patrician word processing) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 642.0236 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (if youre writing text then please be a man and use a text based interface) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 636.0236 cm
+Q
+q
+1 0 0 1 62.69291 636.0236 cm
+Q
+q
+1 0 0 1 62.69291 624.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (latex) Tj /F1 10 Tf ( - compiles to dvi, pics gotta be eps\(a vector format\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 618.0236 cm
+Q
+q
+1 0 0 1 62.69291 606.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (pdflatex) Tj /F1 10 Tf (- compiles latex pics must be png and jpg i think. cant use vector format eps) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 600.0236 cm
+Q
+q
+1 0 0 1 62.69291 588.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (htlatex) Tj /F1 10 Tf (- good compiles latex to html with pics for equations and other floats) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 582.0236 cm
+Q
+q
+1 0 0 1 62.69291 570.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (latex2html) Tj /F1 10 Tf ( - sucks. honorable mention thought) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 564.0236 cm
+Q
+q
+1 0 0 1 62.69291 552.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (dvipdf) Tj /F1 10 Tf ( - turn dvi to pdf common for use of ) Tj /F3 10 Tf (latex) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 546.0236 cm
+Q
+q
+1 0 0 1 62.69291 534.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (rst2html) Tj /F1 10 Tf ( - restructurted text to tml) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 528.0236 cm
+Q
+q
+1 0 0 1 62.69291 516.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (rst2latex) Tj /F1 10 Tf ( - restructurted text to latex) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 510.0236 cm
+Q
+q
+1 0 0 1 62.69291 498.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (rst2man) Tj /F1 10 Tf ( - restructurted text to man page) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 492.0236 cm
+Q
+q
+1 0 0 1 62.69291 480.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (rst2odt) Tj /F1 10 Tf ( - restructurted text to odt) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 474.0236 cm
+Q
+q
+1 0 0 1 62.69291 462.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (rst2pdf) Tj /F1 10 Tf ( - restructurted text to pdf) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 456.0236 cm
+Q
+q
+1 0 0 1 62.69291 420.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm 8.263615 Tw 12 TL /F3 10 Tf 0 0 0 rg (convert) Tj /F1 10 Tf ( - very smartly interfaced command line front end for imagemagick. just) Tj T* 0 Tw 1.358443 Tw /F3 10 Tf (convert) Tj ( ) Tj (bob.) Tj (<) Tj (ext) Tj (>) Tj ( ) Tj (bobout.jpg) Tj /F1 10 Tf ( etc to convert between any image format. this is helpful for) Tj T* 0 Tw (latex etc.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 420.0236 cm
+Q
+q
+1 0 0 1 62.69291 387.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (root filesystem synopsis) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 375.0236 cm
+Q
+q
+1 0 0 1 62.69291 351.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+BT 1 0 0 1 0 2 Tm  T* ET
+q
+1 0 0 1 20 0 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .643984 Tw (Int the past many of these were separate partitions, hence some of the seemingly redundant things.) Tj T* 0 Tw (Now this is not as important with solid state drives and \(i supposed\) more modern file systems) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 351.0236 cm
+Q
+q
+1 0 0 1 62.69291 345.0236 cm
+Q
+q
+1 0 0 1 62.69291 345.0236 cm
+Q
+q
+1 0 0 1 62.69291 321.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .329488 Tw 12 TL /F3 10 Tf 0 0 0 rg (/tmp) Tj /F1 10 Tf ( - temp folder, anyone can write in it. it is there on every system and great place to copy things) Tj T* 0 Tw (to if you are not sure where to do it) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 315.0236 cm
+Q
+q
+1 0 0 1 62.69291 255.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 50 Tm .05881 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc) Tj /F1 10 Tf ( - pronounced et-SEE. all the configuration files and global settings are in here by default. in the) Tj T* 0 Tw -0.070016 Tw (past administration could be done exclusively by modificaion of files here, more or less. programs like) Tj T* 0 Tw .188876 Tw (passwd and usermod are tools to automatically edit files here. Disk usage is small as it is mostly text) Tj T* 0 Tw .772765 Tw (files and it is definitely something you want to back up, as it contains any system settings you took) Tj T* 0 Tw (time configuring.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 249.0236 cm
+Q
+q
+1 0 0 1 62.69291 225.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .33332 Tw 12 TL /F3 10 Tf 0 0 0 rg (/var) Tj /F1 10 Tf ( - various data here, var/log is a default global spot for logs. often home to global data storage,) Tj T* 0 Tw (such as the root of a webserver with static content, or database disk footprint.) Tj T* ET
 Q
 Q
 q
@@ -6580,7 +7209,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm 1.002988 Tw 12 TL /F3 10 Tf 0 0 0 rg ([TAB]) Tj /F1 10 Tf ( tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot) Tj T* 0 Tw (anything. ) Tj /F3 10 Tf (git) Tj ( ) Tj (add) Tj ( ) Tj ([TAB]) Tj ( ) Tj ([TAB]) Tj /F1 10 Tf ( lists your changed files, for instance) Tj T* ET
+BT 1 0 0 1 0 14 Tm .318409 Tw 12 TL /F3 10 Tf 0 0 0 rg (/usr) Tj /F1 10 Tf ( - user installed things generally.... comes with a lot in it these days. it is like an alternative root) Tj T* 0 Tw (where u generally would modify things for system wide access. has the same directory structure as /) Tj T* ET
 Q
 Q
 q
@@ -6605,7 +7234,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 26 Tm .634651 Tw 12 TL /F1 10 Tf 0 0 0 rg (back quotes - ) Tj /F3 10 Tf (kill) Tj ( ) Tj (`pgrep) Tj ( ) Tj (firefox`) Tj /F1 10 Tf ( - inserts stdout from the command in backquotes into the) Tj T* 0 Tw .605898 Tw (shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is) Tj T* 0 Tw (being picked up by kill so that it kills anything that matches firefox) Tj T* ET
+BT 1 0 0 1 0 26 Tm .14061 Tw 12 TL /F3 10 Tf 0 0 0 rg (/proc) Tj /F1 10 Tf ( - process information emulated as block storage devices and stuff like this. can get info about) Tj T* 0 Tw 1.629213 Tw (some hardware from drivers, and access some other kernel level information pertaining to active) Tj T* 0 Tw (system processes) Tj T* ET
 Q
 Q
 q
@@ -6616,570 +7245,7 @@ q
 1 0 0 1 62.69291 147.0236 cm
 Q
 q
-1 0 0 1 62.69291 135.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (*) Tj /F1 10 Tf ( wildcard, ) Tj /F3 10 Tf (ls) Tj ( ) Tj (*.py) Tj /F1 10 Tf ( gives list of python scripts in current directory) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 129.0236 cm
-Q
-q
-1 0 0 1 62.69291 105.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .52436 Tw 12 TL /F3 10 Tf 0 0 0 rg (!!) Tj /F1 10 Tf ( the last command, ) Tj /F3 10 Tf (!n) Tj /F1 10 Tf ( nth command in history, ) Tj /F3 10 Tf (!-n) Tj /F1 10 Tf ( n commands back, IE ) Tj /F3 10 Tf (!-2) Tj /F1 10 Tf ( executes second) Tj T* 0 Tw (last) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 99.02362 cm
-Q
-q
-1 0 0 1 62.69291 87.02362 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (!*) Tj /F1 10 Tf ( args from previous command) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 81.02362 cm
-Q
- 
-endstream
-endobj
-58 0 obj
-<<
-/Length 10430
->>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
-q
-1 0 0 1 62.69291 741.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 1.248735 Tw 12 TL /F3 10 Tf 0 0 0 rg ([0-9]) Tj /F1 10 Tf ( matches digits in shell, ) Tj /F3 10 Tf (ls) Tj ( ) Tj ([0-9]*) Tj /F1 10 Tf ( list everything that starts with a digit. can use comma) Tj T* 0 Tw (separated singletons, works with letters too [a-z]...) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 741.0236 cm
-Q
-q
-1 0 0 1 62.69291 708.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (patrician word processing) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 690.0236 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (if youre writing text then please be a man and use a text based interface) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 684.0236 cm
-Q
-q
-1 0 0 1 62.69291 684.0236 cm
-Q
-q
-1 0 0 1 62.69291 672.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (latex) Tj /F1 10 Tf ( - compiles to dvi, pics gotta be eps\(a vector format\)) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 666.0236 cm
-Q
-q
-1 0 0 1 62.69291 654.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (pdflatex) Tj /F1 10 Tf (- compiles latex pics must be png and jpg i think. cant use vector format eps) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 648.0236 cm
-Q
-q
-1 0 0 1 62.69291 636.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (htlatex) Tj /F1 10 Tf (- good compiles latex to html with pics for equations and other floats) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 630.0236 cm
-Q
-q
-1 0 0 1 62.69291 618.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (latex2html) Tj /F1 10 Tf ( - sucks. honorable mention thought) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 612.0236 cm
-Q
-q
-1 0 0 1 62.69291 600.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (dvipdf) Tj /F1 10 Tf ( - turn dvi to pdf common for use of ) Tj /F3 10 Tf (latex) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 594.0236 cm
-Q
-q
-1 0 0 1 62.69291 582.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (rst2html) Tj /F1 10 Tf ( - restructurted text to tml) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 576.0236 cm
-Q
-q
-1 0 0 1 62.69291 564.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (rst2latex) Tj /F1 10 Tf ( - restructurted text to latex) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 558.0236 cm
-Q
-q
-1 0 0 1 62.69291 546.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (rst2man) Tj /F1 10 Tf ( - restructurted text to man page) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 540.0236 cm
-Q
-q
-1 0 0 1 62.69291 528.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (rst2odt) Tj /F1 10 Tf ( - restructurted text to odt) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 522.0236 cm
-Q
-q
-1 0 0 1 62.69291 510.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (rst2pdf) Tj /F1 10 Tf ( - restructurted text to pdf) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 504.0236 cm
-Q
-q
-1 0 0 1 62.69291 468.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 26 Tm 8.263615 Tw 12 TL /F3 10 Tf 0 0 0 rg (convert) Tj /F1 10 Tf ( - very smartly interfaced command line front end for imagemagick. just) Tj T* 0 Tw 1.358443 Tw /F3 10 Tf (convert) Tj ( ) Tj (bob.) Tj (<) Tj (ext) Tj (>) Tj ( ) Tj (bobout.jpg) Tj /F1 10 Tf ( etc to convert between any image format. this is helpful for) Tj T* 0 Tw (latex etc.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 468.0236 cm
-Q
-q
-1 0 0 1 62.69291 435.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (root filesystem synopsis) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 423.0236 cm
-Q
-q
-1 0 0 1 62.69291 399.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 0 2 Tm  T* ET
-q
-1 0 0 1 20 0 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .643984 Tw (Int the past many of these were separate partitions, hence some of the seemingly redundant things.) Tj T* 0 Tw (Now this is not as important with solid state drives and \(i supposed\) more modern file systems) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 399.0236 cm
-Q
-q
-1 0 0 1 62.69291 393.0236 cm
-Q
-q
-1 0 0 1 62.69291 393.0236 cm
-Q
-q
-1 0 0 1 62.69291 369.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .329488 Tw 12 TL /F3 10 Tf 0 0 0 rg (/tmp) Tj /F1 10 Tf ( - temp folder, anyone can write in it. it is there on every system and great place to copy things) Tj T* 0 Tw (to if you are not sure where to do it) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 363.0236 cm
-Q
-q
-1 0 0 1 62.69291 303.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 45 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 50 Tm .05881 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc) Tj /F1 10 Tf ( - pronounced et-SEE. all the configuration files and global settings are in here by default. in the) Tj T* 0 Tw -0.070016 Tw (past administration could be done exclusively by modificaion of files here, more or less. programs like) Tj T* 0 Tw .188876 Tw (passwd and usermod are tools to automatically edit files here. Disk usage is small as it is mostly text) Tj T* 0 Tw .772765 Tw (files and it is definitely something you want to back up, as it contains any system settings you took) Tj T* 0 Tw (time configuring.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 297.0236 cm
-Q
-q
-1 0 0 1 62.69291 273.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .33332 Tw 12 TL /F3 10 Tf 0 0 0 rg (/var) Tj /F1 10 Tf ( - various data here, var/log is a default global spot for logs. often home to global data storage,) Tj T* 0 Tw (such as the root of a webserver with static content, or database disk footprint.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 267.0236 cm
-Q
-q
-1 0 0 1 62.69291 243.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .318409 Tw 12 TL /F3 10 Tf 0 0 0 rg (/usr) Tj /F1 10 Tf ( - user installed things generally.... comes with a lot in it these days. it is like an alternative root) Tj T* 0 Tw (where u generally would modify things for system wide access. has the same directory structure as /) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 237.0236 cm
-Q
-q
-1 0 0 1 62.69291 201.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 26 Tm .14061 Tw 12 TL /F3 10 Tf 0 0 0 rg (/proc) Tj /F1 10 Tf ( - process information emulated as block storage devices and stuff like this. can get info about) Tj T* 0 Tw 1.629213 Tw (some hardware from drivers, and access some other kernel level information pertaining to active) Tj T* 0 Tw (system processes) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 195.0236 cm
-Q
-q
-1 0 0 1 62.69291 159.0236 cm
+1 0 0 1 62.69291 111.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7201,10 +7267,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 153.0236 cm
+1 0 0 1 62.69291 105.0236 cm
 Q
 q
-1 0 0 1 62.69291 129.0236 cm
+1 0 0 1 62.69291 81.02362 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7226,60 +7292,44 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 123.0236 cm
-Q
-q
 1 0 0 1 62.69291 76.86614 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 31.15748 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 7.15748 cm
-q
-BT 1 0 0 1 0 26 Tm .292651 Tw 12 TL /F3 10 Tf 0 0 0 rg (/dev) Tj /F1 10 Tf ( - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb) Tj T* 0 Tw 1.323735 Tw (devices, all accessed from here if you want to do it directly. it is a virtualized/emulated filesystem) Tj T* 0 Tw .223318 Tw (integrated representation of a group of non-file objects\(very cool\) like proc. these are not actual files,) Tj T* 0 Tw ET
-Q
-Q
-q
-Q
-Q
 Q
  
 endstream
 endobj
 59 0 obj
 <<
-/Length 9937
+/Length 10236
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 741.0236 cm
+1 0 0 1 62.69291 705.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
-BT 1 0 0 1 6 11 Tm  T* ET
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .627485 Tw 12 TL /F1 10 Tf 0 0 0 rg (but dynamic emulated files that make access to devices like accessing a file. reading and writing to) Tj T* 0 Tw (them is the same as a file) Tj T* ET
+BT 1 0 0 1 0 50 Tm 4.489147 Tw 12 TL /F3 10 Tf 0 0 0 rg (/dev) Tj /F1 10 Tf ( - devices, access to raw hardware. it is a virtualized/emulated filesystem integrated) Tj T* 0 Tw 2.261318 Tw (representation of a group of non-file objects\(very cool\) like proc. these are not actual files, but) Tj T* 0 Tw .10686 Tw (dynamic emulated files that make access to devices like accessing a file. reading and writing to them) Tj T* 0 Tw 2.062093 Tw (is the same as a file. there are two styles of io, "block" and "character" devices. io is done by) Tj T* 0 Tw (blocks\(fixed size binary packets\) or bytewise respectively) Tj T* ET
 Q
 Q
 q
 Q
 Q
-Q
-q
-1 0 0 1 62.69291 735.0236 cm
 Q
 q
 1 0 0 1 62.69291 699.0236 cm
+Q
+q
+1 0 0 1 62.69291 663.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7294,564 +7344,6 @@ q
 1 0 0 1 23 -3 cm
 q
 BT 1 0 0 1 0 26 Tm .667882 Tw 12 TL /F3 10 Tf 0 0 0 rg (/opt) Tj /F1 10 Tf ( - not sure what it is supposed to be but it is often used to store globally accessed proprietary) Tj T* 0 Tw .134651 Tw (software that doesn't have facility to install in the typical global directory structure\(where things are in) Tj T* 0 Tw (/bin and /lib andprstuff) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 693.0236 cm
-Q
-q
-1 0 0 1 62.69291 669.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .747633 Tw 12 TL /F3 10 Tf 0 0 0 rg (/bin) Tj /F1 10 Tf ( - binarys, these are where the commands are stored for the base system. most of the higher) Tj T* 0 Tw (level stuff is in /usr/bin and /usr/local/bin) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 663.0236 cm
-Q
-q
-1 0 0 1 62.69291 639.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .68881 Tw 12 TL /F3 10 Tf 0 0 0 rg (/home) Tj /F1 10 Tf ( - home directories for each user here. all user settings and information and data are in their) Tj T* 0 Tw (home folder. copy it to an ew system an it will all be there) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 633.0236 cm
-Q
-q
-1 0 0 1 62.69291 621.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (/root) Tj /F1 10 Tf ( - home directory for admin/root user) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 615.0236 cm
-Q
-q
-1 0 0 1 62.69291 591.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 1.311163 Tw 12 TL /F3 10 Tf 0 0 0 rg (/boot) Tj /F1 10 Tf ( - contains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a) Tj T* 0 Tw (separate partition still) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 585.0236 cm
-Q
-q
-1 0 0 1 62.69291 573.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (/cdrom) Tj /F1 10 Tf ( - vestigal artifact of a time when people used cdrom) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 567.0236 cm
-Q
-q
-1 0 0 1 62.69291 531.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 26 Tm .618221 Tw 12 TL /F3 10 Tf 0 0 0 rg (/mnt) Tj /F1 10 Tf ( - this was originally where you would mount drives, IE, any drive that was not hosting system) Tj T* 0 Tw 1.88152 Tw (critical contents, like removable media, was mounted here. you added these to be automounted) Tj T* 0 Tw (using /etc/fstab, and mounting had to be done by root) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 525.0236 cm
-Q
-q
-1 0 0 1 62.69291 465.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 45 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 50 Tm 2.094983 Tw 12 TL /F3 10 Tf 0 0 0 rg (/media) Tj /F1 10 Tf ( - this is where thigns are mounted now, in a path like /media/) Tj (<) Tj (username) Tj (>) Tj (/) Tj (<) Tj (uuid serial) Tj T* 0 Tw 1.83832 Tw (thing) Tj (>) Tj (, this is now handled by some daemon that will do it for you as a setuid-to-root binary or) Tj T* 0 Tw 2.183059 Tw (something, to streamline the process of using removeable media since the proliferation of USB) Tj T* 0 Tw 1.115366 Tw (storage devices\(previously portable storage media didnt carry its hardware interface with it, so the) Tj T* 0 Tw (system wouldnt see new media as a new device entirely, but a change in state of a known device\)) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 465.0236 cm
-Q
-q
-1 0 0 1 62.69291 432.0236 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (notable filesystem objects, global) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 420.0236 cm
-Q
-q
-1 0 0 1 62.69291 420.0236 cm
-Q
-q
-1 0 0 1 62.69291 408.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (/proc/cpuinfo) Tj /F1 10 Tf ( - cpu core info, pretty great) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 402.0236 cm
-Q
-q
-1 0 0 1 62.69291 390.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (/dev/random) Tj /F1 10 Tf ( - random data from hardware. cat this and u get a dump of real physical entropy) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 384.0236 cm
-Q
-q
-1 0 0 1 62.69291 360.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 1.79061 Tw 12 TL /F3 10 Tf 0 0 0 rg (/dev/urandom) Tj /F1 10 Tf ( - output of a psrng using above as seed. cat this and get infinite 'random' data) Tj T* 0 Tw (generated from finite entropy harvested from ahrdware) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 354.0236 cm
-Q
-q
-1 0 0 1 62.69291 318.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 26 Tm 2.279982 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/passwd) Tj /F1 10 Tf ( - old school place where some user info is stored, originally included encrypted) Tj T* 0 Tw -0.090569 Tw (passwords. now it is where you go to look up info like groups and home directories and shells quickly.) Tj T* 0 Tw (each line is a user and all of their ) Tj /F3 10 Tf (chsh) Tj /F1 10 Tf ( / ) Tj /F3 10 Tf (usermod) Tj /F1 10 Tf ( related properties) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 312.0236 cm
-Q
-q
-1 0 0 1 62.69291 288.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm -0.095308 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/shadow) Tj /F1 10 Tf ( - where they moved the encrypted passwords and put them as only ) Tj /F3 10 Tf (r/w) Tj /F1 10 Tf ( by root and ) Tj /F3 10 Tf (r) Tj /F1 10 Tf  T* 0 Tw (group shadow from passwd to hide them from users when ti as realzied they could be cracked) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 282.0236 cm
-Q
-q
-1 0 0 1 62.69291 258.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .295251 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/hosts) Tj /F1 10 Tf ( - lsit of hosts that are basically added to DNS, can put some of your servers here so u) Tj T* 0 Tw (dont type ip) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 252.0236 cm
-Q
-q
-1 0 0 1 62.69291 228.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 2.768735 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/hostname) Tj /F1 10 Tf ( - yur hostname, for some reason i feel i usualy must edit this and use the) Tj T* 0 Tw (hostname command at the same time/session) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 222.0236 cm
-Q
-q
-1 0 0 1 62.69291 198.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 1.72561 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/rc.local) Tj /F1 10 Tf ( - old school palce to put commands to have them run on boot, on many linux) Tj T* 0 Tw (systems.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 192.0236 cm
-Q
-q
-1 0 0 1 62.69291 156.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 21 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 26 Tm 1.936905 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/resolv.conf) Tj /F1 10 Tf ( - old way of keeping global nameservers. depends on the system now. In) Tj T* 0 Tw .197045 Tw (theory you can just add lines to add hosts but generally there is osme crackpot software stack hiding) Tj T* 0 Tw (behind a local service that this file points to. way to make something overcomplicated.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 150.0236 cm
-Q
-q
-1 0 0 1 62.69291 126.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 2.63436 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/motd) Tj /F1 10 Tf ( - text displayed at login. put stuff here if you have users, info about the system,) Tj T* 0 Tw (advertisements, cuss them out, etc) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 126.0236 cm
-Q
-q
-1 0 0 1 62.69291 93.02362 cm
-q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (notable filesystem objects, local) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 81.02362 cm
-Q
-q
-1 0 0 1 62.69291 81.02362 cm
-Q
- 
-endstream
-endobj
-60 0 obj
-<<
-/Length 7244
->>
-stream
-1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
-q
-1 0 0 1 62.69291 753.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 -3 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (~) Tj /F1 10 Tf ( - alias to your homefolder ) Tj /F3 10 Tf (/home/username) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 747.0236 cm
-Q
-q
-1 0 0 1 62.69291 723.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 1.575984 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.ssh/authorized_keys) Tj /F1 10 Tf ( - put in a copy of someones id_rsa.pub file as a line, and it allows) Tj T* 0 Tw (anyone with the corresponding private key to log into said account to whom ) Tj /F3 10 Tf (~) Tj /F1 10 Tf ( belongs.) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 717.0236 cm
-Q
-q
-1 0 0 1 62.69291 693.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .396651 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.ssh/config) Tj /F1 10 Tf ( - lts u preconfig defults for various servers and things, pivotal wehn using scp and) Tj T* 0 Tw (git reguarly. man ssh_config exists and shows syntax) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 687.0236 cm
-Q
-q
-1 0 0 1 62.69291 663.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm 1.486136 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.ssh/id_rsa.pub) Tj /F1 10 Tf ( - default place for public ssh key, without the ) Tj /F3 10 Tf (.ssh/id_rsa) Tj /F1 10 Tf ( is default for) Tj T* 0 Tw (private, which, should be ) Tj /F3 10 Tf (chmod) Tj ( ) Tj (600) Tj /F1 10 Tf ( for the perms) Tj T* ET
 Q
 Q
 q
@@ -7876,7 +7368,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm 1.428935 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.bashrc) Tj /F1 10 Tf ( - if you use bash, this is a place you can add commands that run on login. such as) Tj T* 0 Tw (adding things to your $PATH) Tj T* ET
+BT 1 0 0 1 0 14 Tm .747633 Tw 12 TL /F3 10 Tf 0 0 0 rg (/bin) Tj /F1 10 Tf ( - binarys, these are where the commands are stored for the base system. most of the higher) Tj T* 0 Tw (level stuff is in /usr/bin and /usr/local/bin) Tj T* ET
 Q
 Q
 q
@@ -7901,7 +7393,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .31561 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.bash_history) Tj /F1 10 Tf ( - hitory of commands in bash, some cap length by default, grep this to find stuff) Tj T* 0 Tw (you did and need th command for) Tj T* ET
+BT 1 0 0 1 0 14 Tm .68881 Tw 12 TL /F3 10 Tf 0 0 0 rg (/home) Tj /F1 10 Tf ( - home directories for each user here. all user settings and information and data are in their) Tj T* 0 Tw (home folder. copy it to an ew system an it will all be there) Tj T* ET
 Q
 Q
 q
@@ -7912,7 +7404,32 @@ q
 1 0 0 1 62.69291 597.0236 cm
 Q
 q
-1 0 0 1 62.69291 573.0236 cm
+1 0 0 1 62.69291 585.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (/root) Tj /F1 10 Tf ( - home directory for admin/root user) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 579.0236 cm
+Q
+q
+1 0 0 1 62.69291 555.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7926,7 +7443,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm 1.164431 Tw 12 TL /F3 10 Tf 0 0 0 rg (.profile) Tj /F1 10 Tf ( - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe) Tj T* 0 Tw (other BSD. defintiely check if you are not using bash) Tj T* ET
+BT 1 0 0 1 0 14 Tm 1.311163 Tw 12 TL /F3 10 Tf 0 0 0 rg (/boot) Tj /F1 10 Tf ( - contains the kernel and initial root disk, boot loader stuff IE GRUB. is more commonly a) Tj T* 0 Tw (separate partition still) Tj T* ET
 Q
 Q
 q
@@ -7934,10 +7451,543 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 567.0236 cm
+1 0 0 1 62.69291 549.0236 cm
 Q
 q
-1 0 0 1 62.69291 543.0236 cm
+1 0 0 1 62.69291 537.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (/cdrom) Tj /F1 10 Tf ( - vestigal artifact of a time when people used cdrom) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 531.0236 cm
+Q
+q
+1 0 0 1 62.69291 495.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm .618221 Tw 12 TL /F3 10 Tf 0 0 0 rg (/mnt) Tj /F1 10 Tf ( - this was originally where you would mount drives, IE, any drive that was not hosting system) Tj T* 0 Tw 1.88152 Tw (critical contents, like removable media, was mounted here. you added these to be automounted) Tj T* 0 Tw (using /etc/fstab, and mounting had to be done by root) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 489.0236 cm
+Q
+q
+1 0 0 1 62.69291 429.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 45 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 50 Tm 2.094983 Tw 12 TL /F3 10 Tf 0 0 0 rg (/media) Tj /F1 10 Tf ( - this is where thigns are mounted now, in a path like /media/) Tj (<) Tj (username) Tj (>) Tj (/) Tj (<) Tj (uuid serial) Tj T* 0 Tw 1.83832 Tw (thing) Tj (>) Tj (, this is now handled by some daemon that will do it for you as a setuid-to-root binary or) Tj T* 0 Tw 2.183059 Tw (something, to streamline the process of using removeable media since the proliferation of USB) Tj T* 0 Tw 1.115366 Tw (storage devices\(previously portable storage media didnt carry its hardware interface with it, so the) Tj T* 0 Tw (system wouldnt see new media as a new device entirely, but a change in state of a known device\)) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 429.0236 cm
+Q
+q
+1 0 0 1 62.69291 396.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (notable filesystem objects, global) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 384.0236 cm
+Q
+q
+1 0 0 1 62.69291 384.0236 cm
+Q
+q
+1 0 0 1 62.69291 372.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (/proc/cpuinfo) Tj /F1 10 Tf ( - cpu core info, pretty great) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 366.0236 cm
+Q
+q
+1 0 0 1 62.69291 354.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (/dev/random) Tj /F1 10 Tf ( - random data from hardware. cat this and u get a dump of real physical entropy) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 348.0236 cm
+Q
+q
+1 0 0 1 62.69291 324.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.79061 Tw 12 TL /F3 10 Tf 0 0 0 rg (/dev/urandom) Tj /F1 10 Tf ( - output of a psrng using above as seed. cat this and get infinite 'random' data) Tj T* 0 Tw (generated from finite entropy harvested from ahrdware) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 318.0236 cm
+Q
+q
+1 0 0 1 62.69291 282.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm 2.279982 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/passwd) Tj /F1 10 Tf ( - old school place where some user info is stored, originally included encrypted) Tj T* 0 Tw -0.090569 Tw (passwords. now it is where you go to look up info like groups and home directories and shells quickly.) Tj T* 0 Tw (each line is a user and all of their ) Tj /F3 10 Tf (chsh) Tj /F1 10 Tf ( / ) Tj /F3 10 Tf (usermod) Tj /F1 10 Tf ( related properties) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 276.0236 cm
+Q
+q
+1 0 0 1 62.69291 252.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm -0.095308 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/shadow) Tj /F1 10 Tf ( - where they moved the encrypted passwords and put them as only ) Tj /F3 10 Tf (r/w) Tj /F1 10 Tf ( by root and ) Tj /F3 10 Tf (r) Tj /F1 10 Tf  T* 0 Tw (group shadow from passwd to hide them from users when ti as realzied they could be cracked) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 246.0236 cm
+Q
+q
+1 0 0 1 62.69291 222.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .295251 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/hosts) Tj /F1 10 Tf ( - lsit of hosts that are basically added to DNS, can put some of your servers here so u) Tj T* 0 Tw (dont type ip) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 216.0236 cm
+Q
+q
+1 0 0 1 62.69291 192.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 2.768735 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/hostname) Tj /F1 10 Tf ( - yur hostname, for some reason i feel i usualy must edit this and use the) Tj T* 0 Tw (hostname command at the same time/session) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 186.0236 cm
+Q
+q
+1 0 0 1 62.69291 162.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.72561 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/rc.local) Tj /F1 10 Tf ( - old school palce to put commands to have them run on boot, on many linux) Tj T* 0 Tw (systems.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 156.0236 cm
+Q
+q
+1 0 0 1 62.69291 120.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 21 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 26 Tm 1.936905 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/resolv.conf) Tj /F1 10 Tf ( - old way of keeping global nameservers. depends on the system now. In) Tj T* 0 Tw .197045 Tw (theory you can just add lines to add hosts but generally there is osme crackpot software stack hiding) Tj T* 0 Tw (behind a local service that this file points to. way to make something overcomplicated.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 114.0236 cm
+Q
+q
+1 0 0 1 62.69291 90.02362 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 2.63436 Tw 12 TL /F3 10 Tf 0 0 0 rg (/etc/motd) Tj /F1 10 Tf ( - text displayed at login. put stuff here if you have users, info about the system,) Tj T* 0 Tw (advertisements, cuss them out, etc) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 90.02362 cm
+Q
+ 
+endstream
+endobj
+60 0 obj
+<<
+/Length 7119
+>>
+stream
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+q
+1 0 0 1 62.69291 744.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (notable filesystem objects, local) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 732.0236 cm
+Q
+q
+1 0 0 1 62.69291 732.0236 cm
+Q
+q
+1 0 0 1 62.69291 720.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 -3 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (~) Tj /F1 10 Tf ( - alias to your homefolder ) Tj /F3 10 Tf (/home/) Tj (<) Tj (username) Tj (>) Tj /F1 10 Tf ( also available as ) Tj /F3 10 Tf ($HOME) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 714.0236 cm
+Q
+q
+1 0 0 1 62.69291 690.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.575984 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.ssh/authorized_keys) Tj /F1 10 Tf ( - put in a copy of someones id_rsa.pub file as a line, and it allows) Tj T* 0 Tw (anyone with the corresponding private key to log into said account to whom ) Tj /F3 10 Tf (~) Tj /F1 10 Tf ( belongs.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 684.0236 cm
+Q
+q
+1 0 0 1 62.69291 660.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .396651 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.ssh/config) Tj /F1 10 Tf ( - lts u preconfig defults for various servers and things, pivotal wehn using scp and) Tj T* 0 Tw (git reguarly. man ssh_config exists and shows syntax) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 654.0236 cm
+Q
+q
+1 0 0 1 62.69291 630.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.486136 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.ssh/id_rsa.pub) Tj /F1 10 Tf ( - default place for public ssh key, without the ) Tj /F3 10 Tf (.ssh/id_rsa) Tj /F1 10 Tf ( is default for) Tj T* 0 Tw (private, which, should be ) Tj /F3 10 Tf (chmod) Tj ( ) Tj (600) Tj /F1 10 Tf ( for the perms) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 624.0236 cm
+Q
+q
+1 0 0 1 62.69291 600.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm 1.428935 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.bashrc) Tj /F1 10 Tf ( - if you use bash, this is a place you can add commands that run on login. such as) Tj T* 0 Tw (adding things to your $PATH) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 594.0236 cm
+Q
+q
+1 0 0 1 62.69291 570.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .31561 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.bash_history) Tj /F1 10 Tf ( - hitory of commands in bash, some cap length by default, grep this to find stuff) Tj T* 0 Tw (you did and need th command for) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 564.0236 cm
+Q
+q
+1 0 0 1 62.69291 540.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .497765 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.profile) Tj /F1 10 Tf ( - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe) Tj T* 0 Tw (other BSD. defintiely check if you are not using bash) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 534.0236 cm
+Q
+q
+1 0 0 1 62.69291 510.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7959,10 +8009,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 537.0236 cm
+1 0 0 1 62.69291 504.0236 cm
 Q
 q
-1 0 0 1 62.69291 513.0236 cm
+1 0 0 1 62.69291 480.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -7984,22 +8034,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 513.0236 cm
-Q
-q
 1 0 0 1 62.69291 480.0236 cm
+Q
 q
-BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (some good config file lines) Tj T* ET
+1 0 0 1 62.69291 447.0236 cm
+q
+BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (user ssh config) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 426.0236 cm
+1 0 0 1 62.69291 393.0236 cm
 q
 BT 1 0 0 1 0 38 Tm .66561 Tw 12 TL /F3 10 Tf 0 0 0 rg (~/.ssh/config) Tj /F1 10 Tf ( This is an import config file, sometimes it is absolutely necessarry if you are using scp) Tj T* 0 Tw 1.277765 Tw (and other ssh based utilities like git that sometimes do not have the ability to take the more advanced) Tj T* 0 Tw .480514 Tw (arguments you may need to give them, in the case of having multile users at the same host with multiple) Tj T* 0 Tw (keys and things like this) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 344.8236 cm
+1 0 0 1 62.69291 311.8236 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -8019,26 +8069,26 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 288.8236 cm
+1 0 0 1 62.69291 255.8236 cm
 q
 BT 1 0 0 1 0 38 Tm .680488 Tw 12 TL /F1 10 Tf 0 0 0 rg (this enables you to simply ) Tj /F3 10 Tf (ssh) Tj ( ) Tj (bob) Tj /F1 10 Tf (, and tab to complete works on this alias for te host. ) Tj /F3 10 Tf (HostName) Tj /F1 10 Tf ( is a) Tj T* 0 Tw .623988 Tw (misleading label, as it is the actual network address, dns or ip, and the aliasd you are giving it which will) Tj T* 0 Tw .623145 Tw (follow this setup every time is the first line in each entry ) Tj /F3 10 Tf (Host) Tj /F1 10 Tf (. these aliases carry over to git commands) Tj T* 0 Tw (and scp, etc) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 255.8236 cm
+1 0 0 1 62.69291 222.8236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (host a git, barebones) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 225.8236 cm
+1 0 0 1 62.69291 192.8236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 3.131984 Tw (simple and dirty instructions always use passwordless SSH for this make git user on server. NO) Tj T* 0 Tw (PASSWORD ON IT. no way to log in with password, furthermore, use git-shell) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 120.6236 cm
+1 0 0 1 62.69291 87.62362 cm
 q
 q
 1 0 0 1 0 0 cm
@@ -8057,56 +8107,56 @@ Q
 Q
 Q
 Q
-q
-1 0 0 1 62.69291 100.6236 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (put public keys in ) Tj /F3 10 Tf (/home/git/.ssh/authorized_keys) Tj /F1 10 Tf ( as a line, on the host n) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 82.62362 cm
-q
-BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (on cients: ) Tj /F3 10 Tf (git) Tj ( ) Tj (clone) Tj ( ) Tj (ssh://git@server:/home/git/package) Tj T* ET
-Q
-Q
  
 endstream
 endobj
 61 0 obj
 <<
-/Length 6010
+/Length 6003
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
 1 0 0 1 62.69291 753.0236 cm
 q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (put public keys in ) Tj /F3 10 Tf (/home/git/.ssh/authorized_keys) Tj /F1 10 Tf ( as a line, on the host n) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 735.0236 cm
+q
+BT 1 0 0 1 0 2 Tm 12 TL /F1 10 Tf 0 0 0 rg (on cients: ) Tj /F3 10 Tf (git) Tj ( ) Tj (clone) Tj ( ) Tj (ssh://git@server:/home/git/package) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 717.0236 cm
+q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (then make an initial commit to master to make sure it works) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 735.0236 cm
+1 0 0 1 62.69291 699.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (pull requests are a social media feature tied to the web interface and dont really exist in this setting.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 702.0236 cm
+1 0 0 1 62.69291 666.0236 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (git client side) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 684.0236 cm
+1 0 0 1 62.69291 648.0236 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL (process of creating branch and merge:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 542.2971 cm
+1 0 0 1 62.69291 506.2971 cm
 q
 q
 .615684 0 0 .615684 0 0 cm
@@ -8126,47 +8176,47 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 474.2971 cm
+1 0 0 1 62.69291 438.2971 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 50 Tm /F1 10 Tf 12 TL .669398 Tw (git is very user friendly for a command line interface, gives useful messages but remember to push after) Tj T* 0 Tw 1.943318 Tw (you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local) Tj T* 0 Tw .422651 Tw (manipulation and interfacing with the underlying repo datastructure that is entirely local. Git can be useful) Tj T* 0 Tw .093988 Tw (without a remote, just to track progress and allow you to undo things if you mess up your code. noobs and) Tj T* 0 Tw (people in the past that didnt have version control used to keep many copies of their code.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 441.2971 cm
+1 0 0 1 62.69291 405.2971 cm
 q
 BT 1 0 0 1 0 3.5 Tm 21 TL /F2 17.5 Tf 0 0 0 rg (docker) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 411.2971 cm
+1 0 0 1 62.69291 375.2971 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL .594488 Tw (docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your) Tj T* 0 Tw (baremetal system.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 321.2971 cm
+1 0 0 1 62.69291 285.2971 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 74 Tm /F1 10 Tf 12 TL -0.021349 Tw (It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use) Tj T* 0 Tw .104987 Tw (of a VM. apps in docker run on your kernel but network and disk is sandboxed and communicates through) Tj T* 0 Tw -0.021445 Tw (whatever avenues you specify\(shared folders and port forwards\). you can run things in docker seamlessly,) Tj T* 0 Tw .94998 Tw (including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages.) Tj T* 0 Tw .436647 Tw (good way to keep reproducible devleopment environments to remove variation between peoples systems) Tj T* 0 Tw 2.575542 Tw (on a dev team. it has a built in management system for images shared by project teams and the) Tj T* 0 Tw (community.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 291.2971 cm
+1 0 0 1 62.69291 255.2971 cm
 q
 0 0 0 rg
 BT 1 0 0 1 0 14 Tm /F1 10 Tf 12 TL 1.455988 Tw (if you dont use it youre basically failing at life. It is not something that requires a ton of knowledge or) Tj T* 0 Tw (practice to benefit from.) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 237.2971 cm
+1 0 0 1 62.69291 201.2971 cm
 q
 BT 1 0 0 1 0 38 Tm .538876 Tw 12 TL /F1 10 Tf 0 0 0 rg (to get started you need to add user to docker group ) Tj /F3 10 Tf (usermod) Tj ( ) Tj (-aG) Tj ( ) Tj (docker) Tj ( ) Tj (<) Tj (user) Tj (>) Tj /F1 10 Tf (, and then make a) Tj T* 0 Tw .599461 Tw (empty directory and put a file in it called Dockerfile, in which you list a series of commands building your) Tj T* 0 Tw .85284 Tw (custom system, generally starting with something from the docker repo. example including most of what) Tj T* 0 Tw (you need:) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 121.7412 cm
+1 0 0 1 62.69291 85.7412 cm
 q
 q
 .635673 0 0 .635673 0 0 cm
@@ -8185,29 +8235,29 @@ Q
 Q
 Q
 Q
-q
-1 0 0 1 62.69291 89.7412 cm
-q
-BT 1 0 0 1 0 14 Tm .256651 Tw 12 TL /F1 10 Tf 0 0 0 rg (then build with ) Tj /F3 10 Tf (docker) Tj ( ) Tj (build) Tj /F1 10 Tf ( and run with ) Tj /F3 10 Tf (docker) Tj ( ) Tj (run) Tj /F1 10 Tf ( with appropriate settings for network exposure) Tj T* 0 Tw (and volume sharing etc.) Tj T* ET
-Q
-Q
-q
-1 0 0 1 62.69291 83.7412 cm
-Q
-q
-1 0 0 1 62.69291 83.7412 cm
-Q
  
 endstream
 endobj
 62 0 obj
 <<
-/Length 6297
+/Length 6691
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
 q
-1 0 0 1 62.69291 717.0236 cm
+1 0 0 1 62.69291 741.0236 cm
+q
+BT 1 0 0 1 0 14 Tm .256651 Tw 12 TL /F1 10 Tf 0 0 0 rg (then build with ) Tj /F3 10 Tf (docker) Tj ( ) Tj (build) Tj /F1 10 Tf ( and run with ) Tj /F3 10 Tf (docker) Tj ( ) Tj (run) Tj /F1 10 Tf ( with appropriate settings for network exposure) Tj T* 0 Tw (and volume sharing etc.) Tj T* ET
+Q
+Q
+q
+1 0 0 1 62.69291 735.0236 cm
+Q
+q
+1 0 0 1 62.69291 735.0236 cm
+Q
+q
+1 0 0 1 62.69291 687.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -8229,10 +8279,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 711.0236 cm
+1 0 0 1 62.69291 681.0236 cm
 Q
 q
-1 0 0 1 62.69291 699.0236 cm
+1 0 0 1 62.69291 669.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -8247,31 +8297,6 @@ q
 1 0 0 1 23 -3 cm
 q
 BT 1 0 0 1 0 2 Tm 12 TL /F3 10 Tf 0 0 0 rg (docker) Tj /F1 10 Tf ( - the normal interface to docker to run one container) Tj T* ET
-Q
-Q
-q
-Q
-Q
-Q
-q
-1 0 0 1 62.69291 693.0236 cm
-Q
-q
-1 0 0 1 62.69291 669.0236 cm
-q
-0 0 0 rg
-BT /F1 10 Tf 12 TL ET
-q
-1 0 0 1 6 9 cm
-q
-0 0 0 rg
-BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
-Q
-Q
-q
-1 0 0 1 23 -3 cm
-q
-BT 1 0 0 1 0 14 Tm .94998 Tw 12 TL /F3 10 Tf 0 0 0 rg (docker) Tj ( ) Tj (stats) Tj /F1 10 Tf ( shows current running containers with resource use. important for noobs becuase) Tj T* 0 Tw (people forget and leave them running) Tj T* ET
 Q
 Q
 q
@@ -8296,7 +8321,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 14 Tm .244147 Tw 12 TL /F3 10 Tf 0 0 0 rg (docker) Tj ( ) Tj (<) Tj (obj) Tj (>) Tj ( ) Tj (prune) Tj /F1 10 Tf (- ) Tj /F3 10 Tf (<) Tj (obj) Tj (>) Tj /F1 10 Tf ( may be ) Tj /F3 10 Tf (container) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (image) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (volume) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (network) Tj /F1 10 Tf ( and maybe others) Tj T* 0 Tw (i forget. this deletes the unused objects of said type, freeing up space.) Tj T* ET
+BT 1 0 0 1 0 14 Tm .94998 Tw 12 TL /F3 10 Tf 0 0 0 rg (docker) Tj ( ) Tj (stats) Tj /F1 10 Tf ( shows current running containers with resource use. important for noobs becuase) Tj T* 0 Tw (people forget and leave them running) Tj T* ET
 Q
 Q
 q
@@ -8307,7 +8332,32 @@ q
 1 0 0 1 62.69291 633.0236 cm
 Q
 q
-1 0 0 1 -115.8622 585.0236 cm
+1 0 0 1 62.69291 609.0236 cm
+q
+0 0 0 rg
+BT /F1 10 Tf 12 TL ET
+q
+1 0 0 1 6 9 cm
+q
+0 0 0 rg
+BT 1 0 0 1 0 2 Tm /F1 10 Tf 12 TL 10.5 0 Td (\177) Tj T* -10.5 0 Td ET
+Q
+Q
+q
+1 0 0 1 23 -3 cm
+q
+BT 1 0 0 1 0 14 Tm .244147 Tw 12 TL /F3 10 Tf 0 0 0 rg (docker) Tj ( ) Tj (<) Tj (obj) Tj (>) Tj ( ) Tj (prune) Tj /F1 10 Tf (- ) Tj /F3 10 Tf (<) Tj (obj) Tj (>) Tj /F1 10 Tf ( may be ) Tj /F3 10 Tf (container) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (image) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (volume) Tj /F1 10 Tf (, ) Tj /F3 10 Tf (network) Tj /F1 10 Tf ( and maybe others) Tj T* 0 Tw (i forget. this deletes the unused objects of said type, freeing up space.) Tj T* ET
+Q
+Q
+q
+Q
+Q
+Q
+q
+1 0 0 1 62.69291 603.0236 cm
+Q
+q
+1 0 0 1 -115.8622 555.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -8329,22 +8379,22 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 585.0236 cm
+1 0 0 1 62.69291 555.0236 cm
 Q
 q
-1 0 0 1 62.69291 555.0236 cm
+1 0 0 1 62.69291 525.0236 cm
 q
 BT 1 0 0 1 0 3 Tm 18 TL /F2 15 Tf 0 0 0 rg (DONT) Tj T* ET
 Q
 Q
 q
-1 0 0 1 62.69291 543.0236 cm
+1 0 0 1 62.69291 513.0236 cm
 Q
 q
-1 0 0 1 62.69291 543.0236 cm
+1 0 0 1 62.69291 513.0236 cm
 Q
 q
-1 0 0 1 62.69291 519.0236 cm
+1 0 0 1 62.69291 489.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -8366,10 +8416,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 513.0236 cm
+1 0 0 1 62.69291 483.0236 cm
 Q
 q
-1 0 0 1 62.69291 465.0236 cm
+1 0 0 1 62.69291 435.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -8391,10 +8441,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 459.0236 cm
+1 0 0 1 62.69291 429.0236 cm
 Q
 q
-1 0 0 1 62.69291 423.0236 cm
+1 0 0 1 62.69291 393.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -8416,10 +8466,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 417.0236 cm
+1 0 0 1 62.69291 387.0236 cm
 Q
 q
-1 0 0 1 62.69291 405.0236 cm
+1 0 0 1 62.69291 375.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -8441,10 +8491,10 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 399.0236 cm
+1 0 0 1 62.69291 369.0236 cm
 Q
 q
-1 0 0 1 62.69291 387.0236 cm
+1 0 0 1 62.69291 357.0236 cm
 q
 0 0 0 rg
 BT /F1 10 Tf 12 TL ET
@@ -8466,7 +8516,7 @@ Q
 Q
 Q
 q
-1 0 0 1 62.69291 387.0236 cm
+1 0 0 1 62.69291 357.0236 cm
 Q
  
 endstream
@@ -8598,46 +8648,46 @@ xref
 0000006289 00000 n 
 0000006438 00000 n 
 0000006586 00000 n 
-0000006728 00000 n 
-0000006864 00000 n 
-0000006994 00000 n 
-0000007141 00000 n 
-0000007234 00000 n 
-0000007393 00000 n 
-0000017235 00000 n 
-0000030317 00000 n 
-0000042954 00000 n 
-0000055146 00000 n 
-0000066490 00000 n 
-0000076749 00000 n 
-0000087256 00000 n 
-0000098427 00000 n 
-0000108538 00000 n 
-0000121145 00000 n 
-0000131628 00000 n 
-0000141617 00000 n 
-0000148913 00000 n 
-0000154975 00000 n 
-0000161324 00000 n 
-0000161502 00000 n 
-0000161536 00000 n 
-0000161570 00000 n 
-0000161604 00000 n 
-0000161638 00000 n 
-0000161672 00000 n 
-0000161706 00000 n 
-0000161740 00000 n 
-0000161774 00000 n 
-0000161808 00000 n 
-0000161843 00000 n 
-0000161878 00000 n 
-0000161913 00000 n 
-0000161948 00000 n 
-0000161983 00000 n 
+0000006716 00000 n 
+0000006852 00000 n 
+0000006982 00000 n 
+0000007129 00000 n 
+0000007222 00000 n 
+0000007381 00000 n 
+0000017223 00000 n 
+0000030305 00000 n 
+0000042942 00000 n 
+0000055134 00000 n 
+0000066478 00000 n 
+0000076614 00000 n 
+0000087213 00000 n 
+0000098435 00000 n 
+0000109008 00000 n 
+0000121228 00000 n 
+0000131904 00000 n 
+0000142193 00000 n 
+0000149364 00000 n 
+0000155419 00000 n 
+0000162162 00000 n 
+0000162340 00000 n 
+0000162374 00000 n 
+0000162408 00000 n 
+0000162442 00000 n 
+0000162476 00000 n 
+0000162510 00000 n 
+0000162544 00000 n 
+0000162578 00000 n 
+0000162612 00000 n 
+0000162646 00000 n 
+0000162681 00000 n 
+0000162716 00000 n 
+0000162751 00000 n 
+0000162786 00000 n 
+0000162821 00000 n 
 trailer
 <<
 /ID 
-[<3cb6b8dce0d68019a7d67924d50910f0><3cb6b8dce0d68019a7d67924d50910f0>]
+[<b6066c6dd6f14bc49ea9b42b3e164764><b6066c6dd6f14bc49ea9b42b3e164764>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 23 0 R
@@ -8645,5 +8695,5 @@ trailer
 /Size 79
 >>
 startxref
-162018
+162856
 %%EOF

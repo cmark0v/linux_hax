@@ -191,6 +191,8 @@ shell  vars in general have a $ infront of them when yolu access them. but not w
 - ``$DISPLAY`` - x11/xorg display, typically :0. machines can have multiple displays, like all unix things, its multiuser
 - ``$PYTHONPATH`` - where python looks for modules
 - ``$USER, $HOME``, - username and home directory path
+- ``$PWD`` - absolute path to current working directory
+- ``$EDITOR`` - default editor, adults set to ``vim`` kids set to ``nano`` 
 - ``$_`` - last arg from previous shell command run
 - ``$?`` - exit value/signal from prev command (0 if success which you manually throw in scripts with ``exit 0``
 - ``alias`` - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def 
@@ -353,7 +355,7 @@ root filesystem synopsis
 - ``/proc`` - process information emulated as block storage devices and stuff like this. can get info about some hardware from drivers, and access some other kernel level information pertaining to active system processes
 - ``/sys`` - kernel emulated filesystem tree allowing information and interaction of various kernel level functionality and hardware devices. This includes the ability to read parameters from live kernel modules and set them by writing to said file as well, for example.
 - ``/run`` - contains filesystem socket devices and other quasi-file dynamic objects written by userland software (as opposed to kernel level features in proc and sys)
-- ``/dev`` - devices, filesystem emulation of actual hardware. all disks are here, your sound devices, usb devices, all accessed from here if you want to do it directly. it is a virtualized/emulated filesystem integrated representation of a group of non-file objects(very cool) like proc. these are not actual files, but dynamic emulated files that make access to devices like accessing a file. reading and writing to them is the same as a file
+- ``/dev`` - devices, access to raw hardware. it is a virtualized/emulated filesystem integrated representation of a group of non-file objects(very cool) like proc. these are not actual files, but dynamic emulated files that make access to devices like accessing a file. reading and writing to them is the same as a file. there are two styles of io, "block" and "character" devices. io is done by blocks(fixed size binary packets) or bytewise respectively
 - ``/opt`` - not sure what it is supposed to be but it is often used to store globally accessed proprietary software that doesn't have facility to install in the typical global directory structure(where things are in /bin and /lib andprstuff
 - ``/bin`` - binarys, these are where the commands are stored for the base system. most of the higher level stuff is in /usr/bin and /usr/local/bin
 - ``/home`` - home directories for each user here. all user settings and information and data are in their home folder. copy it to an ew system an it will all be there 
@@ -380,19 +382,19 @@ notable filesystem objects, global
 
 notable filesystem objects, local
 =================================
-- ``~`` - alias to your homefolder ``/home/username``
+- ``~`` - alias to your homefolder ``/home/<username>`` also available as ``$HOME``
 - ``~/.ssh/authorized_keys`` - put in a copy of someones id_rsa.pub file as a line, and it allows anyone with the corresponding private key to log into said account to whom ``~`` belongs. 
 - ``~/.ssh/config`` - lts u preconfig defults for various servers and things, pivotal wehn using scp and git reguarly. man ssh_config exists and shows syntax
 - ``~/.ssh/id_rsa.pub`` - default place for public ssh key, without the ``.ssh/id_rsa`` is default for private, which, should be ``chmod 600`` for the perms
 - ``~/.bashrc`` - if you use bash, this is a place you can add commands that run on login. such as adding things to your $PATH
 - ``~/.bash_history`` - hitory of commands in bash, some cap length by default, grep this to find stuff you did and need th command for
-- ``.profile`` - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe other BSD. defintiely check if you are not using bash
+- ``~/.profile`` - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe other BSD. defintiely check if you are not using bash
 - ``~/.local/`` - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff gos here
 - ``~/.config/`` - it is now considered best practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~
 
 
-some good config file lines
-===========================
+user ssh config
+===============
 
 ``~/.ssh/config`` This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this
 
