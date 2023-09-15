@@ -2,7 +2,7 @@
 %“Œ‹ž ReportLab Generated PDF document http://www.reportlab.com
 1 0 obj
 <<
-/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 15 0 R
+/F1 2 0 R /F2 3 0 R /F3 4 0 R /F4 20 0 R
 >>
 endobj
 2 0 obj
@@ -119,11 +119,6 @@ endobj
 endobj
 15 0 obj
 <<
-/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
->>
-endobj
-16 0 obj
-<<
 /Contents 57 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 47 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
 >> /Rotate 0 /Trans <<
@@ -132,7 +127,7 @@ endobj
   /Type /Page
 >>
 endobj
-17 0 obj
+16 0 obj
 <<
 /Contents 58 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 47 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
@@ -142,7 +137,7 @@ endobj
   /Type /Page
 >>
 endobj
-18 0 obj
+17 0 obj
 <<
 /Contents 59 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 47 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
@@ -152,7 +147,7 @@ endobj
   /Type /Page
 >>
 endobj
-19 0 obj
+18 0 obj
 <<
 /Contents 60 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 47 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
@@ -162,7 +157,7 @@ endobj
   /Type /Page
 >>
 endobj
-20 0 obj
+19 0 obj
 <<
 /Contents 61 0 R /MediaBox [ 0 0 595.2756 841.8898 ] /Parent 47 0 R /Resources <<
 /Font 1 0 R /ProcSet [ /PDF /Text /ImageB /ImageC /ImageI ]
@@ -170,6 +165,11 @@ endobj
 
 >> 
   /Type /Page
+>>
+endobj
+20 0 obj
+<<
+/BaseFont /Helvetica-Oblique /Encoding /WinAnsiEncoding /Name /F4 /Subtype /Type1 /Type /Font
 >>
 endobj
 21 0 obj
@@ -189,7 +189,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author () /CreationDate (D:20230916020348+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230916020348+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20230916020441+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230916020441+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Linux Hax) /Trapped /False
 >>
 endobj
@@ -260,47 +260,47 @@ endobj
 endobj
 37 0 obj
 <<
-/Dest [ 16 0 R /XYZ 62.69291 555.0236 0 ] /Next 38 0 R /Parent 24 0 R /Prev 36 0 R /Title (operators in shell\(bash\))
+/Dest [ 15 0 R /XYZ 62.69291 555.0236 0 ] /Next 38 0 R /Parent 24 0 R /Prev 36 0 R /Title (operators in shell\(bash\))
 >>
 endobj
 38 0 obj
 <<
-/Dest [ 17 0 R /XYZ 62.69291 729.0236 0 ] /Next 39 0 R /Parent 24 0 R /Prev 37 0 R /Title (patrician word processing)
+/Dest [ 16 0 R /XYZ 62.69291 729.0236 0 ] /Next 39 0 R /Parent 24 0 R /Prev 37 0 R /Title (patrician word processing)
 >>
 endobj
 39 0 obj
 <<
-/Dest [ 17 0 R /XYZ 62.69291 456.0236 0 ] /Next 40 0 R /Parent 24 0 R /Prev 38 0 R /Title (root filesystem synopsis)
+/Dest [ 16 0 R /XYZ 62.69291 456.0236 0 ] /Next 40 0 R /Parent 24 0 R /Prev 38 0 R /Title (root filesystem synopsis)
 >>
 endobj
 40 0 obj
 <<
-/Dest [ 18 0 R /XYZ 62.69291 453.0236 0 ] /Next 41 0 R /Parent 24 0 R /Prev 39 0 R /Title (notable filesystem objects, global)
+/Dest [ 17 0 R /XYZ 62.69291 453.0236 0 ] /Next 41 0 R /Parent 24 0 R /Prev 39 0 R /Title (notable filesystem objects, global)
 >>
 endobj
 41 0 obj
 <<
-/Dest [ 18 0 R /XYZ 62.69291 114.0236 0 ] /Next 42 0 R /Parent 24 0 R /Prev 40 0 R /Title (notable filesystem objects, local)
+/Dest [ 17 0 R /XYZ 62.69291 114.0236 0 ] /Next 42 0 R /Parent 24 0 R /Prev 40 0 R /Title (notable filesystem objects, local)
 >>
 endobj
 42 0 obj
 <<
-/Dest [ 19 0 R /XYZ 62.69291 501.0236 0 ] /Next 43 0 R /Parent 24 0 R /Prev 41 0 R /Title (some good config file lines)
+/Dest [ 18 0 R /XYZ 62.69291 501.0236 0 ] /Next 43 0 R /Parent 24 0 R /Prev 41 0 R /Title (some good config file lines)
 >>
 endobj
 43 0 obj
 <<
-/Dest [ 19 0 R /XYZ 62.69291 276.8236 0 ] /Next 44 0 R /Parent 24 0 R /Prev 42 0 R /Title (host a git, barebones)
+/Dest [ 18 0 R /XYZ 62.69291 276.8236 0 ] /Next 44 0 R /Parent 24 0 R /Prev 42 0 R /Title (host a git, barebones)
 >>
 endobj
 44 0 obj
 <<
-/Dest [ 20 0 R /XYZ 62.69291 723.0236 0 ] /Next 45 0 R /Parent 24 0 R /Prev 43 0 R /Title (git client side)
+/Dest [ 19 0 R /XYZ 62.69291 723.0236 0 ] /Next 45 0 R /Parent 24 0 R /Prev 43 0 R /Title (git client side)
 >>
 endobj
 45 0 obj
 <<
-/Count 1 /Dest [ 20 0 R /XYZ 62.69291 462.2971 0 ] /First 46 0 R /Last 46 0 R /Parent 24 0 R /Prev 44 0 R 
+/Count 1 /Dest [ 19 0 R /XYZ 62.69291 462.2971 0 ] /First 46 0 R /Last 46 0 R /Parent 24 0 R /Prev 44 0 R 
   /Title (docker)
 >>
 endobj
@@ -311,8 +311,8 @@ endobj
 endobj
 47 0 obj
 <<
-/Count 15 /Kids [ 5 0 R 6 0 R 7 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 16 0 R 
-  17 0 R 18 0 R 19 0 R 20 0 R 21 0 R ] /Type /Pages
+/Count 15 /Kids [ 5 0 R 6 0 R 7 0 R 9 0 R 10 0 R 11 0 R 12 0 R 13 0 R 14 0 R 15 0 R 
+  16 0 R 17 0 R 18 0 R 19 0 R 21 0 R ] /Type /Pages
 >>
 endobj
 48 0 obj
@@ -5983,7 +5983,7 @@ endstream
 endobj
 57 0 obj
 <<
-/Length 12543
+/Length 12509
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -6605,7 +6605,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 26 Tm -0.055802 Tw 12 TL /F1 10 Tf 0 0 0 rg (back quotes - ) Tj 1 0 0 rg (``) Tj 0 0 0 rg (kill ) Tj /F4 10 Tf (pgrep firefox) Tj /F1 10 Tf ( `` - inserts stdout from the command in backquotes into the shell as if) Tj T* 0 Tw -0.053821 Tw (you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked) Tj T* 0 Tw (up by kill so that it kills anything that matches firefox) Tj T* ET
+BT 1 0 0 1 0 26 Tm .00332 Tw 12 TL /F1 10 Tf 0 0 0 rg (back quotes - ) Tj 1 0 0 rg (``) Tj 0 0 0 rg (kill `pgrep firefox` `` - inserts stdout from the command in backquotes into the shell as) Tj T* 0 Tw 1.084274 Tw (if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being) Tj T* 0 Tw (picked up by kill so that it kills anything that matches firefox) Tj T* ET
 Q
 Q
 q
@@ -8571,11 +8571,11 @@ xref
 0000002097 00000 n 
 0000002303 00000 n 
 0000002509 00000 n 
-0000002625 00000 n 
-0000002831 00000 n 
-0000003037 00000 n 
-0000003243 00000 n 
-0000003449 00000 n 
+0000002715 00000 n 
+0000002921 00000 n 
+0000003127 00000 n 
+0000003333 00000 n 
+0000003539 00000 n 
 0000003655 00000 n 
 0000003861 00000 n 
 0000003967 00000 n 
@@ -8613,12 +8613,13 @@ xref
 0000087256 00000 n 
 0000098427 00000 n 
 0000108538 00000 n 
-0000121134 00000 n 
-0000131617 00000 n 
-0000141606 00000 n 
-0000148902 00000 n 
-0000154964 00000 n 
-0000161313 00000 n 
+0000121100 00000 n 
+0000131583 00000 n 
+0000141572 00000 n 
+0000148868 00000 n 
+0000154930 00000 n 
+0000161279 00000 n 
+0000161457 00000 n 
 0000161491 00000 n 
 0000161525 00000 n 
 0000161559 00000 n 
@@ -8628,16 +8629,15 @@ xref
 0000161695 00000 n 
 0000161729 00000 n 
 0000161763 00000 n 
-0000161797 00000 n 
-0000161832 00000 n 
-0000161867 00000 n 
-0000161902 00000 n 
-0000161937 00000 n 
-0000161972 00000 n 
+0000161798 00000 n 
+0000161833 00000 n 
+0000161868 00000 n 
+0000161903 00000 n 
+0000161938 00000 n 
 trailer
 <<
 /ID 
-[<f8ea022653398ba8027d5f09ea0d0941><f8ea022653398ba8027d5f09ea0d0941>]
+[<c5700b6da029fe5d91bae2353e77d110><c5700b6da029fe5d91bae2353e77d110>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 23 0 R
@@ -8645,5 +8645,5 @@ trailer
 /Size 79
 >>
 startxref
-162007
+161973
 %%EOF

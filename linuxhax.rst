@@ -315,7 +315,7 @@ operators in shell(bash)
 - ``ctrl-c`` exit, doest leave shell(thats logout) clears the line though. sends a ``kill -s 15`` to the thread in foreground
 - ``ctrl-d`` logout
 - ``[TAB]``  tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. ``git add [TAB] [TAB]`` lists your changed files, for instance
-- back quotes - ``kill `pgrep firefox` ``  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox
+- back quotes - ``kill \`pgrep firefox\` ``  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox
 - ``*``  wildcard, ``ls *.py`` gives list of python scripts in current directory
 - ``!!``  the last command, ``!n`` nth command in history, ``!-n`` n commands back, IE ``!-2`` executes second last 
 - ``!*`` args from previous command
