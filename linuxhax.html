@@ -710,55 +710,33 @@ ul.auto-toc {
 </div>
 <div class="section" id="operators-in-shell-bash">
 <h1>operators in shell(bash)</h1>
-<ul>
+<ul class="simple">
 <li><dl class="first docutils">
-<dt><tt class="docutils literal">|</tt> pipe, puts stdout into stdin like <tt class="docutils literal">ps aux|grep &lt;word&gt;</tt> looks for <tt class="docutils literal">&lt;word&gt;</tt> in output of <a href="#id1"><span class="problematic" id="id2">``</span></a>ps aux``(list of running processes for all users)</dt>
-<dd><div class="first system-message" id="id1">
-<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">linuxhax.rst</tt>, line 303); <em><a href="#id2">backlink</a></em></p>
-<p>Inline literal start-string without end-string.</p>
-</div>
-<ul class="last simple">
+<dt><tt class="docutils literal">|</tt> pipe, puts stdout into stdin like <tt class="docutils literal">ps aux|grep &lt;word&gt;</tt> looks for <tt class="docutils literal">&lt;word&gt;</tt> in output of <tt class="docutils literal">ps aux</tt> (list of running processes for all users)</dt>
+<dd><ul class="first last">
 <li><tt class="docutils literal">ls |tee bob</tt> - example use of <tt class="docutils literal">tee</tt>, this will write the directory contents to file <tt class="docutils literal">bob</tt> while outputing them to stdout as well</li>
 </ul>
 </dd>
 </dl>
 </li>
-<li><p class="first"><tt class="docutils literal">&amp;</tt>  runs concurrently with following command.</p>
-</li>
-<li><p class="first"><tt class="docutils literal">&amp;&amp;</tt>  run next program sequentially, if the first succeeds</p>
-</li>
-<li><p class="first"><tt class="docutils literal">||</tt> run command after only  if the previous command fails</p>
-</li>
-<li><p class="first"><tt class="docutils literal">&gt;</tt>  stdout into a file cat <tt class="docutils literal">bob &gt; file_name</tt>. OVERWRITES THE FILE</p>
-</li>
-<li><p class="first"><tt class="docutils literal">&gt;&gt;</tt>  APPENDS TO THE FILE like <tt class="docutils literal">ls &gt;&gt; listfile</tt> will append contents of current directory to file listfile</p>
-</li>
-<li><p class="first"><tt class="docutils literal">2&gt;</tt>  same as &gt; but does stderr, where <tt class="docutils literal">1&gt;</tt> is just the default that <tt class="docutils literal">&gt;</tt> alone reverts to</p>
-</li>
-<li><p class="first"><tt class="docutils literal">&amp;&gt;</tt> - writes both stderr and stdout to filename after it</p>
-</li>
-<li><p class="first"><tt class="docutils literal">&lt;</tt> file on right into stdin of command on left</p>
-</li>
-<li><p class="first"><tt class="docutils literal">&lt;&lt;&lt;</tt>  string on the right into stdin on the left</p>
-</li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">ctrl-z</span></tt>  pause - immediate effect always</p>
-</li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">ctrl-c</span></tt> exit, doest leave shell(thats logout) clears the line though. sends a <tt class="docutils literal">kill <span class="pre">-s</span> 15</tt> to the thread in foreground</p>
-</li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">ctrl-d</span></tt> logout</p>
-</li>
-<li><p class="first"><tt class="docutils literal">[TAB]</tt>  tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. <tt class="docutils literal">git add [TAB] [TAB]</tt> lists your changed files, for instance</p>
-</li>
-<li><p class="first">back quotes - <tt class="docutils literal">kill `pgrep firefox`</tt>  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox</p>
-</li>
-<li><p class="first"><tt class="docutils literal">*</tt>  wildcard, <tt class="docutils literal">ls *.py</tt> gives list of python scripts in current directory</p>
-</li>
-<li><p class="first"><tt class="docutils literal">!!</tt>  the last command, <tt class="docutils literal">!n</tt> nth command in history, <tt class="docutils literal"><span class="pre">!-n</span></tt> n commands back, IE <tt class="docutils literal"><span class="pre">!-2</span></tt> executes second last</p>
-</li>
-<li><p class="first"><tt class="docutils literal">!*</tt> args from previous command</p>
-</li>
-<li><p class="first"><tt class="docutils literal"><span class="pre">[0-9]</span></tt>  matches digits in shell, <tt class="docutils literal">ls <span class="pre">[0-9]*</span></tt> list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...</p>
-</li>
+<li><tt class="docutils literal">&amp;</tt>  runs concurrently with following command.</li>
+<li><tt class="docutils literal">&amp;&amp;</tt>  run next program sequentially, if the first succeeds</li>
+<li><tt class="docutils literal">||</tt> run command after only  if the previous command fails</li>
+<li><tt class="docutils literal">&gt;</tt>  stdout into a file cat <tt class="docutils literal">bob &gt; file_name</tt>. OVERWRITES THE FILE</li>
+<li><tt class="docutils literal">&gt;&gt;</tt>  APPENDS TO THE FILE like <tt class="docutils literal">ls &gt;&gt; listfile</tt> will append contents of current directory to file listfile</li>
+<li><tt class="docutils literal">2&gt;</tt>  same as &gt; but does stderr, where <tt class="docutils literal">1&gt;</tt> is just the default that <tt class="docutils literal">&gt;</tt> alone reverts to</li>
+<li><tt class="docutils literal">&amp;&gt;</tt> - writes both stderr and stdout to filename after it</li>
+<li><tt class="docutils literal">&lt;</tt> file on right into stdin of command on left</li>
+<li><tt class="docutils literal">&lt;&lt;&lt;</tt>  string on the right into stdin on the left</li>
+<li><tt class="docutils literal"><span class="pre">ctrl-z</span></tt>  pause - immediate effect always</li>
+<li><tt class="docutils literal"><span class="pre">ctrl-c</span></tt> exit, doest leave shell(thats logout) clears the line though. sends a <tt class="docutils literal">kill <span class="pre">-s</span> 15</tt> to the thread in foreground</li>
+<li><tt class="docutils literal"><span class="pre">ctrl-d</span></tt> logout</li>
+<li><tt class="docutils literal">[TAB]</tt>  tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. <tt class="docutils literal">git add [TAB] [TAB]</tt> lists your changed files, for instance</li>
+<li>back quotes - <tt class="docutils literal">kill `pgrep firefox`</tt>  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox</li>
+<li><tt class="docutils literal">*</tt>  wildcard, <tt class="docutils literal">ls *.py</tt> gives list of python scripts in current directory</li>
+<li><tt class="docutils literal">!!</tt>  the last command, <tt class="docutils literal">!n</tt> nth command in history, <tt class="docutils literal"><span class="pre">!-n</span></tt> n commands back, IE <tt class="docutils literal"><span class="pre">!-2</span></tt> executes second last</li>
+<li><tt class="docutils literal">!*</tt> args from previous command</li>
+<li><tt class="docutils literal"><span class="pre">[0-9]</span></tt>  matches digits in shell, <tt class="docutils literal">ls <span class="pre">[0-9]*</span></tt> list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...</li>
 </ul>
 </div>
 <div class="section" id="patrician-word-processing">

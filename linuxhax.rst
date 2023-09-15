@@ -299,7 +299,7 @@ SSH STUFF
 operators in shell(bash)
 ========================
 
-- ``|`` pipe, puts stdout into stdin like ``ps aux|grep <word>`` looks for ``<word>`` in output of ``ps aux``(list of running processes for all users)
+- ``|`` pipe, puts stdout into stdin like ``ps aux|grep <word>`` looks for ``<word>`` in output of ``ps aux`` (list of running processes for all users)
     - ``ls |tee bob`` - example use of ``tee``, this will write the directory contents to file ``bob`` while outputing them to stdout as well
 
 - ``&``  runs concurrently with following command. 

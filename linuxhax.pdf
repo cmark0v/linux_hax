@@ -189,7 +189,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author () /CreationDate (D:20230916021020+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230916021020+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20230916021216+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230916021216+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Linux Hax) /Trapped /False
 >>
 endobj
@@ -5983,7 +5983,7 @@ endstream
 endobj
 57 0 obj
 <<
-/Length 12530
+/Length 12554
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -6214,7 +6214,7 @@ Q
 q
 1 0 0 1 23 30 cm
 q
-BT 1 0 0 1 0 14 Tm 12 TL /F3 10 Tf 0 0 0 rg (|) Tj /F2 10 Tf ( pipe, puts stdout into stdin like ) Tj /F3 10 Tf (ps) Tj ( ) Tj (aux|grep) Tj ( ) Tj (<) Tj (word) Tj (>) Tj /F2 10 Tf ( looks for ) Tj /F3 10 Tf (<) Tj (word) Tj (>) Tj /F2 10 Tf ( in output of ) Tj 1 0 0 rg (``) Tj 0 0 0 rg (ps) Tj T* (aux``\(list of running processes for all users\)) Tj T* ET
+BT 1 0 0 1 0 14 Tm -0.047661 Tw 12 TL /F3 10 Tf 0 0 0 rg (|) Tj /F2 10 Tf ( pipe, puts stdout into stdin like ) Tj /F3 10 Tf (ps) Tj ( ) Tj (aux|grep) Tj ( ) Tj (<) Tj (word) Tj (>) Tj /F2 10 Tf ( looks for ) Tj /F3 10 Tf (<) Tj (word) Tj (>) Tj /F2 10 Tf ( in output of ) Tj /F3 10 Tf (ps) Tj ( ) Tj (aux) Tj /F2 10 Tf  T* 0 Tw (\(list of running processes for all users\)) Tj T* ET
 Q
 Q
 q
@@ -8613,31 +8613,31 @@ xref
 0000087256 00000 n 
 0000098427 00000 n 
 0000108538 00000 n 
-0000121121 00000 n 
-0000131604 00000 n 
-0000141593 00000 n 
-0000148889 00000 n 
-0000154951 00000 n 
-0000161300 00000 n 
-0000161478 00000 n 
-0000161512 00000 n 
-0000161546 00000 n 
-0000161580 00000 n 
-0000161614 00000 n 
-0000161648 00000 n 
-0000161682 00000 n 
-0000161716 00000 n 
-0000161750 00000 n 
-0000161784 00000 n 
-0000161819 00000 n 
-0000161854 00000 n 
-0000161889 00000 n 
-0000161924 00000 n 
-0000161959 00000 n 
+0000121145 00000 n 
+0000131628 00000 n 
+0000141617 00000 n 
+0000148913 00000 n 
+0000154975 00000 n 
+0000161324 00000 n 
+0000161502 00000 n 
+0000161536 00000 n 
+0000161570 00000 n 
+0000161604 00000 n 
+0000161638 00000 n 
+0000161672 00000 n 
+0000161706 00000 n 
+0000161740 00000 n 
+0000161774 00000 n 
+0000161808 00000 n 
+0000161843 00000 n 
+0000161878 00000 n 
+0000161913 00000 n 
+0000161948 00000 n 
+0000161983 00000 n 
 trailer
 <<
 /ID 
-[<f7633e97853b50b20100acd2684bc116><f7633e97853b50b20100acd2684bc116>]
+[<3cb6b8dce0d68019a7d67924d50910f0><3cb6b8dce0d68019a7d67924d50910f0>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 23 0 R
@@ -8645,5 +8645,5 @@ trailer
 /Size 79
 >>
 startxref
-161994
+162018
 %%EOF
