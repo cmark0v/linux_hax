@@ -10,8 +10,10 @@ This is notation and syntactic commonalities reflected in this document and othe
 - ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available. This is however, a feature of the package itself and only ubiquitious due to cultural convention and voluntary adherence thereof. 
 - ``<cmd> --arg-name -a <VAL1> --arg2 <VAL2>`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words. This is also cultural convention, command line args can be anything and are tokenized on whitespace. flag options like ``-a -b`` are generally commutative(order doesnt matter) and can be grouped. so ``-ab`` and ``-ba`` and ``-b -a`` would all be the same to the former. argument values (denoted ``<VAL`>`` and ``<VAL2>`` above, are not commutative and sometimes option flags are grouped with argument values so they are only commutative within that block rather than on the whole line.  
 - RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages... (you know who you are)
-- ``ctrl-x`` - hold control and x both for a moment, ``x-y z`` hold x and y for a moment, release both, hit z
-- ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard, square parenthesis like this are also often used for optional arguments to show their position in the man pages and such
+- ``[expression]`` - same as ``<expression>`` described above, this is common in man pages
+    -``[expression] ...`` - entire ``[expression]`` is repeatable
+- ``[ctrl]-x`` - hold control and x both for a moment, ``x-y z`` hold x and y for a moment, release both, hit z
+- ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard
 
 
 Basic general unix shell commands
@@ -119,7 +121,9 @@ Basic general unix shell commands
 - ``last`` - show log of your users logins
 - ``lslogins`` - list login statistics for all accounts
 - ``bc`` - basic calculator, supports arbitrary precision
-    - ``echo "1 + 1" | bc`` - 
+    - ``echo 1 + 1 | bc`` 
+
+- ``tee <file>`` - output stdin to stdout and to file
 
 
 editors:
@@ -295,7 +299,9 @@ SSH STUFF
 operators in shell(bash)
 ========================
 
-- ``|`` pipe, puts stdout into stdin like ``cat bob|grep <word>``
+- ``|`` pipe, puts stdout into stdin like ``ps aux|grep <word>`` looks for ``<word>`` in output of ``ps aux``(list of running processes for all users)
+    - ``ls |tee bob`` - example use of ``tee``, this will write the directory contents to file ``bob`` while outputing them to stdout as well
+
 - ``&``  runs concurrently with following command. 
 - ``&&``  run next program sequentially, if the first succeeds
 - ``||`` run command after only  if the previous command fails 
@@ -484,7 +490,8 @@ then build with ``docker build`` and run with ``docker run`` with appropriate se
 DONT
 ----
 
-- *DONT* store data in docker. you store that in volumes or shared/mounted directories on host filesystem
-- try to keep persistent systems in docker, it is better to always ``docker run --rm`` to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile
-- *DONT* not run ``apt-get clean`` in Dockerfile not use ``apt-get --no-install-recomends``
+- *DONT* store data in a docker container. you store that in volumes or shared/mounted directories on host filesystem
+- *DONT* try to keep persistent systems in docker, it is better to always ``docker run --rm`` to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile
+- *DONT* not run ``apt-get clean`` in Dockerfile. look for other things to delete too. ideally you make a second container from a lighter cleaner image and copy over the things you set up, leaving behind everything else
+- *DONT* not use ``apt-get --no-install-recomends``
 - *DONT* forget ``DEBIAN_FRONTEND=noninteractive apt-get -y <pkgs>``

@@ -372,8 +372,13 @@ ul.auto-toc {
 <li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--help</span></tt> - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available. This is however, a feature of the package itself and only ubiquitious due to cultural convention and voluntary adherence thereof.</li>
 <li><tt class="docutils literal">&lt;cmd&gt; <span class="pre">--arg-name</span> <span class="pre">-a</span> &lt;VAL1&gt; <span class="pre">--arg2</span> &lt;VAL2&gt;</tt> - it is very common for single character args to use a single <tt class="docutils literal">-</tt> and multi-char to use two like <tt class="docutils literal"><span class="pre">--arg</span></tt>, and use another <tt class="docutils literal">-</tt> to separate words. This is also cultural convention, command line args can be anything and are tokenized on whitespace. flag options like <tt class="docutils literal"><span class="pre">-a</span> <span class="pre">-b</span></tt> are generally commutative(order doesnt matter) and can be grouped. so <tt class="docutils literal"><span class="pre">-ab</span></tt> and <tt class="docutils literal"><span class="pre">-ba</span></tt> and <tt class="docutils literal"><span class="pre">-b</span> <span class="pre">-a</span></tt> would all be the same to the former. argument values (denoted <tt class="docutils literal">&lt;VAL`&gt;</tt> and <tt class="docutils literal">&lt;VAL2&gt;</tt> above, are not commutative and sometimes option flags are grouped with argument values so they are only commutative within that block rather than on the whole line.</li>
 <li>RTFM - means read the fucking manual IE check <tt class="docutils literal">man</tt>, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages... (you know who you are)</li>
-<li><tt class="docutils literal"><span class="pre">ctrl-x</span></tt> - hold control and x both for a moment, <tt class="docutils literal"><span class="pre">x-y</span> z</tt> hold x and y for a moment, release both, hit z</li>
-<li><tt class="docutils literal">[BUTTON]</tt>  - hit a button labeled BUTTON on your keyboard, square parenthesis like this are also often used for optional arguments to show their position in the man pages and such</li>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">[expression]</tt> - same as <tt class="docutils literal">&lt;expression&gt;</tt> described above, this is common in man pages</dt>
+<dd>-<tt class="docutils literal">[expression] ...</tt> - entire <tt class="docutils literal">[expression]</tt> is repeatable</dd>
+</dl>
+</li>
+<li><tt class="docutils literal"><span class="pre">[ctrl]-x</span></tt> - hold control and x both for a moment, <tt class="docutils literal"><span class="pre">x-y</span> z</tt> hold x and y for a moment, release both, hit z</li>
+<li><tt class="docutils literal">[BUTTON]</tt>  - hit a button labeled BUTTON on your keyboard</li>
 </ul>
 </div>
 <div class="section" id="basic-general-unix-shell-commands">
@@ -523,11 +528,12 @@ ul.auto-toc {
 <li><dl class="first docutils">
 <dt><tt class="docutils literal">bc</tt> - basic calculator, supports arbitrary precision</dt>
 <dd><ul class="first last">
-<li><tt class="docutils literal">echo &quot;1 + 1&quot; | bc</tt> -</li>
+<li><tt class="docutils literal">echo 1 + 1 | bc</tt></li>
 </ul>
 </dd>
 </dl>
 </li>
+<li><tt class="docutils literal">tee &lt;file&gt;</tt> - output stdin to stdout and to file</li>
 </ul>
 </div>
 <div class="section" id="editors">
@@ -704,26 +710,55 @@ ul.auto-toc {
 </div>
 <div class="section" id="operators-in-shell-bash">
 <h1>operators in shell(bash)</h1>
-<ul class="simple">
-<li><tt class="docutils literal">|</tt> pipe, puts stdout into stdin like <tt class="docutils literal">cat bob|grep &lt;word&gt;</tt></li>
-<li><tt class="docutils literal">&amp;</tt>  runs concurrently with following command.</li>
-<li><tt class="docutils literal">&amp;&amp;</tt>  run next program sequentially, if the first succeeds</li>
-<li><tt class="docutils literal">||</tt> run command after only  if the previous command fails</li>
-<li><tt class="docutils literal">&gt;</tt>  stdout into a file cat <tt class="docutils literal">bob &gt; file_name</tt>. OVERWRITES THE FILE</li>
-<li><tt class="docutils literal">&gt;&gt;</tt>  APPENDS TO THE FILE like <tt class="docutils literal">ls &gt;&gt; listfile</tt> will append contents of current directory to file listfile</li>
-<li><tt class="docutils literal">2&gt;</tt>  same as &gt; but does stderr, where <tt class="docutils literal">1&gt;</tt> is just the default that <tt class="docutils literal">&gt;</tt> alone reverts to</li>
-<li><tt class="docutils literal">&amp;&gt;</tt> - writes both stderr and stdout to filename after it</li>
-<li><tt class="docutils literal">&lt;</tt> file on right into stdin of command on left</li>
-<li><tt class="docutils literal">&lt;&lt;&lt;</tt>  string on the right into stdin on the left</li>
-<li><tt class="docutils literal"><span class="pre">ctrl-z</span></tt>  pause - immediate effect always</li>
-<li><tt class="docutils literal"><span class="pre">ctrl-c</span></tt> exit, doest leave shell(thats logout) clears the line though. sends a <tt class="docutils literal">kill <span class="pre">-s</span> 15</tt> to the thread in foreground</li>
-<li><tt class="docutils literal"><span class="pre">ctrl-d</span></tt> logout</li>
-<li><tt class="docutils literal">[TAB]</tt>  tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. <tt class="docutils literal">git add [TAB] [TAB]</tt> lists your changed files, for instance</li>
-<li>back quotes - <cite>kill `pgrep firefox</cite> `  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox</li>
-<li><tt class="docutils literal">*</tt>  wildcard, <tt class="docutils literal">ls *.py</tt> gives list of python scripts in current directory</li>
-<li><tt class="docutils literal">!!</tt>  the last command, <tt class="docutils literal">!n</tt> nth command in history, <tt class="docutils literal"><span class="pre">!-n</span></tt> n commands back, IE <tt class="docutils literal"><span class="pre">!-2</span></tt> executes second last</li>
-<li><tt class="docutils literal">!*</tt> args from previous command</li>
-<li><tt class="docutils literal"><span class="pre">[0-9]</span></tt>  matches digits in shell, <tt class="docutils literal">ls <span class="pre">[0-9]*</span></tt> list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...</li>
+<ul>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">|</tt> pipe, puts stdout into stdin like <tt class="docutils literal">ps aux|grep &lt;word&gt;</tt> looks for <tt class="docutils literal">&lt;word&gt;</tt> in output of <a href="#id1"><span class="problematic" id="id2">``</span></a>ps aux``(list of running processes for all users)</dt>
+<dd><div class="first system-message" id="id1">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">linuxhax.rst</tt>, line 303); <em><a href="#id2">backlink</a></em></p>
+<p>Inline literal start-string without end-string.</p>
+</div>
+<ul class="last simple">
+<li><tt class="docutils literal">ls |tee bob</tt> - example use of <tt class="docutils literal">tee</tt>, this will write the directory contents to file <tt class="docutils literal">bob</tt> while outputing them to stdout as well</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first"><tt class="docutils literal">&amp;</tt>  runs concurrently with following command.</p>
+</li>
+<li><p class="first"><tt class="docutils literal">&amp;&amp;</tt>  run next program sequentially, if the first succeeds</p>
+</li>
+<li><p class="first"><tt class="docutils literal">||</tt> run command after only  if the previous command fails</p>
+</li>
+<li><p class="first"><tt class="docutils literal">&gt;</tt>  stdout into a file cat <tt class="docutils literal">bob &gt; file_name</tt>. OVERWRITES THE FILE</p>
+</li>
+<li><p class="first"><tt class="docutils literal">&gt;&gt;</tt>  APPENDS TO THE FILE like <tt class="docutils literal">ls &gt;&gt; listfile</tt> will append contents of current directory to file listfile</p>
+</li>
+<li><p class="first"><tt class="docutils literal">2&gt;</tt>  same as &gt; but does stderr, where <tt class="docutils literal">1&gt;</tt> is just the default that <tt class="docutils literal">&gt;</tt> alone reverts to</p>
+</li>
+<li><p class="first"><tt class="docutils literal">&amp;&gt;</tt> - writes both stderr and stdout to filename after it</p>
+</li>
+<li><p class="first"><tt class="docutils literal">&lt;</tt> file on right into stdin of command on left</p>
+</li>
+<li><p class="first"><tt class="docutils literal">&lt;&lt;&lt;</tt>  string on the right into stdin on the left</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">ctrl-z</span></tt>  pause - immediate effect always</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">ctrl-c</span></tt> exit, doest leave shell(thats logout) clears the line though. sends a <tt class="docutils literal">kill <span class="pre">-s</span> 15</tt> to the thread in foreground</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">ctrl-d</span></tt> logout</p>
+</li>
+<li><p class="first"><tt class="docutils literal">[TAB]</tt>  tab - hit this key a lot, it works to complete MANY things. used to just be files, now almsot anything. <tt class="docutils literal">git add [TAB] [TAB]</tt> lists your changed files, for instance</p>
+</li>
+<li><p class="first">back quotes - <cite>kill `pgrep firefox</cite> `  - inserts stdout from the command in backquotes into the shell as if you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked up by kill so that it kills anything that matches firefox</p>
+</li>
+<li><p class="first"><tt class="docutils literal">*</tt>  wildcard, <tt class="docutils literal">ls *.py</tt> gives list of python scripts in current directory</p>
+</li>
+<li><p class="first"><tt class="docutils literal">!!</tt>  the last command, <tt class="docutils literal">!n</tt> nth command in history, <tt class="docutils literal"><span class="pre">!-n</span></tt> n commands back, IE <tt class="docutils literal"><span class="pre">!-2</span></tt> executes second last</p>
+</li>
+<li><p class="first"><tt class="docutils literal">!*</tt> args from previous command</p>
+</li>
+<li><p class="first"><tt class="docutils literal"><span class="pre">[0-9]</span></tt>  matches digits in shell, <tt class="docutils literal">ls <span class="pre">[0-9]*</span></tt> list everything that starts with a digit. can use comma separated singletons, works with letters too [a-z]...</p>
+</li>
 </ul>
 </div>
 <div class="section" id="patrician-word-processing">
@@ -883,9 +918,10 @@ CMD &lt;command&gt; #whatever you put in for &lt;command&gt; will be the default
 <div class="section" id="dont">
 <h2>DONT</h2>
 <ul class="simple">
-<li><em>DONT</em> store data in docker. you store that in volumes or shared/mounted directories on host filesystem</li>
-<li>try to keep persistent systems in docker, it is better to always <tt class="docutils literal">docker run <span class="pre">--rm</span></tt> to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile</li>
-<li><em>DONT</em> not run <tt class="docutils literal"><span class="pre">apt-get</span> clean</tt> in Dockerfile not use <tt class="docutils literal"><span class="pre">apt-get</span> <span class="pre">--no-install-recomends</span></tt></li>
+<li><em>DONT</em> store data in a docker container. you store that in volumes or shared/mounted directories on host filesystem</li>
+<li><em>DONT</em> try to keep persistent systems in docker, it is better to always <tt class="docutils literal">docker run <span class="pre">--rm</span></tt> to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile</li>
+<li><em>DONT</em> not run <tt class="docutils literal"><span class="pre">apt-get</span> clean</tt> in Dockerfile. look for other things to delete too. ideally you make a second container from a lighter cleaner image and copy over the things you set up, leaving behind everything else</li>
+<li><em>DONT</em> not use <tt class="docutils literal"><span class="pre">apt-get</span> <span class="pre">--no-install-recomends</span></tt></li>
 <li><em>DONT</em> forget <tt class="docutils literal">DEBIAN_FRONTEND=noninteractive <span class="pre">apt-get</span> <span class="pre">-y</span> &lt;pkgs&gt;</tt></li>
 </ul>
 </div>
