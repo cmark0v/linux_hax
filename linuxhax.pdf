@@ -189,7 +189,7 @@ endobj
 endobj
 23 0 obj
 <<
-/Author () /CreationDate (D:20230916020211+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230916020211+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
+/Author () /CreationDate (D:20230916020348+00'00') /Creator (\(unspecified\)) /Keywords () /ModDate (D:20230916020348+00'00') /Producer (ReportLab PDF Library - www.reportlab.com) 
   /Subject (\(unspecified\)) /Title (Linux Hax) /Trapped /False
 >>
 endobj
@@ -5983,7 +5983,7 @@ endstream
 endobj
 57 0 obj
 <<
-/Length 12509
+/Length 12543
 >>
 stream
 1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
@@ -6605,7 +6605,7 @@ Q
 q
 1 0 0 1 23 -3 cm
 q
-BT 1 0 0 1 0 26 Tm .294724 Tw 12 TL /F1 10 Tf 0 0 0 rg (back quotes - ) Tj /F4 10 Tf (kill `pgrep firefox) Tj /F1 10 Tf ( ` - inserts stdout from the command in backquotes into the shell as if) Tj T* 0 Tw -0.053821 Tw (you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked) Tj T* 0 Tw (up by kill so that it kills anything that matches firefox) Tj T* ET
+BT 1 0 0 1 0 26 Tm -0.055802 Tw 12 TL /F1 10 Tf 0 0 0 rg (back quotes - ) Tj 1 0 0 rg (``) Tj 0 0 0 rg (kill ) Tj /F4 10 Tf (pgrep firefox) Tj /F1 10 Tf ( `` - inserts stdout from the command in backquotes into the shell as if) Tj T* 0 Tw -0.053821 Tw (you had typed it. pgrep outputs a list of pids that match the string you give it, here that is being picked) Tj T* 0 Tw (up by kill so that it kills anything that matches firefox) Tj T* ET
 Q
 Q
 q
@@ -8613,13 +8613,12 @@ xref
 0000087256 00000 n 
 0000098427 00000 n 
 0000108538 00000 n 
-0000121100 00000 n 
-0000131583 00000 n 
-0000141572 00000 n 
-0000148868 00000 n 
-0000154930 00000 n 
-0000161279 00000 n 
-0000161457 00000 n 
+0000121134 00000 n 
+0000131617 00000 n 
+0000141606 00000 n 
+0000148902 00000 n 
+0000154964 00000 n 
+0000161313 00000 n 
 0000161491 00000 n 
 0000161525 00000 n 
 0000161559 00000 n 
@@ -8629,15 +8628,16 @@ xref
 0000161695 00000 n 
 0000161729 00000 n 
 0000161763 00000 n 
-0000161798 00000 n 
-0000161833 00000 n 
-0000161868 00000 n 
-0000161903 00000 n 
-0000161938 00000 n 
+0000161797 00000 n 
+0000161832 00000 n 
+0000161867 00000 n 
+0000161902 00000 n 
+0000161937 00000 n 
+0000161972 00000 n 
 trailer
 <<
 /ID 
-[<2ed8b5f2400f000025fafd0112aff08a><2ed8b5f2400f000025fafd0112aff08a>]
+[<f8ea022653398ba8027d5f09ea0d0941><f8ea022653398ba8027d5f09ea0d0941>]
 % ReportLab generated PDF document -- digest (http://www.reportlab.com)
 
 /Info 23 0 R
@@ -8645,5 +8645,5 @@ trailer
 /Size 79
 >>
 startxref
-161973
+162007
 %%EOF
