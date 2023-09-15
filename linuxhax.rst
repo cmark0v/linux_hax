@@ -28,7 +28,8 @@ Basic general unix shell commands
 
 - ``pwd`` - gives u the current directory, like which, full path
 - ``rm`` - delete file
-- ``rm -rf`` - remove folder recursively and force, IE, ignore all warnings. yes it will delete the whole drive if run as sudo on /
+    - ``rm -rf`` - remove folder recursively and force, IE, ignore all warnings. yes it will delete the whole drive if run as sudo on /
+
 - ``mkdir`` - makes an empty directory
 - ``touch`` - makes an empty file
 - ``rmdir`` - remove empty directory only(safety feature)
@@ -128,9 +129,9 @@ Basic general unix shell commands
 
 editors:
 ========
+
 - ``vi`` - the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this 
-- ``vim`` - the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quit RTFN with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides the editor, returning when you exit
- 
+- ``vim`` - the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quit RTFN with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides the editor, returning when you exit 
 - ``elvis`` - this is another editor, a better version of vi, lighter than vim(if i remember correctly)
 - ``neovim`` - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently
 - ``pico`` - simple old editor not sure its ever used anymore. 
@@ -278,7 +279,7 @@ these are the names used if you were to ``service <name> <start|stop|status>`` s
 - ``fail2ban`` - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.  
 - ``nginx`` - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.  
 - ``snort`` - network util for traffic capture and parsing, logging. can be run in the background as a system service to construct intrusion detection functionality, or used like ngrep
-  
+- ``psql`` - best database  
 
 SSH STUFF
 =========
@@ -287,6 +288,7 @@ SSH STUFF
   - ``ssh-keygen -lf .ssh/id_rsa -E sha256`` - generate fingerprint of key
   - ``ssh-keygen -t ed25519-sk -O resident -O application=ssh:<description> -f ~/.ssh/id_ed_sk`` - generate key on fido2 token as resident on key, type can alternatively be ``ecdsa-sk``, omitting ``-O resident`` makes a key that requires the fido token but is not stored on it. not discoverable from the key. ``-O verify-required`` or ``-O no-touch-required`` control the physical prescene requirements(touching the key)
   - ``ssh-keygen -K`` - importing resident keys to new machine from security token
+
 - ``ssh-add -L`` - print all your public keys in .ssh
 - ``scp localfile <user>@<remotehost>:/path/file`` - copies files over ssh bidirectionally, will default to copy locally for composibility/compatibility and uses same args generally, which must be before the locations provided. typical use ``scp user@host:/home/user/stuff stuff``. username is often needed. tab to complete works if you have passwordless ssh set up. USE IT PASSWORDLESS AND USE TAB. tab is slow though(it must open auth and close a ssh session in the background silently to achieve this). remember you can copy to /tmp always, too, if perms are giving you grief.
 - ``ssh -X <remotehost>`` - this arg will forward x11, IE, let u run graphicalprograms over ssh(if u have x11 on both sides) ``ssh -Y`` is equivalent but was meant to be a more lightweight connection

@@ -402,8 +402,14 @@ ul.auto-toc {
 </dl>
 </li>
 <li><tt class="docutils literal">pwd</tt> - gives u the current directory, like which, full path</li>
-<li><tt class="docutils literal">rm</tt> - delete file</li>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">rm</tt> - delete file</dt>
+<dd><ul class="first last">
 <li><tt class="docutils literal">rm <span class="pre">-rf</span></tt> - remove folder recursively and force, IE, ignore all warnings. yes it will delete the whole drive if run as sudo on /</li>
+</ul>
+</dd>
+</dl>
+</li>
 <li><tt class="docutils literal">mkdir</tt> - makes an empty directory</li>
 <li><tt class="docutils literal">touch</tt> - makes an empty file</li>
 <li><tt class="docutils literal">rmdir</tt> - remove empty directory only(safety feature)</li>
@@ -688,6 +694,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">fail2ban</tt> - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.</li>
 <li><tt class="docutils literal">nginx</tt> - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.</li>
 <li><tt class="docutils literal">snort</tt> - network util for traffic capture and parsing, logging. can be run in the background as a system service to construct intrusion detection functionality, or used like ngrep</li>
+<li><tt class="docutils literal">psql</tt> - best database</li>
 </ul>
 </div>
 <div class="section" id="ssh-stuff">
