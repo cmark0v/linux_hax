@@ -328,7 +328,7 @@ operators in shell(bash)
 
 patrician word processing
 =========================
-if youre writing text then please be a man and use a text based interface
+latex, reStructured text, markdown, are hypertext formats that compile into more visually aestetic document formats using various interpreters and compilers. This allows large documents to be written collaboratively under version control in git, and allows formatting to be decided after-the-fact, as well as other kinds of portability. Things like page size, fitment, numbering, reference style, file format, etc are determined by how they are compiled and options supplied at that time. docs for a project can be written in the same repo as the code and compiled into monographic pdfs, text formats, websites, books, powerpoint slides, etc. all from the same source, maintaining formatting and style automatically as determined by config files also kept in the repo. TeX is the most complex while markdown and rst are made to be easy on the eyes as sourcecode. all of them support the same format for math equations, which originally came from TeX and has been incorporated into wiki, notion, MS office, and basically every other document related software. 
 
 - ``latex`` - compiles to dvi, pics gotta be eps(a vector format)
 - ``pdflatex``- compiles latex pics must be png and jpg i think. cant use vector format eps
@@ -340,6 +340,8 @@ if youre writing text then please be a man and use a text based interface
 - ``rst2man`` - restructurted text to man page
 - ``rst2odt`` - restructurted text to odt
 - ``rst2pdf`` - restructurted text to pdf
+- ``mistletoe`` - markdown compiler python module with cli. compiles to html and latex and others
+- ``markdown`` -  markdown, described as a "text-to-html filter"
 - ``convert`` - very smartly interfaced command line front end for imagemagick. just ``convert bob.<ext> bobout.jpg`` etc to convert between any image format. this is helpful for latex etc.
 
 
