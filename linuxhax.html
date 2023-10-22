@@ -478,8 +478,8 @@ ul.auto-toc {
 </dd>
 </dl>
 </li>
-<li><tt class="docutils literal">man</tt> - manual page, man &lt;command&gt; shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim.</li>
-<li><tt class="docutils literal">screen</tt> - make a new screen. <tt class="docutils literal"><span class="pre">ctrl-a</span> (release) d</tt> detaches/exits from it, <tt class="docutils literal"><span class="pre">ctl-a</span> c</tt> closes. this is one way you run things in the background</li>
+<li><tt class="docutils literal">man</tt> - manual page, <tt class="docutils literal">man &lt;command&gt;</tt> shows the man page, short for manual. This is the manual they speak of when they tell you to RTFM. There are entries for config files, too, to reference their syntex. <tt class="docutils literal">man resolv.conf</tt> there are entries for pam plugins and such <tt class="docutils literal">man pam_u2f</tt>. For some utilitiesl ike git, there are entries for subcommands <tt class="docutils literal">man <span class="pre">git-pull</span></tt> for a manual on all the args, syntax, behavior of <tt class="docutils literal">git pull</tt></li>
+<li><tt class="docutils literal">screen</tt> - make a new screen/tty, allowing you to have multiple terminals running independently. <tt class="docutils literal"><span class="pre">ctrl-a</span> (release) d</tt> detaches/exits from it, <tt class="docutils literal"><span class="pre">ctl-a</span> c</tt> closes. this is one way you run things in the background and let them run after logout. <tt class="docutils literal">screen <span class="pre">-r</span></tt> resumes screen you deteched from, if multiple, it lists them. <tt class="docutils literal">screen <span class="pre">-r</span> 45</tt> will resume the screen with id starting with 45 and list if there are multiple.</li>
 <li><tt class="docutils literal">tmux</tt> - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager</li>
 <li><tt class="docutils literal">nohup</tt> - precedes command and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for background process tat will persist on logout</li>
 <li><tt class="docutils literal">md5sum</tt> - jsut called md5 on mac/bsd just does an md5 checksum hash of a file. for comparison of files of any size</li>
@@ -539,7 +539,7 @@ ul.auto-toc {
 </dd>
 </dl>
 </li>
-<li><tt class="docutils literal">tee &lt;file&gt;</tt> - output stdin to stdout and to file</li>
+<li><tt class="docutils literal">tee &lt;file&gt;</tt> - output stdin to stdout and to file.</li>
 </ul>
 </div>
 <div class="section" id="editors">
@@ -605,7 +605,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">$PYTHONPATH</tt> - where python looks for modules</li>
 <li><tt class="docutils literal">$USER, $HOME</tt>, - username and home directory path</li>
 <li><tt class="docutils literal">$PWD</tt> - absolute path to current working directory</li>
-<li><tt class="docutils literal">$EDITOR</tt> - default editor, adults set to <tt class="docutils literal">vim</tt> kids set to <tt class="docutils literal">nano</tt></li>
+<li><tt class="docutils literal">$EDITOR</tt> - default editor, adults set to <tt class="docutils literal">vim</tt> kids set to <tt class="docutils literal">nano</tt> . read by system utils like apt and other things that launch an editor from time to time</li>
 <li><tt class="docutils literal">$_</tt> - last arg from previous shell command run</li>
 <li><tt class="docutils literal">$?</tt> - exit value/signal from prev command (0 if success which you manually throw in scripts with <tt class="docutils literal">exit 0</tt></li>
 <li><tt class="docutils literal">alias</tt> - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def</li>
@@ -803,8 +803,8 @@ Int the past many of these were separate partitions, hence some of the seemingly
 <li><tt class="docutils literal">/etc/motd</tt> - text displayed at login. put stuff here if you have users, info about the system, advertisements, cuss them out, etc</li>
 </ul>
 </div>
-<div class="section" id="notable-filesystem-objects-local">
-<h1>notable filesystem objects, local</h1>
+<div class="section" id="notable-filesystem-objects-user">
+<h1>notable filesystem objects, user</h1>
 <ul class="simple">
 <li><tt class="docutils literal">~</tt> - alias to your homefolder <tt class="docutils literal"><span class="pre">/home/&lt;username&gt;</span></tt> also available as <tt class="docutils literal">$HOME</tt></li>
 <li><tt class="docutils literal"><span class="pre">~/.ssh/authorized_keys</span></tt> - put in a copy of someones id_rsa.pub file as a line, and it allows anyone with the corresponding private key to log into said account to whom <tt class="docutils literal">~</tt> belongs.</li>
@@ -813,18 +813,38 @@ Int the past many of these were separate partitions, hence some of the seemingly
 <li><tt class="docutils literal"><span class="pre">~/.bashrc</span></tt> - if you use bash, this is a place you can add commands that run on login. such as adding things to your $PATH</li>
 <li><tt class="docutils literal"><span class="pre">~/.bash_history</span></tt> - hitory of commands in bash, some cap length by default, grep this to find stuff you did and need th command for</li>
 <li><tt class="docutils literal"><span class="pre">~/.profile</span></tt> - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe other BSD. defintiely check if you are not using bash</li>
-<li><tt class="docutils literal"><span class="pre">~/.local/</span></tt> - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff gos here</li>
+<li><tt class="docutils literal"><span class="pre">~/.local/</span></tt> - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff goes here, for example</li>
 <li><tt class="docutils literal"><span class="pre">~/.config/</span></tt> - it is now considered best practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~</li>
+</ul>
+</div>
+<div class="section" id="vim">
+<h1>vim</h1>
+<p>the interface style is called &quot;a modal editor&quot; this refers to the central characteristic of the user experience revolving around various &quot;modes&quot; that are specialized for different purposes. The main ones are <em>default</em>, <em>INSERT</em>, <em>VISUAL</em>. the first is the one you are in when you open it, and is good for moving around, viewing, etc. the second, <em>INSERT</em>, is the one you are using when you are editing, &quot;like a normal editor&quot;, the third <em>VISUAL</em>, you enter by pressing v in default, and is good for selecting text characterwise and linewise to isolate operations to (delete blocks of text, copy paste, search replace on just selection).</p>
+<ul class="simple">
+<li><tt class="docutils literal">i</tt> - enter insert mode</li>
+<li><tt class="docutils literal">v</tt> - enter visual mode</li>
+<li><tt class="docutils literal">[esc]</tt> - enter normal/default mode</li>
+<li><tt class="docutils literal">:w &lt;file&gt;</tt> - write, optionally to alternate file</li>
+<li><tt class="docutils literal">:r &lt;file&gt;</tt> - read file into buffer you are editing</li>
+<li><tt class="docutils literal">:r! &lt;command&gt;</tt> - spit output of command into buffer you are editing</li>
+<li><tt class="docutils literal">:wq</tt> - write and quit</li>
+<li><tt class="docutils literal">:q!</tt> - quit right now and dont ask about saving</li>
+<li><tt class="docutils literal">d</tt> - delete, <tt class="docutils literal">dd</tt> deletes line, many other subcommands/variations <tt class="docutils literal">di(</tt> deletes inside the parenthese you are in, works with every kind.</li>
+<li><tt class="docutils literal">y</tt> - &quot;yank&quot; copy to vim clipboard(not the system one) works the same as <tt class="docutils literal">d</tt> which is not delete but more accurately a cut command</li>
+<li><tt class="docutils literal">p</tt> - paste things from the vim buffer(s) you filled with the above two commands</li>
+<li><tt class="docutils literal">:help &lt;command&gt;</tt> - get the help</li>
+<li><tt class="docutils literal">=</tt> - format, default code formatter, for C code i think</li>
 </ul>
 </div>
 <div class="section" id="user-ssh-config">
 <h1>user ssh config</h1>
-<p><tt class="docutils literal"><span class="pre">~/.ssh/config</span></tt> This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this</p>
+<p><tt class="docutils literal"><span class="pre">~/.ssh/config</span></tt> This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this. see <tt class="docutils literal">man ssh_config</tt></p>
 <pre class="doctest-block">
 &gt;&gt;&gt;
 Host bob
   HostName bob.com
   User userb
+  Port 222
   IdentityFile ~/.ssh/id_rsa_bob
 </pre>
 <p>this enables you to simply <tt class="docutils literal">ssh bob</tt>, and tab to complete works on this alias for te host. <tt class="docutils literal">HostName</tt> is a misleading label, as it is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry <tt class="docutils literal">Host</tt>. these aliases carry over to git commands and scp, etc</p>
@@ -833,7 +853,8 @@ Host bob
 <h1>host a git, barebones</h1>
 <p>simple and dirty instructions
 always use passwordless SSH for this
-make git user on server. NO PASSWORD ON IT. no way to log in with password, furthermore, use git-shell</p>
+make git user on server. NO PASSWORD ON IT. no way to log in with password, furthermore, use git-shell
+so that there is no way to go crazy on there running commands and tearing things up.</p>
 <pre class="doctest-block">
 &gt;&gt;&gt;
 sudo useradd  -s `which git-shell` git
@@ -846,7 +867,7 @@ git config receive.denyCurrentBranch ignore #lets you push to bare repo
 <p>put public keys in <tt class="docutils literal"><span class="pre">/home/git/.ssh/authorized_keys</span></tt> as a line, on the host n</p>
 <p>on cients:  <tt class="docutils literal">git clone <span class="pre">ssh://git&#64;server:/home/git/package</span></tt></p>
 <p>then make an initial commit to master to make sure it works</p>
-<p>pull requests are a social media feature tied to the web interface and dont really exist in this setting.</p>
+<p>pull requests are a social media feature tied to the web interface and dont really exist in this setting. the command line utility will generate one, which is actually a diff format to sumarize changes between branches. opriginally meant to be emailed to the guy who controls the origin.</p>
 </div>
 <div class="section" id="git-client-side">
 <h1>git client side</h1>
@@ -860,24 +881,24 @@ git checkout mybranchname #- now you are on it, it is forekd off main
 #do stuff, write code
 git add stuff
 git commit -m&quot;new stuff&quot;
-git push #- upload it to the remove server
+git push #- upload it to the remote
 #keep doing stuff, eventually ready to merge
 git checkout master
-git pull #-make sure its up todate
+git pull #-make sure its up to date
 git merge mybranchname
 #now if theres conflicts, you make sure it works, correct them.
-#you can checkout a file from master by &quot;git checkout &lt;branch&gt; &lt;file&gt;&quot; to overwrite your version with one from another branch
+#you can checkout a file from master by &quot;git checkout &lt;branch&gt; &lt;file&gt;&quot; to overwrite your ephemeral version(what you are editing in your environment) with one from a specific branch. add and commit as needed to resolve conflicts
 git push
 git branch -d mybranchname #delete the branch that you merged in, keep it from cluttering repo
 </pre>
-<p>git is very user friendly for a command line interface, gives useful messages
-but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation and interfacing with the underlying repo datastructure that is entirely local. Git can be useful without a remote, just to track progress and allow you to undo things if you mess up your code. noobs and people in the past that didnt have version control used to keep many copies of their code.</p>
+<p>git is very user friendly for a command line interface, gives useful messages and walks you through mnany processes
+but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation and interfacing with the underlying repo data structure that is entirely local, and entirely what git actually contributes as a software(version control). network communications with the remote are done with ssh or other protocols separate from git.  Git is useful without a remote, just to track progress and allow you to undo things if you mess up your code. noobs and people in the past that didnt have version control used to keep many copies of their code. This is inefficient and dangerous and sloppy. Cause of many tears, and something I am sure the suicide hotline operators are quite familiar with.</p>
 </div>
 <div class="section" id="docker">
 <h1>docker</h1>
 <p>docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your baremetal system.</p>
 <p>It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM. apps in docker run on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards). you can run things in docker seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation between peoples systems on a dev team. it has a built in management system for images shared by project teams and the community.</p>
-<p>if you dont use it youre basically failing at life. It is not something that requires a ton of knowledge or practice to benefit from.</p>
+<p>if you dont use it youre basically failing at life. It is not something that requires a ton of knowledge or practice to benefit from. It is not only for enterprise sysadmin operations, either.</p>
 <p>to get started you need to add user to docker group <tt class="docutils literal">usermod <span class="pre">-aG</span> docker &lt;user&gt;</tt>, and then make a empty directory and put a file in it called Dockerfile, in which you list a series of commands building your custom system, generally starting with something from the docker repo. example including most of what you need:</p>
 <pre class="doctest-block">
 &gt;&gt;&gt;
@@ -910,6 +931,7 @@ CMD &lt;command&gt; #whatever you put in for &lt;command&gt; will be the default
 <li><em>DONT</em> not run <tt class="docutils literal"><span class="pre">apt-get</span> clean</tt> in Dockerfile. look for other things to delete too. ideally you make a second container from a lighter cleaner image and copy over the things you set up, leaving behind everything else</li>
 <li><em>DONT</em> not use <tt class="docutils literal"><span class="pre">apt-get</span> <span class="pre">--no-install-recomends</span></tt></li>
 <li><em>DONT</em> forget <tt class="docutils literal">DEBIAN_FRONTEND=noninteractive <span class="pre">apt-get</span> <span class="pre">-y</span> &lt;pkgs&gt;</tt></li>
+<li>to make small containers, you build your binaries and things in one container then copy to a smaller one without all the tools. There are specialized base containers for these two roles</li>
 </ul>
 </div>
 </div>

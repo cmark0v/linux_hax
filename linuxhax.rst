@@ -68,8 +68,8 @@ Basic general unix shell commands
    - ``chmod 600`` - your user can read and write
    - ``chmod 770`` - owner user and owner group can read write and execute
 
-- ``man`` - manual page, man <command> shows the page, it is the help files, it is the best reference for arguments of commands. YOU SHOULD REFERENCE THE MAN PAGE COMMANDS. it is the only source you need for these base commands u see here, and old software. it is not necessarily the best wy to learn how to use vim. 
-- ``screen`` - make a new screen. ``ctrl-a (release) d`` detaches/exits from it, ``ctl-a c`` closes. this is one way you run things in the background
+- ``man`` - manual page, ``man <command>`` shows the man page, short for manual. This is the manual they speak of when they tell you to RTFM. There are entries for config files, too, to reference their syntex. ``man resolv.conf`` there are entries for pam plugins and such ``man pam_u2f``. For some utilitiesl ike git, there are entries for subcommands ``man git-pull`` for a manual on all the args, syntax, behavior of ``git pull`` 
+- ``screen`` - make a new screen/tty, allowing you to have multiple terminals running independently. ``ctrl-a (release) d`` detaches/exits from it, ``ctl-a c`` closes. this is one way you run things in the background and let them run after logout. ``screen -r`` resumes screen you deteched from, if multiple, it lists them. ``screen -r 45`` will resume the screen with id starting with 45 and list if there are multiple.
 - ``tmux`` - terminal multiplexer, lets you squeeze multiple terminals into one screen. like a super old school window manager
 - ``nohup`` - precedes command and prevents hangup signals from hitting it so it will run until killed or closed from internal logic. alternative to screen for background process tat will persist on logout
 - ``md5sum`` - jsut called md5 on mac/bsd just does an md5 checksum hash of a file. for comparison of files of any size
@@ -124,7 +124,7 @@ Basic general unix shell commands
 - ``bc`` - basic calculator, supports arbitrary precision
     - ``echo 1 + 1 | bc`` 
 
-- ``tee <file>`` - output stdin to stdout and to file
+- ``tee <file>`` - output stdin to stdout and to file.
 
 
 editors:
@@ -193,7 +193,7 @@ shell  vars in general have a $ infront of them when yolu access them. but not w
 - ``$PYTHONPATH`` - where python looks for modules
 - ``$USER, $HOME``, - username and home directory path
 - ``$PWD`` - absolute path to current working directory
-- ``$EDITOR`` - default editor, adults set to ``vim`` kids set to ``nano`` 
+- ``$EDITOR`` - default editor, adults set to ``vim`` kids set to ``nano`` . read by system utils like apt and other things that launch an editor from time to time
 - ``$_`` - last arg from previous shell command run
 - ``$?`` - exit value/signal from prev command (0 if success which you manually throw in scripts with ``exit 0``
 - ``alias`` - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def 
@@ -382,7 +382,7 @@ notable filesystem objects, global
 - ``/etc/motd`` - text displayed at login. put stuff here if you have users, info about the system, advertisements, cuss them out, etc
  
 
-notable filesystem objects, local
+notable filesystem objects, user
 =================================
 - ``~`` - alias to your homefolder ``/home/<username>`` also available as ``$HOME``
 - ``~/.ssh/authorized_keys`` - put in a copy of someones id_rsa.pub file as a line, and it allows anyone with the corresponding private key to log into said account to whom ``~`` belongs. 
@@ -391,19 +391,40 @@ notable filesystem objects, local
 - ``~/.bashrc`` - if you use bash, this is a place you can add commands that run on login. such as adding things to your $PATH
 - ``~/.bash_history`` - hitory of commands in bash, some cap length by default, grep this to find stuff you did and need th command for
 - ``~/.profile`` - tis is like .bashrc but not specific to bash. on many systems, mac OSX and i believe other BSD. defintiely check if you are not using bash
-- ``~/.local/`` - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff gos here
+- ``~/.local/`` - hs a root filesystem mirror structure that user installed things (like pip packages) can sit in. like a personal /usr/local. pip user installed stuff goes here, for example
 - ``~/.config/`` - it is now considered best practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~
 
+
+vim 
+===
+
+the interface style is called "a modal editor" this refers to the central characteristic of the user experience revolving around various "modes" that are specialized for different purposes. The main ones are *default*, *INSERT*, *VISUAL*. the first is the one you are in when you open it, and is good for moving around, viewing, etc. the second, *INSERT*, is the one you are using when you are editing, "like a normal editor", the third *VISUAL*, you enter by pressing v in default, and is good for selecting text characterwise and linewise to isolate operations to (delete blocks of text, copy paste, search replace on just selection). 
+
+
+- ``i`` - enter insert mode
+- ``v`` - enter visual mode
+- ``[esc]`` - enter normal/default mode
+- ``:w <file>`` - write, optionally to alternate file
+- ``:r <file>`` - read file into buffer you are editing
+- ``:r! <command>`` - spit output of command into buffer you are editing
+- ``:wq`` - write and quit
+- ``:q!`` - quit right now and dont ask about saving
+- ``d`` - delete, ``dd`` deletes line, many other subcommands/variations ``di(`` deletes inside the parenthese you are in, works with every kind. 
+- ``y`` - "yank" copy to vim clipboard(not the system one) works the same as ``d`` which is not delete but more accurately a cut command
+- ``p`` - paste things from the vim buffer(s) you filled with the above two commands
+- ``:help <command>`` - get the help
+- ``=`` - format, default code formatter, for C code i think
 
 user ssh config
 ===============
 
-``~/.ssh/config`` This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this
+``~/.ssh/config`` This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this. see ``man ssh_config``
 
 >>>
 Host bob
   HostName bob.com
   User userb
+  Port 222
   IdentityFile ~/.ssh/id_rsa_bob
 
 this enables you to simply ``ssh bob``, and tab to complete works on this alias for te host. ``HostName`` is a misleading label, as it is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry ``Host``. these aliases carry over to git commands and scp, etc
@@ -415,6 +436,7 @@ host a git, barebones
 simple and dirty instructions
 always use passwordless SSH for this
 make git user on server. NO PASSWORD ON IT. no way to log in with password, furthermore, use git-shell
+so that there is no way to go crazy on there running commands and tearing things up. 
 
 
 >>>
@@ -431,7 +453,7 @@ on cients:  ``git clone ssh://git@server:/home/git/package``
 
 then make an initial commit to master to make sure it works
 
-pull requests are a social media feature tied to the web interface and dont really exist in this setting. 
+pull requests are a social media feature tied to the web interface and dont really exist in this setting. the command line utility will generate one, which is actually a diff format to sumarize changes between branches. opriginally meant to be emailed to the guy who controls the origin. 
 
 git client side
 ===============
@@ -445,18 +467,18 @@ git checkout mybranchname #- now you are on it, it is forekd off main
 #do stuff, write code
 git add stuff
 git commit -m"new stuff"
-git push #- upload it to the remove server
+git push #- upload it to the remote 
 #keep doing stuff, eventually ready to merge
 git checkout master
-git pull #-make sure its up todate
+git pull #-make sure its up to date
 git merge mybranchname
 #now if theres conflicts, you make sure it works, correct them. 
-#you can checkout a file from master by "git checkout <branch> <file>" to overwrite your version with one from another branch 
+#you can checkout a file from master by "git checkout <branch> <file>" to overwrite your ephemeral version(what you are editing in your environment) with one from a specific branch. add and commit as needed to resolve conflicts
 git push
 git branch -d mybranchname #delete the branch that you merged in, keep it from cluttering repo
 
-git is very user friendly for a command line interface, gives useful messages
-but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation and interfacing with the underlying repo datastructure that is entirely local. Git can be useful without a remote, just to track progress and allow you to undo things if you mess up your code. noobs and people in the past that didnt have version control used to keep many copies of their code.
+git is very user friendly for a command line interface, gives useful messages and walks you through mnany processes
+but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation and interfacing with the underlying repo data structure that is entirely local, and entirely what git actually contributes as a software(version control). network communications with the remote are done with ssh or other protocols separate from git.  Git is useful without a remote, just to track progress and allow you to undo things if you mess up your code. noobs and people in the past that didnt have version control used to keep many copies of their code. This is inefficient and dangerous and sloppy. Cause of many tears, and something I am sure the suicide hotline operators are quite familiar with. 
 
 
 docker
@@ -465,7 +487,7 @@ docker is super helpful, especially if youre a noob. It allows you to do things 
 
 It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM. apps in docker run on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards). you can run things in docker seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation between peoples systems on a dev team. it has a built in management system for images shared by project teams and the community. 
 
-if you dont use it youre basically failing at life. It is not something that requires a ton of knowledge or practice to benefit from. 
+if you dont use it youre basically failing at life. It is not something that requires a ton of knowledge or practice to benefit from. It is not only for enterprise sysadmin operations, either.  
 
 to get started you need to add user to docker group ``usermod -aG docker <user>``, and then make a empty directory and put a file in it called Dockerfile, in which you list a series of commands building your custom system, generally starting with something from the docker repo. example including most of what you need: 
 
@@ -499,3 +521,4 @@ DONT
 - *DONT* not run ``apt-get clean`` in Dockerfile. look for other things to delete too. ideally you make a second container from a lighter cleaner image and copy over the things you set up, leaving behind everything else
 - *DONT* not use ``apt-get --no-install-recomends``
 - *DONT* forget ``DEBIAN_FRONTEND=noninteractive apt-get -y <pkgs>``
+- to make small containers, you build your binaries and things in one container then copy to a smaller one without all the tools. There are specialized base containers for these two roles 
