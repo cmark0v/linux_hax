@@ -1,9 +1,9 @@
 Linux Hax
-+++++++++
+=========
 This started out as a general unix shell primer/reference page for noobs, inspired by a lot of emails written to help colleagues that were getting used to unix based operating systems. I tried to focus on features and cultural norms that are so fundamental to experienced users that they often dont mention them. I have seen this manifest in stark realities such as people that are unaware of tab-to-complete after an embarrassingly long period of daily linux use. It has widened in scope a little to include brief tutorial on important basic userland tools, and reference notes for myself and other advanced users on things that see helpful but infrequent use.
 
 Convention
-==========
+----------
 This is notation and syntactic commonalities reflected in this document and others like it, not strict syntax but some generally unspoken entrenched cultural features that might confuse unix noobs when they take a look at a man page or a document like this.
 
 - ``[expression]`` - same as ``<expression>`` described above, this is more common in man pages
@@ -18,7 +18,7 @@ This is notation and syntactic commonalities reflected in this document and othe
 
 
 Basic general unix shell commands
-=================================
+---------------------------------
 
 - ``ls`` - list files
    - ``ls -al`` - list all files with extra information
@@ -129,7 +129,7 @@ Basic general unix shell commands
 
 
 editors:
-========
+--------
 
 - ``vi`` - the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this 
 - ``vim`` - the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quit RTFN with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides the editor, returning when you exit 
@@ -143,7 +143,7 @@ editors:
 
 
 system things(debian based mint/ubuntu):
-========================================
+----------------------------------------
 - ``sudo`` - run following command as root (admin)
 - ``su`` - set user, defaults to root. can specify shell with -s
 - ``service`` - control a service's ephemeral state and status check. service <name of it> <start, stop, restart, reload>   ex: sudo service postgresql restart
@@ -168,7 +168,7 @@ system things(debian based mint/ubuntu):
 
 
 shells:
-=======
+-------
 - ``bash`` - common, youre prob on it. "bourne again shell" whatever that means
 - ``csh`` - different, advanced too - C shell
 - ``tcsh`` - mac uses it? freebsd? its good too
@@ -177,7 +177,7 @@ shells:
 
 
 env vars:
-=========
+---------
 The shell has a namespace of variables called environment variables. many settings for the shell and for other programs you run are set by these variables. These settings tend to be preferences and other things that tend to be seldom changed by the same user in the same machine. Or for situations where the command line syntax used at call cant be changed for one reason or another. 
 
 type ``env`` to see them all. ``echo $VAR`` to see VAR. ``export VAR=sgfsgs`` to set VAR to sgfsgs for your session. setting ``VAR=5 someprogram``, will modify VAR in the context of that single line running someprogram.
@@ -202,7 +202,7 @@ shell vars in general have a ``$`` infront of them when you access them, but not
 
 
 strange obscure barely useful:
-==============================
+------------------------------
 - ``motd`` - message of the day, displayed on login, not all systems have this command, its old school, but having an MOTD is not a dead art. 
 - ``links`` - text only browser
 - ``lynx`` - older more useless text only browser
@@ -211,7 +211,7 @@ strange obscure barely useful:
 - ``beep`` - makes a console beep
 
 graphical, featureful
-=====================
+---------------------
 - ``xterm`` - old school bare bones terminal emulator for x11
 - xorg/x11 - always started by scripts, but it is the name of the service that runs the GUI in linux generally. x1 was the old name xorg is the new one. there are forks...
 - ``xv`` - old and simple image viewer. seems to be somehow replaced by ``xviewer`` and some systems may have it as ``xview``
@@ -226,7 +226,7 @@ graphical, featureful
 
 
 crypto
-======
+------
 
 - ``gnupg`` - ``gpg`` a gnu implementation of pgp aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  as per gnu naming conventions, its name is a goofy acronym based pun of sorts.
 - ``cryptsetup`` - setup luks volumes. rtfm on it
@@ -237,7 +237,7 @@ crypto
 
 
 network & hax
-=============
+-------------
 
 - ``nmap`` - port scanner highly advanced, many modes and options
 - ``masscan`` - speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information
@@ -271,7 +271,7 @@ network & hax
 
 
 services
-========
+--------
 these are the names used if you were to ``service <name> <start|stop|status>`` services are started stopped etc by scripts which are used by systemd and this command or in general your setup might use a different service manager, which will be similar. This is because some services need a sequence of commands and checks etc before starting or stopping safely. 
 
 - ``fail2ban`` - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularized to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actions abd expire. all bans are cleared on restart by default.  
@@ -280,7 +280,7 @@ these are the names used if you were to ``service <name> <start|stop|status>`` s
 - ``psql`` - best database  
 
 SSH STUFF
-=========
+---------
 - ``ssh <user>@<remotehost>`` - secure shell, replaced telnet when people realised doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel
 - ``ssh-keygen`` - generates keypairs for ssh auth
   - ``ssh-keygen -lf .ssh/id_rsa -E sha256`` - generate fingerprint of key
@@ -299,7 +299,7 @@ SSH STUFF
 - ``ssh-copy-id, ssh-keyscan, ssh-agent`` - other useful key management tools
 
 operators in shell(bash)
-========================
+------------------------
 
 - ``|`` pipe, puts stdout into stdin like ``ps aux|grep <word>`` looks for ``<word>`` in output of ``ps aux`` (list of running processes for all users)
     - ``ls |tee bob`` - example use of ``tee``, this will write the directory contents to file ``bob`` while outputing them to stdout as well
@@ -325,7 +325,7 @@ operators in shell(bash)
 
 
 patrician word processing
-=========================
+-------------------------
 latex, reStructured text, markdown, are hypertext formats that compile into more visually aestetic document formats using various interpreters and compilers. This allows large documents to be written collaboratively under version control in git, and allows formatting to be decided after-the-fact, as well as other kinds of portability. Things like page size, fitment, numbering, reference style, file format, etc are determined by how they are compiled and options supplied at that time. docs for a project can be written in the same repo as the code and compiled into monographic pdfs, text formats, websites, books, powerpoint slides, etc. all from the same source, maintaining formatting and style automatically as determined by config files also kept in the repo. TeX is the most complex while markdown and rst are made to be easy on the eyes as sourcecode. all of them support the same format for math equations, which originally came from TeX and has been incorporated into wiki, notion, MS office, and basically every other document related software. 
 
 - ``latex`` - compiles to dvi, pics gotta be eps(a vector format)
@@ -346,7 +346,7 @@ latex, reStructured text, markdown, are hypertext formats that compile into more
 
 
 root filesystem synopsis
-========================
+------------------------
 
  Int the past many of these were separate partitions, hence some of the seemingly redundant things. Now this is not as important with solid state drives and (i supposed) more modern file systems
 
@@ -368,7 +368,7 @@ root filesystem synopsis
 - ``/media`` - this is where thigns are mounted now, in a path like /media/<username>/<uuid serial thing>, this is now handled by some daemon that will do it for you as a setuid-to-root binary or something, to streamline the process of using removeable media since the proliferation of USB storage devices(previously portable storage media didnt carry its hardware interface with it, so the system wouldnt see new media as a new device entirely, but a change in state of a known device)
 
 notable filesystem objects, global
-==================================
+----------------------------------
 
 - ``/proc/cpuinfo`` - cpu core info, pretty great
 - ``/dev/random`` - random data from hardware. cat this and u get a dump of real physical entropy
@@ -383,7 +383,7 @@ notable filesystem objects, global
  
 
 notable filesystem objects, user
-=================================
+---------------------------------
 - ``~`` - alias to your homefolder ``/home/<username>`` also available as ``$HOME``
 - ``~/.ssh/authorized_keys`` - put in a copy of someones id_rsa.pub file as a line, and it allows anyone with the corresponding private key to log into said account to whom ``~`` belongs. 
 - ``~/.ssh/config`` - lts u preconfig defults for various servers and things, pivotal wehn using scp and git reguarly. man ssh_config exists and shows syntax
@@ -416,7 +416,7 @@ the interface style is called "a modal editor" this refers to the central charac
 - ``=`` - format, default code formatter, for C code i think
 
 user ssh config
-===============
+---------------
 
 ``~/.ssh/config`` This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this. see ``man ssh_config``
 
@@ -432,7 +432,7 @@ this enables you to simply ``ssh bob``, and tab to complete works on this alias 
 
 
 host a git, barebones 
-=====================
+---------------------
 simple and dirty instructions
 always use passwordless SSH for this
 make git user on server. NO PASSWORD ON IT. no way to log in with password, furthermore, use git-shell
@@ -456,7 +456,7 @@ then make an initial commit to master to make sure it works
 pull requests are a social media feature tied to the web interface and dont really exist in this setting. the command line utility will generate one, which is actually a diff format to sumarize changes between branches. opriginally meant to be emailed to the guy who controls the origin. 
 
 git client side
-===============
+---------------
 process of creating branch and merge:
 
 >>>
@@ -482,7 +482,7 @@ but remember to push after you merge, push and pull and clone are remote command
 
 
 docker
-======
+------
 docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your baremetal system. 
 
 It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM. apps in docker run on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards). you can run things in docker seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation between peoples systems on a dev team. it has a built in management system for images shared by project teams and the community. 
