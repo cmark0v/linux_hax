@@ -413,10 +413,19 @@ vi/vim is offensively confusing to everyone who opens it the first time. The int
 - ``y`` - "yank" copy to vim clipboard(not the system one) works the same as ``d`` which is not delete but more accurately a cut command, hit it twice and it deletes the line you are on, hit it once then ``[downarrow]`` or ``[uparrow]`` and it does two lines, the current one and the one below or above. 
 - ``d`` - delete, ``dd`` deletes line, many other subcommands/variations ``di(`` deletes inside the parenthese you are in, works with every kind. same as ``y`` above
 - ``p`` - paste things from the vim buffer(s) you filled with the above two commands
-- ``:help <command>`` - get the help
+- ``:help <command>`` - get the help. its very good. it never fails. works for anything, internal env vars, etc. anything in the name space
 - ``=`` - format, default code formatter, for C code i think. for visual mode
-- ``:[%]s/regex/replace/[g]`` - does a regex on the line you are on, or what you have selected in visual mode. put in the ``%`` and it does it on every line. put in the ``[g]`` and it does it to every instance on every line. ``\\(.*\\)`` is the group match marker and its accessed in the replace expression as $\\1$
+- ``:[%]s/regex/replace/[g]`` - does a regex on the line you are on, or what you have selected in visual mode. put in the ``%`` and it does it on every line. put in the ``[g]`` and it does it to every instance on every line. ``\(.*\)`` is the group match marker and its accessed in the replace expression as $``\1``$, replace ``.*`` with any expression
 - ``&`` - repeats the last regex replace on current line once, to first occurance from left
+
+vim: plugins
+++++++++++++
+
+- ``supertab`` - this is a plugin that allows for easier access and tighter control of the native text completion facilities in vim. 
+- code formatter. whichever you use, there will be a vim plugin acting as an adapter to make it available in vim. 
+- ``easy-align`` - sort of useful tool for easy vertical alignment of blocks of text(such as variable declarations or ascii tabular formats) along various delimiters etc
+- code highlighting, same deal aa the formatter, only it has many built in, if it doesnt, get a plugin for it. 
+
 
 user ssh config
 ---------------

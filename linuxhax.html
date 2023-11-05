@@ -4,7 +4,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<title>linuxhax.rst</title>
+<title>Linux Hax</title>
 <style type="text/css">
 
 /*
@@ -360,14 +360,12 @@ ul.auto-toc {
 </style>
 </head>
 <body>
-<div class="document">
+<div class="document" id="linux-hax">
+<h1 class="title">Linux Hax</h1>
 
-
-<div class="section" id="linux-hax">
-<h1>Linux Hax</h1>
 <p>This started out as a general unix shell primer/reference page for noobs, inspired by a lot of emails written to help colleagues that were getting used to unix based operating systems. I tried to focus on features and cultural norms that are so fundamental to experienced users that they often dont mention them. I have seen this manifest in stark realities such as people that are unaware of tab-to-complete after an embarrassingly long period of daily linux use. It has widened in scope a little to include brief tutorial on important basic userland tools, and reference notes for myself and other advanced users on things that see helpful but infrequent use.</p>
 <div class="section" id="convention">
-<h2>Convention</h2>
+<h1>Convention</h1>
 <p>This is notation and syntactic commonalities reflected in this document and others like it, not strict syntax but some generally unspoken entrenched cultural features that might confuse unix noobs when they take a look at a man page or a document like this.</p>
 <ul class="simple">
 <li><dl class="first docutils">
@@ -388,7 +386,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="basic-general-unix-shell-commands">
-<h2>Basic general unix shell commands</h2>
+<h1>Basic general unix shell commands</h1>
 <ul class="simple">
 <li><dl class="first docutils">
 <dt><tt class="docutils literal">ls</tt> - list files</dt>
@@ -549,7 +547,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="editors">
-<h2>editors:</h2>
+<h1>editors:</h1>
 <ul class="simple">
 <li><tt class="docutils literal">vi</tt> - the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this</li>
 <li><tt class="docutils literal">vim</tt> - the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter <tt class="docutils literal">i</tt> is insert (normal edit mode), <tt class="docutils literal">v</tt> is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual <tt class="docutils literal">d</tt> is delete, hit it twice to delete a line. visual mode <tt class="docutils literal">d</tt> deletes selection. <tt class="docutils literal">u</tt> is undo. the  <tt class="docutils literal">:</tt> char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. <tt class="docutils literal">:w</tt> is write. <tt class="docutils literal">:wq</tt> is write and quit. <tt class="docutils literal">:q</tt> is quit. <tt class="docutils literal">q!</tt> is quit RTFN with no confirmation. <tt class="docutils literal">:r &lt;file&gt;</tt> is read(a file and output it at current cursor position). <tt class="docutils literal">:read !&lt;commands&gt;</tt> does the same for a shell command <tt class="docutils literal">! &lt;cmd&gt;</tt> opens the shell and hides the editor, returning when you exit</li>
@@ -563,7 +561,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="system-things-debian-based-mint-ubuntu">
-<h2>system things(debian based mint/ubuntu):</h2>
+<h1>system things(debian based mint/ubuntu):</h1>
 <ul class="simple">
 <li><tt class="docutils literal">sudo</tt> - run following command as root (admin)</li>
 <li><tt class="docutils literal">su</tt> - set user, defaults to root. can specify shell with -s</li>
@@ -589,7 +587,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="shells">
-<h2>shells:</h2>
+<h1>shells:</h1>
 <ul class="simple">
 <li><tt class="docutils literal">bash</tt> - common, youre prob on it. &quot;bourne again shell&quot; whatever that means</li>
 <li><tt class="docutils literal">csh</tt> - different, advanced too - C shell</li>
@@ -599,7 +597,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="env-vars">
-<h2>env vars:</h2>
+<h1>env vars:</h1>
 <p>The shell has a namespace of variables called environment variables. many settings for the shell and for other programs you run are set by these variables. These settings tend to be preferences and other things that tend to be seldom changed by the same user in the same machine. Or for situations where the command line syntax used at call cant be changed for one reason or another.</p>
 <p>type <tt class="docutils literal">env</tt> to see them all. <tt class="docutils literal">echo $VAR</tt> to see VAR. <tt class="docutils literal">export VAR=sgfsgs</tt> to set VAR to sgfsgs for your session. setting <tt class="docutils literal">VAR=5 someprogram</tt>, will modify VAR in the context of that single line running someprogram.</p>
 <p>shell vars in general have a <tt class="docutils literal">$</tt> infront of them when you access them, but not when you set them.</p>
@@ -622,7 +620,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="strange-obscure-barely-useful">
-<h2>strange obscure barely useful:</h2>
+<h1>strange obscure barely useful:</h1>
 <ul class="simple">
 <li><tt class="docutils literal">motd</tt> - message of the day, displayed on login, not all systems have this command, its old school, but having an MOTD is not a dead art.</li>
 <li><tt class="docutils literal">links</tt> - text only browser</li>
@@ -633,7 +631,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="graphical-featureful">
-<h2>graphical, featureful</h2>
+<h1>graphical, featureful</h1>
 <ul class="simple">
 <li><tt class="docutils literal">xterm</tt> - old school bare bones terminal emulator for x11</li>
 <li>xorg/x11 - always started by scripts, but it is the name of the service that runs the GUI in linux generally. x1 was the old name xorg is the new one. there are forks...</li>
@@ -649,7 +647,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="crypto">
-<h2>crypto</h2>
+<h1>crypto</h1>
 <ul class="simple">
 <li><tt class="docutils literal">gnupg</tt> - <tt class="docutils literal">gpg</tt> a gnu implementation of pgp aka 'pretty good privacy' the first common userland well adopted implementation of modern cryptographic protection, mainly for emails and the like. has rsa and the like, MAC methods and all that.  as per gnu naming conventions, its name is a goofy acronym based pun of sorts.</li>
 <li><tt class="docutils literal">cryptsetup</tt> - setup luks volumes. rtfm on it</li>
@@ -660,7 +658,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="network-hax">
-<h2>network &amp; hax</h2>
+<h1>network &amp; hax</h1>
 <ul class="simple">
 <li><tt class="docutils literal">nmap</tt> - port scanner highly advanced, many modes and options</li>
 <li><tt class="docutils literal">masscan</tt> - speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information</li>
@@ -694,7 +692,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="services">
-<h2>services</h2>
+<h1>services</h1>
 <p>these are the names used if you were to <tt class="docutils literal">service &lt;name&gt; &lt;start|stop|status&gt;</tt> services are started stopped etc by scripts which are used by systemd and this command or in general your setup might use a different service manager, which will be similar. This is because some services need a sequence of commands and checks etc before starting or stopping safely.</p>
 <ul class="simple">
 <li><tt class="docutils literal">fail2ban</tt> - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularized to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actions abd expire. all bans are cleared on restart by default.</li>
@@ -704,7 +702,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="ssh-stuff">
-<h2>SSH STUFF</h2>
+<h1>SSH STUFF</h1>
 <ul class="simple">
 <li><tt class="docutils literal">ssh <span class="pre">&lt;user&gt;&#64;&lt;remotehost&gt;</span></tt> - secure shell, replaced telnet when people realised doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel</li>
 <li><tt class="docutils literal"><span class="pre">ssh-keygen</span></tt> - generates keypairs for ssh auth
@@ -724,7 +722,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="operators-in-shell-bash">
-<h2>operators in shell(bash)</h2>
+<h1>operators in shell(bash)</h1>
 <ul class="simple">
 <li><dl class="first docutils">
 <dt><tt class="docutils literal">|</tt> pipe, puts stdout into stdin like <tt class="docutils literal">ps aux|grep &lt;word&gt;</tt> looks for <tt class="docutils literal">&lt;word&gt;</tt> in output of <tt class="docutils literal">ps aux</tt> (list of running processes for all users)</dt>
@@ -755,7 +753,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="patrician-word-processing">
-<h2>patrician word processing</h2>
+<h1>patrician word processing</h1>
 <p>latex, reStructured text, markdown, are hypertext formats that compile into more visually aestetic document formats using various interpreters and compilers. This allows large documents to be written collaboratively under version control in git, and allows formatting to be decided after-the-fact, as well as other kinds of portability. Things like page size, fitment, numbering, reference style, file format, etc are determined by how they are compiled and options supplied at that time. docs for a project can be written in the same repo as the code and compiled into monographic pdfs, text formats, websites, books, powerpoint slides, etc. all from the same source, maintaining formatting and style automatically as determined by config files also kept in the repo. TeX is the most complex while markdown and rst are made to be easy on the eyes as sourcecode. all of them support the same format for math equations, which originally came from TeX and has been incorporated into wiki, notion, MS office, and basically every other document related software.</p>
 <ul class="simple">
 <li><tt class="docutils literal">latex</tt> - compiles to dvi, pics gotta be eps(a vector format)</li>
@@ -774,7 +772,7 @@ ul.auto-toc {
 </ul>
 </div>
 <div class="section" id="root-filesystem-synopsis">
-<h2>root filesystem synopsis</h2>
+<h1>root filesystem synopsis</h1>
 <blockquote>
 Int the past many of these were separate partitions, hence some of the seemingly redundant things. Now this is not as important with solid state drives and (i supposed) more modern file systems</blockquote>
 <ul class="simple">
@@ -797,7 +795,7 @@ Int the past many of these were separate partitions, hence some of the seemingly
 </ul>
 </div>
 <div class="section" id="notable-filesystem-objects-global">
-<h2>notable filesystem objects, global</h2>
+<h1>notable filesystem objects, global</h1>
 <ul class="simple">
 <li><tt class="docutils literal">/proc/cpuinfo</tt> - cpu core info, pretty great</li>
 <li><tt class="docutils literal">/dev/random</tt> - random data from hardware. cat this and u get a dump of real physical entropy</li>
@@ -812,7 +810,7 @@ Int the past many of these were separate partitions, hence some of the seemingly
 </ul>
 </div>
 <div class="section" id="notable-filesystem-objects-user">
-<h2>notable filesystem objects, user</h2>
+<h1>notable filesystem objects, user</h1>
 <ul class="simple">
 <li><tt class="docutils literal">~</tt> - alias to your homefolder <tt class="docutils literal"><span class="pre">/home/&lt;username&gt;</span></tt> also available as <tt class="docutils literal">$HOME</tt></li>
 <li><tt class="docutils literal"><span class="pre">~/.ssh/authorized_keys</span></tt> - put in a copy of someones id_rsa.pub file as a line, and it allows anyone with the corresponding private key to log into said account to whom <tt class="docutils literal">~</tt> belongs.</li>
@@ -825,27 +823,39 @@ Int the past many of these were separate partitions, hence some of the seemingly
 <li><tt class="docutils literal"><span class="pre">~/.config/</span></tt> - it is now considered best practice for packages to put their user config files in here rather than randomly as a hidden file or folder in ~</li>
 </ul>
 </div>
-</div>
 <div class="section" id="vim">
 <h1>vim</h1>
-<p>the interface style is called &quot;a modal editor&quot; this refers to the central characteristic of the user experience revolving around various &quot;modes&quot; that are specialized for different purposes. The main ones are <em>default</em>, <em>INSERT</em>, <em>VISUAL</em>. the first is the one you are in when you open it, and is good for moving around, viewing, etc. the second, <em>INSERT</em>, is the one you are using when you are editing, &quot;like a normal editor&quot;, the third <em>VISUAL</em>, you enter by pressing v in default, and is good for selecting text characterwise and linewise to isolate operations to (delete blocks of text, copy paste, search replace on just selection).</p>
+<p>vi/vim is offensively confusing to everyone who opens it the first time. The interface style is said to be &quot;modal&quot; this refers to the central characteristic of the user experience revolving around various &quot;modes&quot; that are specialized for different purposes. The main ones are <em>default</em>, <em>INSERT</em>, <em>VISUAL</em>. the first is the one you are in when you open it, and is good for moving around, viewing, etc. the second, <em>INSERT</em>, is the one you are using when you are editing, &quot;like a normal editor&quot;, the third <em>VISUAL</em>, you enter by pressing v in default, and is good for selecting text characterwise and linewise to isolate operations to (delete blocks of text, copy paste, search replace on just selection).</p>
 <ul class="simple">
 <li><tt class="docutils literal">i</tt> - enter insert mode</li>
 <li><tt class="docutils literal">v</tt> - enter visual mode</li>
 <li><tt class="docutils literal">[esc]</tt> - enter normal/default mode</li>
 <li><tt class="docutils literal">:w &lt;file&gt;</tt> - write, optionally to alternate file</li>
 <li><tt class="docutils literal">:r &lt;file&gt;</tt> - read file into buffer you are editing</li>
-<li><tt class="docutils literal">:r! &lt;command&gt;</tt> - spit output of command into buffer you are editing</li>
+<li><tt class="docutils literal">:r! &lt;command&gt;</tt> - spit output of shell command into buffer you are editing</li>
+<li><tt class="docutils literal">:w</tt> - write</li>
 <li><tt class="docutils literal">:wq</tt> - write and quit</li>
 <li><tt class="docutils literal">:q!</tt> - quit right now and dont ask about saving</li>
-<li><tt class="docutils literal">d</tt> - delete, <tt class="docutils literal">dd</tt> deletes line, many other subcommands/variations <tt class="docutils literal">di(</tt> deletes inside the parenthese you are in, works with every kind.</li>
-<li><tt class="docutils literal">y</tt> - &quot;yank&quot; copy to vim clipboard(not the system one) works the same as <tt class="docutils literal">d</tt> which is not delete but more accurately a cut command</li>
+<li><tt class="docutils literal">y</tt> - &quot;yank&quot; copy to vim clipboard(not the system one) works the same as <tt class="docutils literal">d</tt> which is not delete but more accurately a cut command, hit it twice and it deletes the line you are on, hit it once then <tt class="docutils literal">[downarrow]</tt> or <tt class="docutils literal">[uparrow]</tt> and it does two lines, the current one and the one below or above.</li>
+<li><tt class="docutils literal">d</tt> - delete, <tt class="docutils literal">dd</tt> deletes line, many other subcommands/variations <tt class="docutils literal">di(</tt> deletes inside the parenthese you are in, works with every kind. same as <tt class="docutils literal">y</tt> above</li>
 <li><tt class="docutils literal">p</tt> - paste things from the vim buffer(s) you filled with the above two commands</li>
-<li><tt class="docutils literal">:help &lt;command&gt;</tt> - get the help</li>
-<li><tt class="docutils literal">=</tt> - format, default code formatter, for C code i think</li>
+<li><tt class="docutils literal">:help &lt;command&gt;</tt> - get the help. its very good. it never fails. works for anything, internal env vars, etc. anything in the name space</li>
+<li><tt class="docutils literal">=</tt> - format, default code formatter, for C code i think. for visual mode</li>
+<li><tt class="docutils literal"><span class="pre">:[%]s/regex/replace/[g]</span></tt> - does a regex on the line you are on, or what you have selected in visual mode. put in the <tt class="docutils literal">%</tt> and it does it on every line. put in the <tt class="docutils literal">[g]</tt> and it does it to every instance on every line. <tt class="docutils literal"><span class="pre">\(.*\)</span></tt> is the group match marker and its accessed in the replace expression as $``1``$, replace <tt class="docutils literal">.*</tt> with any expression</li>
+<li><tt class="docutils literal">&amp;</tt> - repeats the last regex replace on current line once, to first occurance from left</li>
 </ul>
+<div class="section" id="vim-plugins">
+<h2>vim: plugins</h2>
+<ul class="simple">
+<li><tt class="docutils literal">supertab</tt> - this is a plugin that allows for easier access and tighter control of the native text completion facilities in vim.</li>
+<li>code formatter. whichever you use, there will be a vim plugin acting as an adapter to make it available in vim.</li>
+<li><tt class="docutils literal"><span class="pre">easy-align</span></tt> - sort of useful tool for easy vertical alignment of blocks of text(such as variable declarations or ascii tabular formats) along various delimiters etc</li>
+<li>code highlighting, same deal aa the formatter, only it has many built in, if it doesnt, get a plugin for it.</li>
+</ul>
+</div>
+</div>
 <div class="section" id="user-ssh-config">
-<h2>user ssh config</h2>
+<h1>user ssh config</h1>
 <p><tt class="docutils literal"><span class="pre">~/.ssh/config</span></tt> This is an import config file, sometimes it is absolutely necessarry if you are using scp and other ssh based utilities like git that sometimes do not have the ability to take the more advanced arguments you may need to give them, in the case of having multile users at the same host with multiple keys and things like this. see <tt class="docutils literal">man ssh_config</tt></p>
 <pre class="doctest-block">
 &gt;&gt;&gt;
@@ -858,7 +868,7 @@ Host bob
 <p>this enables you to simply <tt class="docutils literal">ssh bob</tt>, and tab to complete works on this alias for te host. <tt class="docutils literal">HostName</tt> is a misleading label, as it is the actual network address, dns or ip, and the aliasd you are giving it which will follow this setup every time is the first line in each entry <tt class="docutils literal">Host</tt>. these aliases carry over to git commands and scp, etc</p>
 </div>
 <div class="section" id="host-a-git-barebones">
-<h2>host a git, barebones</h2>
+<h1>host a git, barebones</h1>
 <p>simple and dirty instructions
 always use passwordless SSH for this
 make git user on server. NO PASSWORD ON IT. no way to log in with password, furthermore, use git-shell
@@ -878,7 +888,7 @@ git config receive.denyCurrentBranch ignore #lets you push to bare repo
 <p>pull requests are a social media feature tied to the web interface and dont really exist in this setting. the command line utility will generate one, which is actually a diff format to sumarize changes between branches. opriginally meant to be emailed to the guy who controls the origin.</p>
 </div>
 <div class="section" id="git-client-side">
-<h2>git client side</h2>
+<h1>git client side</h1>
 <p>process of creating branch and merge:</p>
 <pre class="doctest-block">
 &gt;&gt;&gt;
@@ -903,7 +913,7 @@ git branch -d mybranchname #delete the branch that you merged in, keep it from c
 but remember to push after you merge, push and pull and clone are remote commands. commit, checkout, merge, etc, are local manipulation and interfacing with the underlying repo data structure that is entirely local, and entirely what git actually contributes as a software(version control). network communications with the remote are done with ssh or other protocols separate from git.  Git is useful without a remote, just to track progress and allow you to undo things if you mess up your code. noobs and people in the past that didnt have version control used to keep many copies of their code. This is inefficient and dangerous and sloppy. Cause of many tears, and something I am sure the suicide hotline operators are quite familiar with.</p>
 </div>
 <div class="section" id="docker">
-<h2>docker</h2>
+<h1>docker</h1>
 <p>docker is super helpful, especially if youre a noob. It allows you to do things as root but not destroy your baremetal system.</p>
 <p>It was originally to make back end services scaleable, reproducible, and sandboxed while avoiding the use of a VM. apps in docker run on your kernel but network and disk is sandboxed and communicates through whatever avenues you specify(shared folders and port forwards). you can run things in docker seamlessly, including graphical interfaces. its a good way to silo sketchy ass commercial spyware-riddled-packages. good way to keep reproducible devleopment environments to remove variation between peoples systems on a dev team. it has a built in management system for images shared by project teams and the community.</p>
 <p>if you dont use it youre basically failing at life. It is not something that requires a ton of knowledge or practice to benefit from. It is not only for enterprise sysadmin operations, either.</p>
@@ -933,7 +943,7 @@ CMD &lt;command&gt; #whatever you put in for &lt;command&gt; will be the default
 </ul>
 </div>
 <div class="section" id="dont">
-<h2>DONT</h2>
+<h1>DONT</h1>
 <ul class="simple">
 <li><em>DONT</em> store data in a docker container. you store that in volumes or shared/mounted directories on host filesystem</li>
 <li><em>DONT</em> try to keep persistent systems in docker, it is better to always <tt class="docutils literal">docker run <span class="pre">--rm</span></tt> to auto remove the container when you are done, and any changes that were needed should go to the Dockerfile. any config files and things should be in shared directories, safely stored on the host. containers should always be reproducible by automated build process defined in the Dockerfile</li>
@@ -942,7 +952,6 @@ CMD &lt;command&gt; #whatever you put in for &lt;command&gt; will be the default
 <li><em>DONT</em> forget <tt class="docutils literal">DEBIAN_FRONTEND=noninteractive <span class="pre">apt-get</span> <span class="pre">-y</span> &lt;pkgs&gt;</tt></li>
 <li>to make small containers, you build your binaries and things in one container then copy to a smaller one without all the tools. There are specialized base containers for these two roles</li>
 </ul>
-</div>
 </div>
 </div>
 </body>
