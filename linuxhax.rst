@@ -1,19 +1,20 @@
 Linux Hax
 +++++++++
-This started out as a general unix shell primer/reference page for noobs, inspired by a lot of emails written to help collegues that were getting used to unix based operating systems. I tried to focus on features and cultural norms that are so fundamental to experienced users that they often dont mention them. I have seen this manifest in stark realities such as people that are unaware of tab-to-complete after an embarassingly long period of daily linux use. It has widened in scope a little to include brief tutorial on important basic userland tools, and reference notes for myself and other advanced users on things that see helpful but infrequent use.
+This started out as a general unix shell primer/reference page for noobs, inspired by a lot of emails written to help colleagues that were getting used to unix based operating systems. I tried to focus on features and cultural norms that are so fundamental to experienced users that they often dont mention them. I have seen this manifest in stark realities such as people that are unaware of tab-to-complete after an embarrassingly long period of daily linux use. It has widened in scope a little to include brief tutorial on important basic userland tools, and reference notes for myself and other advanced users on things that see helpful but infrequent use.
 
 Convention
 ==========
 This is notation and syntactic commonalities reflected in this document and others like it, not strict syntax but some generally unspoken entrenched cultural features that might confuse unix noobs when they take a look at a man page or a document like this.
 
-- ``<x>`` - a common notation for unspecified parameters in unix man pages and such is surrounding a name or description of a quantity or string with the ``<`` and ``>``.  es: ``ls <folder>`` 
-- ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available. This is however, a feature of the package itself and only ubiquitious due to cultural convention and voluntary adherence thereof. 
-- ``<cmd> --arg-name -a <VAL1> --arg2 <VAL2>`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words. This is also cultural convention, command line args can be anything and are tokenized on whitespace. flag options like ``-a -b`` are generally commutative(order doesnt matter) and can be grouped. so ``-ab`` and ``-ba`` and ``-b -a`` would all be the same to the former. argument values (denoted ``<VAL`>`` and ``<VAL2>`` above, are not commutative and sometimes option flags are grouped with argument values so they are only commutative within that block rather than on the whole line.  
-- RTFM - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages... (you know who you are)
-- ``[expression]`` - same as ``<expression>`` described above, this is common in man pages
-    -``[expression] ...`` - entire ``[expression]`` is repeatable
+- ``[expression]`` - same as ``<expression>`` described above, this is more common in man pages
+    - ``[expression]...`` - entire ``[expression]`` is repeatable. Many commands can take an unbounded list of args, ex: ``ls [file]...``  refers to the fact that ``ls file1 file2 file3 ...`` is valid syntax
+- ``<x>`` - a common notation for unspecified commands/parameters in unix man pages and such is surrounding a name or description of a quantity or string with the ``<`` and ``>``.  es: ``ls <folder>`` 
 - ``[ctrl]-x`` - hold control and x both for a moment, ``x-y z`` hold x and y for a moment, release both, hit z
 - ``[BUTTON]``  - hit a button labeled BUTTON on your keyboard
+- ``<cmd> --arg-name -a <VAL1> --arg2 <VAL2>`` - it is very common for single character args to use a single ``-`` and multi-char to use two like ``--arg``, and use another ``-`` to separate words. This is also cultural convention, command line args can be anything and are tokenized on whitespace. flag options like ``-a -b`` are generally commutative(order doesnt matter) and can be grouped. so ``-ab`` and ``-ba`` and ``-b -a`` would all be the same to the former. argument values (denoted ``<VAL`>`` and ``<VAL2>`` above, are not commutative and sometimes option flags are grouped with argument values so they are only commutative within that block rather than on the whole line.  
+- ``<cmd> --help`` - common, quite standard, basically all modern command line utils have this arg to give you a refresh on the syntax, args available. This is however, a feature of the package itself and only ubiquitous due to cultural convention and voluntary adherence thereof. often ``-h`` is equivalent
+- ``RTFM`` - means read the fucking manual IE check ``man``, common use context is in a response to someone who wants to be spoon fed like a baby and cant read his own error messages... (you know who you are)
+- **middle button copypaste** - unix machines use 3 button mice and the middle button takes whatever text you have highlighted and pastes it to your text cursor/carat location. It does not use your regular copy paste buffer that modern interfaces use for ``ctrl-c`` and mouse-right-click-menu copypaste. This is pre-GUI feature and works in terminals. Modern mice have a scroll wheel which made the 3 buttons ubiquitous, but before that, it would be emulated by simultaneous actuation of both buttons in the case of a two button mouse. Some editors paste the text out to the location of the mouse pointer rather than the carat. 
 
 
 Basic general unix shell commands
@@ -133,7 +134,7 @@ editors:
 - ``vi`` - the old version of vim. it sucks. if u have a new install and type vi this is what is usually there. it makes people hate vim. dont use it. install vim and it will clobber the path to this 
 - ``vim`` - the new version of vi, if installed will alias as vi overriding above command, for serious people only. perfect for people that hate their mouse. extensible to the point of absurdity. it is a modal editor, meaning it has modes of interaction with the file. hit escape to dissasociate from a mode, hit a letter to change to that mode. in this case the letter ``i`` is insert (normal edit mode), ``v`` is visual(select and delete copy and stuff large blocks to text). in the default mode and in visual ``d`` is delete, hit it twice to delete a line. visual mode ``d`` deletes selection. ``u`` is undo. the  ``:`` char (yes use shift) lets u type in commands for user defined things and interactions with filesystem. ``:w`` is write. ``:wq`` is write and quit. ``:q`` is quit. ``q!`` is quit RTFN with no confirmation. ``:r <file>`` is read(a file and output it at current cursor position). ``:read !<commands>`` does the same for a shell command ``! <cmd>`` opens the shell and hides the editor, returning when you exit 
 - ``elvis`` - this is another editor, a better version of vi, lighter than vim(if i remember correctly)
-- ``neovim`` - a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, aparently feature-rich and more efficient cleaner codebase as it was written more recently
+- ``nvim`` - neovim, a new and cooler vim that people who think theyre cool use. also has qt graphical neovim-qt, apparently feature-rich with a more informed design architecture and cleaner codebase as it was written more recently
 - ``pico`` - simple old editor not sure its ever used anymore. 
 - ``nano`` - a fork/copy/something of pico, newer, good for noobs, often used and well respected. commands are on the screen when using it and ctrl-X based. 
 - ``emacs`` - a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it. 
@@ -177,18 +178,13 @@ shells:
 
 env vars:
 =========
+The shell has a namespace of variables called environment variables. many settings for the shell and for other programs you run are set by these variables. These settings tend to be preferences and other things that tend to be seldom changed by the same user in the same machine. Or for situations where the command line syntax used at call cant be changed for one reason or another. 
 
-the shell and other software uses many environment vars
+type ``env`` to see them all. ``echo $VAR`` to see VAR. ``export VAR=sgfsgs`` to set VAR to sgfsgs for your session. setting ``VAR=5 someprogram``, will modify VAR in the context of that single line running someprogram.
 
-these give background information about your system and things to software that needs it
+shell vars in general have a ``$`` infront of them when you access them, but not when you set them.
 
-this information is stored here because it doesnt need to be changed often, but always needs to be specified
-
-type ``env`` to see them all. echo $VAR to see VAR. ``export VAR=sgfsgs`` to set VAR to sgfsgs for your session. setting ``VAR=5 someprogram``, will modify VAR for that single line running someprogram. 
-
-shell  vars in general have a $ infront of them when yolu access them. but not when you set them
-
-- ``$PATH`` - path to binarys, default is /bin /usr/bin /usr/local/bin  etc
+- ``$PATH`` - path to binaries, default is /bin /usr/bin /usr/local/bin  etc
 - ``$DISPLAY`` - x11/xorg display, typically :0. machines can have multiple displays, like all unix things, its multiuser
 - ``$PYTHONPATH`` - where python looks for modules
 - ``$USER, $HOME``, - username and home directory path
@@ -196,6 +192,8 @@ shell  vars in general have a $ infront of them when yolu access them. but not w
 - ``$EDITOR`` - default editor, adults set to ``vim`` kids set to ``nano`` . read by system utils like apt and other things that launch an editor from time to time
 - ``$_`` - last arg from previous shell command run
 - ``$?`` - exit value/signal from prev command (0 if success which you manually throw in scripts with ``exit 0``
+- ``$([expression])`` - treats output of [expression] as if it were a variable(rather than literal)
+- ``$(!!)`` - previous command's output(command is re-run)
 - ``alias`` - it is a command that tells the shell to make a macro for other commands, generally default bashrc will have some use of it and generally anything you want to do like this is done better with a function def 
 - ``env`` shows your env
 - ``export`` - declare env var for remainder of session until u close this shell 
@@ -276,14 +274,14 @@ services
 ========
 these are the names used if you were to ``service <name> <start|stop|status>`` services are started stopped etc by scripts which are used by systemd and this command or in general your setup might use a different service manager, which will be similar. This is because some services need a sequence of commands and checks etc before starting or stopping safely. 
 
-- ``fail2ban`` - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularied to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actiobs abd expire. all bans are cleared on restart by default.  
+- ``fail2ban`` - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularized to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actions abd expire. all bans are cleared on restart by default.  
 - ``nginx`` - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.  
 - ``snort`` - network util for traffic capture and parsing, logging. can be run in the background as a system service to construct intrusion detection functionality, or used like ngrep
 - ``psql`` - best database  
 
 SSH STUFF
 =========
-- ``ssh <user>@<remotehost>`` - secure shell, replaced telnet when people realizsed doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel
+- ``ssh <user>@<remotehost>`` - secure shell, replaced telnet when people realised doing password based auth and all your work over cleartext in telnet was retarded and more dangerous than working in a liberian brothel
 - ``ssh-keygen`` - generates keypairs for ssh auth
   - ``ssh-keygen -lf .ssh/id_rsa -E sha256`` - generate fingerprint of key
   - ``ssh-keygen -t ed25519-sk -O resident -O application=ssh:<description> -f ~/.ssh/id_ed_sk`` - generate key on fido2 token as resident on key, type can alternatively be ``ecdsa-sk``, omitting ``-O resident`` makes a key that requires the fido token but is not stored on it. not discoverable from the key. ``-O verify-required`` or ``-O no-touch-required`` control the physical prescene requirements(touching the key)
