@@ -396,9 +396,9 @@ notable filesystem objects, user
 
 
 vim 
-===
+---
 
-the interface style is called "a modal editor" this refers to the central characteristic of the user experience revolving around various "modes" that are specialized for different purposes. The main ones are *default*, *INSERT*, *VISUAL*. the first is the one you are in when you open it, and is good for moving around, viewing, etc. the second, *INSERT*, is the one you are using when you are editing, "like a normal editor", the third *VISUAL*, you enter by pressing v in default, and is good for selecting text characterwise and linewise to isolate operations to (delete blocks of text, copy paste, search replace on just selection). 
+vi/vim is offensively confusing to everyone who opens it the first time. The interface style is said to be "modal" this refers to the central characteristic of the user experience revolving around various "modes" that are specialized for different purposes. The main ones are *default*, *INSERT*, *VISUAL*. the first is the one you are in when you open it, and is good for moving around, viewing, etc. the second, *INSERT*, is the one you are using when you are editing, "like a normal editor", the third *VISUAL*, you enter by pressing v in default, and is good for selecting text characterwise and linewise to isolate operations to (delete blocks of text, copy paste, search replace on just selection). 
 
 
 - ``i`` - enter insert mode
@@ -406,14 +406,17 @@ the interface style is called "a modal editor" this refers to the central charac
 - ``[esc]`` - enter normal/default mode
 - ``:w <file>`` - write, optionally to alternate file
 - ``:r <file>`` - read file into buffer you are editing
-- ``:r! <command>`` - spit output of command into buffer you are editing
+- ``:r! <command>`` - spit output of shell command into buffer you are editing
+- ``:w`` - write
 - ``:wq`` - write and quit
 - ``:q!`` - quit right now and dont ask about saving
-- ``d`` - delete, ``dd`` deletes line, many other subcommands/variations ``di(`` deletes inside the parenthese you are in, works with every kind. 
-- ``y`` - "yank" copy to vim clipboard(not the system one) works the same as ``d`` which is not delete but more accurately a cut command
+- ``y`` - "yank" copy to vim clipboard(not the system one) works the same as ``d`` which is not delete but more accurately a cut command, hit it twice and it deletes the line you are on, hit it once then ``[downarrow]`` or ``[uparrow]`` and it does two lines, the current one and the one below or above. 
+- ``d`` - delete, ``dd`` deletes line, many other subcommands/variations ``di(`` deletes inside the parenthese you are in, works with every kind. same as ``y`` above
 - ``p`` - paste things from the vim buffer(s) you filled with the above two commands
 - ``:help <command>`` - get the help
-- ``=`` - format, default code formatter, for C code i think
+- ``=`` - format, default code formatter, for C code i think. for visual mode
+- ``:[%]s/regex/replace/[g]`` - does a regex on the line you are on, or what you have selected in visual mode. put in the ``%`` and it does it on every line. put in the ``[g]`` and it does it to every instance on every line. ``\\(.*\\)`` is the group match marker and its accessed in the replace expression as $\\1$
+- ``&`` - repeats the last regex replace on current line once, to first occurance from left
 
 user ssh config
 ---------------
