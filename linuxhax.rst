@@ -139,11 +139,12 @@ editors:
 - ``nano`` - a fork/copy/something of pico, newer, good for noobs, often used and well respected. commands are on the screen when using it and ctrl-X based. 
 - ``emacs`` - a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it. 
 - ``ed`` - the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use. 
-- ``gedit`` - simple grpahical editor, good, basically notepad with syntax highlighting. 
+- ``gedit`` - simple graphical editor, good for anyone, basically notepad with syntax highlighting. 
 
 
-system things(debian based mint/ubuntu):
-----------------------------------------
+system things(debian oriented):
+-------------------------------
+
 - ``sudo`` - run following command as root (admin)
 - ``su`` - set user, defaults to root. can specify shell with -s
 - ``service`` - control a service's ephemeral state and status check. service <name of it> <start, stop, restart, reload>   ex: sudo service postgresql restart
@@ -151,9 +152,9 @@ system things(debian based mint/ubuntu):
 - ``hostname`` - prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary
 - ``adduser`` -``adduser <newusername>`` makes a new user. many options. none are really required, even a password. interactive walk through
 - ``useradd`` - more l33t version of ``adduser``. more useful noninteractively and non-user-friendly 
-- ``usermod`` - mod shell and stuff of a givemn user usermod -aG common for adding group
+- ``usermod`` - mod shell and stuff of a givemn user ``usermod -aG <group> <user>`` common for adding group
 - ``passwd`` - password change, ``passwd <user>`` does it for user when u are admin
-- ``dd`` - writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem
+- ``dd`` - writes raw data. ``dd if=indevice of=outdevice bs=1M`` , ``if`` is a filesystem object to be read(can be raw image file or ``/dev/<block device>``, ``of`` is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like ``dd if=linux.iso of=/dev/sdc bs=4M``. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem
 - ``chsh``- change the shell for a user
 - ``chgroup``- change group of file... group ownership 
 - ``chmod``- change permissions of file chmod 777 file makes everyone read write ex it, chmod 666 is read write for all.... chmod 600 is another common one ls -al will show the perms
@@ -169,15 +170,17 @@ system things(debian based mint/ubuntu):
 
 shells:
 -------
+
 - ``bash`` - common, youre prob on it. "bourne again shell" whatever that means
 - ``csh`` - different, advanced too - C shell
 - ``tcsh`` - mac uses it? freebsd? its good too
 - ``zsh`` - another shell that some nerds are all about, like the previous 2
 - ``sh`` - the most simple bare bones one used when there is nothing else in some broke-ass embedded system or something, no tab to complete, no features, you run it because its always there on every system, common hack entrypoint to spawn a shell in a priv upgrade or somesort of remote code exe sploit
-
+- ``git-shell`` - restrictive shell for the git user when hosting a git repo. prevents logins but can make scripts available for interactive session over ssh. 
 
 env vars:
 ---------
+
 The shell has a namespace of variables called environment variables. many settings for the shell and for other programs you run are set by these variables. These settings tend to be preferences and other things that tend to be seldom changed by the same user in the same machine. Or for situations where the command line syntax used at call cant be changed for one reason or another. 
 
 type ``env`` to see them all. ``echo $VAR`` to see VAR. ``export VAR=sgfsgs`` to set VAR to sgfsgs for your session. setting ``VAR=5 someprogram``, will modify VAR in the context of that single line running someprogram.
@@ -241,26 +244,26 @@ network & hax
 
 - ``nmap`` - port scanner highly advanced, many modes and options
 - ``masscan`` - speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information
-- ``nc`` - previously merntioned, netcat, raw conns ``nc <host> <port>`` does tcp conn. ``-u`` arg does udp and ``-l`` is listen
+- ``nc`` - previously mentioned, netcat, raw conns ``nc <host> <port>`` does tcp conn. ``-u`` arg does udp and ``-l`` is listen
 - ``ettercap`` - manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack. it is bad to the bone, it is a cyberweapon
-- ``wireshark`` - watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon
-- ``ngrep`` - network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for
-- ``tcpdump`` - captures and dumps packets, dump files can be reloaded, minor dissection available with some calssification, can load the dumps up with anything
-- ``ifconfig`` - old network interface config command line utility. windows ipconfig is the ripoff version with a weird name
+- ``wireshark`` - watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should a korean children's cartoon
+- ``ngrep`` - network grep, just reads packets going by your box and spits that out to stdout if it matches what you're looking for
+- ``tcpdump`` - captures and dumps packets, dump files can be reloaded, minor dissection available with some classification, can load the dumps up with anything
+- ``ifconfig`` - old network interface config command line utility. windows ipconfig is a ripoff of it. it is in apt package net-tools  
 - ``ip`` - the newer, 'better' network interface and routing table configuration tool
-- ``route`` - orouting table edit and explore
+- ``route`` - routing table edit and explore
 - ``httping`` - sends a http packet to a server on default prot of 80, gives response time
 - ``ping`` - normal old school icmp ping. not waht it used to be
-- ``telnet`` - old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. helpful for testing connections, manual single prot probing like tenet <host> 80 to connect to port 80 on <host>
+- ``telnet`` - old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. can be helpful to manually probe a port and see the header or whatnot ``telnet <host> 80`` to connect to port 80 on <host>
 - ``nslookup`` - look up an ip or hostname in DNS
-- ``john`` - old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-vivisection enthusiast)
+- ``john`` - old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(which must be in honor of the famous hooker-vivisection enthusiast, jack)
 - ``whois`` - information on domain ownership, reverse look up of IP addresses. just an entry from a database about the owner and registrar stuff for IPs and domains. 
-- ``traceroute`` - old school packet routing trace, not sure if it really works the same anymore, but shows you the path packets take to a server. seems like maye routers out in the widl drop the packets it uses now often? not sure. dont use it much and its not what it used to be is the word
-- ``arping`` - executes a ping-analogous function using the arp protocol. v nice. 
+- ``traceroute`` - old school packet routing trace. uses icmp by default but works better with an open tcp port which you can set. 
+- ``arping`` - executes a ping-analogous function using the arp protocol. for discovery of hosts in the LAN context
 - ``tsocks`` - wrap any protocol through socks generally config in etc
 - ``httping``- ping a http server. IE, give the response time to a http service 
 - ``aircrack-ng`` - a suite of utilities for security analysis of wifi networks
-- ``iwconfig``-ike ifconfig but with specific features for wifi adapters/driver interfaces. it is old school
+- ``iwconfig``- like ifconfig but with specific features for wifi adapters/driver interfaces. it is old school
 - ``iw`` - same as above but not as old school
 - ``bluetoothctl``- shell style interface to bluetooth hardware. quite good
 - ``yersinia``- a powerful security analysis too that i am not too familiar with, but worth a mention. some kid in vegas looked at me like i was insane for not using it. appears very powerful.
@@ -268,16 +271,20 @@ network & hax
 - ``fido2-token`` - manipulate and probe fido2 auth tokens such as yubikey etc
 - ``opensc-tool`` + ``opensc-explorer`` - cli util and interactive shell interface for smart card interactions a-la iso7816 and iso14443(contact chip and nfc interfaces respectively)
 - ``pcsc_scan`` - report basic diagnostic info on connected smart cards
-
+- ``dsniff`` - minimally parse cleartext protocols and save interesting bits such as passwords. 
+- ``macof`` - flood LAN with fake mac addresses, part of dsniff package
+- ``p0f`` - passive OS fingerprinting. does OS fingerprinting, NAT detection, http header analysis, client and server app detection
 
 services
 --------
-these are the names used if you were to ``service <name> <start|stop|status>`` services are started stopped etc by scripts which are used by systemd and this command or in general your setup might use a different service manager, which will be similar. This is because some services need a sequence of commands and checks etc before starting or stopping safely. 
+
+This is a list of useful, not generally installed by default, services. You control services through the commands ``service`` and ``systemctl``(which can also be used for user-specific serfices) which interface with scripts in /etc/init.d and /etc/systemd. usage is ``service [name] [status|start|stop]`` and ``systemctl [status|start|stop|enable|disable|mask|unmask...] [name]``. mask is a stronger form of disable which links the script to /dev/null to make it impossible to start. Some services have extra commands like reload, to reload settings without a restart.  
 
 - ``fail2ban`` - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularized to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actions abd expire. all bans are cleared on restart by default.  
 - ``nginx`` - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.  
 - ``snort`` - network util for traffic capture and parsing, logging. can be run in the background as a system service to construct intrusion detection functionality, or used like ngrep
-- ``psql`` - best database  
+- ``postgresql`` - best database. most advanced open source dawtabase. powerful for text search. scales. 
+- ``dnscrypt-proxy`` - local proxy that routes dns requests through encrypted dns protocol servers
 
 SSH STUFF
 ---------

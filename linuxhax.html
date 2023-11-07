@@ -557,11 +557,11 @@ ul.auto-toc {
 <li><tt class="docutils literal">nano</tt> - a fork/copy/something of pico, newer, good for noobs, often used and well respected. commands are on the screen when using it and ctrl-X based.</li>
 <li><tt class="docutils literal">emacs</tt> - a complex and extensible editor, bulky for a command line utility. generally serious editor nerds that use stuff in this section use either emacs or vim, and have strong convictions about it.</li>
 <li><tt class="docutils literal">ed</tt> - the simplest editor from extremely long time ago, only used in extreme emergencies. the kind of editor a eunich would use.</li>
-<li><tt class="docutils literal">gedit</tt> - simple grpahical editor, good, basically notepad with syntax highlighting.</li>
+<li><tt class="docutils literal">gedit</tt> - simple graphical editor, good for anyone, basically notepad with syntax highlighting.</li>
 </ul>
 </div>
-<div class="section" id="system-things-debian-based-mint-ubuntu">
-<h1>system things(debian based mint/ubuntu):</h1>
+<div class="section" id="system-things-debian-oriented">
+<h1>system things(debian oriented):</h1>
 <ul class="simple">
 <li><tt class="docutils literal">sudo</tt> - run following command as root (admin)</li>
 <li><tt class="docutils literal">su</tt> - set user, defaults to root. can specify shell with -s</li>
@@ -570,9 +570,9 @@ ul.auto-toc {
 <li><tt class="docutils literal">hostname</tt> - prints hostname, if given arg it will set the hostname to the arg. if u do this, should also manually change /etc/hostname and make sure /etc/hosts refects that change if necessary</li>
 <li><tt class="docutils literal">adduser</tt> -<tt class="docutils literal">adduser &lt;newusername&gt;</tt> makes a new user. many options. none are really required, even a password. interactive walk through</li>
 <li><tt class="docutils literal">useradd</tt> - more l33t version of <tt class="docutils literal">adduser</tt>. more useful noninteractively and non-user-friendly</li>
-<li><tt class="docutils literal">usermod</tt> - mod shell and stuff of a givemn user usermod -aG common for adding group</li>
+<li><tt class="docutils literal">usermod</tt> - mod shell and stuff of a givemn user <tt class="docutils literal">usermod <span class="pre">-aG</span> &lt;group&gt; &lt;user&gt;</tt> common for adding group</li>
 <li><tt class="docutils literal">passwd</tt> - password change, <tt class="docutils literal">passwd &lt;user&gt;</tt> does it for user when u are admin</li>
-<li><tt class="docutils literal">dd</tt> - writes raw data. dd if=indevice of=outdevice bs=1M. if is a filesyste object to be read, of is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like dd if=linux.iso of=/dev/sdc bs=4M. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem</li>
+<li><tt class="docutils literal">dd</tt> - writes raw data. <tt class="docutils literal">dd if=indevice of=outdevice bs=1M</tt> , <tt class="docutils literal">if</tt> is a filesystem object to be read(can be raw image file or <tt class="docutils literal"><span class="pre">/dev/&lt;block</span> device&gt;</tt>, <tt class="docutils literal">of</tt> is the filesystem object to be written and bs is the block size which can be written human readable like 1M 2M 4M and in bytes like 1024(the old way). you use this when wipeing disks with random data. you use it when 'burning' a flash drive with a disk image like <tt class="docutils literal">dd if=linux.iso <span class="pre">of=/dev/sdc</span> bs=4M</tt>. If you mess up with this as root you can easily overwrite your hard drive. do not do it to mounted filesystem</li>
 <li><tt class="docutils literal">chsh</tt>- change the shell for a user</li>
 <li><tt class="docutils literal">chgroup</tt>- change group of file... group ownership</li>
 <li><tt class="docutils literal">chmod</tt>- change permissions of file chmod 777 file makes everyone read write ex it, chmod 666 is read write for all.... chmod 600 is another common one ls -al will show the perms</li>
@@ -594,6 +594,7 @@ ul.auto-toc {
 <li><tt class="docutils literal">tcsh</tt> - mac uses it? freebsd? its good too</li>
 <li><tt class="docutils literal">zsh</tt> - another shell that some nerds are all about, like the previous 2</li>
 <li><tt class="docutils literal">sh</tt> - the most simple bare bones one used when there is nothing else in some broke-ass embedded system or something, no tab to complete, no features, you run it because its always there on every system, common hack entrypoint to spawn a shell in a priv upgrade or somesort of remote code exe sploit</li>
+<li><tt class="docutils literal"><span class="pre">git-shell</span></tt> - restrictive shell for the git user when hosting a git repo. prevents logins but can make scripts available for interactive session over ssh.</li>
 </ul>
 </div>
 <div class="section" id="env-vars">
@@ -662,26 +663,26 @@ ul.auto-toc {
 <ul class="simple">
 <li><tt class="docutils literal">nmap</tt> - port scanner highly advanced, many modes and options</li>
 <li><tt class="docutils literal">masscan</tt> - speed optimized port scanner for large volume scanning, target acquisition. usually preceeds  the use of nmap whcih yields more detailed information</li>
-<li><tt class="docutils literal">nc</tt> - previously merntioned, netcat, raw conns <tt class="docutils literal">nc &lt;host&gt; &lt;port&gt;</tt> does tcp conn. <tt class="docutils literal"><span class="pre">-u</span></tt> arg does udp and <tt class="docutils literal"><span class="pre">-l</span></tt> is listen</li>
+<li><tt class="docutils literal">nc</tt> - previously mentioned, netcat, raw conns <tt class="docutils literal">nc &lt;host&gt; &lt;port&gt;</tt> does tcp conn. <tt class="docutils literal"><span class="pre">-u</span></tt> arg does udp and <tt class="docutils literal"><span class="pre">-l</span></tt> is listen</li>
 <li><tt class="docutils literal">ettercap</tt> - manipulation of ARP, DNS, other protocols, generally for the purpose of man in the middle attack. it is bad to the bone, it is a cyberweapon</li>
-<li><tt class="docutils literal">wireshark</tt> - watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should be the name of a chinese electrician tool or a korean children's cartoon</li>
-<li><tt class="docutils literal">ngrep</tt> - network grep, just reads packets going by your box and spits that out to stdout if it matches what ur looking for</li>
-<li><tt class="docutils literal">tcpdump</tt> - captures and dumps packets, dump files can be reloaded, minor dissection available with some calssification, can load the dumps up with anything</li>
-<li><tt class="docutils literal">ifconfig</tt> - old network interface config command line utility. windows ipconfig is the ripoff version with a weird name</li>
+<li><tt class="docutils literal">wireshark</tt> - watch network packets go by. need to change group to work properly. can run as root and always works that way, but not recomended. used to be called ethereal - the new name sucks. still hate them for it. the new name reads like it should a korean children's cartoon</li>
+<li><tt class="docutils literal">ngrep</tt> - network grep, just reads packets going by your box and spits that out to stdout if it matches what you're looking for</li>
+<li><tt class="docutils literal">tcpdump</tt> - captures and dumps packets, dump files can be reloaded, minor dissection available with some classification, can load the dumps up with anything</li>
+<li><tt class="docutils literal">ifconfig</tt> - old network interface config command line utility. windows ipconfig is a ripoff of it. it is in apt package net-tools</li>
 <li><tt class="docutils literal">ip</tt> - the newer, 'better' network interface and routing table configuration tool</li>
-<li><tt class="docutils literal">route</tt> - orouting table edit and explore</li>
+<li><tt class="docutils literal">route</tt> - routing table edit and explore</li>
 <li><tt class="docutils literal">httping</tt> - sends a http packet to a server on default prot of 80, gives response time</li>
 <li><tt class="docutils literal">ping</tt> - normal old school icmp ping. not waht it used to be</li>
-<li><tt class="docutils literal">telnet</tt> - old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. helpful for testing connections, manual single prot probing like tenet &lt;host&gt; 80 to connect to port 80 on &lt;host&gt;</li>
+<li><tt class="docutils literal">telnet</tt> - old school shell/terminal over the wire. completely unencrypted, not much more complex than netcat. can be helpful to manually probe a port and see the header or whatnot <tt class="docutils literal">telnet &lt;host&gt; 80</tt> to connect to port 80 on &lt;host&gt;</li>
 <li><tt class="docutils literal">nslookup</tt> - look up an ip or hostname in DNS</li>
-<li><tt class="docutils literal">john</tt> - old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(after the famous amteur serial hooker-vivisection enthusiast)</li>
+<li><tt class="docutils literal">john</tt> - old school powerful password hash cracker. supports extensions and a lot of hash algorithms. parallelism exists too, not sure about GPU kernels. likely better things these days. called john the ripper(which must be in honor of the famous hooker-vivisection enthusiast, jack)</li>
 <li><tt class="docutils literal">whois</tt> - information on domain ownership, reverse look up of IP addresses. just an entry from a database about the owner and registrar stuff for IPs and domains.</li>
-<li><tt class="docutils literal">traceroute</tt> - old school packet routing trace, not sure if it really works the same anymore, but shows you the path packets take to a server. seems like maye routers out in the widl drop the packets it uses now often? not sure. dont use it much and its not what it used to be is the word</li>
-<li><tt class="docutils literal">arping</tt> - executes a ping-analogous function using the arp protocol. v nice.</li>
+<li><tt class="docutils literal">traceroute</tt> - old school packet routing trace. uses icmp by default but works better with an open tcp port which you can set.</li>
+<li><tt class="docutils literal">arping</tt> - executes a ping-analogous function using the arp protocol. for discovery of hosts in the LAN context</li>
 <li><tt class="docutils literal">tsocks</tt> - wrap any protocol through socks generally config in etc</li>
 <li><tt class="docutils literal">httping</tt>- ping a http server. IE, give the response time to a http service</li>
 <li><tt class="docutils literal"><span class="pre">aircrack-ng</span></tt> - a suite of utilities for security analysis of wifi networks</li>
-<li><tt class="docutils literal">iwconfig</tt>-ike ifconfig but with specific features for wifi adapters/driver interfaces. it is old school</li>
+<li><tt class="docutils literal">iwconfig</tt>- like ifconfig but with specific features for wifi adapters/driver interfaces. it is old school</li>
 <li><tt class="docutils literal">iw</tt> - same as above but not as old school</li>
 <li><tt class="docutils literal">bluetoothctl</tt>- shell style interface to bluetooth hardware. quite good</li>
 <li><tt class="docutils literal">yersinia</tt>- a powerful security analysis too that i am not too familiar with, but worth a mention. some kid in vegas looked at me like i was insane for not using it. appears very powerful.</li>
@@ -689,16 +690,20 @@ ul.auto-toc {
 <li><tt class="docutils literal"><span class="pre">fido2-token</span></tt> - manipulate and probe fido2 auth tokens such as yubikey etc</li>
 <li><tt class="docutils literal"><span class="pre">opensc-tool</span></tt> + <tt class="docutils literal"><span class="pre">opensc-explorer</span></tt> - cli util and interactive shell interface for smart card interactions a-la iso7816 and iso14443(contact chip and nfc interfaces respectively)</li>
 <li><tt class="docutils literal">pcsc_scan</tt> - report basic diagnostic info on connected smart cards</li>
+<li><tt class="docutils literal">dsniff</tt> - minimally parse cleartext protocols and save interesting bits such as passwords.</li>
+<li><tt class="docutils literal">macof</tt> - flood LAN with fake mac addresses, part of dsniff package</li>
+<li><tt class="docutils literal">p0f</tt> - passive OS fingerprinting. does OS fingerprinting, NAT detection, http header analysis, client and server app detection</li>
 </ul>
 </div>
 <div class="section" id="services">
 <h1>services</h1>
-<p>these are the names used if you were to <tt class="docutils literal">service &lt;name&gt; &lt;start|stop|status&gt;</tt> services are started stopped etc by scripts which are used by systemd and this command or in general your setup might use a different service manager, which will be similar. This is because some services need a sequence of commands and checks etc before starting or stopping safely.</p>
+<p>This is a list of useful, not generally installed by default, services. You control services through the commands <tt class="docutils literal">service</tt> and <tt class="docutils literal"><span class="pre">systemctl``(which</span> can also be used for <span class="pre">user-specific</span> serfices) which interface with scripts in /etc/init.d and /etc/systemd. usage is ``service [name] [status|start|stop]</tt> and <tt class="docutils literal">systemctl <span class="pre">[status|start|stop|enable|disable|mask|unmask...]</span> [name]</tt>. mask is a stronger form of disable which links the script to /dev/null to make it impossible to start. Some services have extra commands like reload, to reload settings without a restart.</p>
 <ul class="simple">
 <li><tt class="docutils literal">fail2ban</tt> - great utility that watches update of logs from whatever you want and responds to predined events (you set up in /etc/fail2ban. modularized to actions filters and jails. where actions are responses, filters define events and jails define groups of events and how they trigger actions abd expire. all bans are cleared on restart by default.</li>
 <li><tt class="docutils literal">nginx</tt> - nice simple lightweight webserver, often used as a proxy to a web app run with python-flask or similar, to provide robust features that come with a real web server.</li>
 <li><tt class="docutils literal">snort</tt> - network util for traffic capture and parsing, logging. can be run in the background as a system service to construct intrusion detection functionality, or used like ngrep</li>
-<li><tt class="docutils literal">psql</tt> - best database</li>
+<li><tt class="docutils literal">postgresql</tt> - best database. most advanced open source dawtabase. powerful for text search. scales.</li>
+<li><tt class="docutils literal"><span class="pre">dnscrypt-proxy</span></tt> - local proxy that routes dns requests through encrypted dns protocol servers</li>
 </ul>
 </div>
 <div class="section" id="ssh-stuff">
